@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="efF-kg-Ais">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,20 +20,20 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bij-Xo-vvY">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1317"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Overview" highlightedImage="Overview" translatesAutoresizingMaskIntoConstraints="NO" id="EsX-gw-lDI">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="476"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1299"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EsX-gw-lDI" secondAttribute="height" multiplier="767:973" id="Kg8-wR-Vd0"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-A6-zak" userLabel="GoButton">
-                                        <rect key="frame" x="140" y="224.5" width="94" height="70"/>
+                                        <rect key="frame" x="384" y="673" width="256" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Sep-R3-mN9"/>
                                         </constraints>
@@ -78,15 +78,46 @@
                         <viewControllerLayoutGuide type="bottom" id="8ce-5m-jhc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nUc-hV-EYz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5se-DL-z8M" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Watson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-2Y-8SM" userLabel="Title">
+                                        <rect key="frame" x="464.5" y="25.5" width="95.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80784313725490198" green="0.043137254901960784" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="A4y-4T-k5Y"/>
+                                    <constraint firstItem="cuN-2Y-8SM" firstAttribute="centerY" secondItem="5se-DL-z8M" secondAttribute="centerY" multiplier="1.2" id="S71-o0-KWt"/>
+                                    <constraint firstItem="cuN-2Y-8SM" firstAttribute="centerX" secondItem="5se-DL-z8M" secondAttribute="centerX" id="bML-eL-tWy"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChatBackground" translatesAutoresizingMaskIntoConstraints="NO" id="P0M-He-JUj">
+                                <rect key="frame" x="0.0" y="60" width="1024" height="1307"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5se-DL-z8M" firstAttribute="top" secondItem="nUc-hV-EYz" secondAttribute="top" id="8fb-Lw-8bq"/>
+                            <constraint firstItem="5se-DL-z8M" firstAttribute="leading" secondItem="nUc-hV-EYz" secondAttribute="leading" id="HKF-q4-SOE"/>
+                            <constraint firstItem="P0M-He-JUj" firstAttribute="leading" secondItem="nUc-hV-EYz" secondAttribute="leading" id="P9j-Fn-uNG"/>
+                            <constraint firstAttribute="trailing" secondItem="5se-DL-z8M" secondAttribute="trailing" id="blk-HR-3ng"/>
+                            <constraint firstItem="8ce-5m-jhc" firstAttribute="top" secondItem="P0M-He-JUj" secondAttribute="bottom" constant="-50" id="g3W-ZV-qPK"/>
+                            <constraint firstAttribute="trailing" secondItem="P0M-He-JUj" secondAttribute="trailing" id="ji4-KV-7fT"/>
+                            <constraint firstItem="P0M-He-JUj" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" id="nEK-WY-wiX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ask Watson" image="TabBarIcon-Watson" selectedImage="TabBarIcon-Watson" id="iQ9-A8-4Bg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTp-CT-sgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071" y="649"/>
+            <point key="canvasLocation" x="1069.5999999999999" y="648.12593703148434"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2YK-Ib-dq7">
@@ -109,6 +140,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ChatBackground" width="8" height="855"/>
         <image name="Overview" width="767" height="973"/>
         <image name="TabBarIcon-Overview" width="25" height="25"/>
         <image name="TabBarIcon-Watson" width="26" height="26"/>
