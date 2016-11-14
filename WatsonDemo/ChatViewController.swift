@@ -25,6 +25,9 @@ class ChatViewController: UIViewController {
 
     // MARK: - Actions
 
+    @IBAction func dismissKeyboardButtonTapped() {
+        view.endEditing(true)
+    }
 
     // MARK: - Private
     // This will only execute on the simulator and NOT on a real device
