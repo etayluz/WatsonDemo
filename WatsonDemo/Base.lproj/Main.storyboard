@@ -86,7 +86,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Watson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-2Y-8SM" userLabel="Title">
-                                        <rect key="frame" x="140" y="25.5" width="95.5" height="21.5"/>
+                                        <rect key="frame" x="140" y="25" width="96" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -232,10 +232,47 @@
                                     <outlet property="delegate" destination="3go-5g-2RD" id="JjZ-8a-oMT"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1E-09-ULi" userLabel="InputAccessoryView">
+                                <rect key="frame" x="0.0" y="573" width="375" height="45"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MicOff" highlightedImage="MicOff" translatesAutoresizingMaskIntoConstraints="NO" id="vb7-PA-IIf" userLabel="Mic">
+                                        <rect key="frame" x="10" y="5.5" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vb7-PA-IIf" secondAttribute="height" id="ASS-ib-GYG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T25-IS-XUm" userLabel="InputTextField" customClass="ChatTextField" customModule="WatsonDemo">
+                                        <rect key="frame" x="59" y="5.5" width="257" height="34"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWx-nd-flC">
+                                        <rect key="frame" x="331" y="7.5" width="36" height="30"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" red="0.28627450980392155" green="0.34901960784313724" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="T25-IS-XUm" firstAttribute="centerY" secondItem="E1E-09-ULi" secondAttribute="centerY" id="7xO-pc-bEc"/>
+                                    <constraint firstItem="T25-IS-XUm" firstAttribute="centerX" secondItem="E1E-09-ULi" secondAttribute="centerX" id="BWj-aJ-fa2"/>
+                                    <constraint firstItem="vb7-PA-IIf" firstAttribute="height" secondItem="T25-IS-XUm" secondAttribute="height" id="CbE-5g-5oj"/>
+                                    <constraint firstItem="T25-IS-XUm" firstAttribute="leading" secondItem="vb7-PA-IIf" secondAttribute="trailing" constant="15" id="NIE-BM-eTA"/>
+                                    <constraint firstAttribute="height" constant="45" id="Pby-EV-brJ"/>
+                                    <constraint firstItem="vb7-PA-IIf" firstAttribute="leading" secondItem="E1E-09-ULi" secondAttribute="leading" constant="10" id="PfK-Eq-h0k"/>
+                                    <constraint firstItem="SWx-nd-flC" firstAttribute="leading" secondItem="T25-IS-XUm" secondAttribute="trailing" constant="15" id="RZD-1E-Tum"/>
+                                    <constraint firstAttribute="trailing" secondItem="SWx-nd-flC" secondAttribute="trailing" constant="8" id="bcT-wy-IDl"/>
+                                    <constraint firstItem="vb7-PA-IIf" firstAttribute="centerY" secondItem="E1E-09-ULi" secondAttribute="centerY" id="fSC-Dp-tCH"/>
+                                    <constraint firstItem="SWx-nd-flC" firstAttribute="centerY" secondItem="T25-IS-XUm" secondAttribute="centerY" id="jp0-kP-cYM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="width" secondItem="P0M-He-JUj" secondAttribute="width" id="2Ge-Bd-vqD"/>
+                            <constraint firstItem="E1E-09-ULi" firstAttribute="width" secondItem="nUc-hV-EYz" secondAttribute="width" id="4cD-D8-d9t"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="top" secondItem="nUc-hV-EYz" secondAttribute="top" id="8fb-Lw-8bq"/>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" id="A5j-NF-sQY"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="leading" secondItem="nUc-hV-EYz" secondAttribute="leading" id="HKF-q4-SOE"/>
@@ -245,14 +282,19 @@
                             <constraint firstAttribute="trailing" secondItem="P0M-He-JUj" secondAttribute="trailing" id="ji4-KV-7fT"/>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="centerX" secondItem="P0M-He-JUj" secondAttribute="centerX" id="lY4-Qw-wDL"/>
                             <constraint firstItem="P0M-He-JUj" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" id="nEK-WY-wiX"/>
+                            <constraint firstItem="8ce-5m-jhc" firstAttribute="top" secondItem="E1E-09-ULi" secondAttribute="bottom" id="s8r-uK-9n7"/>
+                            <constraint firstItem="E1E-09-ULi" firstAttribute="centerX" secondItem="nUc-hV-EYz" secondAttribute="centerX" id="tje-rL-ulO"/>
                             <constraint firstItem="8ce-5m-jhc" firstAttribute="top" secondItem="GbL-9b-ILu" secondAttribute="bottom" id="zCn-2T-HtN"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ask Watson" image="TabBarIcon-Watson" selectedImage="TabBarIcon-Watson" id="iQ9-A8-4Bg"/>
+                    <connections>
+                        <outlet property="inputTextField" destination="T25-IS-XUm" id="3pt-Af-8pm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTp-CT-sgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="391"/>
+            <point key="canvasLocation" x="1028" y="390.85457271364322"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2YK-Ib-dq7">
@@ -276,6 +318,7 @@
     </scenes>
     <resources>
         <image name="ChatBackground" width="8" height="855"/>
+        <image name="MicOff" width="30" height="30"/>
         <image name="Overview" width="767" height="973"/>
         <image name="RightTriangle" width="10" height="16"/>
         <image name="TabBarIcon-Overview" width="25" height="25"/>

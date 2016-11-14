@@ -10,20 +10,21 @@ import UIKit
 
 class ChatViewController: UIViewController {
 
+    // MARK: - Constants
+    private struct Constants {
+    }
+
+    // MARK: - Outlets
+    @IBOutlet weak var inputTextField: UITextField!
+
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSimulator()
     }
 
-    // MARK: - Constants
-    private struct Constants {
-        static let chatSelectedIndex = 1
-    }
-
     // MARK: - Actions
-    @IBAction func goButtonTapped() {
-        tabBarController?.selectedIndex = Constants.chatSelectedIndex
-    }
+
 
     // MARK: - Private
     // This will only execute on the simulator and NOT on a real device
