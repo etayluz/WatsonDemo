@@ -10,5 +10,7 @@ import UIKit
 
 class WatsonChatViewCell: UITableViewCell {
 
+    // MARK: - Outlets
+    @IBOutlet weak var messageLabel: CustomLabel!
 
 }

@@ -10,5 +10,6 @@ import UIKit
 
 class UserChatViewCell: UITableViewCell {
 
-
+    // MARK: - Outlets
+    @IBOutlet weak var messageLabel: CustomLabel!
 }
