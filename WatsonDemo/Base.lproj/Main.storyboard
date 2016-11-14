@@ -232,7 +232,7 @@
                                     <outlet property="delegate" destination="3go-5g-2RD" id="JjZ-8a-oMT"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1E-09-ULi" userLabel="InputAccessoryView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1E-09-ULi" userLabel="ChatInputAccessoryView">
                                 <rect key="frame" x="0.0" y="573" width="375" height="45"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MicOff" highlightedImage="MicOff" translatesAutoresizingMaskIntoConstraints="NO" id="vb7-PA-IIf" userLabel="Mic">

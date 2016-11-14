@@ -10,10 +10,36 @@ import UIKit
 
 class ChatTextField: UITextField {
 
-    /// Setup the chat text field with an input accessory view of InputAccessoryView
+    // MARK: - Properties
+    let chatInputAccessoryView = ChatInputAccessoryView()
+
+    // MARK: - View Lifecycle
     override func awakeFromNib() {
-        let inputAccessoryView = InputAccessoryView()
-        self.inputAccessoryView = inputAccessoryView.contentView
+        delegate = self
     }
 
+}
+
+// MARK: - UITextFieldDelegate
+extension ChatTextField: UITextFieldDelegate {
+
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool  {
+        guard inputAccessoryView == nil else {
+            inputAccessoryView = nil
+            return false
+        }
+
+        return true
+    }
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        /// Setup the chat text field with an input accessory view of InputAccessoryView
+        inputAccessoryView = chatInputAccessoryView.contentView
+
+        let when = DispatchTime.now() + 0.1
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            self.chatInputAccessoryView.inputTextField.becomeFirstResponder()
+        }
+    }
+    
 }

@@ -1,5 +1,5 @@
 //
-//  InputAccessoryView.swift
+//  ChatInputAccessoryView.swift
 //  WatsonDemo
 //
 //  Created by Etay Luz on 11/14/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InputAccessoryView: NSObject {
+class ChatInputAccessoryView: NSObject {
 
     // MARK: - Outlets
     @IBOutlet var contentView: UIView!
@@ -23,7 +23,6 @@ class InputAccessoryView: NSObject {
     // MARK: - Actions
     @IBAction func sendButtonTapped() {
         inputTextField.resignFirstResponder()
-        print("tapped")
     }
 
     // MARK: - Private
@@ -36,15 +35,11 @@ class InputAccessoryView: NSObject {
 }
 
 // MARK: - UITextFieldDelegate
-extension InputAccessoryView: UITextFieldDelegate {
-
-    func textFieldDidEndEditing(_ textField: UITextField) {
-
-    }
+extension ChatInputAccessoryView: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        return false
+        return true
     }
     
 }
