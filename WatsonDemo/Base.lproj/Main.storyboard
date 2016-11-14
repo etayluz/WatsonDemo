@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +15,7 @@
         <!--HomeViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" userLabel="HomeViewController" customClass="HomeViewController" customModule="WatsonDemo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" userLabel="HomeViewController" customClass="OverviewViewController" customModule="WatsonDemo" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -72,7 +73,7 @@
         <!--ChatViewController-->
         <scene sceneID="fcW-ZN-TN6">
             <objects>
-                <viewController id="3go-5g-2RD" userLabel="ChatViewController" customClass="ChatViewController" sceneMemberID="viewController">
+                <viewController id="3go-5g-2RD" userLabel="ChatViewController" customClass="ChatViewController" customModule="WatsonDemo" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2sY-f8-GTJ"/>
                         <viewControllerLayoutGuide type="bottom" id="8ce-5m-jhc"/>
@@ -101,16 +102,89 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChatBackground" translatesAutoresizingMaskIntoConstraints="NO" id="P0M-He-JUj">
                                 <rect key="frame" x="0.0" y="60" width="375" height="608"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GbL-9b-ILu">
+                                <rect key="frame" x="0.0" y="60" width="375" height="558"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WatsonChatViewCell" id="BJB-NB-L3A" userLabel="WatsonViewCell" customClass="WatsonChatViewCell" customModule="WatsonDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BJB-NB-L3A" id="9i8-DP-9qa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watson" highlightedImage="Watson" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-Dx-6Yr" userLabel="WatsonIcon">
+                                                    <rect key="frame" x="18" y="20" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="3w5-xb-dhM"/>
+                                                        <constraint firstAttribute="width" secondItem="MLg-Dx-6Yr" secondAttribute="height" id="nYl-T1-Gje"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giz-gT-A77" userLabel="Message" customClass="CustomLabel" customModule="WatsonDemo" customModuleProvider="target">
+                                                    <rect key="frame" x="93" y="25" width="72" height="50.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="MLg-Dx-6Yr" firstAttribute="centerY" secondItem="9i8-DP-9qa" secondAttribute="centerY" id="1QE-Cq-H5l"/>
+                                                <constraint firstItem="giz-gT-A77" firstAttribute="centerY" secondItem="MLg-Dx-6Yr" secondAttribute="centerY" id="dgg-lS-GrE"/>
+                                                <constraint firstItem="MLg-Dx-6Yr" firstAttribute="leading" secondItem="9i8-DP-9qa" secondAttribute="leadingMargin" constant="10" id="dvb-Q9-bJD"/>
+                                                <constraint firstItem="giz-gT-A77" firstAttribute="leading" secondItem="MLg-Dx-6Yr" secondAttribute="trailing" constant="15" id="wEv-zB-8q0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserChatViewCell" id="55h-j6-z27" userLabel="UserViewCell" customClass="UserChatViewCell" customModule="WatsonDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="55h-j6-z27" id="Ju8-59-tQr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3go-5g-2RD" id="KWP-0a-HyI"/>
+                                    <outlet property="delegate" destination="3go-5g-2RD" id="JjZ-8a-oMT"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GbL-9b-ILu" firstAttribute="width" secondItem="P0M-He-JUj" secondAttribute="width" id="2Ge-Bd-vqD"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="top" secondItem="nUc-hV-EYz" secondAttribute="top" id="8fb-Lw-8bq"/>
+                            <constraint firstItem="GbL-9b-ILu" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" id="A5j-NF-sQY"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="leading" secondItem="nUc-hV-EYz" secondAttribute="leading" id="HKF-q4-SOE"/>
                             <constraint firstItem="P0M-He-JUj" firstAttribute="leading" secondItem="nUc-hV-EYz" secondAttribute="leading" id="P9j-Fn-uNG"/>
                             <constraint firstAttribute="trailing" secondItem="5se-DL-z8M" secondAttribute="trailing" id="blk-HR-3ng"/>
                             <constraint firstItem="8ce-5m-jhc" firstAttribute="top" secondItem="P0M-He-JUj" secondAttribute="bottom" constant="-50" id="g3W-ZV-qPK"/>
                             <constraint firstAttribute="trailing" secondItem="P0M-He-JUj" secondAttribute="trailing" id="ji4-KV-7fT"/>
+                            <constraint firstItem="GbL-9b-ILu" firstAttribute="centerX" secondItem="P0M-He-JUj" secondAttribute="centerX" id="lY4-Qw-wDL"/>
                             <constraint firstItem="P0M-He-JUj" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" id="nEK-WY-wiX"/>
+                            <constraint firstItem="8ce-5m-jhc" firstAttribute="top" secondItem="GbL-9b-ILu" secondAttribute="bottom" id="zCn-2T-HtN"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ask Watson" image="TabBarIcon-Watson" selectedImage="TabBarIcon-Watson" id="iQ9-A8-4Bg"/>
@@ -144,5 +218,6 @@
         <image name="Overview" width="767" height="973"/>
         <image name="TabBarIcon-Overview" width="25" height="25"/>
         <image name="TabBarIcon-Watson" width="26" height="26"/>
+        <image name="Watson" width="70" height="70"/>
     </resources>
 </document>

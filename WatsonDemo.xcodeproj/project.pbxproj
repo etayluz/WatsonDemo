@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18611DD96859008CE7C2 /* ChatViewController.swift */; };
+		B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
+		B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
+		B48B18691DD96FC5008CE7C2 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18681DD96FC5008CE7C2 /* CustomLabel.swift */; };
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
-		B4CBCF971DD91EA70003074A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF961DD91EA70003074A /* HomeViewController.swift */; };
+		B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF961DD91EA70003074A /* OverviewViewController.swift */; };
 		B4CBCF9A1DD91EA70003074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
 		B4CBCF9C1DD91EA70003074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		B4CBCF9F1DD91EA70003074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B48B18611DD96859008CE7C2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonChatViewCell.swift; sourceTree = "<group>"; };
+		B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserChatViewCell.swift; sourceTree = "<group>"; };
+		B48B18681DD96FC5008CE7C2 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		B4CBCF911DD91EA70003074A /* WatsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CBCF941DD91EA70003074A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4CBCF961DD91EA70003074A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B4CBCF961DD91EA70003074A /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		B4CBCF991DD91EA70003074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4CBCF9B1DD91EA70003074A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4CBCF9E1DD91EA70003074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,7 +46,8 @@
 		B48B185E1DD92AD8008CE7C2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B4CBCF961DD91EA70003074A /* HomeViewController.swift */,
+				B48B18611DD96859008CE7C2 /* ChatViewController.swift */,
+				B4CBCF961DD91EA70003074A /* OverviewViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -58,6 +67,16 @@
 				B4CBCFA01DD91EA70003074A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B48B18671DD96ACF008CE7C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B48B18681DD96FC5008CE7C2 /* CustomLabel.swift */,
+				B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */,
+				B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		B4CBCF881DD91EA70003074A = {
@@ -83,6 +102,7 @@
 				B4CBCF9B1DD91EA70003074A /* Assets.xcassets */,
 				B48B185F1DD92AE9008CE7C2 /* Storyboards */,
 				B48B18601DD92B02008CE7C2 /* Supporting Files */,
+				B48B18671DD96ACF008CE7C2 /* Views */,
 				B48B185E1DD92AD8008CE7C2 /* ViewControllers */,
 			);
 			path = WatsonDemo;
@@ -161,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4CBCF971DD91EA70003074A /* HomeViewController.swift in Sources */,
 				B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */,
+				B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */,
+				B48B18691DD96FC5008CE7C2 /* CustomLabel.swift in Sources */,
+				B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */,
+				B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */,
+				B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
