@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="efF-kg-Ais">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" userLabel="HomeViewController" customClass="HomeViewController" customModule="WatsonDemo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bij-Xo-vvY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Overview" highlightedImage="Overview" translatesAutoresizingMaskIntoConstraints="NO" id="EsX-gw-lDI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="476"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EsX-gw-lDI" secondAttribute="height" multiplier="767:973" id="Kg8-wR-Vd0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-A6-zak" userLabel="GoButton">
+                                        <rect key="frame" x="140" y="224.5" width="94" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Sep-R3-mN9"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="goButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dyz-kz-jDg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EsX-gw-lDI" firstAttribute="top" secondItem="bij-Xo-vvY" secondAttribute="top" id="Dm7-vh-o6g"/>
+                                    <constraint firstItem="EsX-gw-lDI" firstAttribute="leading" secondItem="bij-Xo-vvY" secondAttribute="leading" id="Fto-S5-d7u"/>
+                                    <constraint firstAttribute="trailing" secondItem="EsX-gw-lDI" secondAttribute="trailing" id="Jzf-WS-ZP1"/>
+                                    <constraint firstItem="UCw-A6-zak" firstAttribute="centerX" secondItem="EsX-gw-lDI" secondAttribute="centerX" id="NBL-bh-A7S"/>
+                                    <constraint firstItem="UCw-A6-zak" firstAttribute="width" secondItem="EsX-gw-lDI" secondAttribute="width" multiplier="0.25" id="g1S-EK-kso"/>
+                                    <constraint firstAttribute="bottom" secondItem="EsX-gw-lDI" secondAttribute="bottom" id="ltd-Uh-Lqo"/>
+                                    <constraint firstItem="UCw-A6-zak" firstAttribute="centerY" secondItem="EsX-gw-lDI" secondAttribute="centerY" multiplier="1.09" id="u6o-bJ-FqU"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bij-Xo-vvY" secondAttribute="trailing" id="1UN-yI-aLH"/>
+                            <constraint firstAttribute="bottom" secondItem="bij-Xo-vvY" secondAttribute="bottom" constant="49" id="ckE-HY-cck"/>
+                            <constraint firstItem="bij-Xo-vvY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d2I-n7-ho4"/>
+                            <constraint firstAttribute="trailing" secondItem="EsX-gw-lDI" secondAttribute="trailing" id="kZm-0a-Or0"/>
+                            <constraint firstItem="bij-Xo-vvY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ozf-fL-eCf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Overview" image="TabBarIcon-Overview" selectedImage="TabBarIcon-Overview" id="Oje-pa-UZY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.985507246377" y="-240.48913043478262"/>
+        </scene>
+        <!--ChatViewController-->
+        <scene sceneID="fcW-ZN-TN6">
+            <objects>
+                <viewController id="3go-5g-2RD" userLabel="ChatViewController" customClass="ChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2sY-f8-GTJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ce-5m-jhc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nUc-hV-EYz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ask Watson" image="TabBarIcon-Watson" selectedImage="TabBarIcon-Watson" id="iQ9-A8-4Bg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTp-CT-sgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="649"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2YK-Ib-dq7">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="efF-kg-Ais" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="VP1-j5-PFg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="NVc-Th-1am"/>
+                        <segue destination="3go-5g-2RD" kind="relationship" relationship="viewControllers" id="0td-jl-LSy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Zf-VX-uqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Overview" width="767" height="973"/>
+        <image name="TabBarIcon-Overview" width="25" height="25"/>
+        <image name="TabBarIcon-Watson" width="26" height="26"/>
+    </resources>
+</document>
