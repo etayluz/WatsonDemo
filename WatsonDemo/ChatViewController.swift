@@ -15,16 +15,16 @@ class ChatViewController: UIViewController {
     }
 
     // MARK: - Outlets
-    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var chatTextField: ChatTextField!
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSimulator()
+        chatTextField.chatViewController = self
     }
 
     // MARK: - Actions
-
     @IBAction func dismissKeyboardButtonTapped() {
         view.endEditing(true)
     }
@@ -50,7 +50,6 @@ extension ChatViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: WatsonChatViewCell.self),
                                                  for: indexPath) as! WatsonChatViewCell
 //        cell.configure(withAlert: alert)

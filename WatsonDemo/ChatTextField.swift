@@ -12,6 +12,7 @@ class ChatTextField: UITextField {
 
     // MARK: - Properties
     let chatInputAccessoryView = ChatInputAccessoryView()
+    var chatViewController: ChatViewController!
 
     // MARK: - View Lifecycle
     override func awakeFromNib() {
