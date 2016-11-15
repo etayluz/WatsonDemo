@@ -35,6 +35,9 @@ class ChatViewController: UIViewController {
         chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
         conversationService.startConversation()
 //        conversationService.continueConversation(withText: "Test")
+
+        let gestureTap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
+        chatTableView.addGestureRecognizer(gestureTap)
     }
 
     // MARK: - Actions
@@ -48,6 +51,10 @@ class ChatViewController: UIViewController {
         micButton.isSelected = !micButton.isSelected
     }
 
+
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
     func addUserChat(withMessage message: String) {
         guard message.characters.count > 0 else { return }
@@ -116,7 +123,7 @@ extension ChatViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        view.endEditing(true)
+        dismissKeyboard()
     }
     
 }
