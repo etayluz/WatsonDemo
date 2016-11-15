@@ -10,6 +10,12 @@
 import UIKit
 
 @IBDesignable class CustomLabel: UILabel {
+
+    // MARK: - Constants
+    private struct Constants {
+        static let lineSpacing: CGFloat = 10.0
+    }
+
     @IBInspectable var topInset: CGFloat = 0.0
     @IBInspectable var leftInset: CGFloat = 0.0
     @IBInspectable var bottomInset: CGFloat = 0.0
@@ -46,4 +52,17 @@ import UIKit
 
         return contentSize
     }
+
+    override var text: String? {
+        didSet {
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineSpacing = Constants.lineSpacing
+
+            let attrString = NSMutableAttributedString(string: text!)
+            attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+
+            attributedText = attrString
+        }
+    }
+
 }
