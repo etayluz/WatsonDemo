@@ -14,6 +14,7 @@
 		B48B186B1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		B48B186E1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186D1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift */; };
 		B48B18701DDA139F008CE7C2 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
+		B48B18731DDA8768008CE7C2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18721DDA8768008CE7C2 /* Message.swift */; };
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
 		B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF961DD91EA70003074A /* OverviewViewController.swift */; };
 		B4CBCF9A1DD91EA70003074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
 		B48B186D1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextField.swift; sourceTree = "<group>"; };
+		B48B18721DDA8768008CE7C2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B4CBCF911DD91EA70003074A /* WatsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CBCF941DD91EA70003074A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4CBCF961DD91EA70003074A /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,21 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		B48B18711DDA86DA008CE7C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B48B18721DDA8768008CE7C2 /* Message.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B48B18741DDA8991008CE7C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		B4CBCF881DD91EA70003074A = {
 			isa = PBXGroup;
 			children = (
@@ -117,10 +134,12 @@
 			children = (
 				B4CBCF941DD91EA70003074A /* AppDelegate.swift */,
 				B4CBCF9B1DD91EA70003074A /* Assets.xcassets */,
-				B48B185F1DD92AE9008CE7C2 /* Storyboards */,
-				B48B18601DD92B02008CE7C2 /* Supporting Files */,
+				B48B18711DDA86DA008CE7C2 /* Models */,
 				B48B18671DD96ACF008CE7C2 /* Views */,
 				B48B185E1DD92AD8008CE7C2 /* ViewControllers */,
+				B48B18741DDA8991008CE7C2 /* Services */,
+				B48B185F1DD92AE9008CE7C2 /* Storyboards */,
+				B48B18601DD92B02008CE7C2 /* Supporting Files */,
 			);
 			path = WatsonDemo;
 			sourceTree = "<group>";
@@ -202,6 +221,7 @@
 				B48B18701DDA139F008CE7C2 /* ChatTextField.swift in Sources */,
 				B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */,
 				B48B186E1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift in Sources */,
+				B48B18731DDA8768008CE7C2 /* Message.swift in Sources */,
 				B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */,
 				B48B18691DD96FC5008CE7C2 /* CustomLabel.swift in Sources */,
 				B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */,

@@ -13,4 +13,11 @@ class WatsonChatViewCell: UITableViewCell {
     // MARK: - Outlets
     @IBOutlet weak var messageLabel: CustomLabel!
 
+    /// Configure Watson chat table view cell with Watson message
+    ///
+    /// - Parameter message: Message instance
+    func configure(withMessage message: Message) {
+        messageLabel.text = message.text
+    }
+
 }

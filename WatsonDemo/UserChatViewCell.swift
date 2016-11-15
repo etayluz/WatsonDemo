@@ -12,4 +12,12 @@ class UserChatViewCell: UITableViewCell {
 
     // MARK: - Outlets
     @IBOutlet weak var messageLabel: CustomLabel!
+
+
+    /// Configure user chat table view cell with user message
+    ///
+    /// - Parameter message: Message instance
+    func configure(withMessage message: Message) {
+        messageLabel.text = message.text
+    }
 }
