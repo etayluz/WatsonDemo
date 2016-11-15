@@ -14,6 +14,9 @@ class ChatInputAccessoryView: NSObject {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var inputTextField: UITextField!
 
+    // MARK: - Properties
+    var chatViewController: ChatViewController!
+
     // MARK: - View Lifecycle
     override init() {
         super.init()
@@ -22,6 +25,8 @@ class ChatInputAccessoryView: NSObject {
 
     // MARK: - Actions
     @IBAction func sendButtonTapped() {
+        chatViewController.addUserChat(withMessage: inputTextField.text!)
+        inputTextField.text = ""
         inputTextField.resignFirstResponder()
     }
 
@@ -38,6 +43,8 @@ class ChatInputAccessoryView: NSObject {
 extension ChatInputAccessoryView: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        chatViewController.addUserChat(withMessage: inputTextField.text!)
+        inputTextField.text = ""
         textField.resignFirstResponder()
         return true
     }

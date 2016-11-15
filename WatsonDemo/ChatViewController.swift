@@ -93,12 +93,11 @@ extension ChatViewController: UITableViewDataSource {
 extension ChatViewController: UITableViewDelegate {
 
     private struct AlertTableView {
-        static let dictationIssueAlertCellRowHeight: CGFloat = 120
-        static let signOffAlertCellRowHeight: CGFloat = 143.0
+        static let cellRowHeight: CGFloat = 120
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return AlertTableView.dictationIssueAlertCellRowHeight
+        return AlertTableView.cellRowHeight
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

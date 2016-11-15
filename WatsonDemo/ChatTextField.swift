@@ -27,7 +27,6 @@ extension ChatTextField: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool  {
         guard inputAccessoryView == nil else {
             inputAccessoryView = nil
-            chatViewController.addUserChat(withMessage: chatInputAccessoryView.inputTextField.text!)
             return false
         }
 
@@ -36,7 +35,9 @@ extension ChatTextField: UITextFieldDelegate {
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
         /// Setup the chat text field with an input accessory view of InputAccessoryView
+        chatInputAccessoryView.chatViewController = chatViewController
         inputAccessoryView = chatInputAccessoryView.contentView
+
 
         let when = DispatchTime.now() + 0.1
         DispatchQueue.main.asyncAfter(deadline: when) {
