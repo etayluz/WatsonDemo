@@ -23,24 +23,25 @@ class ConversationService {
     private struct Constants {
         static let firstName = "Jane"
         static let lastName = "Smith"
+        static let httpMethodPost = "POST"
         static let nName = "Jane"
+        static let statusCodeOK = 200
         static let value1 = "Fidelity"
         static let value2 = "TD Ameritrade"
         static let value3 = "Pershing"
-        static let httpMethodPost = "POST"
     }
 
     // MARK: - Key
     private struct Key {
-        static let input = "input"
-        static let workspaceID = "workspace_id"
-        static let firstName = "fname"
-        static let lastName = "lname"
-        static let nName = "nname"
+        static let context = "context"
         static let cValue1 = "cvalue1"
         static let cValue2 = "cvalue2"
         static let cValue3 = "cvalue3"
-        static let context = "context"
+        static let input = "input"
+        static let firstName = "fname"
+        static let lastName = "lname"
+        static let nName = "nname"
+        static let workspaceID = "workspace_id"
     }
 
     // MARK: - Init
@@ -49,7 +50,6 @@ class ConversationService {
     }
 
     func sendMessage(withText text: String) {
-
         let requestParameters =
             [Key.input: text,
              Key.workspaceID : GlobalConstants.conversationWorkspaceID,
@@ -81,14 +81,22 @@ class ConversationService {
             }
 
             // check for http errors
-            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != Constants.statusCodeOK {
                 print("Failed with status code: \(httpStatus.statusCode)")
                 print("response = \(response)")
             }
 
+
             let responseString = String(data: data, encoding: .utf8)
+            if let data = responseString?.data(using: String.Encoding.utf8) {
+                let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
+                let text = json?["text"] as! String
+                self.delegate?.didReceiveMessage(withText: text)
+            }
+
             print("responseString = \(responseString)")
         }
+
         task.resume()
     }
 
