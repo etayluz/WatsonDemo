@@ -59,3 +59,6 @@ Pods/
 +
 +# Code signing
 codesigndoc_exports/
+
+Cartfile.resolved
+Carthage/

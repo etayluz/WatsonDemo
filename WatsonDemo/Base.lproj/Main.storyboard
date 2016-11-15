@@ -239,12 +239,20 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MicOff" highlightedImage="MicOff" translatesAutoresizingMaskIntoConstraints="NO" id="vb7-PA-IIf" userLabel="MicImage">
                                         <rect key="frame" x="10" y="5.5" width="34" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="vb7-PA-IIf" secondAttribute="height" id="ASS-ib-GYG"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuU-ry-Fkb" userLabel="MicButton">
                                         <rect key="frame" x="10" y="5" width="34" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="micButtonTapped" destination="3go-5g-2RD" eventType="touchUpInside" id="crp-oh-pQ0"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T25-IS-XUm" userLabel="ChatTextField" customClass="ChatTextField" customModule="WatsonDemo">
                                         <rect key="frame" x="59" y="5.5" width="257" height="34"/>
@@ -300,6 +308,8 @@
                     <connections>
                         <outlet property="chatTableView" destination="GbL-9b-ILu" id="bhs-R4-Aid"/>
                         <outlet property="chatTextField" destination="T25-IS-XUm" id="FtY-j0-rr8"/>
+                        <outlet property="micButton" destination="cuU-ry-Fkb" id="z6t-G9-R2D"/>
+                        <outlet property="micImage" destination="vb7-PA-IIf" id="0tv-gX-8mT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTp-CT-sgu" userLabel="First Responder" sceneMemberID="firstResponder"/>

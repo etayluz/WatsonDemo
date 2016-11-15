@@ -15,12 +15,38 @@
 		B48B186E1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186D1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift */; };
 		B48B18701DDA139F008CE7C2 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
 		B48B18731DDA8768008CE7C2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18721DDA8768008CE7C2 /* Message.swift */; };
+		B48B18791DDB7025008CE7C2 /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */; };
+		B48B187F1DDB8D80008CE7C2 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */; };
+		B48B18811DDB908E008CE7C2 /* ConversationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18801DDB908E008CE7C2 /* ConversationService.swift */; };
+		B48B18861DDB99C0008CE7C2 /* ConversationV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B18821DDB90CC008CE7C2 /* ConversationV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B48B188A1DDB99DC008CE7C2 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B18821DDB90CC008CE7C2 /* ConversationV1.framework */; };
+		B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
+		B48B188F1DDB9A3B008CE7C2 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
+		B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
+		B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
 		B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF961DD91EA70003074A /* OverviewViewController.swift */; };
 		B4CBCF9A1DD91EA70003074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
 		B4CBCF9C1DD91EA70003074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		B4CBCF9F1DD91EA70003074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B48B18891DDB99C1008CE7C2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B48B18861DDB99C0008CE7C2 /* ConversationV1.framework in Embed Frameworks */,
+				B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */,
+				B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B48B18611DD96859008CE7C2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +57,12 @@
 		B48B186D1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextField.swift; sourceTree = "<group>"; };
 		B48B18721DDA8768008CE7C2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToSpeechService.swift; sourceTree = "<group>"; };
+		B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TextToSpeechV1.framework; sourceTree = "<group>"; };
+		B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		B48B18801DDB908E008CE7C2 /* ConversationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationService.swift; sourceTree = "<group>"; };
+		B48B18821DDB90CC008CE7C2 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ConversationV1.framework; sourceTree = "<group>"; };
+		B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
 		B4CBCF911DD91EA70003074A /* WatsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CBCF941DD91EA70003074A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4CBCF961DD91EA70003074A /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
@@ -45,20 +77,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48B188A1DDB99DC008CE7C2 /* ConversationV1.framework in Frameworks */,
+				B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */,
+				B48B188F1DDB9A3B008CE7C2 /* RestKit.framework in Frameworks */,
+				B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B48B185E1DD92AD8008CE7C2 /* ViewControllers */ = {
+		B48B185E1DD92AD8008CE7C2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				B48B186C1DDA0AC7008CE7C2 /* Cells */,
 				B48B18611DD96859008CE7C2 /* ChatViewController.swift */,
 				B4CBCF961DD91EA70003074A /* OverviewViewController.swift */,
 			);
-			name = ViewControllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		B48B185F1DD92AE9008CE7C2 /* Storyboards */ = {
@@ -109,8 +145,27 @@
 		B48B18741DDA8991008CE7C2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B48B18801DDB908E008CE7C2 /* ConversationService.swift */,
+				B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		B48B18751DDB6EE0008CE7C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48B18821DDB90CC008CE7C2 /* ConversationV1.framework */,
+				B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */,
+				B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B48B18841DDB9122008CE7C2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		B4CBCF881DD91EA70003074A = {
@@ -134,11 +189,14 @@
 			children = (
 				B4CBCF941DD91EA70003074A /* AppDelegate.swift */,
 				B4CBCF9B1DD91EA70003074A /* Assets.xcassets */,
+				B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */,
 				B48B18711DDA86DA008CE7C2 /* Models */,
 				B48B18671DD96ACF008CE7C2 /* Views */,
-				B48B185E1DD92AD8008CE7C2 /* ViewControllers */,
+				B48B185E1DD92AD8008CE7C2 /* Controllers */,
 				B48B18741DDA8991008CE7C2 /* Services */,
 				B48B185F1DD92AE9008CE7C2 /* Storyboards */,
+				B48B18841DDB9122008CE7C2 /* Utilities */,
+				B48B18751DDB6EE0008CE7C2 /* Frameworks */,
 				B48B18601DD92B02008CE7C2 /* Supporting Files */,
 			);
 			path = WatsonDemo;
@@ -154,6 +212,7 @@
 				B4CBCF8D1DD91EA70003074A /* Sources */,
 				B4CBCF8E1DD91EA70003074A /* Frameworks */,
 				B4CBCF8F1DD91EA70003074A /* Resources */,
+				B48B18891DDB99C1008CE7C2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,11 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48B18701DDA139F008CE7C2 /* ChatTextField.swift in Sources */,
+				B48B18791DDB7025008CE7C2 /* TextToSpeechService.swift in Sources */,
 				B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */,
 				B48B186E1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift in Sources */,
 				B48B18731DDA8768008CE7C2 /* Message.swift in Sources */,
+				B48B187F1DDB8D80008CE7C2 /* GlobalConstants.swift in Sources */,
 				B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */,
 				B48B18691DD96FC5008CE7C2 /* CustomLabel.swift in Sources */,
+				B48B18811DDB908E008CE7C2 /* ConversationService.swift in Sources */,
 				B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */,
 				B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */,
 				B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */,
@@ -348,6 +410,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KJRRJ3SKP5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonDemo;
@@ -362,6 +428,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KJRRJ3SKP5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonDemo;

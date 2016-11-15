@@ -17,9 +17,15 @@ class ChatViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var chatTextField: ChatTextField!
+    @IBOutlet weak var micButton: UIButton!
+    @IBOutlet weak var micImage: UIImageView!
 
     // MARK: - Properties
     var messages = [Message]()
+
+    // MARK: - Services
+    private lazy var conversationService: ConversationService = ConversationService(delegate:self)
+    private lazy var textToSpeechService: TextToSpeechService = TextToSpeechService(delegate:self)
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -27,23 +33,36 @@ class ChatViewController: UIViewController {
         setupSimulator()
         chatTextField.chatViewController = self
         chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
+        conversationService.startConversation()
+//        conversationService.continueConversation(withText: "Test")
     }
 
     // MARK: - Actions
-    @IBAction func dismissKeyboardButtonTapped() {
-        view.endEditing(true)
+    @IBAction func micButtonTapped() {
+        if micButton.isSelected {
+            micImage.image = UIImage.init(imageLiteralResourceName: "MicOff")
+        } else {
+            micImage.image = UIImage.init(imageLiteralResourceName: "MicOn")
+        }
+
+        micButton.isSelected = !micButton.isSelected
     }
+
 
     func addUserChat(withMessage message: String) {
         guard message.characters.count > 0 else { return }
 
         messages.append(Message(type: MessageType.User, text: message))
+        addNewMessageToChat()
+    }
+
+    private func addNewMessageToChat() {
+        let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
 
         chatTableView.beginUpdates()
-        chatTableView.insertRows(at: [NSIndexPath(row: messages.count - 1, section: 0) as IndexPath], with: .automatic)
+        chatTableView.insertRows(at: [indexPath], with: .automatic)
         chatTableView.endUpdates()
-
-        chatTableView.scrollToRow(at: NSIndexPath(row: messages.count - 1, section: 0) as IndexPath,
+        chatTableView.scrollToRow(at: indexPath,
                                   at: UITableViewScrollPosition.bottom,
                                   animated: true)
     }
@@ -53,11 +72,6 @@ class ChatViewController: UIViewController {
     private func setupSimulator() {
         #if (arch(i386) || arch(x86_64)) && os(iOS)
             messages.append(Message(type: MessageType.Watson, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything?"))
-            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e"))
-            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e"))
-            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e"))
-            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e"))
-
             chatTableView.reloadData()
         #endif
     }
@@ -107,3 +121,20 @@ extension ChatViewController: UITableViewDelegate {
     
 }
 
+// MARK: - TextToSpeechServiceDelegate
+extension ChatViewController: TextToSpeechServiceDelegate {
+
+    func textToSpeechDidFinishSynthesizing(withAudioData audioData: NSData) {
+
+    }
+    
+}
+
+// MARK: - ConversationServiceDelegate
+extension ChatViewController: ConversationServiceDelegate {
+
+    func conversationDidStart(withMessage:String) {
+
+    }
+    
+}
