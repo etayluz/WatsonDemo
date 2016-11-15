@@ -42,6 +42,10 @@ class ChatViewController: UIViewController {
         chatTableView.beginUpdates()
         chatTableView.insertRows(at: [NSIndexPath(row: messages.count - 1, section: 0) as IndexPath], with: .automatic)
         chatTableView.endUpdates()
+
+        chatTableView.scrollToRow(at: NSIndexPath(row: messages.count - 1, section: 0) as IndexPath,
+                                  at: UITableViewScrollPosition.bottom,
+                                  animated: true)
     }
 
     // MARK: - Private
