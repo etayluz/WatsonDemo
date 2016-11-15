@@ -26,6 +26,7 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         setupSimulator()
         chatTextField.chatViewController = self
+        chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
     }
 
     // MARK: - Actions
@@ -36,11 +37,11 @@ class ChatViewController: UIViewController {
     func addUserChat(withMessage message: String) {
         guard message.characters.count > 0 else { return }
 
-//        let indexes: IndexSet = [1]
-//
-//        chatTableView.beginUpdates()
-//        chatTableView.insertSections(indexes, with: UITableViewRowAnimation)
-//        chatTableView.endUpdates()
+        messages.append(Message(type: MessageType.User, text: message))
+
+        chatTableView.beginUpdates()
+        chatTableView.insertRows(at: [NSIndexPath(row: messages.count - 1, section: 0) as IndexPath], with: .automatic)
+        chatTableView.endUpdates()
     }
 
     // MARK: - Private
@@ -48,6 +49,9 @@ class ChatViewController: UIViewController {
     private func setupSimulator() {
         #if (arch(i386) || arch(x86_64)) && os(iOS)
             messages.append(Message(type: MessageType.Watson, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything?"))
+            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e ad asdf adf asdfads fads fas falsdfklads fkj l;adfj lajkfl; adjfl;adjs "))
+            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e ad asdf adf asdfads fads fas falsdfklads fkj l;adfj lajkfl; adjfl;adjs "))
+            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e ad asdf adf asdfads fads fas falsdfklads fkj l;adfj lajkfl; adjfl;adjs "))
             messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e ad asdf adf asdfads fads fas falsdfklads fkj l;adfj lajkfl; adjfl;adjs "))
             chatTableView.reloadData()
         #endif
@@ -57,16 +61,13 @@ class ChatViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension ChatViewController: UITableViewDataSource {
 
-//    private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        return 5// messages.count
-//    }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let message = messages[indexPath.row]
+
         if message.type == MessageType.Watson {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: WatsonChatViewCell.self),
                                                      for: indexPath) as! WatsonChatViewCell
@@ -93,6 +94,10 @@ extension ChatViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return AlertTableView.dictationIssueAlertCellRowHeight
+    }
+
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        view.endEditing(true)
     }
     
 }

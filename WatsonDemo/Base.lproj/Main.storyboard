@@ -102,8 +102,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChatBackground" translatesAutoresizingMaskIntoConstraints="NO" id="P0M-He-JUj">
                                 <rect key="frame" x="0.0" y="60" width="375" height="608"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="140" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="GbL-9b-ILu" userLabel="ChatTableView">
-                                <rect key="frame" x="0.0" y="60" width="375" height="558"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="140" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="GbL-9b-ILu" userLabel="ChatTableView">
+                                <rect key="frame" x="0.0" y="60" width="375" height="513"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -277,26 +277,16 @@
                                     <constraint firstItem="cuU-ry-Fkb" firstAttribute="centerY" secondItem="vb7-PA-IIf" secondAttribute="centerY" id="uxC-IO-YiI"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcQ-GZ-zTy" userLabel="DismissKeyboardButton">
-                                <rect key="frame" x="-0.5" y="20" width="375" height="553"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="dismissKeyboardButtonTapped" destination="3go-5g-2RD" eventType="touchUpInside" id="YMf-z0-LZY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="width" secondItem="P0M-He-JUj" secondAttribute="width" id="2Ge-Bd-vqD"/>
-                            <constraint firstItem="qcQ-GZ-zTy" firstAttribute="width" secondItem="nUc-hV-EYz" secondAttribute="width" id="2gV-Ra-HEz"/>
                             <constraint firstItem="E1E-09-ULi" firstAttribute="width" secondItem="nUc-hV-EYz" secondAttribute="width" id="4cD-D8-d9t"/>
-                            <constraint firstItem="qcQ-GZ-zTy" firstAttribute="centerX" secondItem="nUc-hV-EYz" secondAttribute="centerX" id="7Ov-X2-I0c"/>
+                            <constraint firstItem="E1E-09-ULi" firstAttribute="top" secondItem="GbL-9b-ILu" secondAttribute="bottom" id="53A-7O-1hP"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="top" secondItem="nUc-hV-EYz" secondAttribute="top" id="8fb-Lw-8bq"/>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" id="A5j-NF-sQY"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="leading" secondItem="nUc-hV-EYz" secondAttribute="leading" id="HKF-q4-SOE"/>
                             <constraint firstItem="P0M-He-JUj" firstAttribute="leading" secondItem="nUc-hV-EYz" secondAttribute="leading" id="P9j-Fn-uNG"/>
-                            <constraint firstItem="E1E-09-ULi" firstAttribute="top" secondItem="qcQ-GZ-zTy" secondAttribute="bottom" id="QBe-Zw-Xox"/>
-                            <constraint firstItem="qcQ-GZ-zTy" firstAttribute="top" secondItem="2sY-f8-GTJ" secondAttribute="bottom" id="QFL-K1-rN7"/>
                             <constraint firstAttribute="trailing" secondItem="5se-DL-z8M" secondAttribute="trailing" id="blk-HR-3ng"/>
                             <constraint firstItem="8ce-5m-jhc" firstAttribute="top" secondItem="P0M-He-JUj" secondAttribute="bottom" constant="-50" id="g3W-ZV-qPK"/>
                             <constraint firstAttribute="trailing" secondItem="P0M-He-JUj" secondAttribute="trailing" id="ji4-KV-7fT"/>
@@ -304,7 +294,6 @@
                             <constraint firstItem="P0M-He-JUj" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" id="nEK-WY-wiX"/>
                             <constraint firstItem="8ce-5m-jhc" firstAttribute="top" secondItem="E1E-09-ULi" secondAttribute="bottom" id="s8r-uK-9n7"/>
                             <constraint firstItem="E1E-09-ULi" firstAttribute="centerX" secondItem="nUc-hV-EYz" secondAttribute="centerX" id="tje-rL-ulO"/>
-                            <constraint firstItem="8ce-5m-jhc" firstAttribute="top" secondItem="GbL-9b-ILu" secondAttribute="bottom" id="zCn-2T-HtN"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ask Watson" image="TabBarIcon-Watson" selectedImage="TabBarIcon-Watson" id="iQ9-A8-4Bg"/>

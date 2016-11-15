@@ -18,6 +18,7 @@ class UserChatViewCell: UITableViewCell {
     ///
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
+        selectionStyle = UITableViewCellSelectionStyle.none
         messageLabel.text = message.text
     }
 }
