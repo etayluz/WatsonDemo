@@ -153,7 +153,7 @@
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="MLg-Dx-6Yr" firstAttribute="centerY" secondItem="9i8-DP-9qa" secondAttribute="centerY" id="1QE-Cq-H5l"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="giz-gT-A77" secondAttribute="trailing" constant="80" id="347-T0-Shq"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="giz-gT-A77" secondAttribute="trailing" constant="20" id="347-T0-Shq"/>
                                                 <constraint firstItem="giz-gT-A77" firstAttribute="centerY" secondItem="MLg-Dx-6Yr" secondAttribute="centerY" id="dgg-lS-GrE"/>
                                                 <constraint firstItem="MLg-Dx-6Yr" firstAttribute="leading" secondItem="9i8-DP-9qa" secondAttribute="leadingMargin" constant="10" id="dvb-Q9-bJD"/>
                                                 <constraint firstItem="ZxN-iL-KVp" firstAttribute="centerY" secondItem="giz-gT-A77" secondAttribute="centerY" multiplier="0.9" constant="0.84999999999999998" id="eqP-WG-Wrl"/>
@@ -217,7 +217,7 @@
                                                 <constraint firstItem="vo5-6M-QOP" firstAttribute="leading" secondItem="pRW-E5-X6Q" secondAttribute="trailing" constant="15" id="Mk7-WG-472"/>
                                                 <constraint firstItem="vo5-6M-QOP" firstAttribute="centerY" secondItem="Ju8-59-tQr" secondAttribute="centerY" id="Ssk-f9-iFI"/>
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="width" secondItem="3gf-Ki-PLb" secondAttribute="height" multiplier="10:16" id="Z4s-l8-zF0"/>
-                                                <constraint firstItem="pRW-E5-X6Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ju8-59-tQr" secondAttribute="leadingMargin" constant="80" id="ZjT-dF-tn3"/>
+                                                <constraint firstItem="pRW-E5-X6Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ju8-59-tQr" secondAttribute="leadingMargin" constant="20" id="ZjT-dF-tn3"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="vo5-6M-QOP" secondAttribute="trailing" constant="10" id="tgi-Nx-eav"/>
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="centerY" secondItem="pRW-E5-X6Q" secondAttribute="centerY" multiplier="0.85" id="uZd-qe-ejY"/>
                                             </constraints>

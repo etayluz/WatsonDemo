@@ -13,7 +13,7 @@ import UIKit
 
     // MARK: - Constants
     private struct Constants {
-        static let lineSpacing: CGFloat = 10.0
+        static let lineSpacing: CGFloat = 5.0
     }
 
     @IBInspectable var topInset: CGFloat = 0.0
