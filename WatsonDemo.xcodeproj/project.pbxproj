@@ -18,9 +18,7 @@
 		B48B18791DDB7025008CE7C2 /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */; };
 		B48B187F1DDB8D80008CE7C2 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */; };
 		B48B18811DDB908E008CE7C2 /* ConversationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18801DDB908E008CE7C2 /* ConversationService.swift */; };
-		B48B18861DDB99C0008CE7C2 /* ConversationV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B18821DDB90CC008CE7C2 /* ConversationV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B48B188A1DDB99DC008CE7C2 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B18821DDB90CC008CE7C2 /* ConversationV1.framework */; };
 		B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
 		B48B188F1DDB9A3B008CE7C2 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
 		B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
@@ -39,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B48B18861DDB99C0008CE7C2 /* ConversationV1.framework in Embed Frameworks */,
 				B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */,
 				B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */,
 			);
@@ -61,7 +58,6 @@
 		B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TextToSpeechV1.framework; sourceTree = "<group>"; };
 		B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		B48B18801DDB908E008CE7C2 /* ConversationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationService.swift; sourceTree = "<group>"; };
-		B48B18821DDB90CC008CE7C2 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ConversationV1.framework; sourceTree = "<group>"; };
 		B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
 		B4CBCF911DD91EA70003074A /* WatsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CBCF941DD91EA70003074A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48B188A1DDB99DC008CE7C2 /* ConversationV1.framework in Frameworks */,
 				B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */,
 				B48B188F1DDB9A3B008CE7C2 /* RestKit.framework in Frameworks */,
 				B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */,
@@ -154,7 +149,6 @@
 		B48B18751DDB6EE0008CE7C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B48B18821DDB90CC008CE7C2 /* ConversationV1.framework */,
 				B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */,
 				B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */,
 			);

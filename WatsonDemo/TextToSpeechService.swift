@@ -13,7 +13,7 @@ import AVFoundation
 import TextToSpeechV1
 
 protocol TextToSpeechServiceDelegate: class {
-    func textToSpeechDidFinishSynthesizing(withAudioData audioData: NSData)
+    func textToSpeechDidFinishSynthesizing(withAudioData audioData: Data)
 }
 
 class TextToSpeechService {
@@ -30,11 +30,15 @@ class TextToSpeechService {
     ///
     /// - Parameter text: Text to be syntheszied to speech
     func synthesizeSpeech(withText text: String) {
-        let textToSpeech = TextToSpeech(username: GlobalConstants.username, password: GlobalConstants.password)
-        let failure = { (error: Error) in print(error) }
-        textToSpeech.synthesize(text, failure: failure) { [weak self] data in
+        let textToSpeech = TextToSpeech(username: GlobalConstants.etayluzBluemixUsername,
+                                        password: GlobalConstants.etayluzBluemixPassword)
+        let failure = { (error: Error) in
+            print(error)
+        }
+
+        textToSpeech.synthesize(text, audioFormat: AudioFormat.wav, failure: failure) { [weak self] data in
             guard let strongSelf = self else { return }
-            strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data as NSData)
+            strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
         }
     }
 

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Etay Luz. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 
 class ChatViewController: UIViewController {
@@ -21,7 +22,9 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var micImage: UIImageView!
 
     // MARK: - Properties
+    var audioPlayer = AVAudioPlayer()
     var messages = [Message]()
+
 
     // MARK: - Services
     private lazy var conversationService: ConversationService = ConversationService(delegate:self)
@@ -33,8 +36,8 @@ class ChatViewController: UIViewController {
         setupSimulator()
         chatTextField.chatViewController = self
         chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
-        conversationService.startConversation()
-//        conversationService.continueConversation(withText: "Test")
+
+        conversationService.sendMessage(withText: "Hi")
 
         let gestureTap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
         chatTableView.addGestureRecognizer(gestureTap)
@@ -52,6 +55,7 @@ class ChatViewController: UIViewController {
     }
 
 
+    /// Dismiss keyboard on screen tap
     func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -61,6 +65,7 @@ class ChatViewController: UIViewController {
 
         messages.append(Message(type: MessageType.User, text: message))
         addNewMessageToChat()
+        textToSpeechService.synthesizeSpeech(withText: message)
     }
 
     private func addNewMessageToChat() {
@@ -120,19 +125,16 @@ extension ChatViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return AlertTableView.cellRowHeight
     }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
-        dismissKeyboard()
-    }
     
 }
 
 // MARK: - TextToSpeechServiceDelegate
 extension ChatViewController: TextToSpeechServiceDelegate {
 
-    func textToSpeechDidFinishSynthesizing(withAudioData audioData: NSData) {
-
+    func textToSpeechDidFinishSynthesizing(withAudioData audioData: Data) {
+        audioPlayer = try! AVAudioPlayer(data: audioData)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
     }
     
 }
@@ -140,8 +142,8 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 // MARK: - ConversationServiceDelegate
 extension ChatViewController: ConversationServiceDelegate {
 
-    func conversationDidStart(withMessage:String) {
+    func didReceiveMessage(withText:String) {
 
     }
-    
+
 }

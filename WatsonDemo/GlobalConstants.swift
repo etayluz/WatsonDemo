@@ -9,8 +9,11 @@
 import Foundation
 
 struct GlobalConstants {
-    static let username = "8b772b77-c923-42ff-b2ef-29370cba1965"
-    static let password = "NP0ooxJSFfL8"
-    static let version = "2016-11-15"
-    static let workspaceID = "4ab9b05f-8572-483f-ac23-6f9541a7ab49"
+    static let conversationServiceVersion = "2016-11-15"
+    static let conversationBluemixUsername = "8b772b77-c923-42ff-b2ef-29370cba1965"
+    static let conversationBluemixPassword = "NP0ooxJSFfL8"
+    static let conversationWorkspaceID = "1549fa38-7160-4106-82ee-73796b21f3b8"
+    static let etayluzBluemixUsername = "d5e5ca34-f670-4a7f-98c7-1643d83ecc1d"
+    static let etayluzBluemixPassword = "N8UAQQPXw10Z"
+    static let nodeRedWorkflowUrl = "http://Node-Workflow-Hub.mybluemix.net/mobileV2-1"
 }
