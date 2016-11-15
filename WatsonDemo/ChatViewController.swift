@@ -53,10 +53,11 @@ class ChatViewController: UIViewController {
     private func setupSimulator() {
         #if (arch(i386) || arch(x86_64)) && os(iOS)
             messages.append(Message(type: MessageType.Watson, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything?"))
-            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e ad asdf adf asdfads fads fas falsdfklads fkj l;adfj lajkfl; adjfl;adjs "))
-            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e ad asdf adf asdfads fads fas falsdfklads fkj l;adfj lajkfl; adjfl;adjs "))
-            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e ad asdf adf asdfads fads fas falsdfklads fkj l;adfj lajkfl; adjfl;adjs "))
-            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e ad asdf adf asdfads fads fas falsdfklads fkj l;adfj lajkfl; adjfl;adjs "))
+            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e"))
+            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e"))
+            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e"))
+            messages.append(Message(type: MessageType.User, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything? test e"))
+
             chatTableView.reloadData()
         #endif
     }
@@ -100,7 +101,8 @@ extension ChatViewController: UITableViewDelegate {
         return AlertTableView.dictationIssueAlertCellRowHeight
     }
 
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
         view.endEditing(true)
     }
     
