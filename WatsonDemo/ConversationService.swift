@@ -78,13 +78,11 @@ class ConversationService {
                 // check for http errors
                 if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != Constants.statusCodeOK {
                     print("Failed with status code: \(httpStatus.statusCode)")
-//                    print("response = \(response)")
                 }
 
                 let responseString = String(data: data, encoding: .utf8)
                 if let data = responseString?.data(using: String.Encoding.utf8) {
                     let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-//                    print("converation = \(json)")
                     strongSelf.context = json?["context"] as! String
                     let text = json?["text"] as! String
                     strongSelf.delegate?.didReceiveMessage(withText: text)
