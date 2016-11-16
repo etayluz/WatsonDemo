@@ -53,6 +53,7 @@ class ChatViewController: UIViewController {
             recorderService.finishRecording(success: true)
         } else {
             micImage.image = UIImage.init(imageLiteralResourceName: "MicOn")
+            audioPlayer.stop()
             recorderService.startRecording()
         }
 
@@ -71,6 +72,7 @@ class ChatViewController: UIViewController {
         messages.append(Message(type: messageType, text: text))
 
         if messageType == MessageType.User {
+            textToSpeechService.synthesizeSpeech(withText: text)
             conversationService.sendMessage(withText: text)
         }
 
@@ -155,6 +157,8 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 extension ChatViewController: ConversationServiceDelegate {
 
     func didReceiveMessage(withText text: String) {
+        guard text.characters.count > 0 else { return }
+
         textToSpeechService.synthesizeSpeech(withText: text)
         appendMessageToChat(withMessageType: MessageType.Watson, text: text)
     }
@@ -165,7 +169,6 @@ extension ChatViewController: ConversationServiceDelegate {
 extension ChatViewController: RecorderDelegate {
 
     func finishedRecording(withAudioData audioData: Data) {
-        textToSpeechDidFinishSynthesizing(withAudioData: audioData)
         speechToTextService.transcribeSpeechToText(forAudioData: audioData)
     }
     

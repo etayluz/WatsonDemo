@@ -51,10 +51,10 @@ public class RecorderService: NSObject, AVAudioRecorderDelegate {
 
     func startRecording() {
 
-        let settings = [AVSampleRateKey : NSNumber(value: Float(44100.0)),
-                        AVFormatIDKey : NSNumber(value: Int32(kAudioFormatMPEG4AAC)),
-                        AVNumberOfChannelsKey : NSNumber(value: 1),
-                        AVEncoderAudioQualityKey : NSNumber(value: Int32(AVAudioQuality.medium.rawValue))]
+        let settings = [AVFormatIDKey: NSNumber(value: Int32(kAudioFormatLinearPCM)),
+                        AVSampleRateKey: NSNumber(value: Float(16000.0)),
+                        AVNumberOfChannelsKey: NSNumber(value: 1),
+                        AVEncoderAudioQualityKey: NSNumber(value: Int32(AVAudioQuality.high.rawValue))]
 
 
         do {
@@ -92,7 +92,7 @@ public class RecorderService: NSObject, AVAudioRecorderDelegate {
         let fileManager = FileManager.default
         let urls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = urls[0] as NSURL
-        let soundURL = documentDirectory.appendingPathComponent("sound.m4a")
+        let soundURL = documentDirectory.appendingPathComponent("sound.wav")
         return soundURL!
     }
 }
