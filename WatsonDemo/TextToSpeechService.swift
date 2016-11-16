@@ -36,9 +36,12 @@ class TextToSpeechService {
             print(error)
         }
 
-        textToSpeech.synthesize(text, audioFormat: AudioFormat.wav, failure: failure) { [weak self] data in
-            guard let strongSelf = self else { return }
-            strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
+        textToSpeech.synthesize(text, audioFormat: AudioFormat.wav, failure: failure) { data in
+            DispatchQueue.main.async { [weak self] in
+                guard let strongSelf = self else { return }
+
+                strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
+            }
         }
     }
 

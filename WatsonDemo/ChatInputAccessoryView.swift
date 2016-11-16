@@ -25,7 +25,7 @@ class ChatInputAccessoryView: NSObject {
 
     // MARK: - Actions
     @IBAction func sendButtonTapped() {
-        chatViewController.addUserChat(withMessage: inputTextField.text!)
+        chatViewController.appendMessageToChat(withMessageType: MessageType.User, text: inputTextField.text!)
         inputTextField.text = ""
         inputTextField.resignFirstResponder()
     }
@@ -43,7 +43,7 @@ class ChatInputAccessoryView: NSObject {
 extension ChatInputAccessoryView: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        chatViewController.addUserChat(withMessage: inputTextField.text!)
+        chatViewController.appendMessageToChat(withMessageType: MessageType.User, text: inputTextField.text!)
         inputTextField.text = ""
         textField.resignFirstResponder()
         return true

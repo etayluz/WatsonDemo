@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ConversationServiceDelegate: class {
-    func didReceiveMessage(withText:String)
+    func didReceiveMessage(withText text: String)
 }
 
 
@@ -61,8 +61,6 @@ class ConversationService {
              Key.cValue3 : Constants.value3,
              Key.context : context]
 
-        print (requestParameters)
-
         var request = URLRequest(url: URL(string: GlobalConstants.nodeRedWorkflowUrl)!)
         request.httpMethod = Constants.httpMethodPost
         var parametersString = ""
@@ -75,26 +73,29 @@ class ConversationService {
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             // check for fundamental networking error
-            guard let data = data, error == nil else {
-                print("error=\(error)")
-                return
+            DispatchQueue.main.async { [weak self] in
+                guard let strongSelf = self else { return }
+
+                guard let data = data, error == nil else {
+                    print("error=\(error)")
+                    return
+                }
+
+                // check for http errors
+                if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != Constants.statusCodeOK {
+                    print("Failed with status code: \(httpStatus.statusCode)")
+                    print("response = \(response)")
+                }
+
+                let responseString = String(data: data, encoding: .utf8)
+                if let data = responseString?.data(using: String.Encoding.utf8) {
+                    let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
+                    print("converation = \(json)")
+                    strongSelf.context = json?["context"] as! String
+                    let text = json?["text"] as! String
+                    strongSelf.delegate?.didReceiveMessage(withText: text)
+                }
             }
-
-            // check for http errors
-            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != Constants.statusCodeOK {
-                print("Failed with status code: \(httpStatus.statusCode)")
-                print("response = \(response)")
-            }
-
-
-            let responseString = String(data: data, encoding: .utf8)
-            if let data = responseString?.data(using: String.Encoding.utf8) {
-                let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-                let text = json?["text"] as! String
-                self.delegate?.didReceiveMessage(withText: text)
-            }
-
-            print("responseString = \(responseString)")
         }
 
         task.resume()

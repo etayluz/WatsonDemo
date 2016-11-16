@@ -10,14 +10,15 @@ import UIKit
 
 class OverviewViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupSimulator()
-    }
-
     // MARK: - Constants
     private struct Constants {
         static let chatSelectedIndex = 1
+    }
+
+    // MARK: - View Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupSimulator()
     }
 
     // MARK: - Actions
@@ -36,4 +37,5 @@ class OverviewViewController: UIViewController {
 
         #endif
     }
+
 }

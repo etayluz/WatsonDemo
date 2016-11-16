@@ -24,11 +24,12 @@ class ChatViewController: UIViewController {
     // MARK: - Properties
     var audioPlayer = AVAudioPlayer()
     var messages = [Message]()
+    lazy var recoder: Recorder = self.setupRecorder()
 
 
     // MARK: - Services
-    private lazy var conversationService: ConversationService = ConversationService(delegate:self)
-    private lazy var textToSpeechService: TextToSpeechService = TextToSpeechService(delegate:self)
+    lazy var conversationService: ConversationService = ConversationService(delegate:self)
+    lazy var textToSpeechService: TextToSpeechService = TextToSpeechService(delegate:self)
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -37,6 +38,7 @@ class ChatViewController: UIViewController {
         chatTextField.chatViewController = self
         chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
 
+        // We need to send a "Hi" to keep off the conversation
         conversationService.sendMessage(withText: "Hi")
 
         let gestureTap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
@@ -47,8 +49,10 @@ class ChatViewController: UIViewController {
     @IBAction func micButtonTapped() {
         if micButton.isSelected {
             micImage.image = UIImage.init(imageLiteralResourceName: "MicOff")
+            recoder.finishRecording(success: true)
         } else {
             micImage.image = UIImage.init(imageLiteralResourceName: "MicOn")
+            recoder.startRecording()
         }
 
         micButton.isSelected = !micButton.isSelected
@@ -60,17 +64,17 @@ class ChatViewController: UIViewController {
         view.endEditing(true)
     }
 
-    func addUserChat(withMessage message: String) {
-        guard message.characters.count > 0 else { return }
+    func appendMessageToChat(withMessageType messageType: MessageType, text: String) {
+        guard text.characters.count > 0 else { return }
 
-        messages.append(Message(type: MessageType.User, text: message))
-        addNewMessageToChat()
-        textToSpeechService.synthesizeSpeech(withText: message)
-    }
+        messages.append(Message(type: messageType, text: text))
 
-    private func addNewMessageToChat() {
+        if messageType == MessageType.User {
+            conversationService.sendMessage(withText: text)
+        }
+
+        /// Add new row to chatTableView
         let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
-
         chatTableView.beginUpdates()
         chatTableView.insertRows(at: [indexPath], with: .automatic)
         chatTableView.endUpdates()
@@ -80,11 +84,16 @@ class ChatViewController: UIViewController {
     }
 
     // MARK: - Private
+    private func setupRecorder() -> Recorder {
+        let recorderInstance = Recorder()
+        recorderInstance.delegate = self
+        return recorderInstance
+    }
+
     // This will only execute on the simulator and NOT on a real device
     private func setupSimulator() {
         #if (arch(i386) || arch(x86_64)) && os(iOS)
-            messages.append(Message(type: MessageType.Watson, text: "Hello! I'm your personal banking virtual assistant. You can ask me about anything?"))
-            chatTableView.reloadData()
+//            chatTableView.reloadData()
         #endif
     }
 
@@ -133,7 +142,6 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 
     func textToSpeechDidFinishSynthesizing(withAudioData audioData: Data) {
         audioPlayer = try! AVAudioPlayer(data: audioData)
-        audioPlayer.prepareToPlay()
         audioPlayer.play()
     }
     
@@ -142,8 +150,18 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 // MARK: - ConversationServiceDelegate
 extension ChatViewController: ConversationServiceDelegate {
 
-    func didReceiveMessage(withText:String) {
-
+    func didReceiveMessage(withText text: String) {
+        textToSpeechService.synthesizeSpeech(withText: text)
+        appendMessageToChat(withMessageType: MessageType.Watson, text: text)
     }
 
+}
+
+// MARK: - RecorderDelegate
+extension ChatViewController: RecorderDelegate {
+
+    func finishedRecording(withAudioData audioData: Data) {
+        textToSpeechDidFinishSynthesizing(withAudioData: audioData)
+    }
+    
 }
