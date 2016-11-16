@@ -12,9 +12,9 @@ protocol RecorderDelegate: class {
     func finishedRecording(withAudioData audioData: Data)
 }
 
-public class Recorder: NSObject, AVAudioRecorderDelegate {
+public class RecorderService: NSObject, AVAudioRecorderDelegate {
 
-    lazy var audioURL: NSURL = Recorder.directoryURL()
+    lazy var audioURL: NSURL = RecorderService.directoryURL()
     var audioRecorder: AVAudioRecorder!
     var recordingSession: AVAudioSession!
     weak var delegate: RecorderDelegate?
@@ -41,6 +41,12 @@ public class Recorder: NSObject, AVAudioRecorderDelegate {
         } catch {
             // TBD: Show a message to the user that they need to give permission in settings app to proceed
         }
+    }
+
+    // MARK: - Convenience Init
+    convenience init(delegate: RecorderDelegate) {
+        self.init()
+        self.delegate = delegate
     }
 
     func startRecording() {

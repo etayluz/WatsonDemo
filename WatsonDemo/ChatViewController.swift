@@ -13,6 +13,7 @@ class ChatViewController: UIViewController {
 
     // MARK: - Constants
     private struct Constants {
+        static let conversationKickoffMessage = "Hi"
     }
 
     // MARK: - Outlets
@@ -24,11 +25,10 @@ class ChatViewController: UIViewController {
     // MARK: - Properties
     var audioPlayer = AVAudioPlayer()
     var messages = [Message]()
-    lazy var recoder: Recorder = self.setupRecorder()
-
 
     // MARK: - Services
     lazy var conversationService: ConversationService = ConversationService(delegate:self)
+    lazy var recorderService: RecorderService = RecorderService(delegate: self)
     lazy var textToSpeechService: TextToSpeechService = TextToSpeechService(delegate:self)
 
     // MARK: - View Lifecycle
@@ -38,8 +38,8 @@ class ChatViewController: UIViewController {
         chatTextField.chatViewController = self
         chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
 
-        // We need to send a "Hi" to keep off the conversation
-        conversationService.sendMessage(withText: "Hi")
+        // We need to send some dummy text to keep off the conversation
+        conversationService.sendMessage(withText: Constants.conversationKickoffMessage)
 
         let gestureTap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
         chatTableView.addGestureRecognizer(gestureTap)
@@ -49,10 +49,10 @@ class ChatViewController: UIViewController {
     @IBAction func micButtonTapped() {
         if micButton.isSelected {
             micImage.image = UIImage.init(imageLiteralResourceName: "MicOff")
-            recoder.finishRecording(success: true)
+            recorderService.finishRecording(success: true)
         } else {
             micImage.image = UIImage.init(imageLiteralResourceName: "MicOn")
-            recoder.startRecording()
+            recorderService.startRecording()
         }
 
         micButton.isSelected = !micButton.isSelected
@@ -84,12 +84,6 @@ class ChatViewController: UIViewController {
     }
 
     // MARK: - Private
-    private func setupRecorder() -> Recorder {
-        let recorderInstance = Recorder()
-        recorderInstance.delegate = self
-        return recorderInstance
-    }
-
     // This will only execute on the simulator and NOT on a real device
     private func setupSimulator() {
         #if (arch(i386) || arch(x86_64)) && os(iOS)
@@ -127,12 +121,12 @@ extension ChatViewController: UITableViewDataSource {
 // MARK: - UITableViewDataSource
 extension ChatViewController: UITableViewDelegate {
 
-    private struct AlertTableView {
+    private struct ChatTableView {
         static let cellRowHeight: CGFloat = 120
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return AlertTableView.cellRowHeight
+        return ChatTableView.cellRowHeight
     }
     
 }

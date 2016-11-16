@@ -28,7 +28,7 @@
 		B4CBCF9A1DD91EA70003074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
 		B4CBCF9C1DD91EA70003074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		B4CBCF9F1DD91EA70003074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
-		B4D160F91DDBE8C000D436F1 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D160F81DDBE8C000D436F1 /* Recorder.swift */; };
+		B4D160F91DDBE8C000D436F1 /* RecorderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D160F81DDBE8C000D436F1 /* RecorderService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,7 +67,7 @@
 		B4CBCF9B1DD91EA70003074A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4CBCF9E1DD91EA70003074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4CBCFA01DD91EA70003074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4D160F81DDBE8C000D436F1 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		B4D160F81DDBE8C000D436F1 /* RecorderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,6 @@
 		B48B185E1DD92AD8008CE7C2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B48B186C1DDA0AC7008CE7C2 /* Cells */,
 				B48B18611DD96859008CE7C2 /* ChatViewController.swift */,
 				B4CBCF961DD91EA70003074A /* OverviewViewController.swift */,
 			);
@@ -114,6 +113,7 @@
 		B48B18671DD96ACF008CE7C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B48B186C1DDA0AC7008CE7C2 /* ChatTableViewCells */,
 				B48B186D1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift */,
 				B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */,
 				B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */,
@@ -122,13 +122,13 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		B48B186C1DDA0AC7008CE7C2 /* Cells */ = {
+		B48B186C1DDA0AC7008CE7C2 /* ChatTableViewCells */ = {
 			isa = PBXGroup;
 			children = (
 				B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */,
 				B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */,
 			);
-			name = Cells;
+			name = ChatTableViewCells;
 			sourceTree = "<group>";
 		};
 		B48B18711DDA86DA008CE7C2 /* Models */ = {
@@ -143,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				B48B18801DDB908E008CE7C2 /* ConversationService.swift */,
+				B4D160F81DDBE8C000D436F1 /* RecorderService.swift */,
 				B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */,
 			);
 			name = Services;
@@ -155,14 +156,6 @@
 				B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B48B18841DDB9122008CE7C2 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				B4D160F81DDBE8C000D436F1 /* Recorder.swift */,
-			);
-			name = Utilities;
 			sourceTree = "<group>";
 		};
 		B4CBCF881DD91EA70003074A = {
@@ -192,7 +185,6 @@
 				B48B185E1DD92AD8008CE7C2 /* Controllers */,
 				B48B18741DDA8991008CE7C2 /* Services */,
 				B48B185F1DD92AE9008CE7C2 /* Storyboards */,
-				B48B18841DDB9122008CE7C2 /* Utilities */,
 				B48B18751DDB6EE0008CE7C2 /* Frameworks */,
 				B48B18601DD92B02008CE7C2 /* Supporting Files */,
 			);
@@ -276,7 +268,7 @@
 			files = (
 				B48B18701DDA139F008CE7C2 /* ChatTextField.swift in Sources */,
 				B48B18791DDB7025008CE7C2 /* TextToSpeechService.swift in Sources */,
-				B4D160F91DDBE8C000D436F1 /* Recorder.swift in Sources */,
+				B4D160F91DDBE8C000D436F1 /* RecorderService.swift in Sources */,
 				B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */,
 				B48B186E1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift in Sources */,
 				B48B18731DDA8768008CE7C2 /* Message.swift in Sources */,
