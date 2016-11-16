@@ -63,13 +63,7 @@ class ConversationService {
 
         var request = URLRequest(url: URL(string: GlobalConstants.nodeRedWorkflowUrl)!)
         request.httpMethod = Constants.httpMethodPost
-        var parametersString = ""
-        for (key, value) in requestParameters {
-            parametersString = parametersString + key + "=" + value + "&"
-        }
-        parametersString = parametersString.substring(to: parametersString.index(before: parametersString.endIndex))
-        parametersString = parametersString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
-        request.httpBody = parametersString.data(using: .utf8)
+        request.httpBody = requestParameters.stringFromHttpParameters().data(using: .utf8)
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             // check for fundamental networking error

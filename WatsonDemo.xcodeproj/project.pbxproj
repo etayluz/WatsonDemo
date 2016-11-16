@@ -20,7 +20,6 @@
 		B48B18811DDB908E008CE7C2 /* ConversationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18801DDB908E008CE7C2 /* ConversationService.swift */; };
 		B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		B48B188F1DDB9A3B008CE7C2 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
 		B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
 		B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
@@ -29,6 +28,10 @@
 		B4CBCF9C1DD91EA70003074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		B4CBCF9F1DD91EA70003074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		B4D160F91DDBE8C000D436F1 /* RecorderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D160F81DDBE8C000D436F1 /* RecorderService.swift */; };
+		B4D160FB1DDBF19D00D436F1 /* SpeechToTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */; };
+		B4D160FD1DDBF1EE00D436F1 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
+		B4D160FF1DDBF1FC00D436F1 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4D161021DDBF2C600D436F1 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +43,7 @@
 			files = (
 				B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */,
 				B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */,
+				B4D160FF1DDBF1FC00D436F1 /* SpeechToTextV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +72,9 @@
 		B4CBCF9E1DD91EA70003074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4CBCFA01DD91EA70003074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D160F81DDBE8C000D436F1 /* RecorderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderService.swift; sourceTree = "<group>"; };
+		B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechToTextService.swift; sourceTree = "<group>"; };
+		B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechToTextV1.framework; sourceTree = "<group>"; };
+		B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +83,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */,
-				B48B188F1DDB9A3B008CE7C2 /* RestKit.framework in Frameworks */,
 				B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */,
+				B4D160FD1DDBF1EE00D436F1 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +151,7 @@
 			children = (
 				B48B18801DDB908E008CE7C2 /* ConversationService.swift */,
 				B4D160F81DDBE8C000D436F1 /* RecorderService.swift */,
+				B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */,
 				B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */,
 			);
 			name = Services;
@@ -153,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */,
+				B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */,
 				B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */,
 			);
 			name = Frameworks;
@@ -180,6 +189,7 @@
 				B4CBCF941DD91EA70003074A /* AppDelegate.swift */,
 				B4CBCF9B1DD91EA70003074A /* Assets.xcassets */,
 				B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */,
+				B4D161001DDBF27700D436F1 /* Extensions */,
 				B48B18711DDA86DA008CE7C2 /* Models */,
 				B48B18671DD96ACF008CE7C2 /* Views */,
 				B48B185E1DD92AD8008CE7C2 /* Controllers */,
@@ -189,6 +199,14 @@
 				B48B18601DD92B02008CE7C2 /* Supporting Files */,
 			);
 			path = WatsonDemo;
+			sourceTree = "<group>";
+		};
+		B4D161001DDBF27700D436F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +287,7 @@
 				B48B18701DDA139F008CE7C2 /* ChatTextField.swift in Sources */,
 				B48B18791DDB7025008CE7C2 /* TextToSpeechService.swift in Sources */,
 				B4D160F91DDBE8C000D436F1 /* RecorderService.swift in Sources */,
+				B4D160FB1DDBF19D00D436F1 /* SpeechToTextService.swift in Sources */,
 				B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */,
 				B48B186E1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift in Sources */,
 				B48B18731DDA8768008CE7C2 /* Message.swift in Sources */,
@@ -279,6 +298,7 @@
 				B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */,
 				B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */,
 				B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */,
+				B4D161021DDBF2C600D436F1 /* Dictionary+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
