@@ -11,7 +11,7 @@ import UIKit
 class UserChatViewCell: UITableViewCell {
 
     // MARK: - Outlets
-    @IBOutlet weak var messageLabel: CustomLabel!
+    @IBOutlet weak var messageLabel: UILabel!
 
 
     /// Configure user chat table view cell with user message

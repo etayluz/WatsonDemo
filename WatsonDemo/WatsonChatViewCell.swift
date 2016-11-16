@@ -11,7 +11,7 @@ import UIKit
 class WatsonChatViewCell: UITableViewCell {
 
     // MARK: - Outlets
-    @IBOutlet weak var messageLabel: CustomLabel!
+    @IBOutlet weak var messageLabel: UILabel!
 
     /// Configure Watson chat table view cell with Watson message
     ///

@@ -121,29 +121,25 @@
                                                         <constraint firstAttribute="width" secondItem="MLg-Dx-6Yr" secondAttribute="height" id="nYl-T1-Gje"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giz-gT-A77" userLabel="WatsonMessage" customClass="CustomLabel" customModule="WatsonDemo" customModuleProvider="target">
-                                                    <rect key="frame" x="93" y="47" width="65.5" height="47"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-6E-kDH" userLabel="WatsonMsgBackground">
+                                                    <rect key="frame" x="93" y="20.5" width="244.5" height="100.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giz-gT-A77" userLabel="WatsonMessage">
+                                                    <rect key="frame" x="108" y="35.5" width="214.5" height="70.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Hello! I'm your personal banking virtual assistant. You can ask me about anything?">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="topInset">
-                                                            <real key="value" value="15"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
-                                                            <real key="value" value="15"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
-                                                            <real key="value" value="15"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
-                                                            <real key="value" value="15"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Triangle" highlightedImage="Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-iL-KVp" userLabel="LeftTriangle">
-                                                    <rect key="frame" x="86" y="56" width="9" height="15"/>
+                                                    <rect key="frame" x="86" y="57" width="9" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="giS-Bk-Z42"/>
                                                         <constraint firstAttribute="width" secondItem="ZxN-iL-KVp" secondAttribute="height" multiplier="10:16" id="sEI-G5-rHZ"/>
@@ -154,16 +150,20 @@
                                             <constraints>
                                                 <constraint firstItem="MLg-Dx-6Yr" firstAttribute="centerY" secondItem="9i8-DP-9qa" secondAttribute="centerY" id="1QE-Cq-H5l"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="giz-gT-A77" secondAttribute="trailing" constant="20" id="347-T0-Shq"/>
+                                                <constraint firstItem="xSu-6E-kDH" firstAttribute="centerY" secondItem="giz-gT-A77" secondAttribute="centerY" id="FXj-aT-pde"/>
+                                                <constraint firstItem="xSu-6E-kDH" firstAttribute="width" secondItem="giz-gT-A77" secondAttribute="width" constant="30" id="WzY-hR-04r"/>
+                                                <constraint firstItem="xSu-6E-kDH" firstAttribute="centerX" secondItem="giz-gT-A77" secondAttribute="centerX" id="d2X-Ur-cuP"/>
                                                 <constraint firstItem="giz-gT-A77" firstAttribute="centerY" secondItem="MLg-Dx-6Yr" secondAttribute="centerY" id="dgg-lS-GrE"/>
                                                 <constraint firstItem="MLg-Dx-6Yr" firstAttribute="leading" secondItem="9i8-DP-9qa" secondAttribute="leadingMargin" constant="10" id="dvb-Q9-bJD"/>
+                                                <constraint firstItem="xSu-6E-kDH" firstAttribute="leading" secondItem="ZxN-iL-KVp" secondAttribute="trailing" constant="-2" id="eP7-OV-Ddq"/>
                                                 <constraint firstItem="ZxN-iL-KVp" firstAttribute="centerY" secondItem="giz-gT-A77" secondAttribute="centerY" multiplier="0.9" constant="0.84999999999999998" id="eqP-WG-Wrl"/>
-                                                <constraint firstItem="giz-gT-A77" firstAttribute="leading" secondItem="ZxN-iL-KVp" secondAttribute="trailing" constant="-2" id="swq-sd-zfg"/>
-                                                <constraint firstItem="giz-gT-A77" firstAttribute="leading" secondItem="MLg-Dx-6Yr" secondAttribute="trailing" constant="15" id="wEv-zB-8q0"/>
+                                                <constraint firstItem="xSu-6E-kDH" firstAttribute="height" secondItem="giz-gT-A77" secondAttribute="height" constant="30" id="ouv-Bx-vcq"/>
+                                                <constraint firstItem="giz-gT-A77" firstAttribute="leading" secondItem="MLg-Dx-6Yr" secondAttribute="trailing" constant="30" id="wEv-zB-8q0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="messageLabel" destination="giz-gT-A77" id="UIS-Xj-9I7"/>
+                                            <outlet property="messageLabel" destination="giz-gT-A77" id="z6e-1J-hcG"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserChatViewCell" id="55h-j6-z27" userLabel="UserViewCell" customClass="UserChatViewCell" customModule="WatsonDemo" customModuleProvider="target">
@@ -180,26 +180,22 @@
                                                         <constraint firstAttribute="width" constant="60" id="eHB-mL-2OL"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRW-E5-X6Q" userLabel="UserMessage" customClass="CustomLabel" customModule="WatsonDemo" customModuleProvider="target">
-                                                    <rect key="frame" x="216.5" y="46" width="65.5" height="47"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Tq-dd-0u9" userLabel="UserMsgBackground">
+                                                    <rect key="frame" x="20.5" y="35" width="261.5" height="70.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRW-E5-X6Q" userLabel="UserMessage">
+                                                    <rect key="frame" x="35.5" y="49.5" width="231.5" height="40.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Could you please let me know what is my checking balance today?">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="14"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="topInset">
-                                                            <real key="value" value="15"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
-                                                            <real key="value" value="15"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
-                                                            <real key="value" value="15"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
-                                                            <real key="value" value="15"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightTriangle" highlightedImage="RightTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-Ki-PLb" userLabel="RightTriangle">
                                                     <rect key="frame" x="280" y="52" width="9" height="15"/>
@@ -212,20 +208,24 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="3gf-Ki-PLb" firstAttribute="leading" secondItem="pRW-E5-X6Q" secondAttribute="trailing" constant="-2" id="AfW-Pj-KDB"/>
+                                                <constraint firstItem="2Tq-dd-0u9" firstAttribute="centerX" secondItem="pRW-E5-X6Q" secondAttribute="centerX" id="81G-Lf-2Jk"/>
+                                                <constraint firstItem="2Tq-dd-0u9" firstAttribute="width" secondItem="pRW-E5-X6Q" secondAttribute="width" constant="30" id="AN2-lN-ZbF"/>
                                                 <constraint firstItem="pRW-E5-X6Q" firstAttribute="centerY" secondItem="vo5-6M-QOP" secondAttribute="centerY" id="I23-Zi-8I2"/>
-                                                <constraint firstItem="vo5-6M-QOP" firstAttribute="leading" secondItem="pRW-E5-X6Q" secondAttribute="trailing" constant="15" id="Mk7-WG-472"/>
+                                                <constraint firstItem="3gf-Ki-PLb" firstAttribute="leading" secondItem="2Tq-dd-0u9" secondAttribute="trailing" constant="-2" id="Kze-JZ-0In"/>
+                                                <constraint firstItem="vo5-6M-QOP" firstAttribute="leading" secondItem="pRW-E5-X6Q" secondAttribute="trailing" constant="30" id="Mk7-WG-472"/>
                                                 <constraint firstItem="vo5-6M-QOP" firstAttribute="centerY" secondItem="Ju8-59-tQr" secondAttribute="centerY" id="Ssk-f9-iFI"/>
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="width" secondItem="3gf-Ki-PLb" secondAttribute="height" multiplier="10:16" id="Z4s-l8-zF0"/>
                                                 <constraint firstItem="pRW-E5-X6Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ju8-59-tQr" secondAttribute="leadingMargin" constant="20" id="ZjT-dF-tn3"/>
+                                                <constraint firstItem="2Tq-dd-0u9" firstAttribute="height" secondItem="pRW-E5-X6Q" secondAttribute="height" constant="30" id="nIj-kP-L2G"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="vo5-6M-QOP" secondAttribute="trailing" constant="10" id="tgi-Nx-eav"/>
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="centerY" secondItem="pRW-E5-X6Q" secondAttribute="centerY" multiplier="0.85" id="uZd-qe-ejY"/>
+                                                <constraint firstItem="2Tq-dd-0u9" firstAttribute="centerY" secondItem="pRW-E5-X6Q" secondAttribute="centerY" id="xny-rn-jzx"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="messageLabel" destination="pRW-E5-X6Q" id="aXb-5N-i4P"/>
+                                            <outlet property="messageLabel" destination="pRW-E5-X6Q" id="bzK-yL-tyN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

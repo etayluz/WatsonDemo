@@ -72,7 +72,6 @@ class ChatViewController: UIViewController {
         messages.append(Message(type: messageType, text: text))
 
         if messageType == MessageType.User {
-            textToSpeechService.synthesizeSpeech(withText: text)
             conversationService.sendMessage(withText: text)
         }
 
