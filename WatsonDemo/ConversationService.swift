@@ -52,14 +52,14 @@ class ConversationService {
     func sendMessage(withText text: String) {
         let requestParameters =
             [Key.input: text,
-             Key.workspaceID : GlobalConstants.dennisNotoWorkspaceID,
-             Key.firstName : Constants.firstName,
-             Key.lastName : Constants.lastName,
-             Key.nName : Constants.nName,
-             Key.cValue1 : Constants.value1,
-             Key.cValue2 : Constants.value2,
-             Key.cValue3 : Constants.value3,
-             Key.context : context]
+             Key.workspaceID: GlobalConstants.dennisNotoWorkspaceID,
+             Key.firstName: Constants.firstName,
+             Key.lastName: Constants.lastName,
+             Key.nName: Constants.nName,
+             Key.cValue1: Constants.value1,
+             Key.cValue2: Constants.value2,
+             Key.cValue3: Constants.value3,
+             Key.context: context]
 
         var request = URLRequest(url: URL(string: GlobalConstants.nodeRedWorkflowUrl)!)
         request.httpMethod = Constants.httpMethodPost
