@@ -52,7 +52,7 @@ class ConversationService {
     func sendMessage(withText text: String) {
         let requestParameters =
             [Key.input: text,
-             Key.workspaceID : GlobalConstants.conversationWorkspaceID,
+             Key.workspaceID : GlobalConstants.dennisNotoWorkspaceID,
              Key.firstName : Constants.firstName,
              Key.lastName : Constants.lastName,
              Key.nName : Constants.nName,

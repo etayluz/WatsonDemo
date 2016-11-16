@@ -29,6 +29,7 @@ class ChatViewController: UIViewController {
     // MARK: - Services
     lazy var conversationService: ConversationService = ConversationService(delegate:self)
     lazy var recorderService: RecorderService = RecorderService(delegate: self)
+    lazy var speechToTextService: SpeechToTextService = SpeechToTextService(delegate:self)
     lazy var textToSpeechService: TextToSpeechService = TextToSpeechService(delegate:self)
 
     // MARK: - View Lifecycle
@@ -131,6 +132,15 @@ extension ChatViewController: UITableViewDelegate {
     
 }
 
+// MARK: - SpeechToTextServiceDelegate
+extension ChatViewController: SpeechToTextServiceDelegate {
+
+    func didFinishTranscribingSpeech(withText text: String) {
+        appendMessageToChat(withMessageType: MessageType.User, text: text)
+    }
+    
+}
+
 // MARK: - TextToSpeechServiceDelegate
 extension ChatViewController: TextToSpeechServiceDelegate {
 
@@ -156,6 +166,7 @@ extension ChatViewController: RecorderDelegate {
 
     func finishedRecording(withAudioData audioData: Data) {
         textToSpeechDidFinishSynthesizing(withAudioData: audioData)
+        speechToTextService.transcribeSpeechToText(forAudioData: audioData)
     }
     
 }

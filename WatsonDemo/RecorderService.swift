@@ -14,7 +14,7 @@ protocol RecorderDelegate: class {
 
 public class RecorderService: NSObject, AVAudioRecorderDelegate {
 
-    lazy var audioURL: NSURL = RecorderService.directoryURL()
+    lazy var audioURL: URL = RecorderService.directoryURL()
     var audioRecorder: AVAudioRecorder!
     var recordingSession: AVAudioSession!
     weak var delegate: RecorderDelegate?
@@ -76,7 +76,7 @@ public class RecorderService: NSObject, AVAudioRecorderDelegate {
 
         if success {
            // Copy recording from disk into program memory and delete recording from disk
-            let audioData = FileManager.default.contents(atPath: audioURL.path!)!
+            let audioData = FileManager.default.contents(atPath: audioURL.path)!
             do {
               try FileManager.default.removeItem(at: audioURL as URL)
                 delegate?.finishedRecording(withAudioData: audioData)
@@ -88,11 +88,11 @@ public class RecorderService: NSObject, AVAudioRecorderDelegate {
         }
     }
 
-    class func directoryURL() -> NSURL {
+    class func directoryURL() -> URL {
         let fileManager = FileManager.default
         let urls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = urls[0] as NSURL
         let soundURL = documentDirectory.appendingPathComponent("sound.m4a")
-        return soundURL! as NSURL
+        return soundURL!
     }
 }
