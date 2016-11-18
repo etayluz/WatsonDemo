@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ConversationServiceDelegate: class {
-    func didReceiveMessage(withText text: String)
+    func didReceiveMessage(withText text: String, options: [String])
 }
 
 
@@ -84,8 +84,22 @@ class ConversationService {
                 if let data = responseString?.data(using: String.Encoding.utf8) {
                     let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
                     strongSelf.context = json?["context"] as! String
-                    let text = json?["text"] as! String
-                    strongSelf.delegate?.didReceiveMessage(withText: text)
+                    var text = json?["text"] as! String
+
+                    // Look for the option params in the brackets
+                    let nsString = text as NSString
+                    let regex = try! NSRegularExpression(pattern: "\\[.*\\]")
+                    var options = [String]()
+                    if let result = regex.matches(in: text, range: NSRange(location: 0, length: nsString.length)).last {
+                        var optionsString = nsString.substring(with: result.range)
+                        text = text.replacingOccurrences(of: optionsString, with: "")
+                        optionsString = optionsString.replacingOccurrences(of: "[", with: "")
+                        optionsString = optionsString.replacingOccurrences(of: "]", with: "")
+                        optionsString = optionsString.replacingOccurrences(of: " ", with: "")
+                        options = optionsString.components(separatedBy: ",")
+                    }
+
+                    strongSelf.delegate?.didReceiveMessage(withText: text, options:options)
                 }
             }
         }

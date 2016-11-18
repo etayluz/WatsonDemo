@@ -154,8 +154,8 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 
 // MARK: - ConversationServiceDelegate
 extension ChatViewController: ConversationServiceDelegate {
-
-    func didReceiveMessage(withText text: String) {
+    
+    internal func didReceiveMessage(withText text: String, options: [String]) {
         guard text.characters.count > 0 else { return }
 
         textToSpeechService.synthesizeSpeech(withText: text)
