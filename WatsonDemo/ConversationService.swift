@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ConversationServiceDelegate: class {
-    func didReceiveMessage(withText text: String, options: [String])
+    func didReceiveMessage(withText text: String, options: [String]?)
 }
 
 
@@ -89,7 +89,7 @@ class ConversationService {
                     // Look for the option params in the brackets
                     let nsString = text as NSString
                     let regex = try! NSRegularExpression(pattern: "\\[.*\\]")
-                    var options = [String]()
+                    var options: [String]?
                     if let result = regex.matches(in: text, range: NSRange(location: 0, length: nsString.length)).last {
                         var optionsString = nsString.substring(with: result.range)
                         text = text.replacingOccurrences(of: optionsString, with: "")
@@ -99,7 +99,7 @@ class ConversationService {
                         options = optionsString.components(separatedBy: ",")
                     }
 
-                    strongSelf.delegate?.didReceiveMessage(withText: text, options:options)
+                    strongSelf.delegate?.didReceiveMessage(withText: text, options: options)
                 }
             }
         }

@@ -17,6 +17,7 @@ enum MessageType {
 public struct Message {
 
     // MARK: - Properties
+    var options: [String]?
     var text: String?
     var type: MessageType
 
@@ -26,9 +27,11 @@ public struct Message {
     /// - Parameters:
     ///   - type: type of message
     ///   - text: text of message
-    init(type: MessageType, text: String) {
+    ///   - options: button options
+    init(type: MessageType, text: String, options: [String]?) {
         self.type = type
         self.text = text
+        self.options = options
     }
 
 }

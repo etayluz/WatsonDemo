@@ -66,12 +66,13 @@ class ChatViewController: UIViewController {
         view.endEditing(true)
     }
 
-    func appendMessageToChat(withMessageType messageType: MessageType, text: String) {
-        guard text.characters.count > 0 else { return }
+//    func appendMessageToChat(withMessageType messageType: MessageType, text: String) {
+    func appendChat(withMessage message: Message) {
+        guard let text = message.text, (text.characters.count > 0 || message.options != nil) else { return }
 
-        messages.append(Message(type: messageType, text: text))
+        messages.append(message)
 
-        if messageType == MessageType.User {
+        if message.type == MessageType.User {
             conversationService.sendMessage(withText: text)
         }
 
@@ -137,7 +138,7 @@ extension ChatViewController: UITableViewDelegate {
 extension ChatViewController: SpeechToTextServiceDelegate {
 
     func didFinishTranscribingSpeech(withText text: String) {
-        appendMessageToChat(withMessageType: MessageType.User, text: text)
+        appendChat(withMessage: Message(type: MessageType.User, text: text, options: nil))
     }
     
 }
@@ -147,7 +148,7 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 
     func textToSpeechDidFinishSynthesizing(withAudioData audioData: Data) {
         audioPlayer = try! AVAudioPlayer(data: audioData)
-        audioPlayer.play()
+//        audioPlayer.play()
     }
     
 }
@@ -155,11 +156,14 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 // MARK: - ConversationServiceDelegate
 extension ChatViewController: ConversationServiceDelegate {
     
-    internal func didReceiveMessage(withText text: String, options: [String]) {
+    internal func didReceiveMessage(withText text: String, options: [String]?) {
         guard text.characters.count > 0 else { return }
 
         textToSpeechService.synthesizeSpeech(withText: text)
-        appendMessageToChat(withMessageType: MessageType.Watson, text: text)
+        appendChat(withMessage: Message(type: MessageType.Watson, text: text, options: nil))
+        if let _ = options {
+            appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))
+        }
     }
 
 }
