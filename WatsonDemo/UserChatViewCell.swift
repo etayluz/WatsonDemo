@@ -22,13 +22,17 @@ class UserChatViewCell: UITableViewCell {
     @IBOutlet weak var buttonThree: CustomButton!
 
     // MARK: - Constraints
-
     @IBOutlet weak var buttonsLeadingConstraint: NSLayoutConstraint!
+
+    // MARK: - Properties
+    var message: Message?
+    var chatViewController: ChatViewController?
 
     /// Configure user chat table view cell with user message
     ///
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
+        self.message = message
         messageLabel.text = message.text
 
         if let _ = message.options {
@@ -39,12 +43,24 @@ class UserChatViewCell: UITableViewCell {
             buttonOne.isHidden = true
             buttonTwo.isHidden = true
             buttonThree.isHidden = true
+            messageBackground.isHidden = false
+            rightTriangleView.isHidden = false
+            userIcon.isHidden = false
         }
     }
 
     // MARK: - Actions
     @IBAction func optionButtonTapped(_ sender: CustomButton) {
         let selectedButton = sender
+
+        message?.options = nil
+        message?.text = selectedButton.titleLabel?.text
+
+        /// Update message
+        if let indexPath = chatViewController?.chatTableView.indexPath(for: self),
+           let message = message {
+            chatViewController?.messages[indexPath.row] = message
+        }
 
         /// Hide all buttons except for selected button
         buttonOne.isHidden = true

@@ -114,6 +114,7 @@ extension ChatViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UserChatViewCell.self),
                                                      for: indexPath) as! UserChatViewCell
             cell.configure(withMessage: message)
+            cell.chatViewController = self
             return cell
         }
 
