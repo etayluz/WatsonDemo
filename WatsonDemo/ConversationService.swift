@@ -95,7 +95,7 @@ class ConversationService {
                         text = text.replacingOccurrences(of: optionsString, with: "")
                         optionsString = optionsString.replacingOccurrences(of: "[", with: "")
                         optionsString = optionsString.replacingOccurrences(of: "]", with: "")
-                        optionsString = optionsString.replacingOccurrences(of: " ", with: "")
+                        optionsString = optionsString.replacingOccurrences(of: ", ", with: ",")
                         options = optionsString.components(separatedBy: ",")
                     }
 

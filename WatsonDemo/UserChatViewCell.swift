@@ -25,31 +25,53 @@ class UserChatViewCell: UITableViewCell {
     @IBOutlet weak var buttonsLeadingConstraint: NSLayoutConstraint!
 
     // MARK: - Properties
+    var buttons = [UIButton]()
     var message: Message?
     var chatViewController: ChatViewController?
+
+
+    override func awakeFromNib() {
+        buttons.append(buttonOne)
+        buttons.append(buttonTwo)
+        buttons.append(buttonThree)
+    }
+
+    override func prepareForReuse() {
+        buttonsLeadingConstraint.constant = 12
+        messageBackground.isHidden = false
+        messageLabel.isHidden = false
+        rightTriangleView.isHidden = false
+        userIcon.isHidden = false
+        buttonOne.isHidden = true
+        buttonTwo.isHidden = true
+        buttonThree.isHidden = true
+        buttonOne.backgroundColor = UIColor.buttonBackgroundColor()
+        buttonTwo.backgroundColor = UIColor.buttonBackgroundColor()
+        buttonThree.backgroundColor = UIColor.buttonBackgroundColor()
+        buttonOne.setTitleColor(UIColor.white, for: UIControlState.normal)
+        buttonTwo.setTitleColor(UIColor.white, for: UIControlState.normal)
+        buttonThree.setTitleColor(UIColor.white, for: UIControlState.normal)
+
+    }
 
     /// Configure user chat table view cell with user message
     ///
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
+        prepareForReuse()
+        
         self.message = message
         messageLabel.text = message.text
 
-        if let _ = message.options {
+        if let options = message.options {
             messageBackground.isHidden = true
             rightTriangleView.isHidden = true
             userIcon.isHidden = true
 
-            if (message.options?.count)! <= 2 {
-                buttonThree.isHidden = true
+            for (index, option) in options.enumerated() {
+                buttons[index].setTitle(option, for: UIControlState.normal)
+                buttons[index].isHidden = false
             }
-            if (message.options?.count)! <= 1 {
-                buttonTwo.isHidden = true
-            }
-            if (message.options?.count)! == 0 {
-                buttonOne.isHidden = true
-            }
-
         } else {
             buttonOne.isHidden = true
             buttonTwo.isHidden = true
@@ -71,6 +93,7 @@ class UserChatViewCell: UITableViewCell {
         if let indexPath = chatViewController?.chatTableView.indexPath(for: self),
            let message = message {
             chatViewController?.messages[indexPath.row] = message
+            chatViewController?.conversationService.sendMessage(withText: message.text!)
         }
 
         /// Hide all buttons except for selected button
@@ -89,7 +112,13 @@ class UserChatViewCell: UITableViewCell {
             let constraintOffset = self.userIcon.frame.origin.x - selectedButton.frame.origin.x - selectedButton.frame.size.width - 15
             self.buttonsLeadingConstraint.constant += constraintOffset
             selectedButton.superview?.layoutIfNeeded()
-        }, completion: nil)
+        }, completion: { result in
+            selectedButton.isHidden = true
+            self.messageLabel.text = selectedButton.titleLabel?.text
+            self.prepareForReuse()
+        }
+
+        )
     }
 
 }
