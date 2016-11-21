@@ -39,6 +39,17 @@ class UserChatViewCell: UITableViewCell {
             messageBackground.isHidden = true
             rightTriangleView.isHidden = true
             userIcon.isHidden = true
+
+            if (message.options?.count)! <= 2 {
+                buttonThree.isHidden = true
+            }
+            if (message.options?.count)! <= 1 {
+                buttonTwo.isHidden = true
+            }
+            if (message.options?.count)! == 0 {
+                buttonOne.isHidden = true
+            }
+
         } else {
             buttonOne.isHidden = true
             buttonTwo.isHidden = true
