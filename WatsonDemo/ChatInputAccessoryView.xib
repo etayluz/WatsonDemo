@@ -35,7 +35,7 @@
                         <outlet property="delegate" destination="-1" id="nka-ID-f4Q"/>
                     </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-qo-36T">
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-qo-36T">
                     <rect key="frame" x="331" y="8" width="36" height="30"/>
                     <state key="normal" title="Send">
                         <color key="titleColor" red="0.28627450980000002" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
