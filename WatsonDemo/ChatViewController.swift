@@ -70,7 +70,7 @@ class ChatViewController: UIViewController {
     func appendChat(withMessage message: Message) {
         guard let text = message.text, (text.characters.count > 0 || message.options != nil) else { return }
 
-        if message.type == MessageType.User {
+        if message.type == MessageType.User && text.characters.count > 0 {
             conversationService.sendMessage(withText: text)
         }
 
