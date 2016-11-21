@@ -70,20 +70,26 @@ class ChatViewController: UIViewController {
     func appendChat(withMessage message: Message) {
         guard let text = message.text, (text.characters.count > 0 || message.options != nil) else { return }
 
-        messages.append(message)
-
         if message.type == MessageType.User {
             conversationService.sendMessage(withText: text)
         }
 
-        /// Add new row to chatTableView
-        let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
-        chatTableView.beginUpdates()
-        chatTableView.insertRows(at: [indexPath], with: .automatic)
-        chatTableView.endUpdates()
-        chatTableView.scrollToRow(at: indexPath,
-                                  at: UITableViewScrollPosition.bottom,
-                                  animated: true)
+        if messages.last?.options != nil {
+            let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
+            messages[messages.count - 1] = message
+            chatTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        } else {
+            messages.append(message)
+            /// Add new row to chatTableView
+            let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
+            chatTableView.beginUpdates()
+            chatTableView.insertRows(at: [indexPath], with: .automatic)
+            chatTableView.endUpdates()
+            chatTableView.scrollToRow(at: indexPath,
+                                      at: UITableViewScrollPosition.bottom,
+                                      animated: true)
+        }
+
     }
 
     // MARK: - Private
@@ -149,7 +155,7 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 
     func textToSpeechDidFinishSynthesizing(withAudioData audioData: Data) {
         audioPlayer = try! AVAudioPlayer(data: audioData)
-//        audioPlayer.play()
+        audioPlayer.play()
     }
     
 }
