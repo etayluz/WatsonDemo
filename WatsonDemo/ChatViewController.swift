@@ -74,7 +74,8 @@ class ChatViewController: UIViewController {
             conversationService.sendMessage(withText: text)
         }
 
-        if messages.last?.options != nil {
+        if let _ = messages.last?.options {
+            /// If user speak or types instead of tapping option button, reload that cell
             let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
             messages[messages.count - 1] = message
             chatTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
