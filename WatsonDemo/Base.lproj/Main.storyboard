@@ -219,7 +219,7 @@
                                                         <action selector="optionButtonTapped:" destination="55h-j6-z27" eventType="touchUpInside" id="hX0-Io-JBW"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCV-Wa-fwT" customClass="CustomButton" customModule="WatsonDemo">
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCV-Wa-fwT" customClass="CustomButton" customModule="WatsonDemo">
                                                     <rect key="frame" x="105" y="55" width="50" height="30"/>
                                                     <color key="backgroundColor" red="0.85882352939999995" green="0.1215686275" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="No">
@@ -234,7 +234,7 @@
                                                         <action selector="optionButtonTapped:" destination="55h-j6-z27" eventType="touchUpInside" id="SSi-LF-XMw"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGb-4x-fB4" customClass="CustomButton" customModule="WatsonDemo">
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGb-4x-fB4" customClass="CustomButton" customModule="WatsonDemo">
                                                     <rect key="frame" x="190" y="55" width="103" height="30"/>
                                                     <color key="backgroundColor" red="0.85882352939999995" green="0.1215686275" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="Visit Branch">
