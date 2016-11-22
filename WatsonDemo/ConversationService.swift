@@ -10,6 +10,7 @@ import Foundation
 
 protocol ConversationServiceDelegate: class {
     func didReceiveMessage(withText text: String, options: [String]?)
+    func didReceiveMap(withUrl mapUrl: URL)
 }
 
 
@@ -99,7 +100,22 @@ class ConversationService {
                         options = optionsString.components(separatedBy: ",")
                     }
 
+
+                    var mapUrl: URL?
+
+                    /// Check for maps
+                    if text.contains("InsMap1") {
+                        text = text.replacingOccurrences(of: "InsMap1", with: "")
+                        mapUrl = URL(string: "https://maps.googleapis.com/maps/api/staticmap?format=png&zoom=17&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C10900+South+Parker+road+Parker+Colorado&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k")
+
+                    }
+
                     strongSelf.delegate?.didReceiveMessage(withText: text, options: options)
+                    if let mapUrl = mapUrl {
+                        strongSelf.delegate?.didReceiveMap(withUrl: mapUrl)
+                    }
+                    
+
                 }
             }
         }

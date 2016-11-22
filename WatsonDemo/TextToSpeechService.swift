@@ -30,6 +30,8 @@ class TextToSpeechService {
     ///
     /// - Parameter text: Text to be syntheszied to speech
     func synthesizeSpeech(withText text: String) {
+        guard text.characters.count > 0 else { return }
+        
         let textToSpeech = TextToSpeech(username: GlobalConstants.etayluzBluemixUsername,
                                         password: GlobalConstants.etayluzBluemixPassword)
         let failure = { (error: Error) in

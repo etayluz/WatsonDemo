@@ -122,11 +122,11 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-6E-kDH" userLabel="WatsonMsgBackground">
-                                                    <rect key="frame" x="93" y="7" width="195" height="127"/>
+                                                    <rect key="frame" x="93" y="7" width="194.5" height="127"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giz-gT-A77" userLabel="WatsonMessage">
-                                                    <rect key="frame" x="108" y="22" width="165" height="97"/>
+                                                    <rect key="frame" x="108" y="22" width="164.5" height="97"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Hello! I'm your personal banking virtual assistant. You can ask me about anything?">
@@ -284,6 +284,32 @@
                                             <outlet property="messageLabel" destination="pRW-E5-X6Q" id="bzK-yL-tyN"/>
                                             <outlet property="rightTriangleView" destination="3gf-Ki-PLb" id="MGA-gg-Rcp"/>
                                             <outlet property="userIcon" destination="vo5-6M-QOP" id="GJ0-pG-06y"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapViewCell" id="82H-b7-0No" userLabel="MapViewCell" customClass="MapViewCell" customModule="WatsonDemo">
+                                        <rect key="frame" x="0.0" y="281" width="320" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="82H-b7-0No" id="0hf-wd-wKg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-5d-NVy" userLabel="MapImageView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="centerX" secondItem="0hf-wd-wKg" secondAttribute="centerX" id="2R5-dK-Ych"/>
+                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="centerY" secondItem="0hf-wd-wKg" secondAttribute="centerY" id="Jyh-YF-Ni4"/>
+                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="height" secondItem="0hf-wd-wKg" secondAttribute="height" id="PPe-Nn-4Qh"/>
+                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="width" secondItem="0hf-wd-wKg" secondAttribute="width" id="aif-80-Afg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="mapImageView" destination="ETF-5d-NVy" id="EZI-zU-ikm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

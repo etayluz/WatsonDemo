@@ -68,7 +68,9 @@ class ChatViewController: UIViewController {
 
 //    func appendMessageToChat(withMessageType messageType: MessageType, text: String) {
     func appendChat(withMessage message: Message) {
-        guard let text = message.text, (text.characters.count > 0 || message.options != nil) else { return }
+        guard let text = message.text,
+            (text.characters.count > 0 || message.options != nil || message.mapUrl != nil)
+            else { return }
 
         if message.type == MessageType.User && text.characters.count > 0 {
             conversationService.sendMessage(withText: text)
@@ -112,17 +114,26 @@ extension ChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let message = messages[indexPath.row]
 
-        if message.type == MessageType.Watson {
+        switch message.type {
+        case MessageType.Map:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MapViewCell.self),
+                                                     for: indexPath) as! MapViewCell
+            cell.configure(withMessage: message)
+            return cell
+
+        case MessageType.Watson:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: WatsonChatViewCell.self),
                                                      for: indexPath) as! WatsonChatViewCell
             cell.configure(withMessage: message)
             return cell
-        } else {
+
+        case MessageType.User:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UserChatViewCell.self),
                                                      for: indexPath) as! UserChatViewCell
             cell.configure(withMessage: message)
             cell.chatViewController = self
             return cell
+
         }
 
     }
@@ -134,10 +145,23 @@ extension ChatViewController: UITableViewDelegate {
 
     private struct ChatTableView {
         static let cellRowHeight: CGFloat = 120
+        static let mapRowHeight: CGFloat = 240
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return ChatTableView.cellRowHeight
+        let message = messages[indexPath.row]
+
+        switch message.type {
+        case MessageType.Map:
+            return ChatTableView.mapRowHeight
+
+        case MessageType.Watson:
+            return ChatTableView.cellRowHeight
+
+        case MessageType.User:
+            return ChatTableView.cellRowHeight
+            
+        }
     }
     
 }
@@ -172,6 +196,12 @@ extension ChatViewController: ConversationServiceDelegate {
         if let _ = options {
             appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))
         }
+    }
+
+    internal func didReceiveMap(withUrl mapUrl: URL) {
+        var message = Message(type: MessageType.Map, text: "", options: nil)
+        message.mapUrl = mapUrl
+        appendChat(withMessage: message)
     }
 
 }
