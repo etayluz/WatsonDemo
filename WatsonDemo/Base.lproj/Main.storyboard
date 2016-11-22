@@ -304,15 +304,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-5d-NVy" userLabel="MapImageView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                                    <rect key="frame" x="0.0" y="8" width="320" height="109"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="ETF-5d-NVy" firstAttribute="centerX" secondItem="0hf-wd-wKg" secondAttribute="centerX" id="2R5-dK-Ych"/>
-                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="centerY" secondItem="0hf-wd-wKg" secondAttribute="centerY" id="Jyh-YF-Ni4"/>
-                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="height" secondItem="0hf-wd-wKg" secondAttribute="height" id="PPe-Nn-4Qh"/>
+                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="top" secondItem="0hf-wd-wKg" secondAttribute="topMargin" id="CsZ-xU-62V"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ETF-5d-NVy" secondAttribute="bottom" constant="15" id="Nf9-s4-LYs"/>
                                                 <constraint firstItem="ETF-5d-NVy" firstAttribute="width" secondItem="0hf-wd-wKg" secondAttribute="width" id="aif-80-Afg"/>
                                             </constraints>
                                         </tableViewCellContentView>

@@ -37,7 +37,7 @@ class UserChatViewCell: UITableViewCell {
     }
 
     override func prepareForReuse() {
-        buttonsLeadingConstraint.constant = 12
+        buttonsLeadingConstraint.constant = frame.size.width / 2 - 80
         messageBackground.isHidden = false
         messageLabel.isHidden = false
         rightTriangleView.isHidden = false
@@ -116,9 +116,7 @@ class UserChatViewCell: UITableViewCell {
             selectedButton.isHidden = true
             self.messageLabel.text = selectedButton.titleLabel?.text
             self.prepareForReuse()
-        }
-
-        )
+        })
     }
 
 }
