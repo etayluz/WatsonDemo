@@ -10,6 +10,7 @@
 		B40FDFE61DDF89BF00BE07EB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE51DDF89BF00BE07EB /* CustomButton.swift */; };
 		B40FDFE81DE27E8D00BE07EB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */; };
 		B40FDFEA1DE3EF6900BE07EB /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */; };
+		B4395A001DE50DD400F2C075 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43959FF1DE50DD400F2C075 /* CustomView.swift */; };
 		B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18611DD96859008CE7C2 /* ChatViewController.swift */; };
 		B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
@@ -57,6 +58,7 @@
 		B40FDFE51DDF89BF00BE07EB /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCell.swift; sourceTree = "<group>"; };
+		B43959FF1DE50DD400F2C075 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		B48B18611DD96859008CE7C2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonChatViewCell.swift; sourceTree = "<group>"; };
 		B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserChatViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */,
 				B40FDFE51DDF89BF00BE07EB /* CustomButton.swift */,
 				B48B18681DD96FC5008CE7C2 /* CustomLabel.swift */,
+				B43959FF1DE50DD400F2C075 /* CustomView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				B4D160FB1DDBF19D00D436F1 /* SpeechToTextService.swift in Sources */,
 				B40FDFE81DE27E8D00BE07EB /* UIColor+Hex.swift in Sources */,
 				B40FDFE61DDF89BF00BE07EB /* CustomButton.swift in Sources */,
+				B4395A001DE50DD400F2C075 /* CustomView.swift in Sources */,
 				B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */,
 				B48B186E1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift in Sources */,
 				B48B18731DDA8768008CE7C2 /* Message.swift in Sources */,
