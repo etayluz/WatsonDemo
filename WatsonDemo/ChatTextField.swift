@@ -48,7 +48,7 @@ extension ChatTextField: UITextFieldDelegate {
 
 
     private func setupSimulator() {
-        #if (arch(i386) || arch(x86_64)) && os(iOS)
+        #if DEBUG
             if (debugChatIndex == 1) {
                 chatInputAccessoryView.inputTextField.text = "I received an alert on a suspicious transaction"
                 debugChatIndex = debugChatIndex + 1

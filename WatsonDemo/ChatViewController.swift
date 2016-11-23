@@ -98,8 +98,8 @@ class ChatViewController: UIViewController {
     // MARK: - Private
     // This will only execute on the simulator and NOT on a real device
     private func setupSimulator() {
-        #if (arch(i386) || arch(x86_64)) && os(iOS)
-//            chatTableView.reloadData()
+        #if DEBUG
+
         #endif
     }
 

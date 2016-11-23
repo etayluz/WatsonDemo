@@ -29,12 +29,11 @@ class OverviewViewController: UIViewController {
     // MARK: - Private
     // This will only execute on the simulator and NOT on a real device
     private func setupSimulator() {
-        #if (arch(i386) || arch(x86_64)) && os(iOS)
+        #if DEBUG
             let when = DispatchTime.now() + 0.01
             DispatchQueue.main.asyncAfter(deadline: when) {
                 self.tabBarController?.selectedIndex = Constants.chatSelectedIndex
             }
-
         #endif
     }
 
