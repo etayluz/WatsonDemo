@@ -37,7 +37,9 @@ class UserChatViewCell: UITableViewCell {
     }
 
     override func prepareForReuse() {
-        buttonsLeadingConstraint.constant = frame.size.width / 2 - 80
+        if let numberOfOptions = message?.options?.count {
+            buttonsLeadingConstraint.constant = frame.size.width / 2 - 53 * CGFloat(numberOfOptions)
+        }
         messageBackground.isHidden = false
         messageLabel.isHidden = false
         rightTriangleView.isHidden = false
@@ -58,9 +60,9 @@ class UserChatViewCell: UITableViewCell {
     ///
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
-        prepareForReuse()
-        
         self.message = message
+        prepareForReuse()
+
         messageLabel.text = message.text
 
         if let options = message.options {
