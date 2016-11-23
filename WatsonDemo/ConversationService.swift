@@ -45,6 +45,14 @@ class ConversationService {
         static let workspaceID = "workspace_id"
     }
 
+    // MARK: - Map
+    private struct Map {
+        static let mapOne = "https://maps.googleapis.com/maps/api/staticmap?format=png&zoom=17&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C10900+South+Parker+road+Parker+Colorado&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k"
+        static let mapTwo = "https://maps.googleapis.com/maps/api/staticmap?maptype=satellite&format=png&zoom=18&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C10900+South+Parker+road+Parker+Colorado&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k"
+        static let mapThree = "https://maps.googleapis.com/maps/api/staticmap?format=png&zoom=13&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C1000+Jasper+Avenue+Edmonton+Canada&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k"
+        static let mapFour = "https://maps.googleapis.com/maps/api/staticmap?maptype=satellite&format=png&zoom=18&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C1000+Jasper+Avenue+Edmonton+Canada&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k"
+    }
+
     // MARK: - Init
     init(delegate: ConversationServiceDelegate) {
         self.delegate = delegate
@@ -101,17 +109,31 @@ class ConversationService {
                     }
 
 
-                    var mapUrl: URL?
+                    var mapUrlString: String?
 
                     /// Check for maps
                     if text.contains("InsMap1") {
                         text = text.replacingOccurrences(of: "InsMap1", with: "")
-                        mapUrl = URL(string: "https://maps.googleapis.com/maps/api/staticmap?format=png&zoom=17&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C10900+South+Parker+road+Parker+Colorado&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k")
+                        mapUrlString = Map.mapOne
+                    }
 
+                    if text.contains("InsMap2") {
+                        text = text.replacingOccurrences(of: "InsMap2", with: "")
+                        mapUrlString = Map.mapTwo
+                    }
+
+                    if text.contains("InsMap3") {
+                        text = text.replacingOccurrences(of: "InsMap3", with: "")
+                        mapUrlString = Map.mapThree
+                    }
+
+                    if text.contains("InsMap4") {
+                        text = text.replacingOccurrences(of: "InsMap4", with: "")
+                        mapUrlString = Map.mapFour
                     }
 
                     strongSelf.delegate?.didReceiveMessage(withText: text, options: options)
-                    if let mapUrl = mapUrl {
+                    if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
                         strongSelf.delegate?.didReceiveMap(withUrl: mapUrl)
                     }
                     

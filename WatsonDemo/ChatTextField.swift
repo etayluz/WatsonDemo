@@ -54,23 +54,39 @@ extension ChatTextField: UITextFieldDelegate {
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 2) {
-                chatInputAccessoryView.inputTextField.text = "No"
+                chatInputAccessoryView.inputTextField.text = "Can I use my debt card in the US"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 3) {
-                chatInputAccessoryView.inputTextField.text = "No"
+                chatInputAccessoryView.inputTextField.text = "Yes, Please"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 4) {
-                chatInputAccessoryView.inputTextField.text = "Watson"
+                chatInputAccessoryView.inputTextField.text = "Savings"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 5) {
-                chatInputAccessoryView.inputTextField.text = "Yes"
+                chatInputAccessoryView.inputTextField.text = "Checking"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 6) {
-                chatInputAccessoryView.inputTextField.text = "Visit Branch"
+                chatInputAccessoryView.inputTextField.text = "Will I have to pay a fee for taking cash out"
+                debugChatIndex = debugChatIndex + 1
+            }
+            else if (debugChatIndex == 7) {
+                chatInputAccessoryView.inputTextField.text = "What are the exchange rates"
+                debugChatIndex = debugChatIndex + 1
+            }
+            else if (debugChatIndex == 8) {
+                chatInputAccessoryView.inputTextField.text = "Yea"
+                debugChatIndex = debugChatIndex + 1
+            }
+            else if (debugChatIndex == 9) {
+                chatInputAccessoryView.inputTextField.text = "Thanks for the advice"
+                debugChatIndex = debugChatIndex + 1
+            }
+            else if (debugChatIndex == 10) {
+                chatInputAccessoryView.inputTextField.text = "Thanks for the advice"
                 debugChatIndex = debugChatIndex + 1
             }
         #endif

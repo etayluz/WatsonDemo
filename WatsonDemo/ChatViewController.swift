@@ -146,6 +146,7 @@ extension ChatViewController: UITableViewDelegate {
     private struct ChatTableView {
         static let cellRowHeight: CGFloat = 120
         static let mapRowHeight: CGFloat = 240
+        static let longMessageRowHeight: CGFloat = 200
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -156,7 +157,11 @@ extension ChatViewController: UITableViewDelegate {
             return ChatTableView.mapRowHeight
 
         case MessageType.Watson:
-            return ChatTableView.cellRowHeight
+            if (message.text?.characters.count)! < 200 {
+                return ChatTableView.cellRowHeight
+            } else {
+                return ChatTableView.longMessageRowHeight
+            }
 
         case MessageType.User:
             return ChatTableView.cellRowHeight
