@@ -34,8 +34,8 @@ class SpeechToTextService {
         let speechToText = SpeechToText(username: GlobalConstants.dennisNotoBluemixUsername,
                                         password: GlobalConstants.dennisNotoBluemixPassword)
 
-        let settings = RecognitionSettings(contentType: .wav)
-//        settings.interimResults = true
+        var settings = RecognitionSettings(contentType: .wav)
+        settings.smartFormatting = true
 
         let failure = {
             (error: Error) in print(error)

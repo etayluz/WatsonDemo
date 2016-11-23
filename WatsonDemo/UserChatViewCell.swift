@@ -38,7 +38,13 @@ class UserChatViewCell: UITableViewCell {
 
     override func prepareForReuse() {
         if let numberOfOptions = message?.options?.count {
-            buttonsLeadingConstraint.constant = frame.size.width / 2 - 53 * CGFloat(numberOfOptions)
+            if numberOfOptions >= 3 {
+                buttonsLeadingConstraint.constant = frame.size.width / 2 - 160
+            } else if numberOfOptions == 2 {
+                buttonsLeadingConstraint.constant = frame.size.width / 2 - 80
+            } else if numberOfOptions == 1 {
+                buttonsLeadingConstraint.constant = frame.size.width / 2 - 30
+            }
         }
         messageBackground.isHidden = false
         messageLabel.isHidden = false
