@@ -15,7 +15,7 @@
         <!--HomeViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" userLabel="HomeViewController" customClass="OverviewViewController" customModule="WatsonDemo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" userLabel="HomeViewController" customClass="OverviewViewController" customModule="WatsonDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -73,7 +73,7 @@
         <!--ChatViewController-->
         <scene sceneID="fcW-ZN-TN6">
             <objects>
-                <viewController id="3go-5g-2RD" userLabel="ChatViewController" customClass="ChatViewController" customModule="WatsonDemo" sceneMemberID="viewController">
+                <viewController id="3go-5g-2RD" userLabel="ChatViewController" customClass="ChatViewController" customModule="WatsonDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2sY-f8-GTJ"/>
                         <viewControllerLayoutGuide type="bottom" id="8ce-5m-jhc"/>
