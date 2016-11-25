@@ -19,7 +19,7 @@ Add a comment to this line
 +!default.mode2v3
 +*.perspectivev3
 +!default.perspectivev3
-+*.xcuserdata/
+*.xcuserdata/
 +
 +## Other
 +*.moved-aside
