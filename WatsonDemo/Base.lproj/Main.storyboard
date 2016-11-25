@@ -121,7 +121,7 @@
                                                         <constraint firstAttribute="width" secondItem="MLg-Dx-6Yr" secondAttribute="height" id="nYl-T1-Gje"/>
                                                     </constraints>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-6E-kDH" userLabel="WatsonMsgBackground" customClass="CustomView" customModule="WatsonDemo">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-6E-kDH" userLabel="WatsonMsgBackground" customClass="CustomView" customModule="WatsonDemo" customModuleProvider="target">
                                                     <rect key="frame" x="93" y="7" width="194.5" height="127"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
@@ -296,7 +296,7 @@
                                             <outlet property="userIcon" destination="vo5-6M-QOP" id="GJ0-pG-06y"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapViewCell" id="82H-b7-0No" userLabel="MapViewCell" customClass="MapViewCell" customModule="WatsonDemo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapViewCell" id="82H-b7-0No" userLabel="MapViewCell" customClass="MapViewCell" customModule="WatsonDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="281" width="320" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="82H-b7-0No" id="0hf-wd-wKg">
@@ -348,7 +348,7 @@
                                             <action selector="micButtonTapped" destination="3go-5g-2RD" eventType="touchUpInside" id="crp-oh-pQ0"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T25-IS-XUm" userLabel="ChatTextField" customClass="ChatTextField" customModule="WatsonDemo">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T25-IS-XUm" userLabel="ChatTextField" customClass="ChatTextField" customModule="WatsonDemo" customModuleProvider="target">
                                         <rect key="frame" x="59" y="5.5" width="202" height="34"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
