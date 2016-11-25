@@ -66,7 +66,6 @@ class ChatViewController: UIViewController {
         view.endEditing(true)
     }
 
-//    func appendMessageToChat(withMessageType messageType: MessageType, text: String) {
     func appendChat(withMessage message: Message) {
         guard let text = message.text,
             (text.characters.count > 0 || message.options != nil || message.mapUrl != nil)

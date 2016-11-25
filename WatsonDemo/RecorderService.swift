@@ -27,6 +27,8 @@ public class RecorderService: NSObject, AVAudioRecorderDelegate {
         do {
             try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
             try recordingSession.setActive(true)
+            try recordingSession.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+
             recordingSession.requestRecordPermission() { (allowed: Bool) -> Void in
                 DispatchQueue.main.async {
                     if allowed {
