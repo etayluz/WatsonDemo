@@ -144,7 +144,7 @@ extension ChatViewController: UITableViewDataSource {
 extension ChatViewController: UITableViewDelegate {
 
     private struct ChatTableView {
-        static let buttonsRowHeight: CGFloat = 90
+        static let buttonsRowHeight: CGFloat = 60
         static let cellRowHeight: CGFloat = 120
         static let mapRowHeight: CGFloat = 240
         static let longMessageRowHeight: CGFloat = 200
