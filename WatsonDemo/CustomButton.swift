@@ -23,7 +23,6 @@ import UIKit
 
     // MARK: - Properties
     var leadingConstraint: NSLayoutConstraint?
-    var savedInstrinsicContentSize: CGSize?
 
     @IBInspectable var masksToBounds: Bool = true {
         didSet {
@@ -68,16 +67,8 @@ import UIKit
     }
 
     override var intrinsicContentSize: CGSize {
-        // Seems that intrinsicContentSize returns the wrong size when calling setTitleColor on CustomButton
-        // Using a prevouisly saved contentSize to get around this strange behavior
-        if let savedInstrinsicContentSize = savedInstrinsicContentSize {
-            return savedInstrinsicContentSize
-        }
-
         var contentSize = super.intrinsicContentSize
         contentSize.width += 20
-
-        savedInstrinsicContentSize = contentSize
         return contentSize
     }
 }

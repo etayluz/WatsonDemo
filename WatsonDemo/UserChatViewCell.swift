@@ -59,10 +59,6 @@ class UserChatViewCell: UITableViewCell {
         buttonOne.setTitleColor(UIColor.white, for: UIControlState.normal)
         buttonTwo.setTitleColor(UIColor.white, for: UIControlState.normal)
         buttonThree.setTitleColor(UIColor.white, for: UIControlState.normal)
-        buttonOne.savedInstrinsicContentSize = nil
-        buttonTwo.savedInstrinsicContentSize = nil
-        buttonThree.savedInstrinsicContentSize = nil
-
     }
 
     /// Configure user chat table view cell with user message
