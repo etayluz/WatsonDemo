@@ -37,8 +37,8 @@ class SpeechToTextService {
         var settings = RecognitionSettings(contentType: .wav)
         settings.smartFormatting = true
 
-        let failure = {
-            (error: Error) in print(error)
+        let failure = { (error: Error) in
+            print(error)
         }
 
         speechToText.recognize(audio: audioData, settings: settings, failure: failure) { results in

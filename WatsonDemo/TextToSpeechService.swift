@@ -1,4 +1,3 @@
-
 //
 //  TextToSpeechService.swift
 //  WatsonDemo
@@ -34,6 +33,7 @@ class TextToSpeechService {
         
         let textToSpeech = TextToSpeech(username: GlobalConstants.etayluzBluemixUsername,
                                         password: GlobalConstants.etayluzBluemixPassword)
+
         let failure = { (error: Error) in
             print(error)
         }

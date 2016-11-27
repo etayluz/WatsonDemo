@@ -108,6 +108,9 @@ class ConversationService {
                         options = optionsString.components(separatedBy: ",")
                     }
 
+                    // TBD: Remove me - for debug of buttons
+                    // options = ["checking", "savings", "savings"]
+
 
                     var mapUrlString: String?
 

@@ -79,7 +79,7 @@ class ChatViewController: UIViewController {
             /// If user speak or types instead of tapping option button, reload that cell
             let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
             messages[messages.count - 1] = message
-            chatTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            chatTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
         } else {
             messages.append(message)
             /// Add new row to chatTableView

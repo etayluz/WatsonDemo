@@ -59,6 +59,9 @@ class UserChatViewCell: UITableViewCell {
         buttonOne.setTitleColor(UIColor.white, for: UIControlState.normal)
         buttonTwo.setTitleColor(UIColor.white, for: UIControlState.normal)
         buttonThree.setTitleColor(UIColor.white, for: UIControlState.normal)
+        buttonOne.savedInstrinsicContentSize = nil
+        buttonTwo.savedInstrinsicContentSize = nil
+        buttonThree.savedInstrinsicContentSize = nil
 
     }
 
@@ -78,6 +81,7 @@ class UserChatViewCell: UITableViewCell {
 
             for (index, option) in options.enumerated() {
                 buttons[index].setTitle(option, for: UIControlState.normal)
+                buttons[index].setTitle(option, for: UIControlState.highlighted)
                 buttons[index].isHidden = false
             }
         } else {
@@ -113,8 +117,8 @@ class UserChatViewCell: UITableViewCell {
 
         /// Show selected button and change its background color to white
         selectedButton.isHidden = false
-        selectedButton.backgroundColor = UIColor.white
         selectedButton.setTitleColor(UIColor.black, for: UIControlState.normal)
+        selectedButton.backgroundColor = UIColor.white
 
         UIView.animate(withDuration: 0.5, animations: {
             let constraintOffset = self.userIcon.frame.origin.x - selectedButton.frame.origin.x - selectedButton.frame.size.width - 15
