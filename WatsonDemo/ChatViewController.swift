@@ -37,7 +37,10 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         setupSimulator()
         chatTextField.chatViewController = self
+
         chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
+        chatTableView.rowHeight = UITableViewAutomaticDimension
+        chatTableView.estimatedRowHeight = 140
 
         // We need to send some dummy text to keep off the conversation
         conversationService.sendMessage(withText: Constants.conversationKickoffMessage)
@@ -71,6 +74,7 @@ class ChatViewController: UIViewController {
             (text.characters.count > 0 || message.options != nil || message.mapUrl != nil)
             else { return }
 
+
         if message.type == MessageType.User && text.characters.count > 0 {
             conversationService.sendMessage(withText: text)
         }
@@ -79,17 +83,18 @@ class ChatViewController: UIViewController {
             /// If user speak or types instead of tapping option button, reload that cell
             let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
             messages[messages.count - 1] = message
-            chatTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
+            chatTableView.reloadRows(at: [indexPath], with: .none)
         } else {
             messages.append(message)
             /// Add new row to chatTableView
             let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
             chatTableView.beginUpdates()
-            chatTableView.insertRows(at: [indexPath], with: .automatic)
+            chatTableView.insertRows(at: [indexPath], with: .none)
             chatTableView.endUpdates()
             chatTableView.scrollToRow(at: indexPath,
-                                      at: UITableViewScrollPosition.bottom,
-                                      animated: true)
+                                      at: .bottom,
+                                      animated: false)
+
         }
 
     }
@@ -142,35 +147,8 @@ extension ChatViewController: UITableViewDataSource {
 // MARK: - UITableViewDataSource
 extension ChatViewController: UITableViewDelegate {
 
-    private struct ChatTableView {
-        static let buttonsRowHeight: CGFloat = 60
-        static let cellRowHeight: CGFloat = 120
-        static let mapRowHeight: CGFloat = 240
-        static let longMessageRowHeight: CGFloat = 200
-    }
-
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let message = messages[indexPath.row]
-
-        switch message.type {
-        case MessageType.Map:
-            return ChatTableView.mapRowHeight
-
-        case MessageType.Watson:
-            if (message.text?.characters.count)! < 200 {
-                return ChatTableView.cellRowHeight
-            } else {
-                return ChatTableView.longMessageRowHeight
-            }
-
-        case MessageType.User:
-            if let _ = message.options {
-                return ChatTableView.buttonsRowHeight
-            } else {
-                return ChatTableView.cellRowHeight
-            }
-            
-        }
+        return UITableViewAutomaticDimension
     }
     
 }
@@ -200,17 +178,25 @@ extension ChatViewController: ConversationServiceDelegate {
     internal func didReceiveMessage(withText text: String, options: [String]?) {
         guard text.characters.count > 0 else { return }
 
-        textToSpeechService.synthesizeSpeech(withText: text)
-        appendChat(withMessage: Message(type: MessageType.Watson, text: text, options: nil))
-        if let _ = options {
-            appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))
+        let when = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            self.textToSpeechService.synthesizeSpeech(withText: text)
+            self.appendChat(withMessage: Message(type: MessageType.Watson, text: text, options: nil))
+            if let _ = options {
+                self.appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))
+            }
         }
+
     }
 
     internal func didReceiveMap(withUrl mapUrl: URL) {
         var message = Message(type: MessageType.Map, text: "", options: nil)
         message.mapUrl = mapUrl
-        appendChat(withMessage: message)
+
+        let when = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            self.appendChat(withMessage: message)
+        }
     }
 
 }
