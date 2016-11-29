@@ -68,10 +68,14 @@ class UserChatViewCell: UITableViewCell {
         self.message = message
         prepareForReuse()
 
-        messageLabel.text = message.text
+        if let text = message.text,
+            text.characters.count > 0 {
+            messageLabel.text = text
+        }
 
         if let options = message.options {
             messageBackground.isHidden = true
+            messageLabel.isHidden = true
             rightTriangleView.isHidden = true
             userIcon.isHidden = true
 
@@ -85,6 +89,7 @@ class UserChatViewCell: UITableViewCell {
             buttonTwo.isHidden = true
             buttonThree.isHidden = true
             messageBackground.isHidden = false
+            messageLabel.isHidden = false
             rightTriangleView.isHidden = false
             userIcon.isHidden = false
         }
