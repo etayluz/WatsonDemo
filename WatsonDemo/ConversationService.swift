@@ -109,7 +109,7 @@ class ConversationService {
                     }
 
                     // TBD: Remove me - for debug of buttons
-                    // options = ["checking", "savings", "savings"]
+                    options = ["checking", "savings", "savings", "checking", "savings", "savings"]
 
 
                     var mapUrlString: String?

@@ -19,6 +19,13 @@ import UIKit
     @IBInspectable var bottomInset: CGFloat = 0.0
     @IBInspectable var rightInset: CGFloat = 0.0
 
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+            layer.masksToBounds = true
+        }
+    }
+    
     var insets: UIEdgeInsets {
         get {
             return UIEdgeInsetsMake(topInset, leftInset, bottomInset, rightInset)
@@ -30,7 +37,7 @@ import UIKit
             rightInset = newValue.right
         }
     }
-
+        
     override func drawText(in rect: CGRect) {
         super.drawText(in: UIEdgeInsetsInsetRect(rect, insets))
     }

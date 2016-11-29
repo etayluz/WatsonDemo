@@ -11,54 +11,42 @@ import UIKit
 class UserChatViewCell: UITableViewCell {
 
     // MARK: - Outlets
+    @IBOutlet weak var buttonsCollectionView: UICollectionView!
+    @IBOutlet weak var buttonsCollectionViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var messageBackground: UIView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var rightTriangleView: UIImageView!
     @IBOutlet weak var userIcon: UIImageView!
 
-    // MARK: - Buttons
-    @IBOutlet weak var buttonOne: CustomButton!
-    @IBOutlet weak var buttonTwo: CustomButton!
-    @IBOutlet weak var buttonThree: CustomButton!
 
     // MARK: - Constraints
     @IBOutlet weak var buttonsLeadingConstraint: NSLayoutConstraint!
 
     // MARK: - Properties
-    var buttons = [UIButton]()
     var message: Message?
     var chatViewController: ChatViewController?
 
 
     override func awakeFromNib() {
-        buttons.append(buttonOne)
-        buttons.append(buttonTwo)
-        buttons.append(buttonThree)
+        buttonsCollectionView.delegate = self
+        buttonsCollectionView.dataSource = self
+
+        if let flowLayout = buttonsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
+
+//        let when = DispatchTime.now() + 2
+//        DispatchQueue.main.asyncAfter(deadline: when) {
+//            self.buttonsCollectionView.reloadData()
+//        }
     }
 
     override func prepareForReuse() {
-        if let numberOfOptions = message?.options?.count {
-            if numberOfOptions >= 3 {
-                buttonsLeadingConstraint.constant = frame.size.width / 2 - 160
-            } else if numberOfOptions == 2 {
-                buttonsLeadingConstraint.constant = frame.size.width / 2 - 80
-            } else if numberOfOptions == 1 {
-                buttonsLeadingConstraint.constant = frame.size.width / 2 - 30
-            }
-        }
         messageBackground.isHidden = false
         messageLabel.isHidden = false
         rightTriangleView.isHidden = false
         userIcon.isHidden = false
-        buttonOne.isHidden = true
-        buttonTwo.isHidden = true
-        buttonThree.isHidden = true
-        buttonOne.backgroundColor = UIColor.buttonBackgroundColor()
-        buttonTwo.backgroundColor = UIColor.buttonBackgroundColor()
-        buttonThree.backgroundColor = UIColor.buttonBackgroundColor()
-        buttonOne.setTitleColor(UIColor.white, for: UIControlState.normal)
-        buttonTwo.setTitleColor(UIColor.white, for: UIControlState.normal)
-        buttonThree.setTitleColor(UIColor.white, for: UIControlState.normal)
+
     }
 
     /// Configure user chat table view cell with user message
@@ -80,14 +68,9 @@ class UserChatViewCell: UITableViewCell {
             userIcon.isHidden = true
 
             for (index, option) in options.enumerated() {
-                buttons[index].setTitle(option, for: UIControlState.normal)
-                buttons[index].setTitle(option, for: UIControlState.highlighted)
-                buttons[index].isHidden = false
+
             }
         } else {
-            buttonOne.isHidden = true
-            buttonTwo.isHidden = true
-            buttonThree.isHidden = true
             messageBackground.isHidden = false
             messageLabel.isHidden = false
             rightTriangleView.isHidden = false
@@ -111,9 +94,6 @@ class UserChatViewCell: UITableViewCell {
         }
 
         /// Hide all buttons except for selected button
-        buttonOne.isHidden = true
-        buttonTwo.isHidden = true
-        buttonThree.isHidden = true
 
         userIcon.isHidden = false
 
@@ -133,5 +113,36 @@ class UserChatViewCell: UITableViewCell {
         })
     }
 
+}
+
+  // MARK: UICollectionViewDataSource & UICollectionViewDelegate
+extension UserChatViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+
+        if let count = message?.options?.count {
+            return count
+        }
+
+        return 0
+    }
+
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let optionButtonCell =
+            collectionView.dequeueReusableCell(withReuseIdentifier: "OptionButtonCell", for: indexPath)  as! OptionButtonCell
+
+        if let option = message?.options?[indexPath.row] {
+            optionButtonCell.configure(withOption: option)
+        }
+
+        return optionButtonCell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+
+    }
 }
 
