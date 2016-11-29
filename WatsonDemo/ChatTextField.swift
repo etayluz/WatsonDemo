@@ -28,7 +28,7 @@ extension ChatTextField: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool  {
         guard inputAccessoryView == nil else {
             inputAccessoryView = nil
-            chatViewController.chatTableBottomConstraint.constant = 0
+            chatViewController.chatTableBottomConstraint.constant = 15
             UIView.animate(withDuration: 0.5) { [weak self] in
                 guard let strongSelf = self else { return }
 
