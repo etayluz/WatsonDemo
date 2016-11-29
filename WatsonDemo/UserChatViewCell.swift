@@ -102,6 +102,7 @@ class UserChatViewCell: UITableViewCell {
            let message = message {
             chatViewController?.messages[indexPath.row] = message
             chatViewController?.conversationService.sendMessage(withText: message.text!)
+            chatViewController?.dismissKeyboard()
         }
 
         /// Hide all buttons except for selected button

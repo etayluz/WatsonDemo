@@ -406,6 +406,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Ask Watson" image="TabBarIcon-Watson" selectedImage="TabBarIcon-Watson" id="iQ9-A8-4Bg"/>
                     <connections>
+                        <outlet property="chatTableBottomConstraint" destination="53A-7O-1hP" id="VxI-M3-sgE"/>
                         <outlet property="chatTableView" destination="GbL-9b-ILu" id="bhs-R4-Aid"/>
                         <outlet property="chatTextField" destination="T25-IS-XUm" id="FtY-j0-rr8"/>
                         <outlet property="micButton" destination="cuU-ry-Fkb" id="z6t-G9-R2D"/>

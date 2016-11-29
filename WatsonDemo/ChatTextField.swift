@@ -28,6 +28,12 @@ extension ChatTextField: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool  {
         guard inputAccessoryView == nil else {
             inputAccessoryView = nil
+            chatViewController.chatTableBottomConstraint.constant = 0
+            UIView.animate(withDuration: 0.5) { [weak self] in
+                guard let strongSelf = self else { return }
+
+                strongSelf.chatViewController.view.layoutIfNeeded()
+            }
             return false
         }
 
@@ -39,10 +45,14 @@ extension ChatTextField: UITextFieldDelegate {
         chatInputAccessoryView.chatViewController = chatViewController
         inputAccessoryView = chatInputAccessoryView.contentView
 
+        chatViewController.chatTableBottomConstraint.constant = 250
+
         setupSimulator()
         let when = DispatchTime.now() + 0.1
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.chatInputAccessoryView.inputTextField.becomeFirstResponder()
+            let indexPath = NSIndexPath(row: self.chatViewController.messages.count - 1, section: 0) as IndexPath
+            self.chatViewController.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
         }
     }
 

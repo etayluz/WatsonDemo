@@ -17,6 +17,7 @@ class ChatViewController: UIViewController {
     }
 
     // MARK: - Outlets
+    @IBOutlet weak var chatTableBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var chatTextField: ChatTextField!
     @IBOutlet weak var micButton: UIButton!
@@ -66,6 +67,7 @@ class ChatViewController: UIViewController {
 
     /// Dismiss keyboard on screen tap
     func dismissKeyboard() {
+        chatTableBottomConstraint.constant = 0
         view.endEditing(true)
     }
 
@@ -91,9 +93,7 @@ class ChatViewController: UIViewController {
             chatTableView.beginUpdates()
             chatTableView.insertRows(at: [indexPath], with: .none)
             chatTableView.endUpdates()
-            chatTableView.scrollToRow(at: indexPath,
-                                      at: .bottom,
-                                      animated: false)
+            chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
 
         }
 
