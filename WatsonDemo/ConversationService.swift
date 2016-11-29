@@ -139,7 +139,9 @@ class ConversationService {
                     if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
                         strongSelf.delegate?.didReceiveMap(withUrl: mapUrl)
                     }
-                    
+
+                    // TBD: Remove me - for debug of map
+                    // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
 
                 }
             }

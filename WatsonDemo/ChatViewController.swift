@@ -148,6 +148,12 @@ extension ChatViewController: UITableViewDataSource {
 extension ChatViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let message = messages[indexPath.row]
+
+        if message.type == MessageType.Map {
+            return 240
+        }
+        
         return UITableViewAutomaticDimension
     }
     

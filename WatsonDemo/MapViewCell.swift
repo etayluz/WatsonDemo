@@ -14,6 +14,9 @@ class MapViewCell: UITableViewCell {
     // MARK: - Outlets
     @IBOutlet weak var mapImageView: UIImageView!
 
+    override func prepareForReuse() {
+        mapImageView.image = nil
+    }
 
     func configure(withMessage message: Message) {
         if let mapUrl = message.mapUrl {
