@@ -43,17 +43,10 @@ class UserChatViewCell: UITableViewCell {
     private func reloadCell() {
         let when = DispatchTime.now()
         DispatchQueue.main.asyncAfter(deadline: when) {
-            let indexPath = (self.superview!.superview as! UITableView).indexPath(for: self)! as NSIndexPath
-            self.chatViewController?.chatTableView.reloadRows(at: [indexPath as IndexPath], with: .none)
+            if let indexPath = self.chatViewController?.chatTableView.indexPath(for: self) {
+                self.chatViewController?.chatTableView.reloadRows(at: [indexPath], with: .none)
+            }
         }
-    }
-
-    override func prepareForReuse() {
-//        messageBackground.isHidden = false
-//        messageLabel.isHidden = false
-//        rightTriangleView.isHidden = false
-//        userIcon.isHidden = false
-//        buttonsCollectionView.reloadData()
     }
 
     /// Configure user chat table view cell with user message
@@ -61,7 +54,6 @@ class UserChatViewCell: UITableViewCell {
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
         self.message = message
-//        prepareForReuse()
 
         if let text = message.text,
             text.characters.count > 0 {
@@ -69,13 +61,15 @@ class UserChatViewCell: UITableViewCell {
         }
 
         if let _ = message.options {
+            buttonsCollectionView.collectionViewLayout.invalidateLayout()
+            buttonsCollectionView.reloadData()
             buttonsCollectionView.isHidden = false
             messageBackground.isHidden = true
             messageLabel.isHidden = true
             rightTriangleView.isHidden = true
             userIcon.isHidden = true
         } else {
-//            buttonsCollectionView.isHidden = true
+            buttonsCollectionView.isHidden = true
             messageBackground.isHidden = false
             messageLabel.isHidden = false
             rightTriangleView.isHidden = false
@@ -103,12 +97,12 @@ class UserChatViewCell: UITableViewCell {
         copiedButton.setTitleColor(UIColor.black, for: UIControlState.normal)
         copiedButton.setTitleColor(UIColor.black, for: UIControlState.highlighted)
         copiedButton.backgroundColor = UIColor.white
-
+        copiedButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         if let selectedButtonText = selectedButton.titleLabel?.text {
             copiedButton.setTitle(selectedButtonText, for: .normal)
             copiedButton.setTitle(selectedButtonText, for: .highlighted)
         }
-        copiedButton.cornerRadius = 10
+        copiedButton.cornerRadius = selectedButton.cornerRadius
         self.addSubview(copiedButton)
 
         layoutIfNeeded()
@@ -118,7 +112,7 @@ class UserChatViewCell: UITableViewCell {
         copiedButton.centerYAnchor.constraint(equalTo: userIcon.centerYAnchor).isActive = true
 
 
-        UIView.animate(withDuration: 1, delay: 0.1, animations: { [weak self] in
+        UIView.animate(withDuration: 0.5, delay: 0.1, animations: { [weak self] in
             self?.layoutIfNeeded()
         }, completion: { result in
             self.reloadCell()
@@ -134,12 +128,7 @@ extension UserChatViewCell: UICollectionViewDataSource, UICollectionViewDelegate
 
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-
-        if let count = message?.options?.count {
-            return count
-        }
-
-        return 0
+        return message?.options?.count ?? 0
     }
 
     func collectionView(_ collectionView: UICollectionView,
@@ -161,4 +150,3 @@ extension UserChatViewCell: UICollectionViewDataSource, UICollectionViewDelegate
 
     }
 }
-
