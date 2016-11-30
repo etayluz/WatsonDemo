@@ -10,13 +10,20 @@ import UIKit
 
 class OptionButtonCell: UICollectionViewCell {
 
+    // MARK: - Outlets
     @IBOutlet weak var optionButton: CustomButton!
 
-    override func awakeFromNib() {
 
+
+    // MARK: - Properties
+    weak var userChatViewCell: UserChatViewCell!
+
+    // MARK: - Actions
+    @IBAction func optionButtonTapped(_ sender: CustomButton) {
+        let selectedButton = sender
+        userChatViewCell.optionButtonTapped(withSelectedButton: selectedButton)
     }
 
-    
     /// Configure button with option
     ///
     /// - Parameter option: button option

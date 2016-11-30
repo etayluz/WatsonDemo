@@ -11,7 +11,7 @@ import UIKit
 class UserChatViewCell: UITableViewCell {
 
     // MARK: - Outlets
-    @IBOutlet weak var buttonsCollectionView: UICollectionView!
+    @IBOutlet weak var buttonsCollectionView: CustomCollectionView!
     @IBOutlet weak var buttonsCollectionViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var messageBackground: UIView!
     @IBOutlet weak var messageLabel: UILabel!
@@ -35,18 +35,25 @@ class UserChatViewCell: UITableViewCell {
             flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
         }
 
-//        let when = DispatchTime.now() + 2
-//        DispatchQueue.main.asyncAfter(deadline: when) {
-//            self.buttonsCollectionView.reloadData()
-//        }
+        reloadCell()
+    }
+
+    /// The cell is reloaded to allow the buttonsCollectionView to set its intrinsic content size
+    /// according to its content view which is only available after the first time it has been loaded
+    private func reloadCell() {
+        let when = DispatchTime.now()
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            let indexPath = (self.superview!.superview as! UITableView).indexPath(for: self)! as NSIndexPath
+            self.chatViewController?.chatTableView.reloadRows(at: [indexPath as IndexPath], with: .none)
+        }
     }
 
     override func prepareForReuse() {
-        messageBackground.isHidden = false
-        messageLabel.isHidden = false
-        rightTriangleView.isHidden = false
-        userIcon.isHidden = false
-
+//        messageBackground.isHidden = false
+//        messageLabel.isHidden = false
+//        rightTriangleView.isHidden = false
+//        userIcon.isHidden = false
+//        buttonsCollectionView.reloadData()
     }
 
     /// Configure user chat table view cell with user message
@@ -54,23 +61,20 @@ class UserChatViewCell: UITableViewCell {
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
         self.message = message
-        prepareForReuse()
+//        prepareForReuse()
 
         if let text = message.text,
             text.characters.count > 0 {
             messageLabel.text = text
         }
 
-        if let options = message.options {
+        if let _ = message.options {
             messageBackground.isHidden = true
             messageLabel.isHidden = true
             rightTriangleView.isHidden = true
             userIcon.isHidden = true
-
-            for (index, option) in options.enumerated() {
-
-            }
         } else {
+            buttonsCollectionView.removeFromSuperview()
             messageBackground.isHidden = false
             messageLabel.isHidden = false
             rightTriangleView.isHidden = false
@@ -79,8 +83,7 @@ class UserChatViewCell: UITableViewCell {
     }
 
     // MARK: - Actions
-    @IBAction func optionButtonTapped(_ sender: CustomButton) {
-        let selectedButton = sender
+    func optionButtonTapped(withSelectedButton selectedButton: CustomButton) {
 
         message?.options = nil
         message?.text = selectedButton.titleLabel?.text
@@ -89,7 +92,7 @@ class UserChatViewCell: UITableViewCell {
         if let indexPath = chatViewController?.chatTableView.indexPath(for: self),
            let message = message {
             chatViewController?.messages[indexPath.row] = message
-            chatViewController?.conversationService.sendMessage(withText: message.text!)
+//            chatViewController?.conversationService.sendMessage(withText: message.text!)
             chatViewController?.dismissKeyboard()
         }
 
@@ -97,20 +100,37 @@ class UserChatViewCell: UITableViewCell {
 
         userIcon.isHidden = false
 
+        selectedButton.frame = selectedButton.convert(selectedButton.frame, to: self)
+
+        self.addSubview(selectedButton)
+
+
+
         /// Show selected button and change its background color to white
-        selectedButton.isHidden = false
+//        selectedButton.isHidden = false
         selectedButton.setTitleColor(UIColor.black, for: UIControlState.normal)
         selectedButton.backgroundColor = UIColor.white
 
-        UIView.animate(withDuration: 0.5, animations: {
-            let constraintOffset = self.userIcon.frame.origin.x - selectedButton.frame.origin.x - selectedButton.frame.size.width - 15
-            self.buttonsLeadingConstraint.constant += constraintOffset
-            selectedButton.superview?.layoutIfNeeded()
+        buttonsCollectionView.removeFromSuperview()
+
+        selectedButton.trailingAnchor.constraint(equalTo: userIcon.leadingAnchor, constant: -15).isActive = true
+        selectedButton.centerYAnchor.constraint(equalTo: userIcon.centerYAnchor).isActive = true
+
+        UIView.animate(withDuration: 1, animations: { [weak self] in
+            self?.layoutIfNeeded()
         }, completion: { result in
-            selectedButton.isHidden = true
-            self.messageLabel.text = selectedButton.titleLabel?.text
-            self.prepareForReuse()
+
+           self.reloadCell()
+//            selectedButton.isHidden = true
+//            self.messageLabel.text = selectedButton.titleLabel?.text
+//            self.prepareForReuse()
         })
+
+//        UIView.animate(withDuration: 1) { [weak self] in
+//            self?.layoutIfNeeded()
+//        }, completion: { result in
+//
+//        })
     }
 
 }
@@ -135,6 +155,7 @@ extension UserChatViewCell: UICollectionViewDataSource, UICollectionViewDelegate
 
         if let option = message?.options?[indexPath.row] {
             optionButtonCell.configure(withOption: option)
+            optionButtonCell.userChatViewCell = self
         }
 
         return optionButtonCell

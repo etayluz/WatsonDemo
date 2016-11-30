@@ -109,7 +109,7 @@ class ConversationService {
                     }
 
                     // TBD: Remove me - for debug of buttons
-                    options = ["checking", "savings", "savings", "checking", "savings", "savings"]
+                    options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking", "savings", "savings"]
 
 
                     var mapUrlString: String?

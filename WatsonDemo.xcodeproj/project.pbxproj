@@ -26,6 +26,7 @@
 		B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
 		B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
 		B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4981CB91DEE37F700C67B35 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		B4BC24F61DED54E3009360AE /* OptionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC24F51DED54E3009360AE /* OptionButtonCell.swift */; };
 		B4BC24F81DED655C009360AE /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC24F71DED655C009360AE /* CustomCollectionView.swift */; };
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
@@ -74,6 +75,7 @@
 		B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		B48B18801DDB908E008CE7C2 /* ConversationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationService.swift; sourceTree = "<group>"; };
 		B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
+		B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B4BC24F51DED54E3009360AE /* OptionButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionButtonCell.swift; sourceTree = "<group>"; };
 		B4BC24F71DED655C009360AE /* CustomCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		B4CBCF911DD91EA70003074A /* WatsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,9 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */,
-				B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */,
-				B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */,
 				B4BC24F51DED54E3009360AE /* OptionButtonCell.swift */,
+				B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */,
+				B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */,
 			);
 			name = ChatTableViewCells;
 			sourceTree = "<group>";
@@ -223,6 +225,7 @@
 			children = (
 				B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */,
 				B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */,
+				B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4981CB91DEE37F700C67B35 /* UIView+Extension.swift in Sources */,
 				B48B18701DDA139F008CE7C2 /* ChatTextField.swift in Sources */,
 				B48B18791DDB7025008CE7C2 /* TextToSpeechService.swift in Sources */,
 				B4BC24F61DED54E3009360AE /* OptionButtonCell.swift in Sources */,
