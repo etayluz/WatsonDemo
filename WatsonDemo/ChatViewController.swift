@@ -100,17 +100,6 @@ class ChatViewController: UIViewController {
             chatTableView.insertRows(at: [indexPath], with: .none)
             chatTableView.endUpdates()
             chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
-
-            /// This is to force the UICollectionView to resize itself with it's contentSize
-            /// ContentSize is only known after loading once - so second time is to size with the contentSize
-//            let when = DispatchTime.now()
-//            DispatchQueue.main.asyncAfter(deadline: when) {
-//                let indexPath = NSIndexPath(row: self.messages.count - 1, section: 0) as IndexPath
-//                self.chatTableView.reloadRows(at: [indexPath], with: .none)
-//                self.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
-//            }
-
-
         }
 
     }

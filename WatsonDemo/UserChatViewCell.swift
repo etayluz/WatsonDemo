@@ -69,12 +69,13 @@ class UserChatViewCell: UITableViewCell {
         }
 
         if let _ = message.options {
+            buttonsCollectionView.isHidden = false
             messageBackground.isHidden = true
             messageLabel.isHidden = true
             rightTriangleView.isHidden = true
             userIcon.isHidden = true
         } else {
-            buttonsCollectionView.removeFromSuperview()
+//            buttonsCollectionView.isHidden = true
             messageBackground.isHidden = false
             messageLabel.isHidden = false
             rightTriangleView.isHidden = false
@@ -92,34 +93,37 @@ class UserChatViewCell: UITableViewCell {
         if let indexPath = chatViewController?.chatTableView.indexPath(for: self),
            let message = message {
             chatViewController?.messages[indexPath.row] = message
-//            chatViewController?.conversationService.sendMessage(withText: message.text!)
             chatViewController?.dismissKeyboard()
         }
 
-        /// Hide all buttons except for selected button
-
         userIcon.isHidden = false
+        buttonsCollectionView.isHidden = true
 
-        selectedButton.frame = selectedButton.convert(selectedButton.frame, to: self)
+        let copiedButton = CustomButton(frame: selectedButton.convert(selectedButton.frame, to: self))
+        copiedButton.setTitleColor(UIColor.black, for: UIControlState.normal)
+        copiedButton.setTitleColor(UIColor.black, for: UIControlState.highlighted)
+        copiedButton.backgroundColor = UIColor.white
 
-        self.addSubview(selectedButton)
+        if let selectedButtonText = selectedButton.titleLabel?.text {
+            copiedButton.setTitle(selectedButtonText, for: .normal)
+            copiedButton.setTitle(selectedButtonText, for: .highlighted)
+        }
+        copiedButton.cornerRadius = 10
+        self.addSubview(copiedButton)
+
+        layoutIfNeeded()
+
+        copiedButton.translatesAutoresizingMaskIntoConstraints = false
+        copiedButton.trailingAnchor.constraint(equalTo: userIcon.leadingAnchor, constant: -15).isActive = true
+        copiedButton.centerYAnchor.constraint(equalTo: userIcon.centerYAnchor).isActive = true
 
 
-
-        /// Show selected button and change its background color to white
-//        selectedButton.isHidden = false
-        selectedButton.setTitleColor(UIColor.black, for: UIControlState.normal)
-        selectedButton.backgroundColor = UIColor.white
-
-        buttonsCollectionView.removeFromSuperview()
-
-        selectedButton.trailingAnchor.constraint(equalTo: userIcon.leadingAnchor, constant: -15).isActive = true
-        selectedButton.centerYAnchor.constraint(equalTo: userIcon.centerYAnchor).isActive = true
-
-        UIView.animate(withDuration: 1, animations: { [weak self] in
+        UIView.animate(withDuration: 1, delay: 0.1, animations: { [weak self] in
             self?.layoutIfNeeded()
         }, completion: { result in
-           self.reloadCell()
+            self.reloadCell()
+            copiedButton.removeFromSuperview()
+            self.chatViewController?.conversationService.sendMessage(withText: (copiedButton.titleLabel?.text!)!)
         })
     }
 
