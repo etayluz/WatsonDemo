@@ -44,7 +44,7 @@ class UserChatViewCell: UITableViewCell {
         let when = DispatchTime.now()
         DispatchQueue.main.asyncAfter(deadline: when) {
             let indexPath = (self.superview!.superview as! UITableView).indexPath(for: self)! as NSIndexPath
-            self.chatViewController?.chatTableView.reloadRows(at: [indexPath as IndexPath], with: .automatic)
+            self.chatViewController?.chatTableView.reloadRows(at: [indexPath as IndexPath], with: .none)
         }
     }
 
@@ -119,18 +119,8 @@ class UserChatViewCell: UITableViewCell {
         UIView.animate(withDuration: 1, animations: { [weak self] in
             self?.layoutIfNeeded()
         }, completion: { result in
-
            self.reloadCell()
-//            selectedButton.isHidden = true
-//            self.messageLabel.text = selectedButton.titleLabel?.text
-//            self.prepareForReuse()
         })
-
-//        UIView.animate(withDuration: 1) { [weak self] in
-//            self?.layoutIfNeeded()
-//        }, completion: { result in
-//
-//        })
     }
 
 }
@@ -151,7 +141,8 @@ extension UserChatViewCell: UICollectionViewDataSource, UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let optionButtonCell =
-            collectionView.dequeueReusableCell(withReuseIdentifier: "OptionButtonCell", for: indexPath)  as! OptionButtonCell
+            collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: OptionButtonCell.self),
+                                               for: indexPath)  as! OptionButtonCell
 
         if let option = message?.options?[indexPath.row] {
             optionButtonCell.configure(withOption: option)

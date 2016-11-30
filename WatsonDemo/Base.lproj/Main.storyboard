@@ -181,14 +181,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" highlightedImage="User" translatesAutoresizingMaskIntoConstraints="NO" id="vo5-6M-QOP" userLabel="UserIcon">
-                                                    <rect key="frame" x="297" y="40" width="60" height="60"/>
+                                                    <rect key="frame" x="297" y="22" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="eHB-mL-2OL"/>
                                                         <constraint firstAttribute="height" constant="60" id="v5G-ha-yyt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Tq-dd-0u9" userLabel="UserMsgBackground" customClass="CustomView" customModule="WatsonDemo" customModuleProvider="target">
-                                                    <rect key="frame" x="216.5" y="46.5" width="65.5" height="47"/>
+                                                    <rect key="frame" x="216.5" y="30.5" width="65.5" height="42"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -197,7 +197,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRW-E5-X6Q" userLabel="UserMessage">
-                                                    <rect key="frame" x="231.5" y="61.5" width="35.5" height="17"/>
+                                                    <rect key="frame" x="231.5" y="43" width="35.5" height="17"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
@@ -210,7 +210,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightTriangle" highlightedImage="RightTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-Ki-PLb" userLabel="RightTriangle">
-                                                    <rect key="frame" x="280" y="51.5" width="9" height="15"/>
+                                                    <rect key="frame" x="280" y="36" width="9" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="WNM-D4-NlR"/>
                                                     </constraints>
@@ -262,7 +262,7 @@
                                                     </cells>
                                                 </collectionView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="vo5-6M-QOP" firstAttribute="leading" secondItem="XxT-ij-5Dk" secondAttribute="trailing" constant="49" id="5ll-wZ-xPf"/>
@@ -273,15 +273,16 @@
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="leading" secondItem="2Tq-dd-0u9" secondAttribute="trailing" constant="-2" id="Kze-JZ-0In"/>
                                                 <constraint firstItem="vo5-6M-QOP" firstAttribute="leading" secondItem="pRW-E5-X6Q" secondAttribute="trailing" constant="30" id="Mk7-WG-472"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="XxT-ij-5Dk" secondAttribute="leading" id="N5t-BD-912"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="pRW-E5-X6Q" secondAttribute="bottom" priority="750" constant="35" id="Owq-P9-4mp"/>
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="width" secondItem="3gf-Ki-PLb" secondAttribute="height" multiplier="10:16" id="Z4s-l8-zF0"/>
                                                 <constraint firstItem="pRW-E5-X6Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ju8-59-tQr" secondAttribute="leadingMargin" constant="20" id="ZjT-dF-tn3"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="XxT-ij-5Dk" secondAttribute="bottom" id="dJ0-Rx-THl"/>
-                                                <constraint firstItem="2Tq-dd-0u9" firstAttribute="height" secondItem="pRW-E5-X6Q" secondAttribute="height" constant="30" id="nIj-kP-L2G"/>
+                                                <constraint firstItem="2Tq-dd-0u9" firstAttribute="height" secondItem="pRW-E5-X6Q" secondAttribute="height" constant="25" id="nIj-kP-L2G"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="vo5-6M-QOP" secondAttribute="trailing" constant="10" id="tgi-Nx-eav"/>
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="centerY" secondItem="pRW-E5-X6Q" secondAttribute="centerY" multiplier="0.85" id="uZd-qe-ejY"/>
                                                 <constraint firstItem="vo5-6M-QOP" firstAttribute="height" secondItem="Ju8-59-tQr" secondAttribute="height" multiplier="0.5" priority="750" id="ufK-V2-ut8"/>
+                                                <constraint firstItem="pRW-E5-X6Q" firstAttribute="top" secondItem="Ju8-59-tQr" secondAttribute="topMargin" priority="750" constant="35" id="wW2-xT-NhR"/>
                                                 <constraint firstItem="2Tq-dd-0u9" firstAttribute="centerY" secondItem="pRW-E5-X6Q" secondAttribute="centerY" id="xny-rn-jzx"/>
-                                                <constraint firstItem="vo5-6M-QOP" firstAttribute="centerY" secondItem="Ju8-59-tQr" secondAttribute="centerY" id="yE4-7B-32G"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
