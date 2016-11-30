@@ -44,7 +44,7 @@ class UserChatViewCell: UITableViewCell {
         let when = DispatchTime.now()
         DispatchQueue.main.asyncAfter(deadline: when) {
             let indexPath = (self.superview!.superview as! UITableView).indexPath(for: self)! as NSIndexPath
-            self.chatViewController?.chatTableView.reloadRows(at: [indexPath as IndexPath], with: .none)
+            self.chatViewController?.chatTableView.reloadRows(at: [indexPath as IndexPath], with: .automatic)
         }
     }
 
