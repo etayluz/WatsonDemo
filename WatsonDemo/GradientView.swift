@@ -16,7 +16,7 @@ import UIKit
 
     override func draw(_ rect: CGRect) {
 
-        let gradient:CAGradientLayer = CAGradientLayer()
+        let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = CGRect(x: CGFloat(0),
                                 y: CGFloat(0),
                                 width: superview!.frame.size.width,
