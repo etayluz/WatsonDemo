@@ -11,6 +11,7 @@
 		B40FDFE81DE27E8D00BE07EB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */; };
 		B40FDFEA1DE3EF6900BE07EB /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */; };
 		B4395A001DE50DD400F2C075 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43959FF1DE50DD400F2C075 /* CustomView.swift */; };
+		B47B68C01DF423FF00AB6421 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18611DD96859008CE7C2 /* ChatViewController.swift */; };
 		B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
@@ -62,6 +63,7 @@
 		B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCell.swift; sourceTree = "<group>"; };
 		B43959FF1DE50DD400F2C075 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		B47B68BF1DF423FF00AB6421 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B48B18611DD96859008CE7C2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonChatViewCell.swift; sourceTree = "<group>"; };
 		B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserChatViewCell.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				B4BC24F71DED655C009360AE /* CustomCollectionView.swift */,
 				B48B18681DD96FC5008CE7C2 /* CustomLabel.swift */,
 				B43959FF1DE50DD400F2C075 /* CustomView.swift */,
+				B47B68BF1DF423FF00AB6421 /* GradientView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4981CB91DEE37F700C67B35 /* UIView+Extension.swift in Sources */,
+				B47B68C01DF423FF00AB6421 /* GradientView.swift in Sources */,
 				B48B18701DDA139F008CE7C2 /* ChatTextField.swift in Sources */,
 				B48B18791DDB7025008CE7C2 /* TextToSpeechService.swift in Sources */,
 				B4BC24F61DED54E3009360AE /* OptionButtonCell.swift in Sources */,
