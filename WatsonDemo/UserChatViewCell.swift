@@ -124,8 +124,9 @@ class UserChatViewCell: UITableViewCell {
     /// The cell is reloaded to allow the buttonsCollectionView to set its intrinsic content size
     /// according to its content view which is only available after the first time it has been loaded
     private func reloadCell() {
-        // This is needed to reside the UICollectionView
-        // It works, but it's a bit glitchy and ruins the experience
+        // This is needed to resize the UICollectionView correctly
+        // It works, but it's a bit glitchy and ruins the experience, so I took out the dispatch after for now
+        // Must uncomment that code to get resizing of ButtonCollectionView to work correctly
 //        let when = DispatchTime.now()
 //        DispatchQueue.main.asyncAfter(deadline: when) {
             if let indexPath = self.chatViewController?.chatTableView.indexPath(for: self) {
