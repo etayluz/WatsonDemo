@@ -49,7 +49,7 @@ class UserChatViewCell: UITableViewCell {
             messageLabel.text = text
         }
 
-        let numberOfOptions = message.options?.count ?? 0
+//        let numberOfOptions = message.options?.count ?? 0
         // This was causing app to crash iPad only
 //        if numberOfOptions != buttonsCollectionView.numberOfItems(inSection: 0) {
             buttonsCollectionView.reloadData()
