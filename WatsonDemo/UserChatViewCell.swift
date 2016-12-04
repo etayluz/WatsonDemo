@@ -50,11 +50,12 @@ class UserChatViewCell: UITableViewCell {
         }
 
         let numberOfOptions = message.options?.count ?? 0
-        if numberOfOptions != buttonsCollectionView.numberOfItems(inSection: 0) {
+        // This was causing app to crash iPad only
+//        if numberOfOptions != buttonsCollectionView.numberOfItems(inSection: 0) {
             buttonsCollectionView.reloadData()
             buttonsCollectionView.collectionViewLayout.invalidateLayout()
-            reloadCell()
-        }
+//            reloadCell()
+//        }
 
         if let _ = message.options {
             buttonsCollectionView.isHidden = false
