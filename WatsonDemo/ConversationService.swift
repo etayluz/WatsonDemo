@@ -108,10 +108,11 @@ class ConversationService {
                         options = optionsString.components(separatedBy: ",")
                     }
 
-                    // TBD: Remove me - for debug of buttons
-//                    options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking", "savings", "savings"]
-//                    options = ["Yes", "No"]
-//                    options = ["4 PM today", "9:30 AM", "1 PM tomorrow"]
+                    #if DEBUG
+//                      options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking", "savings", "savings"]
+//                      options = ["Yes", "No"]
+                        options = ["4 PM today", "9:30 AM", "1 PM tomorrow"]
+                    #endif
 
                     var mapUrlString: String?
 
