@@ -51,8 +51,10 @@ extension ChatTextField: UITextFieldDelegate {
         let when = DispatchTime.now() + 0.1
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.chatInputAccessoryView.inputTextField.becomeFirstResponder()
-            let indexPath = NSIndexPath(row: self.chatViewController.messages.count - 1, section: 0) as IndexPath
-            self.chatViewController.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+            if self.chatViewController.messages.count > 0 {
+                let indexPath = NSIndexPath(row: self.chatViewController.messages.count - 1, section: 0) as IndexPath
+                self.chatViewController.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+            }
         }
     }
 

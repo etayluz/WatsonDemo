@@ -57,14 +57,13 @@ class UserChatViewCell: UITableViewCell {
         }
 
         if let _ = message.options {
-
             buttonsCollectionView.isHidden = false
             messageBackground.isHidden = true
             messageLabel.isHidden = true
             rightTriangleView.isHidden = true
             userIcon.isHidden = true
         } else {
-//            buttonsCollectionView.isHidden = true
+            buttonsCollectionView.isHidden = true
             messageBackground.isHidden = false
             messageLabel.isHidden = false
             rightTriangleView.isHidden = false
@@ -105,6 +104,11 @@ class UserChatViewCell: UITableViewCell {
         copiedButton.trailingAnchor.constraint(equalTo: userIcon.leadingAnchor, constant: -15).isActive = true
         copiedButton.centerYAnchor.constraint(equalTo: userIcon.centerYAnchor).isActive = true
 
+        buttonsCollectionView.isHidden = true
+         // or do below:
+//        buttonsCollectionView.reloadData()
+//        buttonsCollectionView.collectionViewLayout.invalidateLayout()
+
         UIView.animate(withDuration: 0.5, delay: 0.1, animations: { [weak self] in
             self?.layoutIfNeeded()
         }, completion: { result in
@@ -136,7 +140,6 @@ extension UserChatViewCell: UICollectionViewDataSource, UICollectionViewDelegate
 
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        print ("count: \(message?.options?.count)")
         return message?.options?.count ?? 0
     }
 
