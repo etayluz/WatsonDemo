@@ -38,17 +38,6 @@ class UserChatViewCell: UITableViewCell {
         reloadCell()
     }
 
-    /// The cell is reloaded to allow the buttonsCollectionView to set its intrinsic content size
-    /// according to its content view which is only available after the first time it has been loaded
-    private func reloadCell() {
-        let when = DispatchTime.now()
-        DispatchQueue.main.asyncAfter(deadline: when) {
-            if let indexPath = self.chatViewController?.chatTableView.indexPath(for: self) {
-                self.chatViewController?.chatTableView.reloadRows(at: [indexPath], with: .none)
-            }
-        }
-    }
-
     /// Configure user chat table view cell with user message
     ///
     /// - Parameter message: Message instance
@@ -60,16 +49,22 @@ class UserChatViewCell: UITableViewCell {
             messageLabel.text = text
         }
 
-        if let _ = message.options {
-            buttonsCollectionView.collectionViewLayout.invalidateLayout()
+        let numberOfOptions = message.options?.count ?? 0
+        if numberOfOptions != buttonsCollectionView.numberOfItems(inSection: 0) {
             buttonsCollectionView.reloadData()
+            buttonsCollectionView.collectionViewLayout.invalidateLayout()
+            reloadCell()
+        }
+
+        if let _ = message.options {
+
             buttonsCollectionView.isHidden = false
             messageBackground.isHidden = true
             messageLabel.isHidden = true
             rightTriangleView.isHidden = true
             userIcon.isHidden = true
         } else {
-            buttonsCollectionView.isHidden = true
+//            buttonsCollectionView.isHidden = true
             messageBackground.isHidden = false
             messageLabel.isHidden = false
             rightTriangleView.isHidden = false
@@ -91,7 +86,6 @@ class UserChatViewCell: UITableViewCell {
         }
 
         userIcon.isHidden = false
-        buttonsCollectionView.isHidden = true
 
         let copiedButton = CustomButton(frame: selectedButton.convert(selectedButton.frame, to: self))
         copiedButton.setTitleColor(UIColor.black, for: UIControlState.normal)
@@ -111,7 +105,6 @@ class UserChatViewCell: UITableViewCell {
         copiedButton.trailingAnchor.constraint(equalTo: userIcon.leadingAnchor, constant: -15).isActive = true
         copiedButton.centerYAnchor.constraint(equalTo: userIcon.centerYAnchor).isActive = true
 
-
         UIView.animate(withDuration: 0.5, delay: 0.1, animations: { [weak self] in
             self?.layoutIfNeeded()
         }, completion: { result in
@@ -121,13 +114,29 @@ class UserChatViewCell: UITableViewCell {
         })
     }
 
+    // MARK: - Private
+
+    /// The cell is reloaded to allow the buttonsCollectionView to set its intrinsic content size
+    /// according to its content view which is only available after the first time it has been loaded
+    private func reloadCell() {
+        let when = DispatchTime.now()
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            if let indexPath = self.chatViewController?.chatTableView.indexPath(for: self) {
+                self.chatViewController?.chatTableView.reloadRows(at: [indexPath], with: .none)
+                self.chatViewController?.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
+            }
+        }
+    }
+
 }
 
   // MARK: UICollectionViewDataSource & UICollectionViewDelegate
 extension UserChatViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
 
+
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
+        print ("count: \(message?.options?.count)")
         return message?.options?.count ?? 0
     }
 
