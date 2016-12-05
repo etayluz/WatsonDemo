@@ -113,7 +113,7 @@ class ConversationService {
 //                      options = ["Yes", "No"]
 //                        options = ["4 PM today", "9:30 AM", "1 PM tomorrow"]
 //                        options = ["Checking", "Savings", "Brokerage"]
-                        options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking"]
+//                        options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking"]
                     #endif
 
                     var mapUrlString: String?

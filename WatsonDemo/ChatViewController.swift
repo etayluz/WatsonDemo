@@ -172,7 +172,9 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 
     func textToSpeechDidFinishSynthesizing(withAudioData audioData: Data) {
         audioPlayer = try! AVAudioPlayer(data: audioData)
-//        audioPlayer.play()
+        #if !DEBUG
+            audioPlayer.play()
+        #endif
     }
     
 }

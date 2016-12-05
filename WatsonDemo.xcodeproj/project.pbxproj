@@ -13,6 +13,8 @@
 		B4395A001DE50DD400F2C075 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43959FF1DE50DD400F2C075 /* CustomView.swift */; };
 		B47B68C01DF423FF00AB6421 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		B47B68C21DF5D03D00AB6421 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */; };
+		B47B68C41DF5FF8A00AB6421 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
+		B47B68C51DF5FF8A00AB6421 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18611DD96859008CE7C2 /* ChatViewController.swift */; };
 		B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
@@ -51,6 +53,7 @@
 				B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */,
 				B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */,
 				B4D160FF1DDBF1FC00D436F1 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B47B68C51DF5FF8A00AB6421 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +67,7 @@
 		B43959FF1DE50DD400F2C075 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		B47B68BF1DF423FF00AB6421 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		B47B68C31DF5FF8A00AB6421 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebImage.framework; sourceTree = "<group>"; };
 		B48B18611DD96859008CE7C2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonChatViewCell.swift; sourceTree = "<group>"; };
 		B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserChatViewCell.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */,
 				B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */,
 				B4D160FD1DDBF1EE00D436F1 /* SpeechToTextV1.framework in Frameworks */,
+				B47B68C41DF5FF8A00AB6421 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +187,7 @@
 				B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */,
 				B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */,
 				B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */,
+				B47B68C31DF5FF8A00AB6421 /* WebImage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

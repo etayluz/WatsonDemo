@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import WebImage
 
 class MapViewCell: UITableViewCell {
 
@@ -20,16 +21,7 @@ class MapViewCell: UITableViewCell {
 
     func configure(withMessage message: Message) {
         if let mapUrl = message.mapUrl {
-            DispatchQueue.global().async {
-                let data = try? Data(contentsOf: mapUrl)
-                DispatchQueue.main.async { [weak self] () -> Void  in
-                    guard let strongSelf = self else { return }
-
-                    if let data = data {
-                        strongSelf.mapImageView.image = UIImage(data: data)
-                    }
-                }
-            }
+            mapImageView.sd_setImage(with: mapUrl)
         }
     }
 }
