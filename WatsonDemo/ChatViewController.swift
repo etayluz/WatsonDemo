@@ -48,12 +48,6 @@ class ChatViewController: UIViewController {
 
         let gestureTap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
         chatTableView.addGestureRecognizer(gestureTap)
-
-//        let when = DispatchTime.now() + 1
-//        DispatchQueue.main.asyncAfter(deadline: when) {
-//            let indexPath = NSIndexPath(row: self.messages.count - 1, section: 0) as IndexPath
-//            self.chatTableView.reloadRows(at: [indexPath], with: .none)
-//        }
     }
 
     // MARK: - Actions
@@ -178,7 +172,7 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 
     func textToSpeechDidFinishSynthesizing(withAudioData audioData: Data) {
         audioPlayer = try! AVAudioPlayer(data: audioData)
-        audioPlayer.play()
+//        audioPlayer.play()
     }
     
 }

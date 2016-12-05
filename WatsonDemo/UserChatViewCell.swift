@@ -11,8 +11,7 @@ import UIKit
 class UserChatViewCell: UITableViewCell {
 
     // MARK: - Outlets
-    @IBOutlet weak var buttonsCollectionView: CustomCollectionView!
-    @IBOutlet weak var buttonsCollectionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var buttonsView: ButtonsView!
     @IBOutlet weak var messageBackground: UIView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var rightTriangleView: UIImageView!
@@ -23,20 +22,10 @@ class UserChatViewCell: UITableViewCell {
     @IBOutlet weak var buttonsLeadingConstraint: NSLayoutConstraint!
 
     // MARK: - Properties
-    var message: Message?
+
     var chatViewController: ChatViewController?
+    var message: Message?
 
-
-    override func awakeFromNib() {
-        buttonsCollectionView.delegate = self
-        buttonsCollectionView.dataSource = self
-
-        if let flowLayout = buttonsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.estimatedItemSize = CGSize(width: 1, height: 1)
-        }
-
-        reloadCell()
-    }
 
     /// Configure user chat table view cell with user message
     ///
@@ -49,27 +38,14 @@ class UserChatViewCell: UITableViewCell {
             messageLabel.text = text
         }
 
-//        let numberOfOptions = message.options?.count ?? 0
-        // This was causing app to crash iPad only
-//        if numberOfOptions != buttonsCollectionView.numberOfItems(inSection: 0) {
-            buttonsCollectionView.reloadData()
-            buttonsCollectionView.collectionViewLayout.invalidateLayout()
-//            reloadCell()
-//        }
+        buttonsView.configure(withOptions: message.options,
+                              viewWidth: buttonsView.frame.width,
+                              userChatViewCell: self)
 
-        if let _ = message.options {
-            buttonsCollectionView.isHidden = false
-            messageBackground.isHidden = true
-            messageLabel.isHidden = true
-            rightTriangleView.isHidden = true
-            userIcon.isHidden = true
-        } else {
-            buttonsCollectionView.isHidden = true
-            messageBackground.isHidden = false
-            messageLabel.isHidden = false
-            rightTriangleView.isHidden = false
-            userIcon.isHidden = false
-        }
+        messageBackground.isHidden = message.options != nil ? true : false
+        messageLabel.isHidden = message.options != nil ? true : false
+        rightTriangleView.isHidden = message.options != nil ? true : false
+        userIcon.isHidden = message.options != nil ? true : false
     }
 
     // MARK: - Actions
@@ -86,83 +62,45 @@ class UserChatViewCell: UITableViewCell {
         }
 
         userIcon.isHidden = false
+        addSubview(selectedButton)
+        buttonsView.reset()
 
-        let copiedButton = CustomButton(frame: selectedButton.convert(selectedButton.frame, to: self))
-        copiedButton.setTitleColor(UIColor.black, for: UIControlState.normal)
-        copiedButton.setTitleColor(UIColor.black, for: UIControlState.highlighted)
-        copiedButton.backgroundColor = UIColor.white
-        copiedButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        if let selectedButtonText = selectedButton.titleLabel?.text {
-            copiedButton.setTitle(selectedButtonText, for: .normal)
-            copiedButton.setTitle(selectedButtonText, for: .highlighted)
-        }
-        copiedButton.cornerRadius = selectedButton.cornerRadius
-        self.addSubview(copiedButton)
+        selectedButton.frame = CGRect(x: selectedButton.frame.origin.x + buttonsView.frame.origin.x,
+                                      y: selectedButton.frame.origin.y + buttonsView.frame.origin.y,
+                                      width: selectedButton.frame.size.width,
+                                      height: selectedButton.frame.size.height)
+        selectedButton.setTitleColor(UIColor.black, for: UIControlState.normal)
+        selectedButton.setTitleColor(UIColor.black, for: UIControlState.highlighted)
+        selectedButton.backgroundColor = UIColor.white
+        selectedButton.translatesAutoresizingMaskIntoConstraints = false
+        selectedButton.trailingAnchor.constraint(equalTo: userIcon.leadingAnchor, constant: -15).isActive = true
+        selectedButton.centerYAnchor.constraint(equalTo: userIcon.centerYAnchor).isActive = true
+        selectedButton.widthAnchor.constraint(equalToConstant: selectedButton.frame.width).isActive = true
 
-        layoutIfNeeded()
-
-        copiedButton.translatesAutoresizingMaskIntoConstraints = false
-        copiedButton.trailingAnchor.constraint(equalTo: userIcon.leadingAnchor, constant: -15).isActive = true
-        copiedButton.centerYAnchor.constraint(equalTo: userIcon.centerYAnchor).isActive = true
-
-        buttonsCollectionView.isHidden = true
-         // or do below:
-//        buttonsCollectionView.reloadData()
-//        buttonsCollectionView.collectionViewLayout.invalidateLayout()
-
-        UIView.animate(withDuration: 0.5, delay: 0.1, animations: { [weak self] in
+        UIView.animate(withDuration: 1, delay: 0, animations: { [weak self] in
             self?.layoutIfNeeded()
         }, completion: { result in
+            selectedButton.removeFromSuperview()
             self.reloadCell()
-            copiedButton.removeFromSuperview()
-            self.chatViewController?.conversationService.sendMessage(withText: (copiedButton.titleLabel?.text!)!)
+            self.chatViewController?.conversationService.sendMessage(withText: (selectedButton.titleLabel?.text!)!)
         })
     }
 
     // MARK: - Private
-
     /// The cell is reloaded to allow the buttonsCollectionView to set its intrinsic content size
     /// according to its content view which is only available after the first time it has been loaded
     private func reloadCell() {
         // This is needed to resize the UICollectionView correctly
         // It works, but it's a bit glitchy and ruins the experience, so I took out the dispatch after for now
         // Must uncomment that code to get resizing of ButtonCollectionView to work correctly
-//        let when = DispatchTime.now()
-//        DispatchQueue.main.asyncAfter(deadline: when) {
+        let when = DispatchTime.now()
+        DispatchQueue.main.asyncAfter(deadline: when) {
             if let indexPath = self.chatViewController?.chatTableView.indexPath(for: self) {
                 self.chatViewController?.chatTableView.reloadRows(at: [indexPath], with: .none)
                 self.chatViewController?.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
             }
-//        }
-    }
-
-}
-
-  // MARK: UICollectionViewDataSource & UICollectionViewDelegate
-extension UserChatViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
-
-
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-        return message?.options?.count ?? 0
-    }
-
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let optionButtonCell =
-            collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: OptionButtonCell.self),
-                                               for: indexPath)  as! OptionButtonCell
-
-        if let option = message?.options?[indexPath.row] {
-            optionButtonCell.configure(withOption: option)
-            optionButtonCell.userChatViewCell = self
         }
-
-        return optionButtonCell
     }
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
-
-    }
 }

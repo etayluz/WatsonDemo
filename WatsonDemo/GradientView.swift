@@ -21,7 +21,6 @@ import UIKit
                                 y: CGFloat(0),
                                 width: superview!.frame.size.width,
                                 height: superview!.frame.size.height)
-        print(frame.size.height)
         gradient.colors = [startColor.cgColor, endColor.cgColor]
         layer.addSublayer(gradient)
     }
