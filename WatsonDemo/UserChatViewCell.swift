@@ -22,8 +22,8 @@ class UserChatViewCell: UITableViewCell {
     @IBOutlet weak var buttonsLeadingConstraint: NSLayoutConstraint!
 
     // MARK: - Properties
-
     var chatViewController: ChatViewController?
+    var initialButtonsLeadingConstraint: CGFloat!
     var message: Message?
 
 
@@ -41,6 +41,9 @@ class UserChatViewCell: UITableViewCell {
         buttonsView.configure(withOptions: message.options,
                               viewWidth: buttonsView.frame.width,
                               userChatViewCell: self)
+
+        initialButtonsLeadingConstraint = initialButtonsLeadingConstraint ?? buttonsLeadingConstraint.constant
+        buttonsLeadingConstraint.constant = initialButtonsLeadingConstraint + (buttonsView.viewWidth - buttonsView.maxX)/2
 
         messageBackground.isHidden = message.options != nil ? true : false
         messageLabel.isHidden = message.options != nil ? true : false
@@ -77,7 +80,7 @@ class UserChatViewCell: UITableViewCell {
         selectedButton.centerYAnchor.constraint(equalTo: userIcon.centerYAnchor).isActive = true
         selectedButton.widthAnchor.constraint(equalToConstant: selectedButton.frame.width).isActive = true
 
-        UIView.animate(withDuration: 1, delay: 0, animations: { [weak self] in
+        UIView.animate(withDuration: 0.5, delay: 0, animations: { [weak self] in
             self?.layoutIfNeeded()
         }, completion: { result in
             selectedButton.removeFromSuperview()

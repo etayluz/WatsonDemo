@@ -255,6 +255,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
+                                            <outlet property="buttonsLeadingConstraint" destination="ctg-DQ-MVd" id="Q6e-Pe-GQk"/>
                                             <outlet property="buttonsView" destination="4a8-NN-Ikw" id="T0G-Ti-IMh"/>
                                             <outlet property="messageBackground" destination="2Tq-dd-0u9" id="pBT-Ux-VeJ"/>
                                             <outlet property="messageLabel" destination="pRW-E5-X6Q" id="bzK-yL-tyN"/>

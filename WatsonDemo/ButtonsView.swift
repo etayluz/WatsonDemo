@@ -16,14 +16,17 @@ class ButtonsView: UIView {
     var viewHeight: CGFloat!
     var xOffset: CGFloat = 0.0
     var yOffset: CGFloat = 0.0
+    var maxX: CGFloat = 0
     weak var userChatViewCell: UserChatViewCell!
 
     func configure(withOptions options: [String]?, viewWidth: CGFloat,  userChatViewCell: UserChatViewCell) {
-        self.viewWidth = viewWidth
+        // First time around viewWidth isn't correct so hard-coding for now
+        self.viewWidth = UIScreen.main.bounds.size.width * 652 / 768.0
         self.userChatViewCell = userChatViewCell
         viewHeight = 0
         xOffset = 0
         yOffset = 0
+        maxX = 0
 
         if let options = options {
             for option in options {
@@ -47,6 +50,10 @@ class ButtonsView: UIView {
         addSubview(optionButton)
 
         viewHeight = optionButton.frame.origin.y + optionButton.frame.size.height
+        if maxX < optionButton.frame.origin.x + optionButton.frame.size.width  {
+            maxX = optionButton.frame.origin.x + optionButton.frame.size.width
+        }
+
         invalidateIntrinsicContentSize()
     }
 
