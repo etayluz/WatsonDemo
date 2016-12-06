@@ -41,6 +41,9 @@ class ButtonsView: UIView {
 
         let optionButton = UIButton(frame: CGRect(x: xOffset, y: yOffset, width: 0, height: 0))
         optionButton.backgroundColor = UIColor.buttonBackgroundColor()
+        #if WESTFIELD
+            optionButton.backgroundColor = UIColor.westfieldButtonBackgroundColor()
+        #endif
         optionButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         optionButton.setTitle(option, for: .normal)
         optionButton.setTitle(option, for: .highlighted)

@@ -16,12 +16,19 @@ import UIKit
 
     override func draw(_ rect: CGRect) {
 
+        #if WESTFIELD
+            startColor = UIColor.westfieldBackgroundColor()
+            endColor = UIColor.westfieldBackgroundColor()
+        #endif
+
+        
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = CGRect(x: CGFloat(0),
                                 y: CGFloat(0),
                                 width: superview!.frame.size.width,
-                                height: superview!.frame.size.height)
+                                height: superview!.frame.size.height - 120)
         gradient.colors = [startColor.cgColor, endColor.cgColor]
+
         layer.addSublayer(gradient)
     }
 

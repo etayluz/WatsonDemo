@@ -113,7 +113,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" allowsSelectionDuringEditing="YES" rowHeight="140" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="GbL-9b-ILu" userLabel="ChatTableView">
-                                <rect key="frame" x="0.0" y="60" width="320" height="399"/>
+                                <rect key="frame" x="0.0" y="54" width="320" height="405"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -181,6 +181,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="messageLabel" destination="giz-gT-A77" id="z6e-1J-hcG"/>
+                                            <outlet property="watsonIcon" destination="MLg-Dx-6Yr" id="dXU-4E-Pyc"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserChatViewCell" id="55h-j6-z27" userLabel="UserViewCell" customClass="UserChatViewCell" customModule="WatsonDemo" customModuleProvider="target">
@@ -352,7 +353,7 @@
                             <constraint firstItem="E1E-09-ULi" firstAttribute="width" secondItem="nUc-hV-EYz" secondAttribute="width" id="4cD-D8-d9t"/>
                             <constraint firstItem="E1E-09-ULi" firstAttribute="top" secondItem="GbL-9b-ILu" secondAttribute="bottom" constant="15" id="53A-7O-1hP"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="top" secondItem="nUc-hV-EYz" secondAttribute="top" id="8fb-Lw-8bq"/>
-                            <constraint firstItem="GbL-9b-ILu" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" id="A5j-NF-sQY"/>
+                            <constraint firstItem="GbL-9b-ILu" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" constant="-6" id="A5j-NF-sQY"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="leading" secondItem="nUc-hV-EYz" secondAttribute="leading" id="HKF-q4-SOE"/>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="centerX" secondItem="nUc-hV-EYz" secondAttribute="centerX" id="IsH-LV-2Ap"/>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="width" secondItem="nUc-hV-EYz" secondAttribute="width" id="WnO-p5-Zki"/>
@@ -366,6 +367,7 @@
                         <outlet property="chatTableBottomConstraint" destination="53A-7O-1hP" id="VxI-M3-sgE"/>
                         <outlet property="chatTableView" destination="GbL-9b-ILu" id="bhs-R4-Aid"/>
                         <outlet property="chatTextField" destination="T25-IS-XUm" id="FtY-j0-rr8"/>
+                        <outlet property="headerView" destination="5se-DL-z8M" id="bJf-2I-LM2"/>
                         <outlet property="micButton" destination="cuU-ry-Fkb" id="z6t-G9-R2D"/>
                         <outlet property="micImage" destination="vb7-PA-IIf" id="0tv-gX-8mT"/>
                     </connections>

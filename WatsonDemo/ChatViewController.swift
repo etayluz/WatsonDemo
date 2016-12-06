@@ -20,6 +20,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var chatTableBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var chatTextField: ChatTextField!
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var micButton: UIButton!
     @IBOutlet weak var micImage: UIImageView!
 
@@ -37,6 +38,9 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSimulator()
+        #if WESTFIELD
+            headerView.backgroundColor = UIColor.westfieldHeaderColor()
+        #endif
         chatTextField.chatViewController = self
 
         chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
