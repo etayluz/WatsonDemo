@@ -48,7 +48,7 @@ extension ChatTextField: UITextFieldDelegate {
         chatViewController.chatTableBottomConstraint.constant = 250
 
         setupSimulator()
-        let when = DispatchTime.now() + 0.1
+        let when = DispatchTime.now() + 0.01
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.chatInputAccessoryView.inputTextField.becomeFirstResponder()
             if self.chatViewController.messages.count > 0 {

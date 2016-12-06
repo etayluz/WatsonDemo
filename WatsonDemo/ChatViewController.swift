@@ -185,13 +185,10 @@ extension ChatViewController: ConversationServiceDelegate {
     internal func didReceiveMessage(withText text: String, options: [String]?) {
         guard text.characters.count > 0 else { return }
 
-        let when = DispatchTime.now() + 0.5
-        DispatchQueue.main.asyncAfter(deadline: when) {
-            self.textToSpeechService.synthesizeSpeech(withText: text)
-            self.appendChat(withMessage: Message(type: MessageType.Watson, text: text, options: nil))
-            if let _ = options {
-                self.appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))
-            }
+        self.textToSpeechService.synthesizeSpeech(withText: text)
+        self.appendChat(withMessage: Message(type: MessageType.Watson, text: text, options: nil))
+        if let _ = options {
+            self.appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))
         }
 
     }
@@ -199,11 +196,7 @@ extension ChatViewController: ConversationServiceDelegate {
     internal func didReceiveMap(withUrl mapUrl: URL) {
         var message = Message(type: MessageType.Map, text: "", options: nil)
         message.mapUrl = mapUrl
-
-        let when = DispatchTime.now() + 0.5
-        DispatchQueue.main.asyncAfter(deadline: when) {
-            self.appendChat(withMessage: message)
-        }
+        self.appendChat(withMessage: message)
     }
 
 }
