@@ -16,10 +16,17 @@ class OverviewViewController: UIViewController {
         static let chatSelectedIndex = 1
     }
 
+    // MARK: - Outlets
+    @IBOutlet weak var overviewImageView: UIImageView!
+
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSimulator()
+
+        #if WESTFIELD
+            overviewImageView.image = UIImage.westfieldOverview()
+        #endif
     }
 
     // MARK: - Actions

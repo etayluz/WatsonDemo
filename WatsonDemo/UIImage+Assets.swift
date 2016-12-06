@@ -14,4 +14,11 @@ extension UIImage {
         return UIImage(named: "BlueWatsonIcon")!
     }
 
+    class func westfieldOverview() -> UIImage {
+        return UIImage(named: "WestfieldOverview")!
+    }
+
+    class func westfieldUserIcon() -> UIImage {
+        return UIImage(named: "WestfieldUserIcon")!
+    }
 }

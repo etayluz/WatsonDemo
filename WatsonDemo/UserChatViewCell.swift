@@ -49,6 +49,10 @@ class UserChatViewCell: UITableViewCell {
         messageLabel.isHidden = message.options != nil ? true : false
         rightTriangleView.isHidden = message.options != nil ? true : false
         userIcon.isHidden = message.options != nil ? true : false
+
+        #if WESTFIELD
+            userIcon.image = UIImage.westfieldUserIcon()
+        #endif
     }
 
     // MARK: - Actions
