@@ -38,9 +38,6 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSimulator()
-        #if WESTFIELD
-            headerView.backgroundColor = UIColor.westfieldHeaderColor()
-        #endif
         chatTextField.chatViewController = self
 
         chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;

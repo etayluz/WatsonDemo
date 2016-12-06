@@ -8,6 +8,7 @@ import UIKit
 
 
 extension UIColor {
+    
     static func colorWithRGBHex(hex24: UInt) -> UIColor {
         return UIColor(
             red:    (CGFloat)((hex24 & 0xFF0000) >> 16) / 255.0,
@@ -27,19 +28,5 @@ extension UIColor {
     class func buttonBackgroundColor() -> UIColor {
         return colorWithRGBHex(hex24: 0xdb1f38)
     }
-
-#if WESTFIELD
-    class func westfieldHeaderColor() -> UIColor {
-        return colorWithRGBHex(hex24: 0x086bad)
-    }
-
-    class func westfieldBackgroundColor() -> UIColor {
-        return colorWithRGBHex(hex24: 0xa3cfe9)
-    }
-
-    class func westfieldButtonBackgroundColor() -> UIColor {
-        return westfieldHeaderColor()
-    }
-#endif
 
 }

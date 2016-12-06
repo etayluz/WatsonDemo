@@ -23,10 +23,6 @@ class OverviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSimulator()
-
-        #if WESTFIELD
-            overviewImageView.image = UIImage.westfieldOverview()
-        #endif
     }
 
     // MARK: - Actions

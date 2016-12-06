@@ -19,10 +19,6 @@ class WatsonChatViewCell: UITableViewCell {
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
         messageLabel.text = message.text
-
-        #if WESTFIELD
-            watsonIcon.image = UIImage.blueWatsonIcon()
-        #endif
     }
 
 }
