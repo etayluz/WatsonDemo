@@ -14,6 +14,7 @@ struct GlobalConstants {
     static let sriniCheedallaBluemixPassword = "Westfield12"
     static let sriniCheedallaBluemixUsername = "scheeda@us.ibm.com"
     static let dennisNotoWorkspaceID = "1549fa38-7160-4106-82ee-73796b21f3b8"
+    static let sriniCheedallaWorkspaceID = "62fb22ec-7163-44a2-b8c9-afd725c234be"
     static let etayluzBluemixUsername = "d5e5ca34-f670-4a7f-98c7-1643d83ecc1d"
     static let etayluzBluemixPassword = "N8UAQQPXw10Z"
     static let nodeRedWorkflowUrl = "http://Node-Workflow-Hub.mybluemix.net/mobileV2-1"
