@@ -36,18 +36,16 @@ class ChatInputAccessoryView: NSObject {
     }
 
     /// Send message, append it to chat view - and only then dismiss keyboard
-    func sendMessage() {
+    private func sendMessage() {
         let userMessage = Message(type: MessageType.User, text: inputTextField.text!, options: nil)
         self.chatViewController.appendChat(withMessage: userMessage)
         inputTextField.text = ""
 
+        /// Delay dismissal of keyboard after sending message to allow for animation of new table row to complete
         let when = DispatchTime.now()
-        DispatchQueue.main.asyncAfter(deadline: when + 0.2) {
-            // Making animated true sometimes causes a weird glitch where the whole table is animated from the top
+        DispatchQueue.main.asyncAfter(deadline: when + 0.3) {
             self.inputTextField.resignFirstResponder()
         }
-
-
     }
 
 }
@@ -56,7 +54,7 @@ class ChatInputAccessoryView: NSObject {
 extension ChatInputAccessoryView: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        sendMessage()
+        sendButtonTapped()
         return true
     }
     

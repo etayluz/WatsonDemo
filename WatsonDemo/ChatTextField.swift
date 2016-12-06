@@ -30,7 +30,7 @@ extension ChatTextField: UITextFieldDelegate {
             inputAccessoryView = nil
             chatViewController.chatTableBottomConstraint.constant = 15
 
-            /// Animate chatTable down with dismissal of keyboard and scroll to last row
+            /// Animate chatTable DOWN with dismissal of keyboard and scroll to last row
             UIView.animate(withDuration: 0.5) { [weak self] in
                 guard let strongSelf = self else { return }
                 strongSelf.chatViewController.view.layoutIfNeeded()
@@ -50,13 +50,13 @@ extension ChatTextField: UITextFieldDelegate {
         chatInputAccessoryView.chatViewController = chatViewController
         inputAccessoryView = chatInputAccessoryView.contentView
 
-        /// Animate chatTable up with showing of keyboard
+        /// Animate chatTable UP with showing of keyboard
         chatViewController.chatTableBottomConstraint.constant = 250
 
         // I'm not sure why this delay is needed but without it the keyboard won't dismiss
         let when = DispatchTime.now() + 0.01
         DispatchQueue.main.asyncAfter(deadline: when) {
-            UIView.animate(withDuration: 0.05) { [weak self] in
+            UIView.animate(withDuration: 0.1) { [weak self] in
                 self?.chatViewController.view.layoutIfNeeded()
                 self?.chatInputAccessoryView.inputTextField.becomeFirstResponder()
                 self?.chatViewController.scrollChatTableToBottom()
