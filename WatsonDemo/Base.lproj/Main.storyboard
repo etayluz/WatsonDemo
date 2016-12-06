@@ -191,18 +191,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-NN-Ikw" userLabel="ButtonsView" customClass="ButtonsView" customModule="WatsonDemo" customModuleProvider="target">
-                                                    <rect key="frame" x="28" y="37" width="204" height="95"/>
+                                                    <rect key="frame" x="28" y="23" width="204" height="109"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" highlightedImage="User" translatesAutoresizingMaskIntoConstraints="NO" id="vo5-6M-QOP" userLabel="UserIcon">
-                                                    <rect key="frame" x="242" y="22" width="60" height="60"/>
+                                                    <rect key="frame" x="242" y="2" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="eHB-mL-2OL"/>
                                                         <constraint firstAttribute="height" constant="60" id="v5G-ha-yyt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Tq-dd-0u9" userLabel="UserMsgBackground" customClass="CustomView" customModule="WatsonDemo" customModuleProvider="target">
-                                                    <rect key="frame" x="161.5" y="30.5" width="65.5" height="42"/>
+                                                    <rect key="frame" x="161.5" y="10.5" width="65.5" height="42"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -211,7 +211,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRW-E5-X6Q" userLabel="UserMessage">
-                                                    <rect key="frame" x="176.5" y="43" width="35.5" height="17"/>
+                                                    <rect key="frame" x="176.5" y="23" width="35.5" height="17"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
@@ -224,7 +224,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightTriangle" highlightedImage="RightTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-Ki-PLb" userLabel="RightTriangle">
-                                                    <rect key="frame" x="225" y="36" width="9" height="15"/>
+                                                    <rect key="frame" x="225" y="19.5" width="9" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="WNM-D4-NlR"/>
                                                     </constraints>
@@ -237,18 +237,18 @@
                                                 <constraint firstItem="2Tq-dd-0u9" firstAttribute="centerX" secondItem="pRW-E5-X6Q" secondAttribute="centerX" id="81G-Lf-2Jk"/>
                                                 <constraint firstItem="pRW-E5-X6Q" firstAttribute="centerY" secondItem="vo5-6M-QOP" secondAttribute="centerY" id="8nM-QP-acb"/>
                                                 <constraint firstItem="2Tq-dd-0u9" firstAttribute="width" secondItem="pRW-E5-X6Q" secondAttribute="width" constant="30" id="AN2-lN-ZbF"/>
+                                                <constraint firstItem="4a8-NN-Ikw" firstAttribute="top" secondItem="pRW-E5-X6Q" secondAttribute="top" id="CQ9-dv-AMv"/>
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="leading" secondItem="2Tq-dd-0u9" secondAttribute="trailing" constant="-2" id="Kze-JZ-0In"/>
                                                 <constraint firstItem="vo5-6M-QOP" firstAttribute="leading" secondItem="pRW-E5-X6Q" secondAttribute="trailing" constant="30" id="Mk7-WG-472"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="pRW-E5-X6Q" secondAttribute="bottom" priority="750" constant="35" id="Owq-P9-4mp"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="pRW-E5-X6Q" secondAttribute="bottom" priority="750" constant="20" id="Owq-P9-4mp"/>
                                                 <constraint firstItem="vo5-6M-QOP" firstAttribute="leading" secondItem="4a8-NN-Ikw" secondAttribute="trailing" constant="10" id="U3w-Be-S48"/>
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="width" secondItem="3gf-Ki-PLb" secondAttribute="height" multiplier="10:16" id="Z4s-l8-zF0"/>
                                                 <constraint firstItem="pRW-E5-X6Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ju8-59-tQr" secondAttribute="leadingMargin" constant="20" id="ZjT-dF-tn3"/>
                                                 <constraint firstItem="4a8-NN-Ikw" firstAttribute="leading" secondItem="Ju8-59-tQr" secondAttribute="leadingMargin" constant="20" id="ctg-DQ-MVd"/>
                                                 <constraint firstItem="2Tq-dd-0u9" firstAttribute="height" secondItem="pRW-E5-X6Q" secondAttribute="height" constant="25" id="nIj-kP-L2G"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="vo5-6M-QOP" secondAttribute="trailing" constant="10" id="tgi-Nx-eav"/>
-                                                <constraint firstItem="4a8-NN-Ikw" firstAttribute="top" secondItem="Ju8-59-tQr" secondAttribute="topMargin" constant="29" id="uGR-GE-9mK"/>
                                                 <constraint firstItem="3gf-Ki-PLb" firstAttribute="centerY" secondItem="pRW-E5-X6Q" secondAttribute="centerY" multiplier="0.85" id="uZd-qe-ejY"/>
-                                                <constraint firstItem="pRW-E5-X6Q" firstAttribute="top" secondItem="Ju8-59-tQr" secondAttribute="topMargin" priority="750" constant="35" id="wW2-xT-NhR"/>
+                                                <constraint firstItem="pRW-E5-X6Q" firstAttribute="top" secondItem="Ju8-59-tQr" secondAttribute="topMargin" priority="750" constant="15" id="wW2-xT-NhR"/>
                                                 <constraint firstItem="2Tq-dd-0u9" firstAttribute="centerY" secondItem="pRW-E5-X6Q" secondAttribute="centerY" id="xny-rn-jzx"/>
                                             </constraints>
                                         </tableViewCellContentView>
