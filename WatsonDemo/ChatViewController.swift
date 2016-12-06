@@ -93,7 +93,10 @@ class ChatViewController: UIViewController {
             chatTableView.beginUpdates()
             chatTableView.insertRows(at: [indexPath], with: .none)
             chatTableView.endUpdates()
-            chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
+            let when = DispatchTime.now()
+            DispatchQueue.main.asyncAfter(deadline: when + 0.1) {
+                self.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
+            }
         }
 
     }
