@@ -49,7 +49,8 @@ class UserChatViewCell: UITableViewCell {
         messageLabel.isHidden = message.options != nil ? true : false
         rightTriangleView.isHidden = message.options != nil ? true : false
         userIcon.isHidden = message.options != nil ? true : false
-
+        userIcon.layer.cornerRadius = userIcon.frame.width / 2
+        userIcon.clipsToBounds = true
         #if WESTFIELD
             userIcon.image = UIImage.westfieldUserIcon()
         #endif
