@@ -25,21 +25,7 @@ extension UIColor {
     }
 
     class func buttonBackgroundColor() -> UIColor {
-        return colorWithRGBHex(hex24: 0xdb1f38)
-    }
-
-#if WESTFIELD
-    class func westfieldHeaderColor() -> UIColor {
         return colorWithRGBHex(hex24: 0x086bad)
     }
-
-    class func westfieldBackgroundColor() -> UIColor {
-        return colorWithRGBHex(hex24: 0xa3cfe9)
-    }
-
-    class func westfieldButtonBackgroundColor() -> UIColor {
-        return westfieldHeaderColor()
-    }
-#endif
 
 }

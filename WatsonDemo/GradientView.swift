@@ -15,12 +15,6 @@ import UIKit
     @IBInspectable var endColor: UIColor = UIColor.clear
 
     override func draw(_ rect: CGRect) {
-
-        #if WESTFIELD
-            startColor = UIColor.westfieldBackgroundColor()
-            endColor = UIColor.westfieldBackgroundColor()
-        #endif
-
         
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = CGRect(x: CGFloat(0),

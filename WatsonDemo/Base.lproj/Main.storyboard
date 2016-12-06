@@ -34,7 +34,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-A6-zak" userLabel="GoButton">
-                                        <rect key="frame" x="120" y="186.5" width="80.5" height="70"/>
+                                        <rect key="frame" x="120" y="187" width="81" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Sep-R3-mN9"/>
                                         </constraints>
@@ -95,7 +95,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.80784313725490198" green="0.043137254901960784" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.031372549019607843" green="0.41960784313725491" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="A4y-4T-k5Y"/>
                                     <constraint firstItem="cuN-2Y-8SM" firstAttribute="centerY" secondItem="5se-DL-z8M" secondAttribute="centerY" multiplier="1.2" id="S71-o0-KWt"/>
@@ -108,10 +108,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" red="0.99607843137254903" green="0.89411764705882346" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.63921568627450975" green="0.81176470588235294" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" red="0.99215686274509807" green="0.47450980392156861" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.63921568627450975" green="0.81176470588235294" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -129,6 +129,8 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watson" highlightedImage="Watson" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-Dx-6Yr" userLabel="WatsonIcon">
                                                     <rect key="frame" x="18" y="39.5" width="60" height="60"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="3w5-xb-dhM"/>
                                                         <constraint firstAttribute="width" secondItem="MLg-Dx-6Yr" secondAttribute="height" id="nYl-T1-Gje"/>
@@ -401,12 +403,12 @@
     </scenes>
     <resources>
         <image name="MicOff" width="30" height="30"/>
-        <image name="Overview" width="767" height="973"/>
+        <image name="Overview" width="768" height="974"/>
         <image name="RightTriangle" width="10" height="16"/>
         <image name="TabBarIcon-Overview" width="25" height="25"/>
         <image name="TabBarIcon-Watson" width="26" height="26"/>
         <image name="Triangle" width="10" height="16"/>
-        <image name="User" width="72" height="73"/>
+        <image name="User" width="297" height="297"/>
         <image name="Watson" width="70" height="70"/>
     </resources>
 </document>
