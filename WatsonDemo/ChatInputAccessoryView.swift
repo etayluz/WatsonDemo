@@ -25,10 +25,7 @@ class ChatInputAccessoryView: NSObject {
 
     // MARK: - Actions
     @IBAction func sendButtonTapped() {
-        let userMessage = Message(type: MessageType.User, text: inputTextField.text!, options: nil)
-        self.chatViewController.appendChat(withMessage: userMessage)
-        inputTextField.text = ""
-        inputTextField.resignFirstResponder()
+        sendMessage()
     }
 
     // MARK: - Private
@@ -38,16 +35,28 @@ class ChatInputAccessoryView: NSObject {
         nib.instantiate(withOwner: self, options: nil)
     }
 
+    /// Send message, append it to chat view - and only then dismiss keyboard
+    func sendMessage() {
+        let userMessage = Message(type: MessageType.User, text: inputTextField.text!, options: nil)
+        self.chatViewController.appendChat(withMessage: userMessage)
+        inputTextField.text = ""
+
+        let when = DispatchTime.now()
+        DispatchQueue.main.asyncAfter(deadline: when + 0.2) {
+            // Making animated true sometimes causes a weird glitch where the whole table is animated from the top
+            self.inputTextField.resignFirstResponder()
+        }
+
+
+    }
+
 }
 
 // MARK: - UITextFieldDelegate
 extension ChatInputAccessoryView: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        let userMessage = Message(type: MessageType.User, text: inputTextField.text!, options: nil)
-        self.chatViewController.appendChat(withMessage: userMessage)
-        inputTextField.text = ""
-        textField.resignFirstResponder()
+        sendMessage()
         return true
     }
     

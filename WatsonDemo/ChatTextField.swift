@@ -29,11 +29,14 @@ extension ChatTextField: UITextFieldDelegate {
         guard inputAccessoryView == nil else {
             inputAccessoryView = nil
             chatViewController.chatTableBottomConstraint.constant = 15
+
+            /// Animate chatTable down with dismissal of keyboard and scroll to last row
             UIView.animate(withDuration: 0.5) { [weak self] in
                 guard let strongSelf = self else { return }
-
                 strongSelf.chatViewController.view.layoutIfNeeded()
+                strongSelf.chatViewController.scrollChatTableToBottom()
             }
+
             return false
         }
 
@@ -41,19 +44,22 @@ extension ChatTextField: UITextFieldDelegate {
     }
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        setupSimulator()
+
         /// Setup the chat text field with an input accessory view of InputAccessoryView
         chatInputAccessoryView.chatViewController = chatViewController
         inputAccessoryView = chatInputAccessoryView.contentView
 
+        /// Animate chatTable up with showing of keyboard
         chatViewController.chatTableBottomConstraint.constant = 250
 
-        setupSimulator()
+        // I'm not sure why this delay is needed but without it the keyboard won't dismiss
         let when = DispatchTime.now() + 0.01
         DispatchQueue.main.asyncAfter(deadline: when) {
-            self.chatInputAccessoryView.inputTextField.becomeFirstResponder()
-            if self.chatViewController.messages.count > 0 {
-                let indexPath = NSIndexPath(row: self.chatViewController.messages.count - 1, section: 0) as IndexPath
-                self.chatViewController.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+            UIView.animate(withDuration: 0.05) { [weak self] in
+                self?.chatViewController.view.layoutIfNeeded()
+                self?.chatInputAccessoryView.inputTextField.becomeFirstResponder()
+                self?.chatViewController.scrollChatTableToBottom()
             }
         }
     }
@@ -61,6 +67,8 @@ extension ChatTextField: UITextFieldDelegate {
 
     private func setupSimulator() {
         #if DEBUG
+//            chatInputAccessoryView.inputTextField.text = "Testing testing testing testing testing testing Testing testing testing testing testing testing"
+//            return
             if (debugChatIndex == 1) {
                 chatInputAccessoryView.inputTextField.text = "I received an alert on a suspicious transaction"
                 debugChatIndex = debugChatIndex + 1

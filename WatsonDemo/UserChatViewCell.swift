@@ -95,7 +95,7 @@ class UserChatViewCell: UITableViewCell {
         // This is needed to resize the ButtonsView correctly
         if let indexPath = self.chatViewController?.chatTableView.indexPath(for: self) {
             self.chatViewController?.chatTableView.reloadRows(at: [indexPath], with: .none)
-            self.chatViewController?.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
+            self.chatViewController?.scrollChatTableToBottom()
         }
     }
 

@@ -95,10 +95,17 @@ class ChatViewController: UIViewController {
             chatTableView.endUpdates()
             let when = DispatchTime.now()
             DispatchQueue.main.asyncAfter(deadline: when + 0.1) {
-                self.chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+                self.scrollChatTableToBottom()
             }
         }
 
+    }
+
+    func scrollChatTableToBottom() {
+        guard self.messages.count > 0 else { return }
+
+        let indexPath = NSIndexPath(row: self.messages.count - 1, section: 0) as IndexPath
+        chatTableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
     }
 
     // MARK: - Private

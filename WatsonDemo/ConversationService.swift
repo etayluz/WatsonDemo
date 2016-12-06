@@ -77,7 +77,6 @@ class ConversationService {
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             // check for fundamental networking error
             DispatchQueue.main.async { [weak self] in
-                guard let strongSelf = self else { return }
 
                 guard let data = data, error == nil else {
                     print("error=\(error)")
@@ -91,67 +90,82 @@ class ConversationService {
 
                 let responseString = String(data: data, encoding: .utf8)
                 if let data = responseString?.data(using: String.Encoding.utf8) {
-                    let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
-                    strongSelf.context = json?["context"] as! String
-                    var text = json?["text"] as! String
-
-                    // Look for the option params in the brackets
-                    let nsString = text as NSString
-                    let regex = try! NSRegularExpression(pattern: "\\[.*\\]")
-                    var options: [String]?
-                    if let result = regex.matches(in: text, range: NSRange(location: 0, length: nsString.length)).last {
-                        var optionsString = nsString.substring(with: result.range)
-                        text = text.replacingOccurrences(of: optionsString, with: "")
-                        optionsString = optionsString.replacingOccurrences(of: "[", with: "")
-                        optionsString = optionsString.replacingOccurrences(of: "]", with: "")
-                        optionsString = optionsString.replacingOccurrences(of: ", ", with: ",")
-                        options = optionsString.components(separatedBy: ",")
+                    do {
+                        if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject] {
+                            self?.parseJson(json: json)
+                        }
+                    } catch {
+                        // No-op
                     }
-
-                    #if DEBUG
-//                      options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking", "savings", "savings"]
-//                      options = ["Yes", "No"]
-//                        options = ["4 PM today", "9:30 AM", "1 PM tomorrow"]
-//                        options = ["Checking", "Savings", "Brokerage"]
-//                        options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking"]
-                    #endif
-
-                    var mapUrlString: String?
-
-                    /// Check for maps
-                    if text.contains("InsMap1") {
-                        text = text.replacingOccurrences(of: "InsMap1", with: "")
-                        mapUrlString = Map.mapOne
-                    }
-
-                    if text.contains("InsMap2") {
-                        text = text.replacingOccurrences(of: "InsMap2", with: "")
-                        mapUrlString = Map.mapTwo
-                    }
-
-                    if text.contains("InsMap3") {
-                        text = text.replacingOccurrences(of: "InsMap3", with: "")
-                        mapUrlString = Map.mapThree
-                    }
-
-                    if text.contains("InsMap4") {
-                        text = text.replacingOccurrences(of: "InsMap4", with: "")
-                        mapUrlString = Map.mapFour
-                    }
-
-                    strongSelf.delegate?.didReceiveMessage(withText: text, options: options)
-                    if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
-                        strongSelf.delegate?.didReceiveMap(withUrl: mapUrl)
-                    }
-
-                    // TBD: Remove me - for debug of map
-                    // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
 
                 }
             }
         }
 
-        task.resume()
+        /// Delay conversation request so as to give the keyboard time to dismiss and chat table view to scroll bottom
+        let when = DispatchTime.now()
+        DispatchQueue.main.asyncAfter(deadline: when + 0.3) {
+            task.resume()
+        }
+
+    }
+
+    func parseJson(json: [String:AnyObject]) { 
+
+        self.context = json["context"] as! String
+        var text = json["text"] as! String
+
+        // Look for the option params in the brackets
+        let nsString = text as NSString
+        let regex = try! NSRegularExpression(pattern: "\\[.*\\]")
+        var options: [String]?
+        if let result = regex.matches(in: text, range: NSRange(location: 0, length: nsString.length)).last {
+            var optionsString = nsString.substring(with: result.range)
+            text = text.replacingOccurrences(of: optionsString, with: "")
+            optionsString = optionsString.replacingOccurrences(of: "[", with: "")
+            optionsString = optionsString.replacingOccurrences(of: "]", with: "")
+            optionsString = optionsString.replacingOccurrences(of: ", ", with: ",")
+            options = optionsString.components(separatedBy: ",")
+        }
+
+        #if DEBUG
+            //                      options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking", "savings", "savings"]
+            //                      options = ["Yes", "No"]
+            //                        options = ["4 PM today", "9:30 AM", "1 PM tomorrow"]
+            //                        options = ["Checking", "Savings", "Brokerage"]
+            //                        options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking"]
+        #endif
+
+        var mapUrlString: String?
+
+        /// Check for maps
+        if text.contains("InsMap1") {
+            text = text.replacingOccurrences(of: "InsMap1", with: "")
+            mapUrlString = Map.mapOne
+        }
+
+        if text.contains("InsMap2") {
+            text = text.replacingOccurrences(of: "InsMap2", with: "")
+            mapUrlString = Map.mapTwo
+        }
+
+        if text.contains("InsMap3") {
+            text = text.replacingOccurrences(of: "InsMap3", with: "")
+            mapUrlString = Map.mapThree
+        }
+
+        if text.contains("InsMap4") {
+            text = text.replacingOccurrences(of: "InsMap4", with: "")
+            mapUrlString = Map.mapFour
+        }
+
+        self.delegate?.didReceiveMessage(withText: text, options: options)
+        if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
+            self.delegate?.didReceiveMap(withUrl: mapUrl)
+        }
+
+        // TBD: Remove me - for debug of map
+        // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
     }
 
 }
