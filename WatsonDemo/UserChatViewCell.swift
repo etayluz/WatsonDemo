@@ -90,8 +90,7 @@ class UserChatViewCell: UITableViewCell {
     }
 
     // MARK: - Private
-    /// The cell is reloaded to allow the buttonsCollectionView to set its intrinsic content size
-    /// according to its content view which is only available after the first time it has been loaded
+    /// Once the user has tapped an option button, the cell needs to be resized and so we reload it to shrink it
     private func reloadCell() {
         // This is needed to resize the ButtonsView correctly
         if let indexPath = self.chatViewController?.chatTableView.indexPath(for: self) {
