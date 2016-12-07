@@ -19,10 +19,10 @@ class ConversationService {
     // MARK: - Properties
     weak var delegate: ConversationServiceDelegate?
     var context = ""
+    var firstName: String?
 
     // MARK: - Constants
     private struct Constants {
-        static let firstName = "Jane"
         static let lastName = "Smith"
         static let httpMethodPost = "POST"
         static let nName = "Jane"
@@ -59,10 +59,14 @@ class ConversationService {
     }
 
     func sendMessage(withText text: String) {
+        if firstName == nil && text != "Hi" {
+            firstName = text
+        }
+
         let requestParameters =
             [Key.input: text,
              Key.workspaceID: GlobalConstants.sriniCheedallaWorkspaceID,
-             Key.firstName: Constants.firstName,
+             Key.firstName: firstName,
              Key.lastName: Constants.lastName,
              Key.nName: Constants.nName,
              Key.cValue1: Constants.value1,

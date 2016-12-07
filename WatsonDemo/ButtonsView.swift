@@ -76,6 +76,8 @@ class ButtonsView: UIView {
     }
 
     func optionButtonTapped(button: CustomButton) {
+        guard button.titleLabel?.text != "Exit" else { exit(0) }
+
         userChatViewCell.optionButtonTapped(withSelectedButton: button)
     }
 
