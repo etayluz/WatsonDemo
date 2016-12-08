@@ -171,7 +171,7 @@ class ConversationService {
         }
 
         #if DEBUG
-            text = "I would suggest starting with the basics"
+//            text = "I would suggest starting with the basics"
         #endif
         self.delegate?.didReceiveMessage(withText: text, options: options)
         if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {

@@ -18,11 +18,19 @@ class VideoViewCell: UITableViewCell {
     // MARK: - Properties
     var playerViewController: AVPlayerViewController!
     var chatViewController: ChatViewController?
+    var message: Message?
+
+    // MARK: - Cell Lifecycle
+    override func prepareForReuse() {
+        NotificationCenter.default.removeObserver(self)
+    }
 
     /// Configure video chat table view cell with user message
     ///
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
+        self.message = message
+
         let player = AVPlayer(url: message.videoUrl!)
 
         playerViewController = AVPlayerViewController()
@@ -38,14 +46,10 @@ class VideoViewCell: UITableViewCell {
 
         playerViewController.player?.play()
 
-        // TBD:
-        // Terminating app due to uncaught exception 'NSInvalidArgumentException',
-        // reason: '-[WatsonDemo.VideoViewCell playerDidFinishPlaying:]: 
-        // unrecognized selector sent to instance 0x7f906d938a00
-//        NotificationCenter.default.addObserver(self,
-//                                               selector: Selector(("playerDidFinishPlaying:")),
-//                                               name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-//                                               object: player.currentItem)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(VideoViewCell.playerDidFinishPlaying),
+                                               name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+                                               object: player.currentItem)
 
 
 //        let player = AVPlayer(url: message.videoUrl!)
@@ -58,8 +62,10 @@ class VideoViewCell: UITableViewCell {
 //        #endif
     }
 
-//    func playerDidFinishPlaying(note: NSNotification) {
-//        chatViewController?.conversationService.sendMessage(withText: "OK")
-//    }
+    func playerDidFinishPlaying() {
+        if chatViewController?.messages.last?.type == message?.type {
+            chatViewController?.conversationService.sendMessage(withText: "OK")
+        }
+    }
 
 }
