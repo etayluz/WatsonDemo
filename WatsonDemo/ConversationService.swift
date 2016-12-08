@@ -170,6 +170,9 @@ class ConversationService {
             mapUrlString = Map.mapFour
         }
 
+        #if DEBUG
+            text = "I would suggest starting with the basics"
+        #endif
         self.delegate?.didReceiveMessage(withText: text, options: options)
         if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
             self.delegate?.didReceiveMap(withUrl: mapUrl)

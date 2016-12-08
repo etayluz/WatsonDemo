@@ -48,6 +48,7 @@ class ChatViewController: UIViewController {
         conversationService.sendMessage(withText: Constants.conversationKickoffMessage)
 
         let gestureTap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
+        gestureTap.cancelsTouchesInView = false
         chatTableView.addGestureRecognizer(gestureTap)
     }
 

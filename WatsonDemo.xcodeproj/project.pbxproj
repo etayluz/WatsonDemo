@@ -14,6 +14,8 @@
 		B4562FF21DF8D7E500171C0B /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4562FF11DF8D7E500171C0B /* VideoViewCell.swift */; };
 		B4562FF51DF9ADBC00171C0B /* Movie1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4562FF31DF9ABE500171C0B /* Movie1.mp4 */; };
 		B4562FF61DF9ADBC00171C0B /* Movie2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4562FF41DF9ABE500171C0B /* Movie2.mp4 */; };
+		B4562FF91DF9BE2D00171C0B /* TTTAttributedLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4562FF71DF9BE1500171C0B /* TTTAttributedLabel.framework */; };
+		B4562FFA1DF9BE2D00171C0B /* TTTAttributedLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4562FF71DF9BE1500171C0B /* TTTAttributedLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B47B68C01DF423FF00AB6421 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		B47B68C21DF5D03D00AB6421 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */; };
 		B47B68C41DF5FF8A00AB6421 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
@@ -54,6 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4562FFA1DF9BE2D00171C0B /* TTTAttributedLabel.framework in Embed Frameworks */,
 				B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */,
 				B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */,
 				B4D160FF1DDBF1FC00D436F1 /* SpeechToTextV1.framework in Embed Frameworks */,
@@ -72,6 +75,7 @@
 		B4562FF11DF8D7E500171C0B /* VideoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewCell.swift; sourceTree = "<group>"; };
 		B4562FF31DF9ABE500171C0B /* Movie1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie1.mp4; sourceTree = "<group>"; };
 		B4562FF41DF9ABE500171C0B /* Movie2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Movie2.mp4; sourceTree = "<group>"; };
+		B4562FF71DF9BE1500171C0B /* TTTAttributedLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TTTAttributedLabel.framework; sourceTree = "<group>"; };
 		B47B68BF1DF423FF00AB6421 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		B47B68C31DF5FF8A00AB6421 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebImage.framework; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4562FF91DF9BE2D00171C0B /* TTTAttributedLabel.framework in Frameworks */,
 				B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */,
 				B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */,
 				B4D160FD1DDBF1EE00D436F1 /* SpeechToTextV1.framework in Frameworks */,
@@ -118,6 +123,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4562FFB1DF9C82600171C0B /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Docs;
+			sourceTree = "<group>";
+		};
 		B48B185E1DD92AD8008CE7C2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +151,7 @@
 		B48B18601DD92B02008CE7C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4562FFB1DF9C82600171C0B /* Docs */,
 				B4562FF31DF9ABE500171C0B /* Movie1.mp4 */,
 				B4562FF41DF9ABE500171C0B /* Movie2.mp4 */,
 				B4CBCFA01DD91EA70003074A /* Info.plist */,
@@ -198,6 +211,7 @@
 				B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */,
 				B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */,
 				B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */,
+				B4562FF71DF9BE1500171C0B /* TTTAttributedLabel.framework */,
 				B47B68C31DF5FF8A00AB6421 /* WebImage.framework */,
 			);
 			name = Frameworks;
