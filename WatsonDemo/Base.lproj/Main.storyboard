@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -34,7 +33,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-A6-zak" userLabel="GoButton">
-                                        <rect key="frame" x="120" y="187" width="81" height="70"/>
+                                        <rect key="frame" x="120.5" y="187" width="80" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Sep-R3-mN9"/>
                                         </constraints>
@@ -295,6 +294,18 @@
                                             <outlet property="mapImageView" destination="ETF-5d-NVy" id="EZI-zU-ikm"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoViewCell" id="Rnd-pg-Eek" userLabel="VideoViewCell" customClass="VideoViewCell" customModule="WatsonDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="421" width="320" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rnd-pg-Eek" id="lWF-gg-TLq">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="3go-5g-2RD" id="KWP-0a-HyI"/>
@@ -403,7 +414,7 @@
     </scenes>
     <resources>
         <image name="MicOff" width="30" height="30"/>
-        <image name="Overview" width="768" height="974"/>
+        <image name="Overview" width="768" height="956"/>
         <image name="RightTriangle" width="10" height="16"/>
         <image name="TabBarIcon-Overview" width="25" height="25"/>
         <image name="TabBarIcon-Watson" width="26" height="26"/>

@@ -74,7 +74,8 @@ class ChatViewController: UIViewController {
 
     func appendChat(withMessage message: Message) {
         guard let text = message.text,
-            (text.characters.count > 0 || message.options != nil || message.mapUrl != nil)
+            (text.characters.count > 0 || message.options != nil ||
+             message.mapUrl != nil || message.videoUrl != nil)
             else { return }
 
 
@@ -148,6 +149,12 @@ extension ChatViewController: UITableViewDataSource {
             cell.chatViewController = self
             return cell
 
+        case MessageType.Video:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VideoViewCell.self),
+                                                     for: indexPath) as! VideoViewCell
+            cell.configure(withMessage: message)
+            cell.chatViewController = self
+            return cell
         }
 
     }
@@ -163,7 +170,11 @@ extension ChatViewController: UITableViewDelegate {
         if message.type == MessageType.Map {
             return 240
         }
-        
+
+        if message.type == MessageType.Video {
+            return UIScreen.main.bounds.size.width * 0.68
+        }
+
         return UITableViewAutomaticDimension
     }
     
@@ -207,6 +218,12 @@ extension ChatViewController: ConversationServiceDelegate {
     internal func didReceiveMap(withUrl mapUrl: URL) {
         var message = Message(type: MessageType.Map, text: "", options: nil)
         message.mapUrl = mapUrl
+        self.appendChat(withMessage: message)
+    }
+
+    internal func didReceiveVideo(withUrl videoUrl: URL) {
+        var message = Message(type: MessageType.Video, text: "", options: nil)
+        message.videoUrl = videoUrl
         self.appendChat(withMessage: message)
     }
 
