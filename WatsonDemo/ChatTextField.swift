@@ -70,23 +70,23 @@ extension ChatTextField: UITextFieldDelegate {
 //            chatInputAccessoryView.inputTextField.text = "Testing testing testing testing testing testing Testing testing testing testing testing testing"
 //            return
             if (debugChatIndex == 1) {
-                chatInputAccessoryView.inputTextField.text = "I received an alert on a suspicious transaction"
+                chatInputAccessoryView.inputTextField.text = "Etay"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 2) {
-                chatInputAccessoryView.inputTextField.text = "Can I use my debt card in the US"
+                chatInputAccessoryView.inputTextField.text = "OK"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 3) {
-                chatInputAccessoryView.inputTextField.text = "Yes, Please"
+                chatInputAccessoryView.inputTextField.text = "OK"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 4) {
-                chatInputAccessoryView.inputTextField.text = "Savings"
+                chatInputAccessoryView.inputTextField.text = "OK"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 5) {
-                chatInputAccessoryView.inputTextField.text = "Checking"
+                chatInputAccessoryView.inputTextField.text = "OK"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 6) {

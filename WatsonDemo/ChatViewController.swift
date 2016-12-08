@@ -172,7 +172,7 @@ extension ChatViewController: UITableViewDelegate {
         }
 
         if message.type == MessageType.Video {
-            return UIScreen.main.bounds.size.width * 0.68
+            return UIScreen.main.bounds.size.width * 0.76
         }
 
         return UITableViewAutomaticDimension

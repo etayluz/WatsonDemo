@@ -30,7 +30,10 @@ class VideoViewCell: UITableViewCell {
         #if DEBUG
             playerViewController.player?.volume = 0
         #endif
-        playerViewController.view.frame = bounds
+        playerViewController.view.frame = CGRect(x: 20,
+                                                 y: 0,
+                                                 width: frame.size.width - 40,
+                                                 height: frame.size.height - 35)
         self.addSubview(playerViewController.view)
 
         playerViewController.player?.play()
