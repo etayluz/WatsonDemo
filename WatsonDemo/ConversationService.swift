@@ -55,8 +55,8 @@ class ConversationService {
     }
 
     private struct Video {
-        static let videoOne = "https://r2---sn-qxo7snek.googlevideo.com/videoplayback?upn=u3VFnIlYlRY&mn=sn-qxo7snek&mm=31&id=o-ANJR_MNQAL0YSZN3tJP8HyLiUQgBQHxlcHpK7oSWPSlF&gir=yes&mt=1481158915&ms=au&ip=104.197.75.157&key=yt6&requiressl=yes&ei=U7FIWLSeKYiZuQKEpKygDA&lmt=1392959589613671&mv=m&sparams=clen%2Cdur%2Cei%2Cgir%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&mime=video%2Fmp4&expire=1481180595&source=youtube&itag=18&pl=20&dur=30.464&initcwndbps=8352500&clen=2338824&ipbits=0&ratebypass=yes&signature=CE269EE93E35C36492B3877099DA121FB43A3BC7.CCC72118C980E16745CE5FFF6063DD28017E518C&title=BAM%21+Social+Norming"
-        static let videoTwo = "https://r2---sn-qxo7snek.googlevideo.com/videoplayback?ipbits=0&mime=video%2Fmp4&key=yt6&itag=22&beids=%5B9452307%5D&lmt=1473008542724677&signature=9FFF1DCD419683839C40979213311D1F101F15EF.9AC3C7C59CF02ED4D25A8BD2E7CBA2DE5EEF4905&ratebypass=yes&mm=31&source=youtube&mn=sn-qxo7snek&mt=1481161003&mv=m&ms=au&dur=21.153&upn=MvnB9CIuBfE&ei=VrpIWNexJoOhuQLp-YPwDQ&ip=104.197.192.146&initcwndbps=7715000&id=o-AIf5ykSwie6PCmgVe8QOslEBWnTshBfAsEy4XmlmRcDZ&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&expire=1481182902&pl=20&requiressl=yes&title=Wheel+comes+off+truck+%26+hits+car+head+on"
+        static let videoOne = Bundle.main.path(forResource: "Movie1", ofType:"mp4")!
+        static let videoTwo = Bundle.main.path(forResource: "Movie2", ofType:"mp4")!
     }
 
     // MARK: - Init
@@ -177,12 +177,12 @@ class ConversationService {
 
 //        text = "Let me show you a short video to see the effects of distracted driving"
         if text.contains("Let me show you a short video") {
-            let videoUrl = URL(string: Video.videoOne)!
+            let videoUrl = URL(fileURLWithPath: Video.videoOne)
             self.delegate?.didReceiveVideo(withUrl: videoUrl)
         }
 
         if text.contains("Let me show you what can happen") {
-            let videoUrl = URL(string: Video.videoTwo)!
+            let videoUrl = URL(fileURLWithPath: Video.videoTwo)
             self.delegate?.didReceiveVideo(withUrl: videoUrl)
         }
 
