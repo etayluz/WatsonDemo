@@ -31,8 +31,8 @@ class TextToSpeechService {
     func synthesizeSpeech(withText text: String) {
         guard text.characters.count > 0 else { return }
         
-        let textToSpeech = TextToSpeech(username: GlobalConstants.etayluzBluemixUsername,
-                                        password: GlobalConstants.etayluzBluemixPassword)
+        let textToSpeech = TextToSpeech(username: GlobalConstants.dennisNotoBluemixUsernameTTS,
+                                        password: GlobalConstants.dennisNotoBluemixPasswordTTS)
 
         let failure = { (error: Error) in
             print(error)

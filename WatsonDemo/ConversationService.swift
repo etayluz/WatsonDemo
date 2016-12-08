@@ -61,7 +61,7 @@ class ConversationService {
     func sendMessage(withText text: String) {
         let requestParameters =
             [Key.input: text,
-             Key.workspaceID: GlobalConstants.sriniCheedallaWorkspaceID,
+             Key.workspaceID: GlobalConstants.dennisNotoWorkspaceID,
              Key.firstName: Constants.firstName,
              Key.lastName: Constants.lastName,
              Key.nName: Constants.nName,
@@ -71,7 +71,7 @@ class ConversationService {
              Key.context: context,
         ]
 
-        var request = URLRequest(url: URL(string: GlobalConstants.sriniCheedallNodeRedWorkflowUrl)!)
+        var request = URLRequest(url: URL(string: GlobalConstants.nodeRedWorkflowUrl)!)
         request.httpMethod = Constants.httpMethodPost
         request.httpBody = requestParameters.stringFromHttpParameters().data(using: .utf8)
 
