@@ -20,6 +20,9 @@ class VideoViewCell: UITableViewCell {
     var chatViewController: ChatViewController?
     var message: Message?
 
+    // MARK: - VideoUrl
+    var videoUrls = [URL]()
+
     // MARK: - Cell Lifecycle
     override func prepareForReuse() {
         NotificationCenter.default.removeObserver(self)
@@ -30,6 +33,7 @@ class VideoViewCell: UITableViewCell {
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
         self.message = message
+
 
         let player = AVPlayer(url: message.videoUrl!)
 
@@ -44,7 +48,10 @@ class VideoViewCell: UITableViewCell {
                                                  height: frame.size.height - 35)
         self.addSubview(playerViewController.view)
 
-        playerViewController.player?.play()
+        if videoUrls.contains(message.videoUrl!) == false {
+            playerViewController.player?.play()
+            videoUrls.append(message.videoUrl!)
+        }
 
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(VideoViewCell.playerDidFinishPlaying),

@@ -172,13 +172,13 @@ class ConversationService {
 
         #if DEBUG
 //            text = "I would suggest starting with the basics"
+            text = "Let me show you a short video to see the effects of distracted driving"
         #endif
         self.delegate?.didReceiveMessage(withText: text, options: options)
         if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
             self.delegate?.didReceiveMap(withUrl: mapUrl)
         }
 
-//        text = "Let me show you a short video to see the effects of distracted driving"
         if text.contains("Let me show you a short video") {
             let videoUrl = URL(fileURLWithPath: Video.videoOne)
             self.delegate?.didReceiveVideo(withUrl: videoUrl)

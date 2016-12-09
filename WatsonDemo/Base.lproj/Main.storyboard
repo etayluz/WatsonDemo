@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="efF-kg-Ais">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,20 +20,39 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bij-Xo-vvY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Overview" highlightedImage="Overview" translatesAutoresizingMaskIntoConstraints="NO" id="EsX-gw-lDI">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="406"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="525.33333333333337"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EsX-gw-lDI" secondAttribute="height" multiplier="767:973" id="Kg8-wR-Vd0"/>
                                         </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffL-C8-IRE" userLabel="Filler">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WestfieldLogo" highlightedImage="WestfieldLogo" translatesAutoresizingMaskIntoConstraints="NO" id="g3S-Sy-Jpn">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="79.666666666666671"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="g3S-Sy-Jpn" secondAttribute="height" id="MQA-wD-NAV"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="g3S-Sy-Jpn" firstAttribute="height" secondItem="ffL-C8-IRE" secondAttribute="height" multiplier="0.6" id="8Gp-4J-jWW"/>
+                                            <constraint firstItem="g3S-Sy-Jpn" firstAttribute="top" secondItem="ffL-C8-IRE" secondAttribute="top" id="oT2-4v-HaC"/>
+                                            <constraint firstItem="g3S-Sy-Jpn" firstAttribute="leading" secondItem="ffL-C8-IRE" secondAttribute="leading" id="pZj-pJ-qFb"/>
+                                            <constraint firstAttribute="width" secondItem="ffL-C8-IRE" secondAttribute="height" multiplier="320:103" id="yBy-6w-ECT"/>
+                                        </constraints>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-A6-zak" userLabel="GoButton">
-                                        <rect key="frame" x="120.5" y="187" width="80" height="70"/>
+                                        <rect key="frame" x="155.33333333333331" y="250.33333333333331" width="103.33333333333331" height="69.999999999999943"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Sep-R3-mN9"/>
                                         </constraints>
@@ -41,13 +60,22 @@
                                             <action selector="goButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dyz-kz-jDg"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" highlightedImage="User" translatesAutoresizingMaskIntoConstraints="NO" id="rcA-sT-Yzd">
+                                        <rect key="frame" x="52.666666666666629" y="152" width="297" height="107"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="rcA-sT-Yzd" firstAttribute="top" secondItem="ffL-C8-IRE" secondAttribute="bottom" constant="19" id="9h0-gb-hUx"/>
                                     <constraint firstItem="EsX-gw-lDI" firstAttribute="top" secondItem="bij-Xo-vvY" secondAttribute="top" id="Dm7-vh-o6g"/>
                                     <constraint firstItem="EsX-gw-lDI" firstAttribute="leading" secondItem="bij-Xo-vvY" secondAttribute="leading" id="Fto-S5-d7u"/>
+                                    <constraint firstItem="ffL-C8-IRE" firstAttribute="top" secondItem="bij-Xo-vvY" secondAttribute="top" id="H67-Fq-Bff"/>
                                     <constraint firstAttribute="trailing" secondItem="EsX-gw-lDI" secondAttribute="trailing" id="Jzf-WS-ZP1"/>
                                     <constraint firstItem="UCw-A6-zak" firstAttribute="centerX" secondItem="EsX-gw-lDI" secondAttribute="centerX" id="NBL-bh-A7S"/>
+                                    <constraint firstItem="rcA-sT-Yzd" firstAttribute="centerX" secondItem="ffL-C8-IRE" secondAttribute="centerX" multiplier="0.97" id="Nu6-5f-DsT"/>
+                                    <constraint firstItem="rcA-sT-Yzd" firstAttribute="height" secondItem="ffL-C8-IRE" secondAttribute="height" multiplier="0.8" id="Nwu-CQ-kGE"/>
+                                    <constraint firstItem="ffL-C8-IRE" firstAttribute="leading" secondItem="bij-Xo-vvY" secondAttribute="leading" id="OH9-ax-lGl"/>
+                                    <constraint firstItem="ffL-C8-IRE" firstAttribute="width" secondItem="bij-Xo-vvY" secondAttribute="width" id="QMM-z2-CEW"/>
                                     <constraint firstItem="UCw-A6-zak" firstAttribute="width" secondItem="EsX-gw-lDI" secondAttribute="width" multiplier="0.25" id="g1S-EK-kso"/>
                                     <constraint firstAttribute="bottom" secondItem="EsX-gw-lDI" secondAttribute="bottom" id="ltd-Uh-Lqo"/>
                                     <constraint firstItem="UCw-A6-zak" firstAttribute="centerY" secondItem="EsX-gw-lDI" secondAttribute="centerY" multiplier="1.09" id="u6o-bJ-FqU"/>
@@ -70,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="-339"/>
+            <point key="canvasLocation" x="1026.4000000000001" y="-339.58020989505252"/>
         </scene>
         <!--ChatViewController-->
         <scene sceneID="fcW-ZN-TN6">
@@ -81,14 +109,14 @@
                         <viewControllerLayoutGuide type="bottom" id="8ce-5m-jhc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nUc-hV-EYz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5se-DL-z8M" userLabel="Header">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Watson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-2Y-8SM" userLabel="Title">
-                                        <rect key="frame" x="112.5" y="25" width="96" height="22"/>
+                                        <rect key="frame" x="159.66666666666663" y="25" width="96" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -115,19 +143,19 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" allowsSelectionDuringEditing="YES" rowHeight="140" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="GbL-9b-ILu" userLabel="ChatTableView">
-                                <rect key="frame" x="0.0" y="54" width="320" height="405"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="573"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WatsonChatViewCell" id="BJB-NB-L3A" userLabel="WatsonViewCell" customClass="WatsonChatViewCell" customModule="WatsonDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="320" height="140"/>
+                                        <rect key="frame" x="0.0" y="1" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BJB-NB-L3A" id="9i8-DP-9qa">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watson" highlightedImage="Watson" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-Dx-6Yr" userLabel="WatsonIcon">
-                                                    <rect key="frame" x="18" y="39.5" width="60" height="60"/>
+                                                    <rect key="frame" x="18" y="39.666666666666671" width="60" height="60.000000000000014"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -136,7 +164,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-6E-kDH" userLabel="WatsonMsgBackground" customClass="CustomView" customModule="WatsonDemo" customModuleProvider="target">
-                                                    <rect key="frame" x="93" y="28" width="194.5" height="84"/>
+                                                    <rect key="frame" x="93" y="28" width="308" height="84"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -145,7 +173,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giz-gT-A77" userLabel="WatsonMessage" customClass="TTTAttributedLabel">
-                                                    <rect key="frame" x="108" y="43" width="164.5" height="54"/>
+                                                    <rect key="frame" x="108" y="43" width="278" height="54"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Hello! I'm your personal banking virtual assistant. You can ask me about anything?">
@@ -158,7 +186,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Triangle" highlightedImage="Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-iL-KVp" userLabel="LeftTriangle">
-                                                    <rect key="frame" x="86" y="56.5" width="9" height="15"/>
+                                                    <rect key="frame" x="86" y="56.666666666666671" width="9" height="15.000000000000014"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="giS-Bk-Z42"/>
                                                         <constraint firstAttribute="width" secondItem="ZxN-iL-KVp" secondAttribute="height" multiplier="10:16" id="sEI-G5-rHZ"/>
@@ -189,25 +217,25 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserChatViewCell" id="55h-j6-z27" userLabel="UserViewCell" customClass="UserChatViewCell" customModule="WatsonDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="141" width="320" height="140"/>
+                                        <rect key="frame" x="0.0" y="141" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="55h-j6-z27" id="Ju8-59-tQr">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-NN-Ikw" userLabel="ButtonsView" customClass="ButtonsView" customModule="WatsonDemo" customModuleProvider="target">
-                                                    <rect key="frame" x="28" y="23" width="204" height="109"/>
+                                                    <rect key="frame" x="28" y="23" width="298" height="109"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" highlightedImage="User" translatesAutoresizingMaskIntoConstraints="NO" id="vo5-6M-QOP" userLabel="UserIcon">
-                                                    <rect key="frame" x="242" y="2" width="60" height="60"/>
+                                                    <rect key="frame" x="336" y="2" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="eHB-mL-2OL"/>
                                                         <constraint firstAttribute="height" constant="60" id="v5G-ha-yyt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Tq-dd-0u9" userLabel="UserMsgBackground" customClass="CustomView" customModule="WatsonDemo" customModuleProvider="target">
-                                                    <rect key="frame" x="161.5" y="10.5" width="65.5" height="42"/>
+                                                    <rect key="frame" x="255.66666666666663" y="10.666666666666664" width="65.333333333333371" height="42"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -216,7 +244,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRW-E5-X6Q" userLabel="UserMessage">
-                                                    <rect key="frame" x="176.5" y="23" width="35.5" height="17"/>
+                                                    <rect key="frame" x="270.66666666666674" y="23" width="35.333333333333314" height="17"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
@@ -229,7 +257,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightTriangle" highlightedImage="RightTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-Ki-PLb" userLabel="RightTriangle">
-                                                    <rect key="frame" x="225" y="19.5" width="9" height="15"/>
+                                                    <rect key="frame" x="319" y="19.666666666666664" width="9" height="14.999999999999993"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="WNM-D4-NlR"/>
                                                     </constraints>
@@ -269,14 +297,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapViewCell" id="82H-b7-0No" userLabel="MapViewCell" customClass="MapViewCell" customModule="WatsonDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="281" width="320" height="140"/>
+                                        <rect key="frame" x="0.0" y="281" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="82H-b7-0No" id="0hf-wd-wKg">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-5d-NVy" userLabel="MapImageView">
-                                                    <rect key="frame" x="0.0" y="8" width="320" height="124"/>
+                                                    <rect key="frame" x="0.0" y="8" width="414" height="124"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -295,10 +323,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoViewCell" id="Rnd-pg-Eek" userLabel="VideoViewCell" customClass="VideoViewCell" customModule="WatsonDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="421" width="320" height="140"/>
+                                        <rect key="frame" x="0.0" y="421" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rnd-pg-Eek" id="lWF-gg-TLq">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -313,10 +341,10 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1E-09-ULi" userLabel="ChatInputAccessoryView">
-                                <rect key="frame" x="0.0" y="474" width="320" height="45"/>
+                                <rect key="frame" x="0.0" y="642" width="414" height="45"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MicOff" highlightedImage="MicOff" translatesAutoresizingMaskIntoConstraints="NO" id="vb7-PA-IIf" userLabel="MicImage">
-                                        <rect key="frame" x="10" y="5.5" width="34" height="34"/>
+                                        <rect key="frame" x="10" y="5.6666666666666288" width="34" height="34"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="vb7-PA-IIf" secondAttribute="height" id="ASS-ib-GYG"/>
@@ -333,13 +361,13 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T25-IS-XUm" userLabel="ChatTextField" customClass="ChatTextField" customModule="WatsonDemo" customModuleProvider="target">
-                                        <rect key="frame" x="59" y="5.5" width="202" height="34"/>
+                                        <rect key="frame" x="59" y="5.6666666666666288" width="296" height="34"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWx-nd-flC">
-                                        <rect key="frame" x="276" y="7.5" width="36" height="30"/>
+                                        <rect key="frame" x="370" y="7.6666666666666288" width="36" height="30"/>
                                         <state key="normal" title="Send">
                                             <color key="titleColor" red="0.28627450980392155" green="0.34901960784313724" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -421,5 +449,6 @@
         <image name="Triangle" width="10" height="16"/>
         <image name="User" width="297" height="297"/>
         <image name="Watson" width="70" height="70"/>
+        <image name="WestfieldLogo" width="379" height="350"/>
     </resources>
 </document>
