@@ -83,7 +83,7 @@
 		B48B18801DDB908E008CE7C2 /* ConversationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationService.swift; sourceTree = "<group>"; };
 		B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
 		B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		B4CBCF911DD91EA70003074A /* WatsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CBCF911DD91EA70003074A /* WatsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WatsonDemo.app; path = WatsonBankAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CBCF941DD91EA70003074A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4CBCF961DD91EA70003074A /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		B4CBCF991DD91EA70003074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -242,9 +242,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B4CBCF901DD91EA70003074A /* WatsonDemo */ = {
+		B4CBCF901DD91EA70003074A /* WatsonBankAsst */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4CBCFA31DD91EA70003074A /* Build configuration list for PBXNativeTarget "WatsonDemo" */;
+			buildConfigurationList = B4CBCFA31DD91EA70003074A /* Build configuration list for PBXNativeTarget "WatsonBankAsst" */;
 			buildPhases = (
 				B4CBCF8D1DD91EA70003074A /* Sources */,
 				B4CBCF8E1DD91EA70003074A /* Frameworks */,
@@ -255,7 +255,7 @@
 			);
 			dependencies = (
 			);
-			name = WatsonDemo;
+			name = WatsonBankAsst;
 			productName = WatsonDemo;
 			productReference = B4CBCF911DD91EA70003074A /* WatsonDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -272,8 +272,8 @@
 				TargetAttributes = {
 					B4CBCF901DD91EA70003074A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = KJRRJ3SKP5;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 675E4CR9UZ;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -290,7 +290,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B4CBCF901DD91EA70003074A /* WatsonDemo */,
+				B4CBCF901DD91EA70003074A /* WatsonBankAsst */,
 			);
 		};
 /* End PBXProject section */
@@ -457,15 +457,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KJRRJ3SKP5;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.TheWatsonDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -475,15 +479,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KJRRJ3SKP5;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.TheWatsonDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -501,7 +509,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4CBCFA31DD91EA70003074A /* Build configuration list for PBXNativeTarget "WatsonDemo" */ = {
+		B4CBCFA31DD91EA70003074A /* Build configuration list for PBXNativeTarget "WatsonBankAsst" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4CBCFA41DD91EA70003074A /* Debug */,

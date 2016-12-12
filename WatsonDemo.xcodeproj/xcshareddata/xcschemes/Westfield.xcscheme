@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B4CBCF901DD91EA70003074A"
-               BuildableName = "WatsonDemo.app"
-               BlueprintName = "WatsonDemo"
+               BuildableName = "WatsonBankAsst.app"
+               BlueprintName = "WatsonBankAsst"
                ReferencedContainer = "container:WatsonDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4CBCF901DD91EA70003074A"
-            BuildableName = "WatsonDemo.app"
-            BlueprintName = "WatsonDemo"
+            BuildableName = "WatsonBankAsst.app"
+            BlueprintName = "WatsonBankAsst"
             ReferencedContainer = "container:WatsonDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4CBCF901DD91EA70003074A"
-            BuildableName = "WatsonDemo.app"
-            BlueprintName = "WatsonDemo"
+            BuildableName = "WatsonBankAsst.app"
+            BlueprintName = "WatsonBankAsst"
             ReferencedContainer = "container:WatsonDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -82,8 +82,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4CBCF901DD91EA70003074A"
-            BuildableName = "WatsonDemo.app"
-            BlueprintName = "WatsonDemo"
+            BuildableName = "WatsonBankAsst.app"
+            BlueprintName = "WatsonBankAsst"
             ReferencedContainer = "container:WatsonDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
