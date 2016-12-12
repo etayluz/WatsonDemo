@@ -11,8 +11,8 @@ import Foundation
 struct GlobalConstants {
     static let dennisNotoBluemixUsername = "8b772b77-c923-42ff-b2ef-29370cba1965"
     static let dennisNotoBluemixPassword = "NP0ooxJSFfL8"
-    static let sriniCheedallaBluemixPassword = "Westfield12"
-    static let sriniCheedallaBluemixUsername = "scheeda@us.ibm.com"
+    static let sriniCheedallaBluemixSTTPassword = "LSeXB5fPD4E3"
+    static let sriniCheedallaBluemixSSTUsername = "152d3c28-7173-4551-9f21-7593efe74fcb"
     static let dennisNotoWorkspaceID = "1549fa38-7160-4106-82ee-73796b21f3b8"
     static let sriniCheedallaWorkspaceID = "62fb22ec-7163-44a2-b8c9-afd725c234be"
     static let etayluzBluemixUsername = "d5e5ca34-f670-4a7f-98c7-1643d83ecc1d"

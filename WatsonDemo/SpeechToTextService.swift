@@ -31,8 +31,8 @@ class SpeechToTextService {
     ///
     /// - Parameter text: Text to be syntheszied to speech
     func transcribeSpeechToText(forAudioData audioData: Data) {
-        let speechToText = SpeechToText(username: GlobalConstants.dennisNotoBluemixUsername,
-                                        password: GlobalConstants.dennisNotoBluemixPassword)
+        let speechToText = SpeechToText(username: GlobalConstants.sriniCheedallaBluemixSSTUsername,
+                                        password: GlobalConstants.sriniCheedallaBluemixSTTPassword)
 
         var settings = RecognitionSettings(contentType: .wav)
         settings.smartFormatting = true
