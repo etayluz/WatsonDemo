@@ -20,34 +20,38 @@ class SpeechToTextService {
 
     // MARK: - Properties
     weak var delegate: SpeechToTextServiceDelegate?
+    var speechToTextSession = SpeechToTextSession(username: GlobalConstants.dennisNotoBluemixUsernameSTT,
+                                                  password: GlobalConstants.dennisNotoBluemixPasswordSTT)
+    var textTranscription: String?
+
 
     // MARK: - Init
     init(delegate: SpeechToTextServiceDelegate) {
         self.delegate = delegate
-    }
 
-
-    /// Synthesize speech with given text
-    ///
-    /// - Parameter text: Text to be syntheszied to speech
-    func transcribeSpeechToText(forAudioData audioData: Data) {
-        let speechToText = SpeechToText(username: GlobalConstants.sriniCheedallaBluemixSSTUsername,
-                                        password: GlobalConstants.sriniCheedallaBluemixSTTPassword)
-
-        var settings = RecognitionSettings(contentType: .wav)
-        settings.smartFormatting = true
-
-        let failure = { (error: Error) in
-            print(error)
-        }
-
-        speechToText.recognize(audio: audioData, settings: settings, failure: failure) { results in
-            DispatchQueue.main.async { [weak self] in
-                guard let strongSelf = self else { return }
-
-                strongSelf.delegate?.didFinishTranscribingSpeech(withText: results.bestTranscript)
+        speechToTextSession.onResults = { results in print(results.bestTranscript)
+            if let bestTranscript = results.bestTranscript as String? {
+                delegate.didFinishTranscribingSpeech(withText: bestTranscript)
             }
         }
+    }
+
+    func startRecording() {
+        var settings = RecognitionSettings(contentType: .opus)
+        settings.interimResults = false
+        settings.continuous = true
+        settings.inactivityTimeout = -1
+        settings.smartFormatting = true
+
+        speechToTextSession.connect()
+        speechToTextSession.startRequest(settings: settings)
+        speechToTextSession.startMicrophone()
+    }
+
+    func finishRecording() {
+        speechToTextSession.stopMicrophone()
+        speechToTextSession.stopRequest()
+        speechToTextSession.disconnect()
     }
 
 }

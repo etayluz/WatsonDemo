@@ -9,8 +9,8 @@
 import Foundation
 
 struct GlobalConstants {
-    static let dennisNotoBluemixUsername = "8b772b77-c923-42ff-b2ef-29370cba1965"
-    static let dennisNotoBluemixPassword = "NP0ooxJSFfL8"
+    static let dennisNotoBluemixUsernameSTT = "8b772b77-c923-42ff-b2ef-29370cba1965"
+    static let dennisNotoBluemixPasswordSTT = "NP0ooxJSFfL8"
     static let sriniCheedallaBluemixSTTPassword = "LSeXB5fPD4E3"
     static let sriniCheedallaBluemixSSTUsername = "152d3c28-7173-4551-9f21-7593efe74fcb"
     static let dennisNotoWorkspaceID = "1549fa38-7160-4106-82ee-73796b21f3b8"

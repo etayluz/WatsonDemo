@@ -41,7 +41,6 @@
 		B4CBCF9A1DD91EA70003074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
 		B4CBCF9C1DD91EA70003074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		B4CBCF9F1DD91EA70003074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
-		B4D160F91DDBE8C000D436F1 /* RecorderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D160F81DDBE8C000D436F1 /* RecorderService.swift */; };
 		B4D160FB1DDBF19D00D436F1 /* SpeechToTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */; };
 		B4D160FD1DDBF1EE00D436F1 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
 		B4D160FF1DDBF1FC00D436F1 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -100,7 +99,6 @@
 		B4CBCF9B1DD91EA70003074A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4CBCF9E1DD91EA70003074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4CBCFA01DD91EA70003074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4D160F81DDBE8C000D436F1 /* RecorderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderService.swift; sourceTree = "<group>"; };
 		B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechToTextService.swift; sourceTree = "<group>"; };
 		B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechToTextV1.framework; sourceTree = "<group>"; };
 		B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				B48B18801DDB908E008CE7C2 /* ConversationService.swift */,
-				B4D160F81DDBE8C000D436F1 /* RecorderService.swift */,
 				B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */,
 				B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */,
 			);
@@ -344,7 +341,6 @@
 				B48B18701DDA139F008CE7C2 /* ChatTextField.swift in Sources */,
 				B48B18791DDB7025008CE7C2 /* TextToSpeechService.swift in Sources */,
 				B4562FF21DF8D7E500171C0B /* VideoViewCell.swift in Sources */,
-				B4D160F91DDBE8C000D436F1 /* RecorderService.swift in Sources */,
 				B47B68C21DF5D03D00AB6421 /* ButtonsView.swift in Sources */,
 				B40FDFEA1DE3EF6900BE07EB /* MapViewCell.swift in Sources */,
 				B4D160FB1DDBF19D00D436F1 /* SpeechToTextService.swift in Sources */,

@@ -30,7 +30,6 @@ class ChatViewController: UIViewController {
 
     // MARK: - Services
     lazy var conversationService: ConversationService = ConversationService(delegate:self)
-    lazy var recorderService: RecorderService = RecorderService(delegate: self)
     lazy var speechToTextService: SpeechToTextService = SpeechToTextService(delegate:self)
     lazy var textToSpeechService: TextToSpeechService = TextToSpeechService(delegate:self)
 
@@ -56,11 +55,11 @@ class ChatViewController: UIViewController {
     @IBAction func micButtonTapped() {
         if micButton.isSelected {
             micImage.image = UIImage.init(imageLiteralResourceName: "MicOff")
-            recorderService.finishRecording(success: true)
+            speechToTextService.finishRecording()
         } else {
             micImage.image = UIImage.init(imageLiteralResourceName: "MicOn")
             audioPlayer.stop()
-            recorderService.startRecording()
+            speechToTextService.startRecording()
         }
 
         micButton.isSelected = !micButton.isSelected
@@ -228,13 +227,4 @@ extension ChatViewController: ConversationServiceDelegate {
         self.appendChat(withMessage: message)
     }
 
-}
-
-// MARK: - RecorderDelegate
-extension ChatViewController: RecorderDelegate {
-
-    func finishedRecording(withAudioData audioData: Data) {
-        speechToTextService.transcribeSpeechToText(forAudioData: audioData)
-    }
-    
 }
