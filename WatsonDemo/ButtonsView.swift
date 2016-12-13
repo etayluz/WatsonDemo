@@ -28,12 +28,12 @@ class ButtonsView: UIView {
         yOffset = 0
         maxX = 0
 
+        reset()
+
         if let options = options {
             for option in options {
                 addButton(withOption: option)
             }
-        } else {
-            reset()
         }
     }
 
