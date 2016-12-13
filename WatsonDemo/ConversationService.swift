@@ -21,16 +21,17 @@ class ConversationService {
     weak var delegate: ConversationServiceDelegate?
     var context = ""
     var firstName: String?
+    var value1: String?
+    var value2: String?
+    var value3: String?
 
     // MARK: - Constants
     private struct Constants {
         static let lastName = "Smith"
+        static let httpMethodGet = "GET"
         static let httpMethodPost = "POST"
         static let nName = "Jane"
         static let statusCodeOK = 200
-        static let value1 = "Fidelity"
-        static let value2 = "TD Ameritrade"
-        static let value3 = "Pershing"
     }
 
     // MARK: - Key
@@ -75,10 +76,10 @@ class ConversationService {
              Key.firstName: firstName,
              Key.lastName: Constants.lastName,
              Key.nName: Constants.nName,
-             Key.cValue1: Constants.value1,
-             Key.cValue2: Constants.value2,
-             Key.cValue3: Constants.value3,
-             Key.context: context,
+             Key.cValue1: value1,
+             Key.cValue2: value2,
+             Key.cValue3: value3,
+             Key.context: context
         ]
 
         var request = URLRequest(url: URL(string: GlobalConstants.sriniCheedallNodeRedWorkflowUrl)!)
@@ -193,4 +194,63 @@ class ConversationService {
         // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
     }
 
+    func getValues() {
+        var request = URLRequest(url: URL(string: GlobalConstants.valuesCall)!)
+        request.httpMethod = Constants.httpMethodGet
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            // check for fundamental networking error
+            DispatchQueue.main.async { [weak self] in
+
+                guard let data = data, error == nil else {
+                    print("error=\(error)")
+                    return
+                }
+
+                // check for http errors
+                if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != Constants.statusCodeOK {
+                    print("Failed with status code: \(httpStatus.statusCode)")
+                }
+
+                let xmlString = String(data: data, encoding: .utf8)
+
+                self?.value1 = (self?.findMatch(pattern: "policyNumber>.*<", text: xmlString!))!
+                self?.value1 = self?.value1?.replacingOccurrences(of: "policyNumber>", with: "")
+                self?.value1 = self?.value1?.replacingOccurrences(of: "<", with: "")
+
+                self?.value2 = (self?.findMatch(pattern: "causeOfLoss>.*<", text: xmlString!))!
+                self?.value2 = self?.value2?.replacingOccurrences(of: "causeOfLoss>", with: "")
+                self?.value2 = self?.value2?.replacingOccurrences(of: "<", with: "")
+
+                var firstName = (self?.findMatch(pattern: "firstName>.*<", text: xmlString!))!
+                firstName = firstName.replacingOccurrences(of: "firstName>", with: "")
+                firstName = firstName.replacingOccurrences(of: "<", with: "")
+
+                var lastName = (self?.findMatch(pattern: "lastName>.*</WX:lastName", text: xmlString!))!
+                lastName = lastName.replacingOccurrences(of: "lastName>", with: "")
+                lastName = lastName.replacingOccurrences(of: "</WX:lastName", with: "")
+
+                self?.value3 = firstName + " " + lastName
+                self?.sendMessage(withText: "Hi")
+            }
+        }
+
+        /// Delay conversation request so as to give the keyboard time to dismiss and chat table view to scroll bottom
+        let when = DispatchTime.now()
+        DispatchQueue.main.asyncAfter(deadline: when + 0.3) {
+            task.resume()
+        }
+    }
+
+    func findMatch(pattern: String, text: String) -> String {
+        // Look for the option params in the brackets
+        let nsString = text as NSString
+        let regex = try! NSRegularExpression(pattern: pattern)
+        if let result = regex.matches(in: text, range: NSRange(location: 0, length: nsString.length)).first {
+            let matchString = nsString.substring(with: result.range)
+            return matchString
+        }
+
+        return ""
+    }
 }

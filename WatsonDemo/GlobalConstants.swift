@@ -19,4 +19,5 @@ struct GlobalConstants {
     static let etayluzBluemixPassword = "N8UAQQPXw10Z"
     static let nodeRedWorkflowUrl = "http://Node-Workflow-Hub.mybluemix.net/mobileV2-1"
     static let sriniCheedallNodeRedWorkflowUrl = "http://Westfield-Prototype.mybluemix.net/mobileV2-1"
+    static let valuesCall = "https://ineedawar.mybluemix.net/SimpleServlet?token=5531999940875&id=e562a47f-bfb3-4b74-a641-af5336591652&claimNumber=0001546961"
 }
