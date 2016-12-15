@@ -23,6 +23,26 @@ class OverviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSimulator()
+       
+        #if WATSONBANKASST
+            overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
+        #elseif WATSONINSASST
+            overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonInsAsst")
+        #elseif WATSONWEALTHASST
+            overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonWealthAsst")
+        #elseif WATSONMETASST
+            overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonInsAsst")
+        #else
+            overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
+        #endif
+    
+        
+        
+        // This how you change overiew images - Dennis
+        //     overviewImageView.image = #imageLiteral(resourceName: "WestfieldOverview")
+        
+        
+        
     }
 
     // MARK: - Actions
