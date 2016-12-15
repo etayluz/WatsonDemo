@@ -14,6 +14,7 @@ struct GlobalConstants {
     static let dennisNotoBluemixUsernameTTS = "833e48e0-2139-4142-935f-04190b698542"
     static let dennisNotoBluemixPasswordTTS = "DDxOcEN6TIRi"
     
+//Added for multi-target use
     
 #if WATSONBANKASST
     static let dennisNotoWorkspaceID = "1549fa38-7160-4106-82ee-73796b21f3b8"
