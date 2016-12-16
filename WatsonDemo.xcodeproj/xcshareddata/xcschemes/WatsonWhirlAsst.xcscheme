@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,16 +14,16 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B4CBCF901DD91EA70003074A"
-               BuildableName = "WatsonBankAsst.app"
-               BlueprintName = "WatsonBankAsst"
+               BlueprintIdentifier = "74CF3A2D1E045D2700CED191"
+               BuildableName = "WatsonWhirlAsst.app"
+               BlueprintName = "WatsonWhirlAsst"
                ReferencedContainer = "container:WatsonDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "WatsonWhirlAsst"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B4CBCF901DD91EA70003074A"
-            BuildableName = "WatsonBankAsst.app"
-            BlueprintName = "WatsonBankAsst"
+            BlueprintIdentifier = "74CF3A2D1E045D2700CED191"
+            BuildableName = "WatsonWhirlAsst.app"
+            BlueprintName = "WatsonWhirlAsst"
             ReferencedContainer = "container:WatsonDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -42,7 +42,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "WatsonWhirlAsst"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -55,24 +55,17 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B4CBCF901DD91EA70003074A"
-            BuildableName = "WatsonBankAsst.app"
-            BlueprintName = "WatsonBankAsst"
+            BlueprintIdentifier = "74CF3A2D1E045D2700CED191"
+            BuildableName = "WatsonWhirlAsst.app"
+            BlueprintName = "WatsonWhirlAsst"
             ReferencedContainer = "container:WatsonDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "WatsonWhirlAsst"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -81,18 +74,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B4CBCF901DD91EA70003074A"
-            BuildableName = "WatsonBankAsst.app"
-            BlueprintName = "WatsonBankAsst"
+            BlueprintIdentifier = "74CF3A2D1E045D2700CED191"
+            BuildableName = "WatsonWhirlAsst.app"
+            BlueprintName = "WatsonWhirlAsst"
             ReferencedContainer = "container:WatsonDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "WatsonWhirlAsst">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "WatsonWhirlAsst"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

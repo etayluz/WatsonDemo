@@ -28,6 +28,9 @@ struct GlobalConstants {
 #elseif WATSONMETASST
     static let dennisNotoWorkspaceID = "5fd7c1c7-9ea2-4fc8-b6fa-7920e10aad5a"
     static let nodeRedWorkflowUrl = "http://metlifepotnode-red1.mybluemix.net/mobileV2-1"
+#elseif WATSONWHIRLASST
+    static let dennisNotoWorkspaceID = "251c4882-44e3-4f34-9c71-36054e155320"
+    static let nodeRedWorkflowUrl = "https://whirlpoolnode-red.mybluemix.net/mobileV2-1"
 #else
     static let dennisNotoWorkspaceID = "1549fa38-7160-4106-82ee-73796b21f3b8"
     static let nodeRedWorkflowUrl = "http://nodered-v3.mybluemix.net/mobileV2-1"
