@@ -31,20 +31,50 @@ class TextToSpeechService {
     func synthesizeSpeech(withText text: String) {
         guard text.characters.count > 0 else { return }
         
-        let textToSpeech = TextToSpeech(username: GlobalConstants.dennisNotoBluemixUsernameTTS,
-                                        password: GlobalConstants.dennisNotoBluemixPasswordTTS)
+        let textToSpeech = TextToSpeech(username: GlobalConstants.BluemixUsernameTTS,
+                                        password: GlobalConstants.BluemixPasswordTTS)
 
         let failure = { (error: Error) in
             print(error)
         }
 
-        textToSpeech.synthesize(text, audioFormat: AudioFormat.wav, failure: failure) { data in
-            DispatchQueue.main.async { [weak self] in
-                guard let strongSelf = self else { return }
-
-                strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
+         if GlobalConstants.STTcustomizationID == "" {
+            textToSpeech.synthesize(text, audioFormat: AudioFormat.wav, failure: failure)
+            { data in
+                DispatchQueue.main.async { [weak self] in
+                    guard let strongSelf = self else { return }
+                    
+                    strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
+                }
+            }
+        
+         }
+        else {
+            textToSpeech.synthesize(text, customizationID: GlobalConstants.TTScustomizationID,
+                                    audioFormat: AudioFormat.wav,
+                                    failure: failure)
+            { data in
+                DispatchQueue.main.async { [weak self] in
+                    guard let strongSelf = self else { return }
+                    
+                    strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
+                }
             }
         }
+            
+  //      textToSpeech.synthesize(text,
+ //
+ //                 customizationID: GlobalConstants.TTScustomizationID,
+ //
+ //                 audioFormat: AudioFormat.wav,
+ //                 failure: failure)
+ //           { data in
+ //           DispatchQueue.main.async { [weak self] in
+ //               guard let strongSelf = self else { return }
+//
+ //               strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
+ //           }
+ //       }
     }
 
 }
