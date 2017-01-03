@@ -69,5 +69,16 @@ extension UILabel {
 
         NSLog("device is " + identifier)
     }
-    
+
+
+    /// Remove XML markup from text
+    func removeXML() {
+        let nsString = text! as NSString
+        let regex = try! NSRegularExpression(pattern: "\\<.*\\>")
+        if let result = regex.matches(in: text!, range: NSRange(location: 0, length: nsString.length)).last {
+            let occurance = nsString.substring(with: result.range)
+            text = text?.replacingOccurrences(of: occurance, with: "")
+        }
+    }
+
 }

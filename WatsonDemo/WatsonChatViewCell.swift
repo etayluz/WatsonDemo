@@ -20,6 +20,7 @@ class WatsonChatViewCell: UITableViewCell {
     func configure(withMessage message: Message) {
         messageLabel.text = message.text
         messageLabel.setFont()
+        messageLabel.removeXML()
     }
 
 }

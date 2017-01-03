@@ -39,6 +39,7 @@ class UserChatViewCell: UITableViewCell {
         }
         
         messageLabel.setFont()
+        messageLabel.removeXML()
         buttonsView.configure(withOptions: message.options,
                               viewWidth: buttonsView.frame.width,
                               userChatViewCell: self)
