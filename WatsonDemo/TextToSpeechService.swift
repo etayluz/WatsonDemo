@@ -39,11 +39,9 @@ class TextToSpeechService {
         }
 
          if GlobalConstants.STTcustomizationID == "" {
-            textToSpeech.synthesize(text, audioFormat: AudioFormat.wav, failure: failure)
-            { data in
+            textToSpeech.synthesize(text, audioFormat: AudioFormat.wav, failure: failure) { data in
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }
-                    
                     strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
                 }
             }
@@ -52,29 +50,13 @@ class TextToSpeechService {
         else {
             textToSpeech.synthesize(text, customizationID: GlobalConstants.TTScustomizationID,
                                     audioFormat: AudioFormat.wav,
-                                    failure: failure)
-            { data in
+                                    failure: failure) { data in
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }
-                    
                     strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
                 }
             }
         }
-            
-  //      textToSpeech.synthesize(text,
- //
- //                 customizationID: GlobalConstants.TTScustomizationID,
- //
- //                 audioFormat: AudioFormat.wav,
- //                 failure: failure)
- //           { data in
- //           DispatchQueue.main.async { [weak self] in
- //               guard let strongSelf = self else { return }
-//
- //               strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
- //           }
- //       }
     }
 
 }

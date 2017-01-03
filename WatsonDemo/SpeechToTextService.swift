@@ -21,12 +21,6 @@ class SpeechToTextService {
     // MARK: - Properties
     weak var delegate: SpeechToTextServiceDelegate?
     var speechToTextSession: SpeechToTextSession? = nil
-    
-   //  var speechToTextSession = SpeechToTextSession(
-  //      username: GlobalConstants.BluemixUsernameSTT,
-  //      password: GlobalConstants.BluemixPasswordSTT
-  //      , customizationID: GlobalConstants.STTcustomizationID
-  //  )
     var textTranscription: String?
 
 
@@ -36,23 +30,14 @@ class SpeechToTextService {
 
         
     if GlobalConstants.STTcustomizationID == "" {
-      
-         speechToTextSession = SpeechToTextSession(
-            username: GlobalConstants.BluemixUsernameSTT,
-            password: GlobalConstants.BluemixPasswordSTT
-        )
-        
+         speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
+                                                   password: GlobalConstants.BluemixPasswordSTT)
     }
     else {
-        
-         speechToTextSession = SpeechToTextSession(
-            username: GlobalConstants.BluemixUsernameSTT,
-            password: GlobalConstants.BluemixPasswordSTT
-            , customizationID: GlobalConstants.STTcustomizationID
-        )
-        
+         speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
+                                                   password: GlobalConstants.BluemixPasswordSTT,
+                                                   customizationID: GlobalConstants.STTcustomizationID)
     }
-        
         
     speechToTextSession?.onResults = { results in print(results.bestTranscript)
             if let bestTranscript = results.bestTranscript as String? {
