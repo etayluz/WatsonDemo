@@ -25,7 +25,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var micImage: UIImageView!
 
     // MARK: - Properties
-    var audioPlayer = AVAudioPlayer()
+    var audioPlayer: AVAudioPlayer?
     var messages = [Message]()
 
     // MARK: - Services
@@ -57,7 +57,9 @@ class ChatViewController: UIViewController {
             speechToTextService.finishRecording()
         } else {
             micImage.image = UIImage.init(imageLiteralResourceName: "MicOn")
-            audioPlayer.stop()
+            if let _ = audioPlayer {
+                audioPlayer?.stop()
+            }
             speechToTextService.startRecording()
         }
 
@@ -183,7 +185,7 @@ extension ChatViewController: TextToSpeechServiceDelegate {
     func textToSpeechDidFinishSynthesizing(withAudioData audioData: Data) {
         audioPlayer = try! AVAudioPlayer(data: audioData)
         #if !DEBUG
-            audioPlayer.play()
+            audioPlayer?.play()
         #endif
     }
     

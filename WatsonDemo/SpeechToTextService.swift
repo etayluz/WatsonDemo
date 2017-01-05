@@ -41,7 +41,8 @@ class SpeechToTextService {
         
     speechToTextSession?.onResults = { results in print(results.bestTranscript)
             if let bestTranscript = results.bestTranscript as String? {
-                delegate.didFinishTranscribingSpeech(withText: bestTranscript)
+                let truncated = bestTranscript.substring(to: bestTranscript.index(before: bestTranscript.endIndex))
+                delegate.didFinishTranscribingSpeech(withText: truncated)
             }
         }
     }
