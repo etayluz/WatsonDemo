@@ -60,7 +60,7 @@ class ConversationService {
 
     func sendMessage(withText text: String) {
         let requestParameters =
-            [Key.input: text,
+            [Key.input: text + " ", // Need to add space at end since node red chops off last letter
              Key.workspaceID: GlobalConstants.dennisNotoWorkspaceID,
              Key.firstName: Constants.firstName,
              Key.lastName: Constants.lastName,
