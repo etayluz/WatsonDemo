@@ -71,7 +71,7 @@ extension UILabel {
 
     /// Remove XML markup from text
     func removeXML() {
-        text = text?.replacingOccurrences(of: "<[^>]+>", with: " ", options: .regularExpression, range: nil)
+        text = text?.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
     }
 
 }
