@@ -165,8 +165,31 @@ class ConversationService {
             self.delegate?.didReceiveMap(withUrl: mapUrl)
         }
 
+        checkForMovie()
+
         // TBD: Remove me - for debug of map
         // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
+    }
+
+
+    func checkForMovie() {
+        let nsContext = context as NSString
+        // String to remove: ,"movie":{"values":["MOVIELINK1","MOVIELINK2"],"display":"Yes"}
+        let regex = try! NSRegularExpression(pattern: ",\"movie.*Yes\"\\}")
+        if let result = regex.matches(in: context, range: NSRange(location: 0, length: nsContext.length)).last {
+            let movieJson = nsContext.substring(with: result.range)
+            showMovies(forMovieJson: movieJson)
+            context = context.replacingOccurrences(of: movieJson, with: "")
+        }
+    }
+
+    func showMovies(forMovieJson movieJson: String) {
+        var cleanString = movieJson.replacingOccurrences(of: ".*\\[\"", with: "", options: .regularExpression, range: nil)
+        print(cleanString)
+        cleanString = cleanString.replacingOccurrences(of: "\"].*", with: "", options: .regularExpression, range: nil)
+        print(cleanString)
+        let movieArray = cleanString.components(separatedBy: "\",\"")
+        print(movieArray)
     }
 
 }
