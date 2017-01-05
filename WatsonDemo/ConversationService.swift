@@ -11,6 +11,7 @@ import Foundation
 protocol ConversationServiceDelegate: class {
     func didReceiveMessage(withText text: String, options: [String]?)
     func didReceiveMap(withUrl mapUrl: URL)
+    func didReceiveVideo(withUrl videoUrl: URL)
 }
 
 
@@ -185,11 +186,13 @@ class ConversationService {
 
     func showMovies(forMovieJson movieJson: String) {
         var cleanString = movieJson.replacingOccurrences(of: ".*\\[\"", with: "", options: .regularExpression, range: nil)
-        print(cleanString)
         cleanString = cleanString.replacingOccurrences(of: "\"].*", with: "", options: .regularExpression, range: nil)
-        print(cleanString)
-        let movieArray = cleanString.components(separatedBy: "\",\"")
-        print(movieArray)
+        let moviesUrls = cleanString.components(separatedBy: "\",\"")
+
+        for movieUrl in moviesUrls {
+            let videoUrl = URL(string: movieUrl)!
+            delegate?.didReceiveVideo(withUrl: videoUrl)
+        }
     }
 
 }

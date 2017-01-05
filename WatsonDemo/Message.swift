@@ -13,6 +13,7 @@ enum MessageType {
     case Map
     case User
     case Watson
+    case Video
 }
 
 public struct Message {
@@ -22,6 +23,7 @@ public struct Message {
     var text: String?
     var type: MessageType
     var mapUrl: URL?
+    var videoUrl: URL?
 
     /// Initialize Message instance
     ///
