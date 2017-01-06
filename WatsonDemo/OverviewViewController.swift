@@ -34,6 +34,8 @@ class OverviewViewController: UIViewController {
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonInsAsst")
         #elseif WATSONWHIRLASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonInsAsst")
+        #elseif WATSONFIDASST
+            overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonWealthAsst")
         #else
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
         #endif
