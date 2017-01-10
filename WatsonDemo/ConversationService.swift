@@ -165,14 +165,36 @@ class ConversationService {
         if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
             self.delegate?.didReceiveMap(withUrl: mapUrl)
         }
-
+        checkForMap()
         checkForMovie()
 
         // TBD: Remove me - for debug of map
         // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
     }
 
-
+    func checkForMap() {
+        let nsContext = context as NSString
+        // String to remove: ,"map":{"values":["mapsLINK1","mapsLINK2"],"display":"Yes"}
+        let regex = try! NSRegularExpression(pattern: ",\"map.*Yes\"\\}")
+        if let result = regex.matches(in: context, range: NSRange(location: 0, length: nsContext.length)).last {
+            let mapJson = nsContext.substring(with: result.range)
+            showMaps(forMapJson: mapJson)
+            context = context.replacingOccurrences(of: mapJson, with: "")
+        }
+    }
+    
+    func showMaps(forMapJson mapJson: String) {
+        var cleanString = mapJson.replacingOccurrences(of: ".*\\[\"", with: "", options: .regularExpression, range: nil)
+        cleanString = cleanString.replacingOccurrences(of: "\"].*", with: "", options: .regularExpression, range: nil)
+        let mapsUrls = cleanString.components(separatedBy: "\",\"")
+        
+        for mapUrl in mapsUrls {
+            let mapUrl = URL(string: mapUrl)!
+            delegate?.didReceiveMap(withUrl: mapUrl)
+        }
+    }
+    
+    
     func checkForMovie() {
         let nsContext = context as NSString
         // String to remove: ,"movie":{"values":["MOVIELINK1","MOVIELINK2"],"display":"Yes"}
