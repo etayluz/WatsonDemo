@@ -55,7 +55,7 @@ struct GlobalConstants {
     static let TTScustomizationID = ""
     static let STTcustomizationID = ""
 #elseif WATSONFIDASST
-    static let dennisNotoWorkspaceID = "4e6dfce5-0aa9-42fb-a0c8-6ba6fb9929c8"
+    static let dennisNotoWorkspaceID = "46975d17-120f-4757-8fe8-4a6649b3a257"
     static let nodeRedWorkflowUrl = "https://ibm-nodered-v1.mybluemix.net/mobileV2-1"
     static let BluemixUsernameSTT = "8b772b77-c923-42ff-b2ef-29370cba1965"
     static let BluemixPasswordSTT = "NP0ooxJSFfL8"
