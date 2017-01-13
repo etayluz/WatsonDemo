@@ -18,7 +18,9 @@ class ButtonsView: UIView {
     var yOffset: CGFloat = 0.0
     var maxX: CGFloat = 0
     weak var userChatViewCell: UserChatViewCell!
-
+    var found_url = ""
+    var buttonHasUrl = 0
+    
     func configure(withOptions options: [String]?, viewWidth: CGFloat,  userChatViewCell: UserChatViewCell) {
         // First time around viewWidth isn't correct so hard-coding for now
         self.viewWidth = UIScreen.main.bounds.size.width * 652 / 768.0
@@ -39,11 +41,35 @@ class ButtonsView: UIView {
 
     func addButton(withOption option: String) {
 
-        let optionButton = UIButton(frame: CGRect(x: xOffset, y: yOffset, width: 0, height: 0))
+        var found_title = ""
+        buttonHasUrl = 0
+        
+        print ("options is " + option)
+        
+        if let rangeOfZero = option.range(of: "|", options: .backwards) {
+            found_title = String(option.characters.prefix(upTo: rangeOfZero.lowerBound))
+            found_url = String(option.characters.suffix(from: rangeOfZero.upperBound))
+            buttonHasUrl = 1;
+        }
+        
+        let optionButton = CustomButton(frame: CGRect(x: xOffset, y: yOffset, width: 0, height: 0))
         optionButton.backgroundColor = UIColor.buttonBackgroundColor()
         optionButton.titleLabel?.setFont()
-        optionButton.setTitle(option, for: .normal)
-        optionButton.setTitle(option, for: .highlighted)
+        
+        if buttonHasUrl == 0 {
+           optionButton.setTitle(option, for: .normal)
+           optionButton.setTitle(option, for: .highlighted)
+            optionButton.buttonUse = "ButtonOnly"
+            optionButton.buttonUrl = "None"
+        }
+        else {
+           optionButton.setTitle(found_title, for: .normal)
+           optionButton.setTitle(found_title, for: .highlighted)
+           optionButton.buttonUse = "ButtonLink"
+           optionButton.buttonUrl = found_url
+           optionButton.backgroundColor = UIColor.blue
+        
+        }
         size(optionButton: optionButton)
         optionButton.layer.cornerRadius = 15
         optionButton.addTarget(self, action: #selector(optionButtonTapped(button:)), for: .touchUpInside)
@@ -76,9 +102,8 @@ class ButtonsView: UIView {
     }
 
     func optionButtonTapped(button: CustomButton) {
-        userChatViewCell.optionButtonTapped(withSelectedButton: button)
+           userChatViewCell.optionButtonTapped(withSelectedButton: button)
     }
-
 
     func reset() {
         for view in subviews {

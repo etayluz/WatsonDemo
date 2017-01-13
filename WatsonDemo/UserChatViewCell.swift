@@ -58,14 +58,19 @@ class UserChatViewCell: UITableViewCell {
     // MARK: - Actions
     func optionButtonTapped(withSelectedButton selectedButton: CustomButton) {
 
-        message?.options = nil
-        message?.text = selectedButton.titleLabel?.text
+        print ("buttonUse is " + selectedButton.buttonUse!)
+        print ("buttonUrl is " + selectedButton.buttonUrl!)
+        
+        if let rangeOfZero = selectedButton.buttonUse?.range(of: "ButtonOnly", options: .backwards) {
+           message?.options = nil
+           message?.text = selectedButton.titleLabel?.text
 
-        /// Update message
-        if let indexPath = chatViewController?.chatTableView.indexPath(for: self),
-           let message = message {
-            chatViewController?.messages[indexPath.row] = message
-            chatViewController?.dismissKeyboard()
+           /// Update message
+           if let indexPath = chatViewController?.chatTableView.indexPath(for: self),
+              let message = message {
+              chatViewController?.messages[indexPath.row] = message
+              chatViewController?.dismissKeyboard()
+           }
         }
 
         userIcon.isHidden = false
@@ -89,8 +94,21 @@ class UserChatViewCell: UITableViewCell {
         }, completion: { result in
             selectedButton.removeFromSuperview()
             self.reloadCell()
-            self.chatViewController?.conversationService.sendMessage(withText: (selectedButton.titleLabel?.text!)!)
+            if let rangeOfZero = selectedButton.buttonUse?.range(of: "ButtonOnly", options: .backwards) {
+                self.chatViewController?.conversationService.sendMessage(withText: (selectedButton.titleLabel?.text!)!)}
         })
+        
+        if selectedButton.buttonUrl != "" {
+          let url = URL(string: selectedButton.buttonUrl!)
+          if UIApplication.shared.canOpenURL(url!) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            } else {
+                // Fallback on earlier versions
+            }
+          }
+        }
+    
     }
 
     // MARK: - Private

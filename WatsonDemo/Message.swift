@@ -22,7 +22,8 @@ public struct Message {
     var options: [String]?
     var text: String?
     var type: MessageType
-    var mapUrl: URL?
+    var mapStr : String?
+    //var mapUrl: URL?
     var videoUrl: URL?
 
     /// Initialize Message instance

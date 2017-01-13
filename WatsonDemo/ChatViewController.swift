@@ -76,7 +76,7 @@ class ChatViewController: UIViewController {
     func appendChat(withMessage message: Message) {
         guard let text = message.text,
             (text.characters.count > 0 || message.options != nil ||
-                message.mapUrl != nil || message.videoUrl != nil)
+                message.mapStr != nil || message.videoUrl != nil)
             else { return }
 
 
@@ -216,9 +216,9 @@ extension ChatViewController: ConversationServiceDelegate {
 
     }
 
-    internal func didReceiveMap(withUrl mapUrl: URL) {
+    internal func didReceiveMap(withString mapStr: String) {
         var message = Message(type: MessageType.Map, text: "", options: nil)
-        message.mapUrl = mapUrl
+        message.mapStr = mapStr
         self.appendChat(withMessage: message)
     }
 

@@ -10,7 +10,8 @@ import Foundation
 
 protocol ConversationServiceDelegate: class {
     func didReceiveMessage(withText text: String, options: [String]?)
-    func didReceiveMap(withUrl mapUrl: URL)
+    func didReceiveMap(withString mapStr: String)
+    //  func didReceiveMap(withUrl mapUrl: URL)
     func didReceiveVideo(withUrl videoUrl: URL)
 }
 
@@ -20,7 +21,8 @@ class ConversationService {
     // MARK: - Properties
     weak var delegate: ConversationServiceDelegate?
     var context = ""
-
+    var options: [String]?
+    
     // MARK: - Constants
     private struct Constants {
         static let firstName = "Jane"
@@ -116,11 +118,12 @@ class ConversationService {
 
         self.context = json["context"] as! String
         var text = json["text"] as! String
-
+        options?.removeAll(keepingCapacity: false)
+        
         // Look for the option params in the brackets
         let nsString = text as NSString
         let regex = try! NSRegularExpression(pattern: "\\[.*\\]")
-        var options: [String]?
+   //     var options: [String]?
         if let result = regex.matches(in: text, range: NSRange(location: 0, length: nsString.length)).last {
             var optionsString = nsString.substring(with: result.range)
             text = text.replacingOccurrences(of: optionsString, with: "")
@@ -161,10 +164,14 @@ class ConversationService {
             mapUrlString = Map.mapFour
         }
 
+        checkForButton()
         self.delegate?.didReceiveMessage(withText: text, options: options)
-        if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
-            self.delegate?.didReceiveMap(withUrl: mapUrl)
-        }
+        if let mapUrlString = mapUrlString {self.delegate?.didReceiveMap(withString: mapUrlString)}
+        // if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
+       //    self.delegate?.didReceiveMap(withUrl: mapUrl)
+       // }
+       
+        
         checkForMap()
         checkForMovie()
 
@@ -172,6 +179,28 @@ class ConversationService {
         // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
     }
 
+    func checkForButton() {
+        let nsContext = context as NSString
+        // String to remove: ,"map":{"values":["Title:buttonLINK1","Tittle:buttonLINK2"],"display":"Yes"}
+        let regex = try! NSRegularExpression(pattern: ",\"button.*Yes\"\\}")
+        if let result = regex.matches(in: context, range: NSRange(location: 0, length: nsContext.length)).last {
+            var buttonJson = nsContext.substring(with: result.range)
+            setButtons(forButtonJson: buttonJson)
+            context = context.replacingOccurrences(of: buttonJson, with: "")
+        }
+    }
+    
+    func setButtons(forButtonJson mapJson: String) {
+        var cleanString = mapJson.replacingOccurrences(of: ".*\\[\"", with: "", options: .regularExpression, range: nil)
+        cleanString = cleanString.replacingOccurrences(of: "\"].*", with: "", options: .regularExpression, range: nil)
+        options = cleanString.components(separatedBy: "\",\"")
+        
+        //for buttonUrl in buttonsUrls {
+        //    let buttonUrl = URL(string: buttonUrl)!
+        //    delegate?.didReceiveMap(withUrl: buttonUrl)
+        //}
+    }
+    
     func checkForMap() {
         let nsContext = context as NSString
         // String to remove: ,"map":{"values":["mapsLINK1","mapsLINK2"],"display":"Yes"}
@@ -186,11 +215,14 @@ class ConversationService {
     func showMaps(forMapJson mapJson: String) {
         var cleanString = mapJson.replacingOccurrences(of: ".*\\[\"", with: "", options: .regularExpression, range: nil)
         cleanString = cleanString.replacingOccurrences(of: "\"].*", with: "", options: .regularExpression, range: nil)
-        let mapsUrls = cleanString.components(separatedBy: "\",\"")
+        let mapsStrs = cleanString.components(separatedBy: "\",\"")
         
-        for mapUrl in mapsUrls {
-            let mapUrl = URL(string: mapUrl)!
-            delegate?.didReceiveMap(withUrl: mapUrl)
+        for mapStr in mapsStrs {
+              delegate?.didReceiveMap(withString: mapStr)
+         //   var myUrl = mapUrl + "&size=600x300"
+         //   print (myUrl)
+         //   let mapUrl = URL(string: myUrl)!
+         //   delegate?.didReceiveMap(withUrl: mapUrl)
         }
     }
     

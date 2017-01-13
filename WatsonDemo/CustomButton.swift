@@ -23,7 +23,9 @@ import UIKit
 
     // MARK: - Properties
     var leadingConstraint: NSLayoutConstraint?
-
+    var buttonUse: String?
+    var buttonUrl: String?
+    
     @IBInspectable var masksToBounds: Bool = true {
         didSet {
             layer.masksToBounds = masksToBounds
@@ -65,7 +67,7 @@ import UIKit
             layer.borderColor = borderColor.cgColor
         }
     }
-
+    
     override var intrinsicContentSize: CGSize {
         var contentSize = super.intrinsicContentSize
         contentSize.width += 20

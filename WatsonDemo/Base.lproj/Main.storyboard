@@ -273,17 +273,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-5d-NVy" userLabel="MapImageView">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-5d-NVy" userLabel="MapImageView">
                                                     <rect key="frame" x="0.0" y="8" width="414" height="124"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="width" secondItem="0hf-wd-wKg" secondAttribute="width" priority="750" id="Lmi-rp-3vF"/>
-                                                <constraint firstAttribute="topMargin" secondItem="ETF-5d-NVy" secondAttribute="top" priority="750" id="OXA-8B-nrm"/>
-                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="centerX" secondItem="0hf-wd-wKg" secondAttribute="centerX" priority="750" id="ZT1-cY-NsI"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ETF-5d-NVy" secondAttribute="bottom" id="uNW-hq-OBh"/>
+                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="centerX" secondItem="0hf-wd-wKg" secondAttribute="centerX" id="Vsh-6D-jdQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -296,7 +293,7 @@
                                         <rect key="frame" x="0.0" y="421" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ThR-IJ-Thf" id="cIj-cv-1AB">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="139.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
