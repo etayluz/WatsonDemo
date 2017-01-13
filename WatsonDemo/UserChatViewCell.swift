@@ -98,7 +98,7 @@ class UserChatViewCell: UITableViewCell {
                 self.chatViewController?.conversationService.sendMessage(withText: (selectedButton.titleLabel?.text!)!)}
         })
         
-        if selectedButton.buttonUrl != "" {
+         if let rangeOfZero = selectedButton.buttonUse?.range(of: "ButtonLink", options: .backwards) {
           let url = URL(string: selectedButton.buttonUrl!)
           if UIApplication.shared.canOpenURL(url!) {
             if #available(iOS 10.0, *) {
