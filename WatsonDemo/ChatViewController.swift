@@ -209,9 +209,16 @@ extension ChatViewController: ConversationServiceDelegate {
         guard text.characters.count > 0 else { return }
 
         self.textToSpeechService.synthesizeSpeech(withText: text)
-        self.appendChat(withMessage: Message(type: MessageType.Watson, text: text, options: nil))
-        if let _ = options {
+        
+        //add code for multiple messages from watson
+        
+        var texts = text.components(separatedBy: "\",\"")
+        for mytext in texts {
+            
+          self.appendChat(withMessage: Message(type: MessageType.Watson, text: mytext, options: nil))
+          if let _ = options {
             self.appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))
+          }
         }
 
     }
