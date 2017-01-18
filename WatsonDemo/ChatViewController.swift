@@ -207,14 +207,13 @@ extension ChatViewController: ConversationServiceDelegate {
     
     internal func didReceiveMessage(withText text: String, options: [String]?) {
         guard text.characters.count > 0 else { return }
-
-        self.textToSpeechService.synthesizeSpeech(withText: text)
         
         //add code for multiple messages from watson
         
         var texts = text.components(separatedBy: "\",\"")
         for mytext in texts {
-            
+          
+          self.textToSpeechService.synthesizeSpeech(withText: mytext)
           self.appendChat(withMessage: Message(type: MessageType.Watson, text: mytext, options: nil))
           if let _ = options {
             self.appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))
