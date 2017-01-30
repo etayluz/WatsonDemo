@@ -47,6 +47,78 @@
 		7444802E1E20621200291174 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
 		7444802F1E20621300291174 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
 		744480301E20621400291174 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
+		746E44421E3FBC03004AC465 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
+		746E44431E3FBC03004AC465 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
+		746E44441E3FBC03004AC465 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
+		746E44451E3FBC03004AC465 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
+		746E44461E3FBC03004AC465 /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */; };
+		746E44471E3FBC03004AC465 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */; };
+		746E44481E3FBC03004AC465 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1BA4B1E007EB9001656A4 /* UIFont+Extension.swift */; };
+		746E44491E3FBC03004AC465 /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */; };
+		746E444A1E3FBC03004AC465 /* SpeechToTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */; };
+		746E444B1E3FBC03004AC465 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */; };
+		746E444C1E3FBC03004AC465 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE51DDF89BF00BE07EB /* CustomButton.swift */; };
+		746E444D1E3FBC03004AC465 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43959FF1DE50DD400F2C075 /* CustomView.swift */; };
+		746E444E1E3FBC03004AC465 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
+		746E444F1E3FBC03004AC465 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186D1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift */; };
+		746E44501E3FBC03004AC465 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18721DDA8768008CE7C2 /* Message.swift */; };
+		746E44511E3FBC03004AC465 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */; };
+		746E44521E3FBC03004AC465 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18611DD96859008CE7C2 /* ChatViewController.swift */; };
+		746E44531E3FBC03004AC465 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18681DD96FC5008CE7C2 /* CustomLabel.swift */; };
+		746E44541E3FBC03004AC465 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F56E871DF722550068A426 /* UIImage+Assets.swift */; };
+		746E44551E3FBC03004AC465 /* ConversationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18801DDB908E008CE7C2 /* ConversationService.swift */; };
+		746E44561E3FBC03004AC465 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF961DD91EA70003074A /* OverviewViewController.swift */; };
+		746E44571E3FBC03004AC465 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
+		746E44581E3FBC03004AC465 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
+		746E44591E3FBC03004AC465 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
+		746E445B1E3FBC03004AC465 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
+		746E445C1E3FBC03004AC465 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
+		746E445D1E3FBC03004AC465 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
+		746E445E1E3FBC03004AC465 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
+		746E44601E3FBC03004AC465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
+		746E44611E3FBC03004AC465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
+		746E44621E3FBC03004AC465 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
+		746E44631E3FBC03004AC465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
+		746E44651E3FBC03004AC465 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		746E44661E3FBC03004AC465 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		746E44671E3FBC03004AC465 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		746E44681E3FBC03004AC465 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		746E44761E3FBC37004AC465 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
+		746E44771E3FBC37004AC465 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
+		746E44781E3FBC37004AC465 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
+		746E44791E3FBC37004AC465 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
+		746E447A1E3FBC37004AC465 /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */; };
+		746E447B1E3FBC37004AC465 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */; };
+		746E447C1E3FBC37004AC465 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1BA4B1E007EB9001656A4 /* UIFont+Extension.swift */; };
+		746E447D1E3FBC37004AC465 /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */; };
+		746E447E1E3FBC37004AC465 /* SpeechToTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */; };
+		746E447F1E3FBC37004AC465 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */; };
+		746E44801E3FBC37004AC465 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE51DDF89BF00BE07EB /* CustomButton.swift */; };
+		746E44811E3FBC37004AC465 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43959FF1DE50DD400F2C075 /* CustomView.swift */; };
+		746E44821E3FBC37004AC465 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
+		746E44831E3FBC37004AC465 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186D1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift */; };
+		746E44841E3FBC37004AC465 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18721DDA8768008CE7C2 /* Message.swift */; };
+		746E44851E3FBC37004AC465 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */; };
+		746E44861E3FBC37004AC465 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18611DD96859008CE7C2 /* ChatViewController.swift */; };
+		746E44871E3FBC37004AC465 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18681DD96FC5008CE7C2 /* CustomLabel.swift */; };
+		746E44881E3FBC37004AC465 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F56E871DF722550068A426 /* UIImage+Assets.swift */; };
+		746E44891E3FBC37004AC465 /* ConversationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18801DDB908E008CE7C2 /* ConversationService.swift */; };
+		746E448A1E3FBC37004AC465 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF961DD91EA70003074A /* OverviewViewController.swift */; };
+		746E448B1E3FBC37004AC465 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
+		746E448C1E3FBC37004AC465 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
+		746E448D1E3FBC37004AC465 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
+		746E448F1E3FBC37004AC465 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
+		746E44901E3FBC37004AC465 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
+		746E44911E3FBC37004AC465 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
+		746E44921E3FBC37004AC465 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
+		746E44941E3FBC37004AC465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
+		746E44951E3FBC37004AC465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
+		746E44961E3FBC37004AC465 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
+		746E44971E3FBC37004AC465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
+		746E44991E3FBC37004AC465 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		746E449A1E3FBC37004AC465 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		746E449B1E3FBC37004AC465 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		746E449C1E3FBC37004AC465 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74CF3A2F1E045D2700CED191 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		74CF3A301E045D2700CED191 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		74CF3A311E045D2700CED191 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
@@ -241,6 +313,34 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		746E44641E3FBC03004AC465 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				746E44651E3FBC03004AC465 /* TextToSpeechV1.framework in Embed Frameworks */,
+				746E44661E3FBC03004AC465 /* RestKit.framework in Embed Frameworks */,
+				746E44671E3FBC03004AC465 /* SpeechToTextV1.framework in Embed Frameworks */,
+				746E44681E3FBC03004AC465 /* WebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746E44981E3FBC37004AC465 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				746E44991E3FBC37004AC465 /* TextToSpeechV1.framework in Embed Frameworks */,
+				746E449A1E3FBC37004AC465 /* RestKit.framework in Embed Frameworks */,
+				746E449B1E3FBC37004AC465 /* SpeechToTextV1.framework in Embed Frameworks */,
+				746E449C1E3FBC37004AC465 /* WebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74CF3A511E045D2700CED191 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,6 +419,10 @@
 		740FD0801E028165007329B8 /* WatsonWealthAsst-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WatsonWealthAsst-Info.plist"; sourceTree = "<group>"; };
 		744480231E20615B00291174 /* WatsonFidAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonFidAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		744480241E20615C00291174 /* WatsonWealthAsst copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WatsonWealthAsst copy-Info.plist"; path = "/Users/dennisnoto/Documents/NotoData-Dev/Watson/save/WatsonDemo/WatsonWealthAsst copy-Info.plist"; sourceTree = "<absolute>"; };
+		746E44721E3FBC03004AC465 /* WatsonRegAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonRegAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		746E44731E3FBC04004AC465 /* WatsonBankAsst copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WatsonBankAsst copy2-Info.plist"; path = "/Users/dennisnoto/Documents/NotoData-Dev/Watson/UCG-V2-new/WatsonDemo/WatsonBankAsst copy2-Info.plist"; sourceTree = "<absolute>"; };
+		746E44A61E3FBC37004AC465 /* WatsonAlfAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonAlfAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		746E44A71E3FBC38004AC465 /* WatsonInsAsst copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WatsonInsAsst copy-Info.plist"; path = "/Users/dennisnoto/Documents/NotoData-Dev/Watson/UCG-V2-new/WatsonDemo/WatsonInsAsst copy-Info.plist"; sourceTree = "<absolute>"; };
 		74CF3A5E1E045D2700CED191 /* WatsonWhirlAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonWhirlAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E49BE41E0265BD00579DD1 /* WatsonInsAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonInsAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E49C111E0265E100579DD1 /* WatsonWealthAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonWealthAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -368,6 +472,28 @@
 				7444800E1E20615B00291174 /* RestKit.framework in Frameworks */,
 				7444800F1E20615B00291174 /* SpeechToTextV1.framework in Frameworks */,
 				744480101E20615B00291174 /* WebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746E445A1E3FBC03004AC465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746E445B1E3FBC03004AC465 /* TextToSpeechV1.framework in Frameworks */,
+				746E445C1E3FBC03004AC465 /* RestKit.framework in Frameworks */,
+				746E445D1E3FBC03004AC465 /* SpeechToTextV1.framework in Frameworks */,
+				746E445E1E3FBC03004AC465 /* WebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746E448E1E3FBC37004AC465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746E448F1E3FBC37004AC465 /* TextToSpeechV1.framework in Frameworks */,
+				746E44901E3FBC37004AC465 /* RestKit.framework in Frameworks */,
+				746E44911E3FBC37004AC465 /* SpeechToTextV1.framework in Frameworks */,
+				746E44921E3FBC37004AC465 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +646,8 @@
 				B4CBCF931DD91EA70003074A /* WatsonDemo */,
 				B4CBCF921DD91EA70003074A /* Products */,
 				744480241E20615C00291174 /* WatsonWealthAsst copy-Info.plist */,
+				746E44731E3FBC04004AC465 /* WatsonBankAsst copy2-Info.plist */,
+				746E44A71E3FBC38004AC465 /* WatsonInsAsst copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -532,6 +660,8 @@
 				74E49C3E1E0265FF00579DD1 /* WatsonMetAsst.app */,
 				74CF3A5E1E045D2700CED191 /* WatsonWhirlAsst.app */,
 				744480231E20615B00291174 /* WatsonFidAsst.app */,
+				746E44721E3FBC03004AC465 /* WatsonRegAsst.app */,
+				746E44A61E3FBC37004AC465 /* WatsonAlfAsst.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -585,6 +715,42 @@
 			name = WatsonFidAsst;
 			productName = WatsonDemo;
 			productReference = 744480231E20615B00291174 /* WatsonFidAsst.app */;
+			productType = "com.apple.product-type.application";
+		};
+		746E44401E3FBC03004AC465 /* WatsonRegAsst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746E44691E3FBC03004AC465 /* Build configuration list for PBXNativeTarget "WatsonRegAsst" */;
+			buildPhases = (
+				746E44411E3FBC03004AC465 /* Sources */,
+				746E445A1E3FBC03004AC465 /* Frameworks */,
+				746E445F1E3FBC03004AC465 /* Resources */,
+				746E44641E3FBC03004AC465 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatsonRegAsst;
+			productName = WatsonDemo;
+			productReference = 746E44721E3FBC03004AC465 /* WatsonRegAsst.app */;
+			productType = "com.apple.product-type.application";
+		};
+		746E44741E3FBC37004AC465 /* WatsonAlfAsst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 746E449D1E3FBC37004AC465 /* Build configuration list for PBXNativeTarget "WatsonAlfAsst" */;
+			buildPhases = (
+				746E44751E3FBC37004AC465 /* Sources */,
+				746E448E1E3FBC37004AC465 /* Frameworks */,
+				746E44931E3FBC37004AC465 /* Resources */,
+				746E44981E3FBC37004AC465 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatsonAlfAsst;
+			productName = WatsonDemo;
+			productReference = 746E44A61E3FBC37004AC465 /* WatsonAlfAsst.app */;
 			productType = "com.apple.product-type.application";
 		};
 		74CF3A2D1E045D2700CED191 /* WatsonWhirlAsst */ = {
@@ -690,6 +856,12 @@
 					74447FF31E20615B00291174 = {
 						DevelopmentTeam = 675E4CR9UZ;
 					};
+					746E44401E3FBC03004AC465 = {
+						DevelopmentTeam = 675E4CR9UZ;
+					};
+					746E44741E3FBC37004AC465 = {
+						DevelopmentTeam = 675E4CR9UZ;
+					};
 					74CF3A2D1E045D2700CED191 = {
 						DevelopmentTeam = 675E4CR9UZ;
 					};
@@ -728,6 +900,8 @@
 				74E49C131E0265FF00579DD1 /* WatsonMetAsst */,
 				74CF3A2D1E045D2700CED191 /* WatsonWhirlAsst */,
 				74447FF31E20615B00291174 /* WatsonFidAsst */,
+				746E44401E3FBC03004AC465 /* WatsonRegAsst */,
+				746E44741E3FBC37004AC465 /* WatsonAlfAsst */,
 			);
 		};
 /* End PBXProject section */
@@ -741,6 +915,28 @@
 				744480131E20615B00291174 /* Assets.xcassets in Resources */,
 				744480141E20615B00291174 /* ChatInputAccessoryView.xib in Resources */,
 				744480151E20615B00291174 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746E445F1E3FBC03004AC465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746E44601E3FBC03004AC465 /* LaunchScreen.storyboard in Resources */,
+				746E44611E3FBC03004AC465 /* Assets.xcassets in Resources */,
+				746E44621E3FBC03004AC465 /* ChatInputAccessoryView.xib in Resources */,
+				746E44631E3FBC03004AC465 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746E44931E3FBC37004AC465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746E44941E3FBC37004AC465 /* LaunchScreen.storyboard in Resources */,
+				746E44951E3FBC37004AC465 /* Assets.xcassets in Resources */,
+				746E44961E3FBC37004AC465 /* ChatInputAccessoryView.xib in Resources */,
+				746E44971E3FBC37004AC465 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,6 +1027,68 @@
 				744480091E20615B00291174 /* WatsonChatViewCell.swift in Sources */,
 				7444800A1E20615B00291174 /* UserChatViewCell.swift in Sources */,
 				7444800B1E20615B00291174 /* Dictionary+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746E44411E3FBC03004AC465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746E44421E3FBC03004AC465 /* VideoViewCell.swift in Sources */,
+				746E44431E3FBC03004AC465 /* UIView+Extension.swift in Sources */,
+				746E44441E3FBC03004AC465 /* GradientView.swift in Sources */,
+				746E44451E3FBC03004AC465 /* ChatTextField.swift in Sources */,
+				746E44461E3FBC03004AC465 /* TextToSpeechService.swift in Sources */,
+				746E44471E3FBC03004AC465 /* ButtonsView.swift in Sources */,
+				746E44481E3FBC03004AC465 /* UIFont+Extension.swift in Sources */,
+				746E44491E3FBC03004AC465 /* MapViewCell.swift in Sources */,
+				746E444A1E3FBC03004AC465 /* SpeechToTextService.swift in Sources */,
+				746E444B1E3FBC03004AC465 /* UIColor+Hex.swift in Sources */,
+				746E444C1E3FBC03004AC465 /* CustomButton.swift in Sources */,
+				746E444D1E3FBC03004AC465 /* CustomView.swift in Sources */,
+				746E444E1E3FBC03004AC465 /* AppDelegate.swift in Sources */,
+				746E444F1E3FBC03004AC465 /* ChatInputAccessoryView.swift in Sources */,
+				746E44501E3FBC03004AC465 /* Message.swift in Sources */,
+				746E44511E3FBC03004AC465 /* GlobalConstants.swift in Sources */,
+				746E44521E3FBC03004AC465 /* ChatViewController.swift in Sources */,
+				746E44531E3FBC03004AC465 /* CustomLabel.swift in Sources */,
+				746E44541E3FBC03004AC465 /* UIImage+Assets.swift in Sources */,
+				746E44551E3FBC03004AC465 /* ConversationService.swift in Sources */,
+				746E44561E3FBC03004AC465 /* OverviewViewController.swift in Sources */,
+				746E44571E3FBC03004AC465 /* WatsonChatViewCell.swift in Sources */,
+				746E44581E3FBC03004AC465 /* UserChatViewCell.swift in Sources */,
+				746E44591E3FBC03004AC465 /* Dictionary+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746E44751E3FBC37004AC465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746E44761E3FBC37004AC465 /* VideoViewCell.swift in Sources */,
+				746E44771E3FBC37004AC465 /* UIView+Extension.swift in Sources */,
+				746E44781E3FBC37004AC465 /* GradientView.swift in Sources */,
+				746E44791E3FBC37004AC465 /* ChatTextField.swift in Sources */,
+				746E447A1E3FBC37004AC465 /* TextToSpeechService.swift in Sources */,
+				746E447B1E3FBC37004AC465 /* ButtonsView.swift in Sources */,
+				746E447C1E3FBC37004AC465 /* UIFont+Extension.swift in Sources */,
+				746E447D1E3FBC37004AC465 /* MapViewCell.swift in Sources */,
+				746E447E1E3FBC37004AC465 /* SpeechToTextService.swift in Sources */,
+				746E447F1E3FBC37004AC465 /* UIColor+Hex.swift in Sources */,
+				746E44801E3FBC37004AC465 /* CustomButton.swift in Sources */,
+				746E44811E3FBC37004AC465 /* CustomView.swift in Sources */,
+				746E44821E3FBC37004AC465 /* AppDelegate.swift in Sources */,
+				746E44831E3FBC37004AC465 /* ChatInputAccessoryView.swift in Sources */,
+				746E44841E3FBC37004AC465 /* Message.swift in Sources */,
+				746E44851E3FBC37004AC465 /* GlobalConstants.swift in Sources */,
+				746E44861E3FBC37004AC465 /* ChatViewController.swift in Sources */,
+				746E44871E3FBC37004AC465 /* CustomLabel.swift in Sources */,
+				746E44881E3FBC37004AC465 /* UIImage+Assets.swift in Sources */,
+				746E44891E3FBC37004AC465 /* ConversationService.swift in Sources */,
+				746E448A1E3FBC37004AC465 /* OverviewViewController.swift in Sources */,
+				746E448B1E3FBC37004AC465 /* WatsonChatViewCell.swift in Sources */,
+				746E448C1E3FBC37004AC465 /* UserChatViewCell.swift in Sources */,
+				746E448D1E3FBC37004AC465 /* Dictionary+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1860,6 +2118,795 @@
 			};
 			name = WatsonFidAsst;
 		};
+		746E446A1E3FBC03004AC465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		746E446B1E3FBC03004AC465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		746E446C1E3FBC03004AC465 /* WatsonMetAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonMetAsst;
+		};
+		746E446D1E3FBC03004AC465 /* WatsonWhirlAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonWhirlAsst;
+		};
+		746E446E1E3FBC03004AC465 /* WatsonWealthAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonWealthAsst;
+		};
+		746E446F1E3FBC03004AC465 /* WatsonFidAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonFidAsst;
+		};
+		746E44701E3FBC03004AC465 /* WatsonInsAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonInsAsst;
+		};
+		746E44711E3FBC03004AC465 /* WatsonBankAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonBankAsst;
+		};
+		746E449E1E3FBC37004AC465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		746E449F1E3FBC37004AC465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		746E44A01E3FBC37004AC465 /* WatsonMetAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonMetAsst;
+		};
+		746E44A11E3FBC37004AC465 /* WatsonWhirlAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonWhirlAsst;
+		};
+		746E44A21E3FBC37004AC465 /* WatsonWealthAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonWealthAsst;
+		};
+		746E44A31E3FBC37004AC465 /* WatsonFidAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonFidAsst;
+		};
+		746E44A41E3FBC37004AC465 /* WatsonInsAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonInsAsst;
+		};
+		746E44A51E3FBC37004AC465 /* WatsonBankAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonBankAsst;
+		};
+		746E44A81E3FBC7D004AC465 /* WatsonRegAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DWATSONREGASST";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = WatsonRegAsst;
+		};
+		746E44A91E3FBC7D004AC465 /* WatsonRegAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = WatsonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonRegAsst;
+		};
+		746E44AA1E3FBC7D004AC465 /* WatsonRegAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonRegAsst;
+		};
+		746E44AB1E3FBC7D004AC465 /* WatsonRegAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonRegAsst;
+		};
+		746E44AC1E3FBC7D004AC465 /* WatsonRegAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonMetAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonRegAsst;
+		};
+		746E44AD1E3FBC7D004AC465 /* WatsonRegAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonMetAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonRegAsst;
+		};
+		746E44AE1E3FBC7D004AC465 /* WatsonRegAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonRegAsst;
+		};
+		746E44AF1E3FBC7D004AC465 /* WatsonRegAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonRegAsst;
+		};
+		746E44B01E3FBC7D004AC465 /* WatsonRegAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonRegAsst;
+		};
+		746E44B11E3FBC99004AC465 /* WatsonAlfAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DWATSONALFASST";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = WatsonAlfAsst;
+		};
+		746E44B21E3FBC99004AC465 /* WatsonAlfAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = WatsonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonAlfAsst;
+		};
+		746E44B31E3FBC99004AC465 /* WatsonAlfAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonAlfAsst;
+		};
+		746E44B41E3FBC99004AC465 /* WatsonAlfAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonAlfAsst;
+		};
+		746E44B51E3FBC99004AC465 /* WatsonAlfAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonMetAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonAlfAsst;
+		};
+		746E44B61E3FBC99004AC465 /* WatsonAlfAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonMetAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonAlfAsst;
+		};
+		746E44B71E3FBC99004AC465 /* WatsonAlfAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonAlfAsst;
+		};
+		746E44B81E3FBC99004AC465 /* WatsonAlfAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonBankAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonAlfAsst;
+		};
+		746E44B91E3FBC99004AC465 /* WatsonAlfAsst */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatsonDemo",
+				);
+				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "064c884c-840e-4c59-be4f-3d2dae3fb184";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = WatsonAlfAsst;
+		};
 		74CF3A281E045CB600CED191 /* WatsonWhirlAsst */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2422,7 +3469,43 @@
 				744480201E20615B00291174 /* WatsonWealthAsst */,
 				7444802B1E20618C00291174 /* WatsonFidAsst */,
 				744480211E20615B00291174 /* WatsonInsAsst */,
+				746E44B71E3FBC99004AC465 /* WatsonAlfAsst */,
 				744480221E20615B00291174 /* WatsonBankAsst */,
+				746E44AE1E3FBC7D004AC465 /* WatsonRegAsst */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746E44691E3FBC03004AC465 /* Build configuration list for PBXNativeTarget "WatsonRegAsst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746E446A1E3FBC03004AC465 /* Debug */,
+				746E446B1E3FBC03004AC465 /* Release */,
+				746E446C1E3FBC03004AC465 /* WatsonMetAsst */,
+				746E446D1E3FBC03004AC465 /* WatsonWhirlAsst */,
+				746E446E1E3FBC03004AC465 /* WatsonWealthAsst */,
+				746E446F1E3FBC03004AC465 /* WatsonFidAsst */,
+				746E44701E3FBC03004AC465 /* WatsonInsAsst */,
+				746E44B81E3FBC99004AC465 /* WatsonAlfAsst */,
+				746E44711E3FBC03004AC465 /* WatsonBankAsst */,
+				746E44AF1E3FBC7D004AC465 /* WatsonRegAsst */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		746E449D1E3FBC37004AC465 /* Build configuration list for PBXNativeTarget "WatsonAlfAsst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				746E449E1E3FBC37004AC465 /* Debug */,
+				746E449F1E3FBC37004AC465 /* Release */,
+				746E44A01E3FBC37004AC465 /* WatsonMetAsst */,
+				746E44A11E3FBC37004AC465 /* WatsonWhirlAsst */,
+				746E44A21E3FBC37004AC465 /* WatsonWealthAsst */,
+				746E44A31E3FBC37004AC465 /* WatsonFidAsst */,
+				746E44A41E3FBC37004AC465 /* WatsonInsAsst */,
+				746E44B91E3FBC99004AC465 /* WatsonAlfAsst */,
+				746E44A51E3FBC37004AC465 /* WatsonBankAsst */,
+				746E44B01E3FBC7D004AC465 /* WatsonRegAsst */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2437,7 +3520,9 @@
 				74CF3A5B1E045D2700CED191 /* WatsonWealthAsst */,
 				7444802A1E20618C00291174 /* WatsonFidAsst */,
 				74CF3A5C1E045D2700CED191 /* WatsonInsAsst */,
+				746E44B61E3FBC99004AC465 /* WatsonAlfAsst */,
 				74CF3A5D1E045D2700CED191 /* WatsonBankAsst */,
+				746E44AD1E3FBC7D004AC465 /* WatsonRegAsst */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2452,7 +3537,9 @@
 				740FD0741E027464007329B8 /* WatsonWealthAsst */,
 				744480271E20618C00291174 /* WatsonFidAsst */,
 				740FD06F1E027455007329B8 /* WatsonInsAsst */,
+				746E44B31E3FBC99004AC465 /* WatsonAlfAsst */,
 				740FD06A1E02744A007329B8 /* WatsonBankAsst */,
+				746E44AA1E3FBC7D004AC465 /* WatsonRegAsst */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2467,7 +3554,9 @@
 				740FD0751E027464007329B8 /* WatsonWealthAsst */,
 				744480281E20618C00291174 /* WatsonFidAsst */,
 				740FD0701E027455007329B8 /* WatsonInsAsst */,
+				746E44B41E3FBC99004AC465 /* WatsonAlfAsst */,
 				740FD06B1E02744A007329B8 /* WatsonBankAsst */,
+				746E44AB1E3FBC7D004AC465 /* WatsonRegAsst */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2482,7 +3571,9 @@
 				740FD0761E027464007329B8 /* WatsonWealthAsst */,
 				744480291E20618C00291174 /* WatsonFidAsst */,
 				740FD0711E027455007329B8 /* WatsonInsAsst */,
+				746E44B51E3FBC99004AC465 /* WatsonAlfAsst */,
 				740FD06C1E02744A007329B8 /* WatsonBankAsst */,
+				746E44AC1E3FBC7D004AC465 /* WatsonRegAsst */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2497,7 +3588,9 @@
 				740FD0721E027464007329B8 /* WatsonWealthAsst */,
 				744480251E20618C00291174 /* WatsonFidAsst */,
 				740FD06D1E027455007329B8 /* WatsonInsAsst */,
+				746E44B11E3FBC99004AC465 /* WatsonAlfAsst */,
 				740FD0681E02744A007329B8 /* WatsonBankAsst */,
+				746E44A81E3FBC7D004AC465 /* WatsonRegAsst */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2512,7 +3605,9 @@
 				740FD0731E027464007329B8 /* WatsonWealthAsst */,
 				744480261E20618C00291174 /* WatsonFidAsst */,
 				740FD06E1E027455007329B8 /* WatsonInsAsst */,
+				746E44B21E3FBC99004AC465 /* WatsonAlfAsst */,
 				740FD0691E02744A007329B8 /* WatsonBankAsst */,
+				746E44A91E3FBC7D004AC465 /* WatsonRegAsst */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

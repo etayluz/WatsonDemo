@@ -14,16 +14,16 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74447FF31E20615B00291174"
-               BuildableName = "WatsonFidAsst.app"
-               BlueprintName = "WatsonFidAsst"
+               BlueprintIdentifier = "746E44741E3FBC37004AC465"
+               BuildableName = "WatsonAlfAsst.app"
+               BlueprintName = "WatsonAlfAsst"
                ReferencedContainer = "container:WatsonDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "WatsonAlfAsst"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74447FF31E20615B00291174"
-            BuildableName = "WatsonFidAsst.app"
-            BlueprintName = "WatsonFidAsst"
+            BlueprintIdentifier = "746E44741E3FBC37004AC465"
+            BuildableName = "WatsonAlfAsst.app"
+            BlueprintName = "WatsonAlfAsst"
             ReferencedContainer = "container:WatsonDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -42,7 +42,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "WatsonAlfAsst"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74447FF31E20615B00291174"
-            BuildableName = "WatsonFidAsst.app"
-            BlueprintName = "WatsonFidAsst"
+            BlueprintIdentifier = "746E44741E3FBC37004AC465"
+            BuildableName = "WatsonAlfAsst.app"
+            BlueprintName = "WatsonAlfAsst"
             ReferencedContainer = "container:WatsonDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -65,7 +65,7 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "WatsonAlfAsst"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -74,18 +74,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74447FF31E20615B00291174"
-            BuildableName = "WatsonFidAsst.app"
-            BlueprintName = "WatsonFidAsst"
+            BlueprintIdentifier = "746E44741E3FBC37004AC465"
+            BuildableName = "WatsonAlfAsst.app"
+            BlueprintName = "WatsonAlfAsst"
             ReferencedContainer = "container:WatsonDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "WatsonAlfAsst">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "WatsonAlfAsst"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
