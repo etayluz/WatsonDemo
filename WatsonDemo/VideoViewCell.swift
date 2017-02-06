@@ -42,6 +42,7 @@ class VideoViewCell: UITableViewCell {
         #if DEBUG
             playerViewController.player?.volume = 0
         #endif
+    
         playerViewController.view.frame = CGRect(x: 20,
                                                  y: 0,
                                                  width: frame.size.width - 40,
@@ -49,7 +50,7 @@ class VideoViewCell: UITableViewCell {
         self.addSubview(playerViewController.view)
 
         if videoUrls.contains(message.videoUrl!) == false {
-            playerViewController.player?.play()
+          //  playerViewController.player?.play()
             videoUrls.append(message.videoUrl!)
         }
 
