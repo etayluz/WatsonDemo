@@ -75,7 +75,8 @@ class MapViewCell: UITableViewCell {
         //iPad Pro
         case "iPad6,3", "iPad6,4", "iPad6,7", "iPad6,8":imgsize = "&size=600x400";
         //default
-        default: imgsize = "&size=500x300";
+     //   default: imgsize = "&size=500x300";
+          default: imgsize = "&size=700x600";
         }
         
         let myStr = message.mapStr!  + imgsize
