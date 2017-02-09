@@ -104,12 +104,18 @@ struct GlobalConstants {
 #elseif WATSONALFASST
     static let dennisNotoWorkspaceID = "fababd0b-b416-40b0-8b06-3536aaa53d44"
     static let nodeRedWorkflowUrl = "https://aflac1.mybluemix.net/mobileV2-1"
-    static let BluemixUsernameSTT = "8b772b77-c923-42ff-b2ef-29370cba1965"
-    static let BluemixPasswordSTT = "NP0ooxJSFfL8"
-    static let BluemixUsernameTTS = "833e48e0-2139-4142-935f-04190b698542"
-    static let BluemixPasswordTTS = "DDxOcEN6TIRi"
-    static let TTScustomizationID = ""
-    static let STTcustomizationID = ""
+ //   static let BluemixUsernameSTT = "8b772b77-c923-42ff-b2ef-29370cba1965"
+ //   static let BluemixPasswordSTT = "NP0ooxJSFfL8"
+ //   static let BluemixUsernameTTS = "833e48e0-2139-4142-935f-04190b698542"
+ //   static let BluemixPasswordTTS = "DDxOcEN6TIRi"
+    static let BluemixUsernameSTT = "cd577564-8907-4459-97c0-e2bd52e9bc58"
+    static let BluemixPasswordSTT = "EvhOuqq6HyeD"
+    static let BluemixUsernameTTS = "beb39c12-31cf-46b1-bb8b-7d00a5711ebe"
+    static let BluemixPasswordTTS = "ky3dLOMhXbAW"
+    
+    
+    static let TTScustomizationID = "f85ba3f7-4f2e-481c-900f-a24138974973"
+    static let STTcustomizationID = "f276d800-eecd-11e6-8e67-ada083c78a12"
     
 #else
     static let dennisNotoWorkspaceID = "1549fa38-7160-4106-82ee-73796b21f3b8"
