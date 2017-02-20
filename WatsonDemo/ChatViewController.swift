@@ -36,9 +36,33 @@ class ChatViewController: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        #if WATSONBANKASST
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONINSASST
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONWEALTHASST
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONMETASST
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONWHIRLASST
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONFIDASST
+            headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONALFASST
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+        #elseif WATSONREGASST
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #else
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #endif
+        
+        
+    
         setupSimulator()
         chatTextField.chatViewController = self
-
+    
         chatTableView.autoresizingMask = UIViewAutoresizing.flexibleHeight;
         chatTableView.rowHeight = UITableViewAutomaticDimension
         chatTableView.estimatedRowHeight = 140

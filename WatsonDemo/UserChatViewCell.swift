@@ -31,6 +31,29 @@ class UserChatViewCell: UITableViewCell {
     ///
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
+        
+        
+        #if WATSONBANKASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONINSASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONWEALTHASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONMETASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONWHIRLASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONFIDASST
+           userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONALFASST
+            userIcon.image = #imageLiteral(resourceName: "User-WatsonAlfAsst")
+        #elseif WATSONREGASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #else
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #endif
+    
+        
         self.message = message
 
         if let text = message.text,
