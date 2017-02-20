@@ -54,6 +54,27 @@ class ButtonsView: UIView {
         
         let optionButton = CustomButton(frame: CGRect(x: xOffset, y: yOffset, width: 0, height: 0))
         optionButton.backgroundColor = UIColor.buttonBackgroundColor()
+        
+        #if WATSONBANKASST
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONINSASST
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONWEALTHASST
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONMETASST
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONWHIRLASST
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONFIDASST
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #elseif WATSONALFASST
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+        #elseif WATSONREGASST
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #else
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+        #endif
+        
         optionButton.titleLabel?.setFont()
         
         if buttonHasUrl == 0 {
