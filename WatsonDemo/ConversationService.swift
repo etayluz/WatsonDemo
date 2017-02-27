@@ -74,6 +74,8 @@ class ConversationService {
              Key.context: context,
         ]
 
+        print(requestParameters)
+
         var request = URLRequest(url: URL(string: GlobalConstants.nodeRedWorkflowUrl)!)
         request.httpMethod = Constants.httpMethodPost
         request.httpBody = requestParameters.stringFromHttpParameters().data(using: .utf8)
@@ -184,7 +186,7 @@ class ConversationService {
         // String to remove: ,"map":{"values":["Title:buttonLINK1","Tittle:buttonLINK2"],"display":"Yes"}
         let regex = try! NSRegularExpression(pattern: ",\"button.*Yes\"\\}")
         if let result = regex.matches(in: context, range: NSRange(location: 0, length: nsContext.length)).last {
-            var buttonJson = nsContext.substring(with: result.range)
+            let buttonJson = nsContext.substring(with: result.range)
             setButtons(forButtonJson: buttonJson)
             context = context.replacingOccurrences(of: buttonJson, with: "")
         }

@@ -12,12 +12,17 @@ import UIKit
 class OverviewViewController: UIViewController {
 
     // MARK: - Constants
-    private struct Constants {
+    struct Constants {
         static let chatSelectedIndex = 1
     }
 
     // MARK: - Outlets
     @IBOutlet weak var overviewImageView: UIImageView!
+    @IBOutlet weak var usecaseButtons: ButtonsView!
+
+    // MARK: - Constraints
+
+    @IBOutlet weak var usecaseButtonsLeadingConstraint: NSLayoutConstraint!
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -38,24 +43,20 @@ class OverviewViewController: UIViewController {
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonWealthAsst")
         #elseif WATSONALFASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonAlfAsst")
+            setupUsecaseButtons(withOptions: ["File A Claim", "Check Claim Status", "Complete Claim Process"])
         #elseif WATSONREGASST
-                overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
+            overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
         #else
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
         #endif
-    
-        
-        // This how you change overiew images - Dennis
-        //     overviewImageView.image = #imageLiteral(resourceName: "WestfieldOverview")
-        
-        
-        
     }
+
 
     // MARK: - Actions
     @IBAction func goButtonTapped() {
         tabBarController?.selectedIndex = Constants.chatSelectedIndex
     }
+
 
     // MARK: - Private
     // This will only execute on the simulator and NOT on a real device
@@ -68,4 +69,30 @@ class OverviewViewController: UIViewController {
         #endif
     }
 
+    private func setupUsecaseButtons(withOptions options: [String]) {
+        usecaseButtons.configure(withOptions: options,
+                                 viewWidth: usecaseButtons.frame.width,
+                                 delegate: self)
+
+
+        // Center buttons
+        usecaseButtonsLeadingConstraint.constant = (view.frame.size.width - usecaseButtons.maxX)/2
+    }
+
+}
+
+
+// MARK: - ButtonsViewDelegate
+extension OverviewViewController: ButtonsViewDelegate {
+
+    func optionButtonTapped(withSelectedButton selectedButton: CustomButton) {
+
+        if let chatViewController = tabBarController?.viewControllers?[Constants.chatSelectedIndex] as? ChatViewController,
+           let option = selectedButton.titleLabel?.text {
+            chatViewController.kickoffMessage = option
+            tabBarController?.selectedIndex = Constants.chatSelectedIndex
+        }
+
+    }
+    
 }

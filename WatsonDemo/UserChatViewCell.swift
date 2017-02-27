@@ -65,7 +65,7 @@ class UserChatViewCell: UITableViewCell {
         messageLabel.removeXML()
         buttonsView.configure(withOptions: message.options,
                               viewWidth: buttonsView.frame.width,
-                              userChatViewCell: self)
+                              delegate: self)
 
         initialButtonsLeadingConstraint = initialButtonsLeadingConstraint ?? buttonsLeadingConstraint.constant
         buttonsLeadingConstraint.constant = initialButtonsLeadingConstraint + (buttonsView.viewWidth - buttonsView.maxX)/2
@@ -78,22 +78,38 @@ class UserChatViewCell: UITableViewCell {
         userIcon.clipsToBounds = true
     }
 
-    // MARK: - Actions
-    func optionButtonTapped(withSelectedButton selectedButton: CustomButton) {
 
+    // MARK: - Private
+    /// Once the user has tapped an option button, the cell needs to be resized and so we reload it to shrink it
+    func reloadCell() {
+        // This is needed to resize the ButtonsView correctly
+        if let indexPath = self.chatViewController?.chatTableView.indexPath(for: self) {
+            self.chatViewController?.chatTableView.reloadRows(at: [indexPath], with: .none)
+            self.chatViewController?.scrollChatTableToBottom()
+        }
+    }
+
+
+}
+
+
+// MARK: - ButtonsViewDelegate
+extension UserChatViewCell: ButtonsViewDelegate {
+
+    func optionButtonTapped(withSelectedButton selectedButton: CustomButton) {
         print ("buttonUse is " + selectedButton.buttonUse!)
         print ("buttonUrl is " + selectedButton.buttonUrl!)
-        
-        if let rangeOfZero = selectedButton.buttonUse?.range(of: "ButtonOnly", options: .backwards) {
-           message?.options = nil
-           message?.text = selectedButton.titleLabel?.text
 
-           /// Update message
-           if let indexPath = chatViewController?.chatTableView.indexPath(for: self),
-              let message = message {
-              chatViewController?.messages[indexPath.row] = message
-              chatViewController?.dismissKeyboard()
-           }
+        if (selectedButton.buttonUse?.range(of: "ButtonOnly", options: .backwards)) != nil {
+            message?.options = nil
+            message?.text = selectedButton.titleLabel?.text
+
+            /// Update message
+            if let indexPath = chatViewController?.chatTableView.indexPath(for: self),
+                let message = message {
+                chatViewController?.messages[indexPath.row] = message
+                chatViewController?.dismissKeyboard()
+            }
         }
 
         userIcon.isHidden = false
@@ -114,35 +130,23 @@ class UserChatViewCell: UITableViewCell {
 
         UIView.animate(withDuration: 0.5, delay: 0, animations: { [weak self] in
             self?.layoutIfNeeded()
-        }, completion: { result in
-            selectedButton.removeFromSuperview()
-            self.reloadCell()
-            if let rangeOfZero = selectedButton.buttonUse?.range(of: "ButtonOnly", options: .backwards) {
-                self.chatViewController?.conversationService.sendMessage(withText: (selectedButton.titleLabel?.text!)!)}
+            }, completion: { result in
+                selectedButton.removeFromSuperview()
+                self.reloadCell()
+                if (selectedButton.buttonUse?.range(of: "ButtonOnly", options: .backwards)) != nil {
+                    self.chatViewController?.conversationService.sendMessage(withText: (selectedButton.titleLabel?.text!)!)}
         })
-        
-         if let rangeOfZero = selectedButton.buttonUse?.range(of: "ButtonLink", options: .backwards) {
-          let url = URL(string: selectedButton.buttonUrl!)
-          if UIApplication.shared.canOpenURL(url!) {
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-            } else {
-                // Fallback on earlier versions
+
+        if (selectedButton.buttonUse?.range(of: "ButtonLink", options: .backwards)) != nil {
+            let url = URL(string: selectedButton.buttonUrl!)
+            if UIApplication.shared.canOpenURL(url!) {
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                } else {
+                    // Fallback on earlier versions
+                }
             }
-          }
         }
+    }
     
-    }
-
-    // MARK: - Private
-    /// Once the user has tapped an option button, the cell needs to be resized and so we reload it to shrink it
-    private func reloadCell() {
-        // This is needed to resize the ButtonsView correctly
-        if let indexPath = self.chatViewController?.chatTableView.indexPath(for: self) {
-            self.chatViewController?.chatTableView.reloadRows(at: [indexPath], with: .none)
-            self.chatViewController?.scrollChatTableToBottom()
-        }
-    }
-
-
 }

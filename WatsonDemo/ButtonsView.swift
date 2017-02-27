@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+protocol ButtonsViewDelegate: NSObjectProtocol {
+
+    // MARK: - Methods
+    func optionButtonTapped(withSelectedButton selectedButton: CustomButton)
+
+}
+
 class ButtonsView: UIView {
 
     // MARK: - Properties
@@ -17,14 +24,14 @@ class ButtonsView: UIView {
     var xOffset: CGFloat = 0.0
     var yOffset: CGFloat = 0.0
     var maxX: CGFloat = 0
-    weak var userChatViewCell: UserChatViewCell!
+    weak var delegate: ButtonsViewDelegate!
     var found_url = ""
     var buttonHasUrl = 0
     
-    func configure(withOptions options: [String]?, viewWidth: CGFloat,  userChatViewCell: UserChatViewCell) {
+    func configure(withOptions options: [String]?, viewWidth: CGFloat,  delegate: ButtonsViewDelegate) {
         // First time around viewWidth isn't correct so hard-coding for now
         self.viewWidth = UIScreen.main.bounds.size.width * 652 / 768.0
-        self.userChatViewCell = userChatViewCell
+        self.delegate = delegate
         viewHeight = 0
         xOffset = 0
         yOffset = 0
@@ -54,7 +61,7 @@ class ButtonsView: UIView {
         
         let optionButton = CustomButton(frame: CGRect(x: xOffset, y: yOffset, width: 0, height: 0))
         optionButton.backgroundColor = UIColor.buttonBackgroundColor()
-        
+
         #if WATSONBANKASST
             optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #elseif WATSONINSASST
@@ -78,18 +85,17 @@ class ButtonsView: UIView {
         optionButton.titleLabel?.setFont()
         
         if buttonHasUrl == 0 {
-           optionButton.setTitle(option, for: .normal)
-           optionButton.setTitle(option, for: .highlighted)
+            optionButton.setTitle(option, for: .normal)
+            optionButton.setTitle(option, for: .highlighted)
             optionButton.buttonUse = "ButtonOnly"
             optionButton.buttonUrl = "None"
         }
         else {
-           optionButton.setTitle(found_title, for: .normal)
-           optionButton.setTitle(found_title, for: .highlighted)
-           optionButton.buttonUse = "ButtonLink"
-           optionButton.buttonUrl = found_url
-           optionButton.backgroundColor = UIColor.blue
-        
+            optionButton.setTitle(found_title, for: .normal)
+            optionButton.setTitle(found_title, for: .highlighted)
+            optionButton.buttonUse = "ButtonLink"
+            optionButton.buttonUrl = found_url
+            optionButton.backgroundColor = UIColor.blue
         }
         size(optionButton: optionButton)
         optionButton.layer.cornerRadius = 15
@@ -123,7 +129,7 @@ class ButtonsView: UIView {
     }
 
     func optionButtonTapped(button: CustomButton) {
-           userChatViewCell.optionButtonTapped(withSelectedButton: button)
+           delegate.optionButtonTapped(withSelectedButton: button)
     }
 
     func reset() {

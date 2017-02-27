@@ -418,11 +418,8 @@
 		740FD07E1E028149007329B8 /* WatsonMetAsst-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WatsonMetAsst-Info.plist"; sourceTree = "<group>"; };
 		740FD0801E028165007329B8 /* WatsonWealthAsst-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WatsonWealthAsst-Info.plist"; sourceTree = "<group>"; };
 		744480231E20615B00291174 /* WatsonFidAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonFidAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		744480241E20615C00291174 /* WatsonWealthAsst copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WatsonWealthAsst copy-Info.plist"; path = "/Users/dennisnoto/Documents/NotoData-Dev/Watson/save/WatsonDemo/WatsonWealthAsst copy-Info.plist"; sourceTree = "<absolute>"; };
 		746E44721E3FBC03004AC465 /* WatsonRegAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonRegAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		746E44731E3FBC04004AC465 /* WatsonBankAsst copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WatsonBankAsst copy2-Info.plist"; path = "/Users/dennisnoto/Documents/NotoData-Dev/Watson/UCG-V2-new/WatsonDemo/WatsonBankAsst copy2-Info.plist"; sourceTree = "<absolute>"; };
 		746E44A61E3FBC37004AC465 /* WatsonAlfAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonAlfAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		746E44A71E3FBC38004AC465 /* WatsonInsAsst copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WatsonInsAsst copy-Info.plist"; path = "/Users/dennisnoto/Documents/NotoData-Dev/Watson/UCG-V2-new/WatsonDemo/WatsonInsAsst copy-Info.plist"; sourceTree = "<absolute>"; };
 		74CF3A5E1E045D2700CED191 /* WatsonWhirlAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonWhirlAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E49BE41E0265BD00579DD1 /* WatsonInsAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonInsAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E49C111E0265E100579DD1 /* WatsonWealthAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonWealthAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -645,9 +642,6 @@
 			children = (
 				B4CBCF931DD91EA70003074A /* WatsonDemo */,
 				B4CBCF921DD91EA70003074A /* Products */,
-				744480241E20615C00291174 /* WatsonWealthAsst copy-Info.plist */,
-				746E44731E3FBC04004AC465 /* WatsonBankAsst copy2-Info.plist */,
-				746E44A71E3FBC38004AC465 /* WatsonInsAsst copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};

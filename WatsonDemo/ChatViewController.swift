@@ -13,7 +13,7 @@ class ChatViewController: UIViewController {
 
     // MARK: - Constants
     private struct Constants {
-        static let conversationKickoffMessage = "Hi"
+        static let defaultConversationKickoffMessage = "Hi"
     }
 
     // MARK: - Outlets
@@ -27,6 +27,7 @@ class ChatViewController: UIViewController {
     // MARK: - Properties
     var audioPlayer: AVAudioPlayer?
     var messages = [Message]()
+    var kickoffMessage = Constants.defaultConversationKickoffMessage
 
     // MARK: - Services
     lazy var conversationService: ConversationService = ConversationService(delegate:self)
@@ -58,7 +59,6 @@ class ChatViewController: UIViewController {
              headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #endif
         
-        
     
         setupSimulator()
         chatTextField.chatViewController = self
@@ -67,8 +67,9 @@ class ChatViewController: UIViewController {
         chatTableView.rowHeight = UITableViewAutomaticDimension
         chatTableView.estimatedRowHeight = 140
 
-        // We need to send some dummy text to keep off the conversation
-        conversationService.sendMessage(withText: Constants.conversationKickoffMessage)
+        // We need to send some dummy text to kick off the conversation
+        NSLog(kickoffMessage)
+        conversationService.sendMessage(withText: kickoffMessage)
 
         let gestureTap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
         chatTableView.addGestureRecognizer(gestureTap)
@@ -186,6 +187,7 @@ extension ChatViewController: UITableViewDataSource {
 
 }
 
+
 // MARK: - UITableViewDataSource
 extension ChatViewController: UITableViewDelegate {
 
@@ -233,7 +235,7 @@ extension ChatViewController: ConversationServiceDelegate {
         guard text.characters.count > 0 else { return }
         
         //add code for multiple messages from watson
-        var texts = text.components(separatedBy: "\",\"")
+        let texts = text.components(separatedBy: "\",\"")
         for mytext in texts {
           
           
