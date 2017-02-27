@@ -48,7 +48,7 @@ class UserChatViewCell: UITableViewCell {
         #elseif WATSONALFASST
             userIcon.image = #imageLiteral(resourceName: "User-WatsonAlfAsst")
         #elseif WATSONREGASST
-            userIcon.image = #imageLiteral(resourceName: "User")
+            userIcon.image = #imageLiteral(resourceName: "User-WatsonRegAsst")
         #else
             userIcon.image = #imageLiteral(resourceName: "User")
         #endif
