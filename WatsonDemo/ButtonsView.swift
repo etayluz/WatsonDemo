@@ -26,7 +26,9 @@ class ButtonsView: UIView {
     var maxX: CGFloat = 0
     weak var delegate: ButtonsViewDelegate!
     var found_url = ""
+    var found_reply = ""
     var buttonHasUrl = 0
+    var buttonHasReply = 0
     
     func configure(withOptions options: [String]?, viewWidth: CGFloat,  delegate: ButtonsViewDelegate) {
         // First time around viewWidth isn't correct so hard-coding for now
@@ -45,17 +47,23 @@ class ButtonsView: UIView {
     }
 
     func addButton(withOption option: String) {
-
         var found_title = ""
         buttonHasUrl = 0
+        buttonHasReply = 0
         
         print ("options is " + option)
         
         if let rangeOfZero = option.range(of: "|", options: .backwards) {
             found_title = String(option.characters.prefix(upTo: rangeOfZero.lowerBound))
-            found_url = String(option.characters.suffix(from: rangeOfZero.upperBound))
-            buttonHasUrl = 1;
+            if String(option.characters.suffix(from: rangeOfZero.upperBound)).contains("http") {           found_url = String(option.characters.suffix(from: rangeOfZero.upperBound))
+                buttonHasUrl = 1;
+            }
+            else {
+                found_reply = String(option.characters.suffix(from: rangeOfZero.upperBound))
+                buttonHasReply = 1;
+            }
         }
+        
         
         let optionButton = CustomButton(frame: CGRect(x: xOffset, y: yOffset, width: 0, height: 0))
         optionButton.backgroundColor = UIColor.buttonBackgroundColor()
@@ -82,13 +90,21 @@ class ButtonsView: UIView {
         
         optionButton.titleLabel?.setFont()
         
-        if buttonHasUrl == 0 {
+        if buttonHasReply == 1 {
+            optionButton.setTitle(found_title, for: .normal)
+            optionButton.setTitle(found_title, for: .highlighted)
+            optionButton.buttonUse = "ButtonOnly"
+            optionButton.buttonReply = found_reply
+            
+        }
+        
+        else if buttonHasUrl == 0 {
             optionButton.setTitle(option, for: .normal)
             optionButton.setTitle(option, for: .highlighted)
             optionButton.buttonUse = "ButtonOnly"
             optionButton.buttonUrl = "None"
         }
-        else {
+        else  {
             optionButton.setTitle(found_title, for: .normal)
             optionButton.setTitle(found_title, for: .highlighted)
             optionButton.buttonUse = "ButtonLink"

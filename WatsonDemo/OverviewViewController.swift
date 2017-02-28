@@ -43,9 +43,9 @@ class OverviewViewController: UIViewController {
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonWealthAsst")
         #elseif WATSONALFASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonAlfAsst")
-            setupUsecaseButtons(withOptions: ["Michael files a claim",
-                                              "Michael checks claim status",
-                                              "Michael receives proactive claims update"])
+            setupUsecaseButtons(withOptions: ["File a claim|Michael files a claim",
+                                              "Check claim status|Michael checks claim status",
+                                              "Complete claim process|Michael receives proactive claims update"])
         #elseif WATSONREGASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
         #else
@@ -89,12 +89,29 @@ extension OverviewViewController: ButtonsViewDelegate {
 
     func optionButtonTapped(withSelectedButton selectedButton: CustomButton) {
 
-        if let chatViewController = tabBarController?.viewControllers?[Constants.chatSelectedIndex] as? ChatViewController,
-           let option = selectedButton.titleLabel?.text {
-            chatViewController.kickoffMessage = option
-            tabBarController?.selectedIndex = Constants.chatSelectedIndex
+        if (selectedButton.buttonReply?.characters.count)! > 0 {
+            
+            if let chatViewController = tabBarController?.viewControllers?[Constants.chatSelectedIndex] as? ChatViewController,
+                
+                let option = selectedButton.buttonReply {
+                chatViewController.kickoffMessage = option
+                tabBarController?.selectedIndex = Constants.chatSelectedIndex
+            }
+        
+        }
+        
+        else {
+          
+            
+            if let chatViewController = tabBarController?.viewControllers?[Constants.chatSelectedIndex] as? ChatViewController,
+                
+                let option = selectedButton.titleLabel?.text {
+                chatViewController.kickoffMessage = option
+                tabBarController?.selectedIndex = Constants.chatSelectedIndex
+            }
         }
 
-    }
-    
+     }
+        
+        
 }
