@@ -25,6 +25,7 @@ import UIKit
     var leadingConstraint: NSLayoutConstraint?
     var buttonUse: String?
     var buttonUrl: String?
+    var buttonReply: String?
     
     @IBInspectable var masksToBounds: Bool = true {
         didSet {
