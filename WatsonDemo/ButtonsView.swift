@@ -117,7 +117,19 @@ class ButtonsView: UIView {
                                     width: optionButton.frame.width + 25,
                                     height: optionButton.frame.height)
 
-        xOffset += optionButton.frame.width + 20
+        // Button text is too long to fit screen. Reduce font size.
+        if (xOffset == 0 && viewWidth < optionButton.frame.width) {
+            optionButton.frame = CGRect(x: xOffset,
+                                        y: yOffset,
+                                        width: viewWidth - 25,
+                                        height: optionButton.frame.height)
+
+            optionButton.titleLabel?.adjustsFontSizeToFitWidth = true
+            optionButton.titleLabel?.numberOfLines = 0
+            optionButton.titleLabel?.minimumScaleFactor = 0.2
+        } else {
+            xOffset += optionButton.frame.width + 20
+        }
 
         if (xOffset > viewWidth) {
             xOffset = 0

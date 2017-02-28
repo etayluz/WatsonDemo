@@ -18,6 +18,8 @@ extension UILabel {
             guard let value = element.value as? Int8, value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
+
+        NSLog(identifier)
         switch identifier {
         //iPhone 4
         case "iPhone3,1", "iPhone3,2", "iPhone3,3": font = UIFont(name: "Arial", size: 12.0);
@@ -30,7 +32,7 @@ extension UILabel {
         //iPhone 5s
         case "iPhone6,1", "iPhone6,2": font = UIFont(name: "Arial", size: 12.0);
         //iPhone 6
-        case "iPhone7,2": font = UIFont(name: "Arial", size: 14.0);
+        case "iPhone7,2", "x86_64": font = UIFont(name: "Arial", size: 14.0);
         //iPhone 6 Plus
         case "iPhone7,1": font = UIFont(name: "Arial", size: 16.0);
         //iPhone 6s
@@ -38,7 +40,7 @@ extension UILabel {
         //iPhone 6s Plus
         case "iPhone8,2":  font = UIFont(name: "Arial", size: 16.0);
         //iphone 7
-        case "iPhone9,1", "iPhone9,3":  font = UIFont(name: "Arial", size: 14.0);
+        case "iPhone9,1", "iPhone9,3":  font = UIFont(name: "Arial", size: 5.0);
         //iphone 7 plus
         case "iPhone9,2", "iPhone9,4":  font = UIFont(name: "Arial", size: 16.0);
         //iPhone SE
