@@ -19,8 +19,8 @@ protocol ButtonsViewDelegate: NSObjectProtocol {
 class ButtonsView: UIView {
 
     // MARK: - Properties
-    var viewWidth: CGFloat!
-    var viewHeight: CGFloat!
+    var viewWidth: CGFloat = UIScreen.main.bounds.size.width * 652 / 768.0
+    var viewHeight: CGFloat  = 0
     var xOffset: CGFloat = 0.0
     var yOffset: CGFloat = 0.0
     var maxX: CGFloat = 0
@@ -30,9 +30,7 @@ class ButtonsView: UIView {
     
     func configure(withOptions options: [String]?, viewWidth: CGFloat,  delegate: ButtonsViewDelegate) {
         // First time around viewWidth isn't correct so hard-coding for now
-        self.viewWidth = UIScreen.main.bounds.size.width * 652 / 768.0
         self.delegate = delegate
-        viewHeight = 0
         xOffset = 0
         yOffset = 0
         maxX = 0

@@ -20,8 +20,8 @@ class OverviewViewController: UIViewController {
     @IBOutlet weak var overviewImageView: UIImageView!
     @IBOutlet weak var usecaseButtons: ButtonsView!
 
-    // MARK: - Constraints
 
+    // MARK: - Constraints
     @IBOutlet weak var usecaseButtonsLeadingConstraint: NSLayoutConstraint!
 
     // MARK: - View Lifecycle
