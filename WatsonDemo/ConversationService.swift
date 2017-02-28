@@ -167,6 +167,7 @@ class ConversationService {
         }
 
         checkForButton()
+
         self.delegate?.didReceiveMessage(withText: text, options: options)
         if let mapUrlString = mapUrlString {self.delegate?.didReceiveMap(withString: mapUrlString)}
         // if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
