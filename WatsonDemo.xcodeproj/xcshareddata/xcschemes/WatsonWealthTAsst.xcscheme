@@ -85,7 +85,7 @@
       buildConfiguration = "WatsonWealthTAsst">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "WatsonWealthTAsst"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
