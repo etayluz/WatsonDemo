@@ -67,7 +67,7 @@ extension UILabel {
         case "iPad6,3", "iPad6,4", "iPad6,7", "iPad6,8":font = UIFont(name: "Arial", size: 22.0);
         //default
        // default: font = UIFont(name: "Arial", size: 18.0);
-          default: font = UIFont(name: "Arial", size: 24.0);
+          default: font = UIFont(name: "Arial", size: 32.0);
         }
     }
 

@@ -60,6 +60,23 @@ struct GlobalConstants {
     //static let BluemixPasswordTTS = "DDxOcEN6TIRi"
     static let TTScustomizationID = ""
     static let STTcustomizationID = ""
+#elseif WATSONWEALTHTASST
+    static let dennisNotoWorkspaceID = "d229233a-9b65-415d-855d-7edfc231f692"
+    static let nodeRedWorkflowUrl = "https://nodered-dev-v1.mybluemix.net/mobile"
+    static let BluemixUsernameSTT = "57664062-7e3f-44ba-9509-86693059b908"
+    static let BluemixPasswordSTT = "S3mjUCoKlBUW"
+    static let BluemixUsernameTTS = "98b40873-5a5f-46fd-8b87-61d331d8154c"
+    static let BluemixPasswordTTS = "tndhTu1APbI3"
+    
+    //static let dennisNotoWorkspaceID = "2fb924dd-27c4-4668-8ac3-be7add1065c1"
+    //static let nodeRedWorkflowUrl = "http://nodered-v3.mybluemix.net/mobileV2-1"
+    //static let BluemixUsernameSTT = "8b772b77-c923-42ff-b2ef-29370cba1965"
+    //static let BluemixPasswordSTT = "NP0ooxJSFfL8"
+    //static let BluemixUsernameTTS = "833e48e0-2139-4142-935f-04190b698542"
+    //static let BluemixPasswordTTS = "DDxOcEN6TIRi"
+    static let TTScustomizationID = ""
+    static let STTcustomizationID = ""
+    
 #elseif WATSONMETASST
     static let dennisNotoWorkspaceID = "5fd7c1c7-9ea2-4fc8-b6fa-7920e10aad5a"
     static let nodeRedWorkflowUrl = "http://metlifepotnode-red1.mybluemix.net/mobileV2-1"
