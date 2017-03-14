@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74396B821E77C78D00353657 /* WatsonWealthTAsst-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74396B811E77C78D00353657 /* WatsonWealthTAsst-Info.plist */; };
 		74447FF51E20615B00291174 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		74447FF61E20615B00291174 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		74447FF71E20615B00291174 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
@@ -467,9 +468,9 @@
 		740FD07C1E028048007329B8 /* WatsonInsAsst-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WatsonInsAsst-Info.plist"; sourceTree = "<group>"; };
 		740FD07E1E028149007329B8 /* WatsonMetAsst-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WatsonMetAsst-Info.plist"; sourceTree = "<group>"; };
 		740FD0801E028165007329B8 /* WatsonWealthAsst-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WatsonWealthAsst-Info.plist"; sourceTree = "<group>"; };
+		74396B811E77C78D00353657 /* WatsonWealthTAsst-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WatsonWealthTAsst-Info.plist"; sourceTree = "<group>"; };
 		744480231E20615B00291174 /* WatsonFidAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonFidAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		746B7F7F1E778D6C00CFC08B /* WatsonWealthTAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonWealthTAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		746B7F801E778D6D00CFC08B /* WatsonWealthTAsst-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WatsonWealthTAsst-Info.plist"; path = "/Users/dennisnoto/Documents/NotoData-Dev/Watson/UCG-V2-5-Latest/WatsonDemo/WatsonWealthTAsst-Info.plist"; sourceTree = "<absolute>"; };
 		746E44721E3FBC03004AC465 /* WatsonRegAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonRegAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		746E44A61E3FBC37004AC465 /* WatsonAlfAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonAlfAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CF3A5E1E045D2700CED191 /* WatsonWhirlAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonWhirlAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -636,7 +637,7 @@
 		B48B18601DD92B02008CE7C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				746B7F801E778D6D00CFC08B /* WatsonWealthTAsst-Info.plist */,
+				74396B811E77C78D00353657 /* WatsonWealthTAsst-Info.plist */,
 				B4CBCFA01DD91EA70003074A /* Info.plist */,
 				740FD07C1E028048007329B8 /* WatsonInsAsst-Info.plist */,
 				740FD07E1E028149007329B8 /* WatsonMetAsst-Info.plist */,
@@ -1004,6 +1005,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				746B7F6A1E778D6C00CFC08B /* LaunchScreen.storyboard in Resources */,
+				74396B821E77C78D00353657 /* WatsonWealthTAsst-Info.plist in Resources */,
 				746B7F6B1E778D6C00CFC08B /* Assets.xcassets in Resources */,
 				746B7F6C1E778D6C00CFC08B /* ChatInputAccessoryView.xib in Resources */,
 				746B7F6D1E778D6C00CFC08B /* Main.storyboard in Resources */,
