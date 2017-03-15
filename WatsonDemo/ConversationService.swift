@@ -50,11 +50,12 @@ class ConversationService {
 
     // MARK: - Map
     private struct Map {
-        static let mapOne = "https://maps.googleapis.com/maps/api/staticmap?format=png&zoom=17&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C10900+South+Parker+road+Parker+Colorado&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k"
+     /*   static let mapOne = "https://maps.googleapis.com/maps/api/staticmap?format=png&zoom=17&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C10900+South+Parker+road+Parker+Colorado&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k"
         static let mapTwo = "https://maps.googleapis.com/maps/api/staticmap?maptype=satellite&format=png&zoom=18&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C10900+South+Parker+road+Parker+Colorado&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k"
         static let mapThree = "https://maps.googleapis.com/maps/api/staticmap?format=png&zoom=13&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C1000+Jasper+Avenue+Edmonton+Canada&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k"
         static let mapFour = "https://maps.googleapis.com/maps/api/staticmap?maptype=satellite&format=png&zoom=18&size=590x300&markers=icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C1000+Jasper+Avenue+Edmonton+Canada&key=AIzaSyA22GwDjEAwd58byf7JRxcQ5X0IK6JlT9k"
-    }
+    */
+     }
 
     // MARK: - Init
     init(delegate: ConversationServiceDelegate) {
@@ -99,6 +100,7 @@ class ConversationService {
                     do {
                         if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject] {
                             self?.parseJson(json: json)
+                            
                         }
                     } catch {
                         // No-op
@@ -116,8 +118,8 @@ class ConversationService {
 
     }
 
-    func parseJson(json: [String:AnyObject]) { 
-
+    func parseJson(json: [String:AnyObject]) {
+        
         self.context = json["context"] as! String
         var text = json["text"] as! String
         options?.removeAll(keepingCapacity: false)
@@ -145,8 +147,8 @@ class ConversationService {
 
         var mapUrlString: String?
 
-        /// Check for maps
-        if text.contains("InsMap1") {
+        /// No longer needed
+  /*      if text.contains("InsMap1") {
             text = text.replacingOccurrences(of: "InsMap1", with: "")
             mapUrlString = Map.mapOne
         }
@@ -165,7 +167,7 @@ class ConversationService {
             text = text.replacingOccurrences(of: "InsMap4", with: "")
             mapUrlString = Map.mapFour
         }
-
+   */
         checkForButton()
 
         self.delegate?.didReceiveMessage(withText: text, options: options)
@@ -174,7 +176,7 @@ class ConversationService {
        //    self.delegate?.didReceiveMap(withUrl: mapUrl)
        // }
        
-        
+        checkForUserIcon()
         checkForMap()
         checkForMovie()
 
@@ -182,6 +184,17 @@ class ConversationService {
         // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
     }
 
+    func checkForUserIcon() {
+        let nsContext = context as NSString
+        let regex = try! NSRegularExpression(pattern: "\"UserIcon.*\",|\"UserIcon.*\"\\}")
+        if let result = regex.matches(in: context, range: NSRange(location: 0, length: nsContext.length)).last {
+            let userIconStr = nsContext.substring(with: result.range)
+            var cleanString = userIconStr.replacingOccurrences(of: "\"UserIcon\":\"", with: "", options: .regularExpression, range: nil)
+            cleanString = cleanString.replacingOccurrences(of: "\"\\}|\",", with: "", options: .regularExpression, range: nil)
+            GlobalConstants.UserIcon = cleanString
+            print("user name  " + GlobalConstants.UserIcon)
+        }
+    }
     func checkForButton() {
         let nsContext = context as NSString
         // String to remove: ,"map":{"values":["Title:buttonLINK1","Tittle:buttonLINK2"],"display":"Yes"}

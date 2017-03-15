@@ -144,4 +144,6 @@ struct GlobalConstants {
     static let TTScustomizationID = ""
     static let STTcustomizationID = ""
 #endif
+
+static var UserIcon = "";
 }
