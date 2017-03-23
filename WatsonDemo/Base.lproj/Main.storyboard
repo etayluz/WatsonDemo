@@ -311,7 +311,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckboxViewCell" rowHeight="250" id="Y57-VW-GBQ" userLabel="CheckboxViewCell" customClass="CheckboxViewCell" customModule="WatsonBankAsst">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckboxViewCell" rowHeight="250" id="Y57-VW-GBQ" userLabel="CheckboxViewCell" customClass="CheckboxViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="561" width="414" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y57-VW-GBQ" id="ZoX-lS-YTI">
@@ -327,32 +327,32 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Itx-sU-HxD">
-                                                            <rect key="frame" x="23" y="66" width="325" height="88"/>
+                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Itx-sU-HxD">
+                                                            <rect key="frame" x="23" y="66" width="325" height="128"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <prototypes>
-                                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="51" id="bfW-8g-uZR" userLabel="CheckboxTableView Cell" customClass="CheckboxTableViewCell">
+                                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckboxTableViewCell" rowHeight="51" id="bfW-8g-uZR" userLabel="CheckboxTableView Cell" customClass="CheckboxTableViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="28" width="325" height="51"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bfW-8g-uZR" id="zh4-HR-9Ae">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="51"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChecklistVisual" translatesAutoresizingMaskIntoConstraints="NO" id="JO8-bp-jon">
-                                                                                <rect key="frame" x="8" y="8" width="30" height="30"/>
+                                                                                <rect key="frame" x="8" y="8" width="25" height="25"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="height" constant="30" id="M5y-0Y-cUi"/>
-                                                                                    <constraint firstAttribute="width" constant="30" id="jRP-GW-aFt"/>
+                                                                                    <constraint firstAttribute="height" constant="25" id="M5y-0Y-cUi"/>
+                                                                                    <constraint firstAttribute="width" constant="25" id="jRP-GW-aFt"/>
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4q1-7g-GvM" userLabel="Option">
-                                                                                <rect key="frame" x="53" y="14" width="112.33333333333334" height="19.333333333333336"/>
+                                                                                <rect key="frame" x="48" y="11" width="113" height="20"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-lK-gB3" userLabel="Border">
-                                                                                <rect key="frame" x="8" y="49.666666666666664" width="211.33333333333334" height="1"/>
+                                                                                <rect key="frame" x="8" y="50" width="211" height="1"/>
                                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="1" id="evR-0W-mRB"/>
@@ -369,8 +369,16 @@
                                                                             <constraint firstItem="0fb-lK-gB3" firstAttribute="leading" secondItem="zh4-HR-9Ae" secondAttribute="leadingMargin" id="jf9-Qa-2VD"/>
                                                                         </constraints>
                                                                     </tableViewCellContentView>
+                                                                    <connections>
+                                                                        <outlet property="checkbox" destination="JO8-bp-jon" id="721-BW-1lm"/>
+                                                                        <outlet property="optionLabel" destination="4q1-7g-GvM" id="jBA-zx-pfd"/>
+                                                                    </connections>
                                                                 </tableViewCell>
                                                             </prototypes>
+                                                            <connections>
+                                                                <outlet property="dataSource" destination="Y57-VW-GBQ" id="SWn-TI-709"/>
+                                                                <outlet property="delegate" destination="Y57-VW-GBQ" id="Yfy-rP-nIK"/>
+                                                            </connections>
                                                         </tableView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -378,7 +386,7 @@
                                                         <constraint firstItem="Itx-sU-HxD" firstAttribute="trailing" secondItem="2Gr-MD-4dY" secondAttribute="trailing" id="1nq-dB-ojx"/>
                                                         <constraint firstItem="2Gr-MD-4dY" firstAttribute="top" secondItem="KmD-er-qJf" secondAttribute="top" constant="14" id="WXd-f6-gec"/>
                                                         <constraint firstItem="2Gr-MD-4dY" firstAttribute="leading" secondItem="KmD-er-qJf" secondAttribute="leading" constant="23" id="Zx2-yL-Q3x"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Itx-sU-HxD" secondAttribute="bottom" constant="40" id="kr4-7x-eaZ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Itx-sU-HxD" secondAttribute="bottom" id="kr4-7x-eaZ"/>
                                                         <constraint firstItem="Itx-sU-HxD" firstAttribute="leading" secondItem="2Gr-MD-4dY" secondAttribute="leading" id="nIH-Z1-XwG"/>
                                                         <constraint firstAttribute="trailing" secondItem="2Gr-MD-4dY" secondAttribute="trailing" constant="10" id="o1s-cq-nKP"/>
                                                         <constraint firstItem="Itx-sU-HxD" firstAttribute="top" secondItem="2Gr-MD-4dY" secondAttribute="bottom" constant="13.666666666666657" id="tns-3H-zCt"/>
@@ -532,7 +540,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ChecklistVisual" width="529" height="529"/>
+        <image name="ChecklistVisual" width="35" height="35"/>
         <image name="MicOff" width="30" height="30"/>
         <image name="Overview-WatsonAlfAsst" width="768" height="1024"/>
         <image name="RightTriangle" width="10" height="16"/>

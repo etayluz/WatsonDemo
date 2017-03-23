@@ -321,6 +321,23 @@
 		B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
 		B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4981CB91DEE37F700C67B35 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
+		B4AE40DC1E842D290084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
+		B4AE40DD1E8434580084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
+		B4AE40DE1E8434590084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
+		B4AE40DF1E8434590084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
+		B4AE40E01E84345A0084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
+		B4AE40E11E84345A0084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
+		B4AE40E21E84345B0084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
+		B4AE40E31E84345B0084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
+		B4AE40E41E84345C0084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
+		B4AE40E61E84345F0084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
+		B4AE40E71E8434600084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
+		B4AE40E81E8434600084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
+		B4AE40E91E8434610084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
+		B4AE40EA1E8434610084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
+		B4AE40EB1E8434620084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
+		B4AE40EC1E8434620084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
+		B4AE40ED1E8434630084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
 		B4B1BA4C1E007EB9001656A4 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1BA4B1E007EB9001656A4 /* UIFont+Extension.swift */; };
 		B4BAE2CD1E1ED6FB00C06746 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
@@ -500,6 +517,7 @@
 		B48B18801DDB908E008CE7C2 /* ConversationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationService.swift; sourceTree = "<group>"; };
 		B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
 		B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxTableViewCell.swift; sourceTree = "<group>"; };
 		B4B1BA4B1E007EB9001656A4 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewCell.swift; sourceTree = "<group>"; };
 		B4CBCF911DD91EA70003074A /* WatsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WatsonDemo.app; path = WatsonBankAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -670,6 +688,7 @@
 			isa = PBXGroup;
 			children = (
 				B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */,
+				B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */,
 				B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */,
 				B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */,
 				B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */,
@@ -1109,6 +1128,7 @@
 				74447FF71E20615B00291174 /* ChatTextField.swift in Sources */,
 				74447FF81E20615B00291174 /* TextToSpeechService.swift in Sources */,
 				74447FF91E20615B00291174 /* ButtonsView.swift in Sources */,
+				B4AE40E11E84345A0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
 				74447FFA1E20615B00291174 /* UIFont+Extension.swift in Sources */,
 				74447FFB1E20615B00291174 /* MapViewCell.swift in Sources */,
 				74447FFC1E20615B00291174 /* SpeechToTextService.swift in Sources */,
@@ -1125,6 +1145,7 @@
 				744480071E20615B00291174 /* ConversationService.swift in Sources */,
 				744480081E20615B00291174 /* OverviewViewController.swift in Sources */,
 				744480091E20615B00291174 /* WatsonChatViewCell.swift in Sources */,
+				B4AE40EA1E8434610084CDE1 /* CheckboxViewCell.swift in Sources */,
 				7444800A1E20615B00291174 /* UserChatViewCell.swift in Sources */,
 				7444800B1E20615B00291174 /* Dictionary+Extension.swift in Sources */,
 			);
@@ -1140,6 +1161,7 @@
 				746B7F4F1E778D6C00CFC08B /* ChatTextField.swift in Sources */,
 				746B7F501E778D6C00CFC08B /* TextToSpeechService.swift in Sources */,
 				746B7F511E778D6C00CFC08B /* ButtonsView.swift in Sources */,
+				B4AE40E41E84345C0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
 				746B7F521E778D6C00CFC08B /* UIFont+Extension.swift in Sources */,
 				746B7F531E778D6C00CFC08B /* MapViewCell.swift in Sources */,
 				746B7F541E778D6C00CFC08B /* SpeechToTextService.swift in Sources */,
@@ -1156,6 +1178,7 @@
 				746B7F5F1E778D6C00CFC08B /* ConversationService.swift in Sources */,
 				746B7F601E778D6C00CFC08B /* OverviewViewController.swift in Sources */,
 				746B7F611E778D6C00CFC08B /* WatsonChatViewCell.swift in Sources */,
+				B4AE40ED1E8434630084CDE1 /* CheckboxViewCell.swift in Sources */,
 				746B7F621E778D6C00CFC08B /* UserChatViewCell.swift in Sources */,
 				746B7F631E778D6C00CFC08B /* Dictionary+Extension.swift in Sources */,
 			);
@@ -1171,6 +1194,7 @@
 				746E44451E3FBC03004AC465 /* ChatTextField.swift in Sources */,
 				746E44461E3FBC03004AC465 /* TextToSpeechService.swift in Sources */,
 				746E44471E3FBC03004AC465 /* ButtonsView.swift in Sources */,
+				B4AE40E21E84345B0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
 				746E44481E3FBC03004AC465 /* UIFont+Extension.swift in Sources */,
 				746E44491E3FBC03004AC465 /* MapViewCell.swift in Sources */,
 				746E444A1E3FBC03004AC465 /* SpeechToTextService.swift in Sources */,
@@ -1187,6 +1211,7 @@
 				746E44551E3FBC03004AC465 /* ConversationService.swift in Sources */,
 				746E44561E3FBC03004AC465 /* OverviewViewController.swift in Sources */,
 				746E44571E3FBC03004AC465 /* WatsonChatViewCell.swift in Sources */,
+				B4AE40EB1E8434620084CDE1 /* CheckboxViewCell.swift in Sources */,
 				746E44581E3FBC03004AC465 /* UserChatViewCell.swift in Sources */,
 				746E44591E3FBC03004AC465 /* Dictionary+Extension.swift in Sources */,
 			);
@@ -1202,6 +1227,7 @@
 				746E44791E3FBC37004AC465 /* ChatTextField.swift in Sources */,
 				746E447A1E3FBC37004AC465 /* TextToSpeechService.swift in Sources */,
 				746E447B1E3FBC37004AC465 /* ButtonsView.swift in Sources */,
+				B4AE40E31E84345B0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
 				746E447C1E3FBC37004AC465 /* UIFont+Extension.swift in Sources */,
 				746E447D1E3FBC37004AC465 /* MapViewCell.swift in Sources */,
 				746E447E1E3FBC37004AC465 /* SpeechToTextService.swift in Sources */,
@@ -1218,6 +1244,7 @@
 				746E44891E3FBC37004AC465 /* ConversationService.swift in Sources */,
 				746E448A1E3FBC37004AC465 /* OverviewViewController.swift in Sources */,
 				746E448B1E3FBC37004AC465 /* WatsonChatViewCell.swift in Sources */,
+				B4AE40EC1E8434620084CDE1 /* CheckboxViewCell.swift in Sources */,
 				746E448C1E3FBC37004AC465 /* UserChatViewCell.swift in Sources */,
 				746E448D1E3FBC37004AC465 /* Dictionary+Extension.swift in Sources */,
 			);
@@ -1233,6 +1260,7 @@
 				74CF3A311E045D2700CED191 /* ChatTextField.swift in Sources */,
 				74CF3A321E045D2700CED191 /* TextToSpeechService.swift in Sources */,
 				74CF3A331E045D2700CED191 /* ButtonsView.swift in Sources */,
+				B4AE40E01E84345A0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
 				74CF3A341E045D2700CED191 /* UIFont+Extension.swift in Sources */,
 				74CF3A351E045D2700CED191 /* MapViewCell.swift in Sources */,
 				74CF3A361E045D2700CED191 /* SpeechToTextService.swift in Sources */,
@@ -1249,6 +1277,7 @@
 				74CF3A411E045D2700CED191 /* ConversationService.swift in Sources */,
 				74CF3A421E045D2700CED191 /* OverviewViewController.swift in Sources */,
 				74CF3A431E045D2700CED191 /* WatsonChatViewCell.swift in Sources */,
+				B4AE40E91E8434610084CDE1 /* CheckboxViewCell.swift in Sources */,
 				74CF3A441E045D2700CED191 /* UserChatViewCell.swift in Sources */,
 				74CF3A451E045D2700CED191 /* Dictionary+Extension.swift in Sources */,
 			);
@@ -1264,6 +1293,7 @@
 				74E49BBD1E0265BD00579DD1 /* ChatTextField.swift in Sources */,
 				74E49BBE1E0265BD00579DD1 /* TextToSpeechService.swift in Sources */,
 				74E49BBF1E0265BD00579DD1 /* ButtonsView.swift in Sources */,
+				B4AE40DD1E8434580084CDE1 /* CheckboxTableViewCell.swift in Sources */,
 				74E49BC01E0265BD00579DD1 /* UIFont+Extension.swift in Sources */,
 				74E49BC11E0265BD00579DD1 /* MapViewCell.swift in Sources */,
 				74E49BC21E0265BD00579DD1 /* SpeechToTextService.swift in Sources */,
@@ -1280,6 +1310,7 @@
 				74E49BCD1E0265BD00579DD1 /* ConversationService.swift in Sources */,
 				74E49BCE1E0265BD00579DD1 /* OverviewViewController.swift in Sources */,
 				74E49BCF1E0265BD00579DD1 /* WatsonChatViewCell.swift in Sources */,
+				B4AE40E61E84345F0084CDE1 /* CheckboxViewCell.swift in Sources */,
 				74E49BD01E0265BD00579DD1 /* UserChatViewCell.swift in Sources */,
 				74E49BD11E0265BD00579DD1 /* Dictionary+Extension.swift in Sources */,
 			);
@@ -1295,6 +1326,7 @@
 				74E49BEA1E0265E100579DD1 /* ChatTextField.swift in Sources */,
 				74E49BEB1E0265E100579DD1 /* TextToSpeechService.swift in Sources */,
 				74E49BEC1E0265E100579DD1 /* ButtonsView.swift in Sources */,
+				B4AE40DE1E8434590084CDE1 /* CheckboxTableViewCell.swift in Sources */,
 				74E49BED1E0265E100579DD1 /* UIFont+Extension.swift in Sources */,
 				74E49BEE1E0265E100579DD1 /* MapViewCell.swift in Sources */,
 				74E49BEF1E0265E100579DD1 /* SpeechToTextService.swift in Sources */,
@@ -1311,6 +1343,7 @@
 				74E49BFA1E0265E100579DD1 /* ConversationService.swift in Sources */,
 				74E49BFB1E0265E100579DD1 /* OverviewViewController.swift in Sources */,
 				74E49BFC1E0265E100579DD1 /* WatsonChatViewCell.swift in Sources */,
+				B4AE40E81E8434600084CDE1 /* CheckboxViewCell.swift in Sources */,
 				74E49BFD1E0265E100579DD1 /* UserChatViewCell.swift in Sources */,
 				74E49BFE1E0265E100579DD1 /* Dictionary+Extension.swift in Sources */,
 			);
@@ -1326,6 +1359,7 @@
 				74E49C171E0265FF00579DD1 /* ChatTextField.swift in Sources */,
 				74E49C181E0265FF00579DD1 /* TextToSpeechService.swift in Sources */,
 				74E49C191E0265FF00579DD1 /* ButtonsView.swift in Sources */,
+				B4AE40DF1E8434590084CDE1 /* CheckboxTableViewCell.swift in Sources */,
 				74E49C1A1E0265FF00579DD1 /* UIFont+Extension.swift in Sources */,
 				74E49C1B1E0265FF00579DD1 /* MapViewCell.swift in Sources */,
 				74E49C1C1E0265FF00579DD1 /* SpeechToTextService.swift in Sources */,
@@ -1342,6 +1376,7 @@
 				74E49C271E0265FF00579DD1 /* ConversationService.swift in Sources */,
 				74E49C281E0265FF00579DD1 /* OverviewViewController.swift in Sources */,
 				74E49C291E0265FF00579DD1 /* WatsonChatViewCell.swift in Sources */,
+				B4AE40E71E8434600084CDE1 /* CheckboxViewCell.swift in Sources */,
 				74E49C2A1E0265FF00579DD1 /* UserChatViewCell.swift in Sources */,
 				74E49C2B1E0265FF00579DD1 /* Dictionary+Extension.swift in Sources */,
 			);
@@ -1365,6 +1400,7 @@
 				B4395A001DE50DD400F2C075 /* CustomView.swift in Sources */,
 				B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */,
 				B48B186E1DDA0BAB008CE7C2 /* ChatInputAccessoryView.swift in Sources */,
+				B4AE40DC1E842D290084CDE1 /* CheckboxTableViewCell.swift in Sources */,
 				B48B18731DDA8768008CE7C2 /* Message.swift in Sources */,
 				B48B187F1DDB8D80008CE7C2 /* GlobalConstants.swift in Sources */,
 				B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */,

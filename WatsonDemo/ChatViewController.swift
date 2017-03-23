@@ -147,6 +147,8 @@ class ChatViewController: UIViewController {
     }
 
 }
+
+
 // MARK: - UITableViewDataSource
 extension ChatViewController: UITableViewDataSource {
 
@@ -211,7 +213,7 @@ extension ChatViewController: UITableViewDelegate {
         }
 
         if message.type == MessageType.Checkbox {
-            return UIScreen.main.bounds.size.width * 0.76
+            return CGFloat(message.options!.count) * 35 + 150
         }
         
         return UITableViewAutomaticDimension
@@ -273,7 +275,7 @@ extension ChatViewController: ConversationServiceDelegate {
     }
 
     internal func didReceiveCheckbox(witOptions options: [String]) {
-        var message = Message(type: MessageType.Checkbox, text: "", options: options)
+        let message = Message(type: MessageType.Checkbox, text: "", options: options)
         self.appendChat(withMessage: message)
     }
 
