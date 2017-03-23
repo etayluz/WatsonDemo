@@ -20,7 +20,7 @@ class MapViewCell: UITableViewCell {
     }
 
     func configure(withMessage message: Message) {
-       
+        var mapStr = ""
         var imgsize = ""
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -79,10 +79,17 @@ class MapViewCell: UITableViewCell {
           default: imgsize = "&size=700x600";
         }
         
-        let myStr = message.mapStr!  + imgsize
-        print (myStr)
         
-        if let mapUrl = URL(string: myStr) {
+        if (message.mapStr!.contains("googleapi")) {
+          mapStr = message.mapStr!  + imgsize
+          print (mapStr)
+        }
+        else {
+          mapStr = message.mapStr!
+        }
+        
+        
+        if let mapUrl = URL(string: mapStr) {
             mapImageView.sd_setImage(with: mapUrl)
         }
     //    if let mapUrl = message.mapUrl {
