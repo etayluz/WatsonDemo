@@ -82,7 +82,7 @@ class ButtonsView: UIView {
             optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #elseif WATSONFIDASST
             optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
-        #elseif WATSONALFASST
+        #elseif WATSONALFASST || DEBUG
             optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
         #elseif WATSONREGASST
             optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)

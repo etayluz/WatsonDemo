@@ -10,6 +10,7 @@ import Foundation
 
 // MARK: - Type
 enum MessageType {
+    case Checkbox
     case Map
     case User
     case Watson

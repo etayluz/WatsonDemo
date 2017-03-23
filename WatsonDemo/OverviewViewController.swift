@@ -44,7 +44,7 @@ class OverviewViewController: UIViewController {
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonInsAsst")
         #elseif WATSONFIDASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonWealthAsst")
-        #elseif WATSONALFASST
+        #elseif WATSONALFASST || DEBUG
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonAlfAsst")
             setupUsecaseButtons(withOptions: ["File a claim|Michael files a claim",
                                               "Check claim status|Michael checks claim status",

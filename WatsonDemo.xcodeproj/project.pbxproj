@@ -332,6 +332,8 @@
 		B4D160FD1DDBF1EE00D436F1 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
 		B4D160FF1DDBF1FC00D436F1 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4D161021DDBF2C600D436F1 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
+		B4DAA6B81E8301910099C5F6 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
+		B4DAA6BA1E830A3E0099C5F6 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
 		B4F56E881DF722550068A426 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F56E871DF722550068A426 /* UIImage+Assets.swift */; };
 /* End PBXBuildFile section */
 
@@ -510,6 +512,8 @@
 		B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechToTextService.swift; sourceTree = "<group>"; };
 		B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechToTextV1.framework; sourceTree = "<group>"; };
 		B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		B4DAA6B71E8301910099C5F6 /* String_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxViewCell.swift; sourceTree = "<group>"; };
 		B4F56E871DF722550068A426 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -665,6 +669,7 @@
 		B48B186C1DDA0AC7008CE7C2 /* ChatTableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */,
 				B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */,
 				B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */,
 				B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */,
@@ -748,6 +753,7 @@
 			isa = PBXGroup;
 			children = (
 				B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */,
+				B4DAA6B71E8301910099C5F6 /* String_Extension.swift */,
 				B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */,
 				B4B1BA4B1E007EB9001656A4 /* UIFont+Extension.swift */,
 				B4F56E871DF722550068A426 /* UIImage+Assets.swift */,
@@ -1368,7 +1374,9 @@
 				B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */,
 				B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */,
 				B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */,
+				B4DAA6BA1E830A3E0099C5F6 /* CheckboxViewCell.swift in Sources */,
 				B4D161021DDBF2C600D436F1 /* Dictionary+Extension.swift in Sources */,
+				B4DAA6B81E8301910099C5F6 /* String_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

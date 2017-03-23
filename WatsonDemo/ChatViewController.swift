@@ -53,7 +53,7 @@ class ChatViewController: UIViewController {
              headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #elseif WATSONFIDASST
             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
-        #elseif WATSONALFASST
+        #elseif WATSONALFASST || DEBUG
              headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
         #elseif WATSONREGASST
              headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
@@ -158,6 +158,12 @@ extension ChatViewController: UITableViewDataSource {
         let message = messages[indexPath.row]
 
         switch message.type {
+        case MessageType.Checkbox:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CheckboxViewCell.self),
+                                                     for: indexPath) as! CheckboxViewCell
+            cell.configure(withMessage: message)
+            return cell
+
         case MessageType.Map:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MapViewCell.self),
                                                      for: indexPath) as! MapViewCell
@@ -203,6 +209,10 @@ extension ChatViewController: UITableViewDelegate {
         if message.type == MessageType.Video {
             return UIScreen.main.bounds.size.width * 0.76
         }
+
+        if message.type == MessageType.Checkbox {
+            return UIScreen.main.bounds.size.width * 0.76
+        }
         
         return UITableViewAutomaticDimension
     }
@@ -232,7 +242,7 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 
 // MARK: - ConversationServiceDelegate
 extension ChatViewController: ConversationServiceDelegate {
-    
+
     internal func didReceiveMessage(withText text: String, options: [String]?) {
         guard text.characters.count > 0 else { return }
         
@@ -259,6 +269,11 @@ extension ChatViewController: ConversationServiceDelegate {
     internal func didReceiveVideo(withUrl videoUrl: URL) {
         var message = Message(type: MessageType.Video, text: "", options: nil)
         message.videoUrl = videoUrl
+        self.appendChat(withMessage: message)
+    }
+
+    internal func didReceiveCheckbox(witOptions options: [String]) {
+        var message = Message(type: MessageType.Checkbox, text: "", options: options)
         self.appendChat(withMessage: message)
     }
 

@@ -10,9 +10,11 @@ import Foundation
 
 protocol ConversationServiceDelegate: class {
     func didReceiveMessage(withText text: String, options: [String]?)
+    func didReceiveCheckbox(witOptions: [String])
     func didReceiveMap(withString mapStr: String)
     //  func didReceiveMap(withUrl mapUrl: URL)
     func didReceiveVideo(withUrl videoUrl: URL)
+
 }
 
 
@@ -21,6 +23,7 @@ class ConversationService {
     // MARK: - Properties
     weak var delegate: ConversationServiceDelegate?
     var context = ""
+    var contextDictionary: Dictionary<String, Any>?
     var options: [String]?
     
     // MARK: - Constants
@@ -120,7 +123,11 @@ class ConversationService {
 
     func parseJson(json: [String:AnyObject]) {
         
-        self.context = json["context"] as! String
+        context = json["context"] as! String
+
+        // DEBUG CHECKPOINTS
+        context = "{\"checkbox\": { \"values\" :[\"checkTitle1\", \"checkTitle2\"],\"display\": \"Yes\"}}"
+        contextDictionary = context.dictionary()
         var text = json["text"] as! String
         options?.removeAll(keepingCapacity: false)
         
@@ -145,7 +152,7 @@ class ConversationService {
             //                        options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking"]
         #endif
 
-        var mapUrlString: String?
+//        let mapUrlString: String?
 
         /// No longer needed
   /*      if text.contains("InsMap1") {
@@ -168,20 +175,31 @@ class ConversationService {
             mapUrlString = Map.mapFour
         }
    */
-        checkForButton()
 
-        self.delegate?.didReceiveMessage(withText: text, options: options)
-        if let mapUrlString = mapUrlString {self.delegate?.didReceiveMap(withString: mapUrlString)}
+
+//        self.delegate?.didReceiveMessage(withText: text, options: options)
+//        if let mapUrlString = mapUrlString {self.delegate?.didReceiveMap(withString: mapUrlString)}
         // if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
        //    self.delegate?.didReceiveMap(withUrl: mapUrl)
        // }
-       
+
+        checkForButton()
         checkForUserIcon()
         checkForMap()
         checkForMovie()
-
+        checkForCheckbox()
         // TBD: Remove me - for debug of map
         // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
+    }
+
+    func checkForCheckbox() {
+        if contextDictionary?["checkbox"] != nil {
+            let checkbox: Dictionary<String, Any> = contextDictionary?["checkbox"] as! Dictionary<String, Any>
+            let checkboxOptions = checkbox["values"] as! Array<String>
+            NSLog("%@", checkboxOptions)
+            delegate?.didReceiveCheckbox(witOptions: checkboxOptions)
+//            context = context.replacingOccurrences(of: movieJson, with: "")
+        }
     }
 
     func checkForUserIcon() {
