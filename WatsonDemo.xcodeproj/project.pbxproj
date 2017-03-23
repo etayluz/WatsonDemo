@@ -338,6 +338,14 @@
 		B4AE40EB1E8434620084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
 		B4AE40EC1E8434620084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
 		B4AE40ED1E8434630084CDE1 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
+		B4AE40EE1E843DB60084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
+		B4AE40EF1E843DB60084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
+		B4AE40F01E843DB70084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
+		B4AE40F11E843DB70084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
+		B4AE40F21E843DB80084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
+		B4AE40F31E843DB80084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
+		B4AE40F41E843DB90084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
+		B4AE40F51E843DBA0084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
 		B4B1BA4C1E007EB9001656A4 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1BA4B1E007EB9001656A4 /* UIFont+Extension.swift */; };
 		B4BAE2CD1E1ED6FB00C06746 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
@@ -1126,6 +1134,7 @@
 				74447FF51E20615B00291174 /* UIView+Extension.swift in Sources */,
 				74447FF61E20615B00291174 /* GradientView.swift in Sources */,
 				74447FF71E20615B00291174 /* ChatTextField.swift in Sources */,
+				B4AE40F21E843DB80084CDE1 /* String_Extension.swift in Sources */,
 				74447FF81E20615B00291174 /* TextToSpeechService.swift in Sources */,
 				74447FF91E20615B00291174 /* ButtonsView.swift in Sources */,
 				B4AE40E11E84345A0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
@@ -1159,6 +1168,7 @@
 				746B7F4D1E778D6C00CFC08B /* UIView+Extension.swift in Sources */,
 				746B7F4E1E778D6C00CFC08B /* GradientView.swift in Sources */,
 				746B7F4F1E778D6C00CFC08B /* ChatTextField.swift in Sources */,
+				B4AE40F51E843DBA0084CDE1 /* String_Extension.swift in Sources */,
 				746B7F501E778D6C00CFC08B /* TextToSpeechService.swift in Sources */,
 				746B7F511E778D6C00CFC08B /* ButtonsView.swift in Sources */,
 				B4AE40E41E84345C0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
@@ -1192,6 +1202,7 @@
 				746E44431E3FBC03004AC465 /* UIView+Extension.swift in Sources */,
 				746E44441E3FBC03004AC465 /* GradientView.swift in Sources */,
 				746E44451E3FBC03004AC465 /* ChatTextField.swift in Sources */,
+				B4AE40F31E843DB80084CDE1 /* String_Extension.swift in Sources */,
 				746E44461E3FBC03004AC465 /* TextToSpeechService.swift in Sources */,
 				746E44471E3FBC03004AC465 /* ButtonsView.swift in Sources */,
 				B4AE40E21E84345B0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
@@ -1225,6 +1236,7 @@
 				746E44771E3FBC37004AC465 /* UIView+Extension.swift in Sources */,
 				746E44781E3FBC37004AC465 /* GradientView.swift in Sources */,
 				746E44791E3FBC37004AC465 /* ChatTextField.swift in Sources */,
+				B4AE40F41E843DB90084CDE1 /* String_Extension.swift in Sources */,
 				746E447A1E3FBC37004AC465 /* TextToSpeechService.swift in Sources */,
 				746E447B1E3FBC37004AC465 /* ButtonsView.swift in Sources */,
 				B4AE40E31E84345B0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
@@ -1258,6 +1270,7 @@
 				74CF3A2F1E045D2700CED191 /* UIView+Extension.swift in Sources */,
 				74CF3A301E045D2700CED191 /* GradientView.swift in Sources */,
 				74CF3A311E045D2700CED191 /* ChatTextField.swift in Sources */,
+				B4AE40F11E843DB70084CDE1 /* String_Extension.swift in Sources */,
 				74CF3A321E045D2700CED191 /* TextToSpeechService.swift in Sources */,
 				74CF3A331E045D2700CED191 /* ButtonsView.swift in Sources */,
 				B4AE40E01E84345A0084CDE1 /* CheckboxTableViewCell.swift in Sources */,
@@ -1291,6 +1304,7 @@
 				74E49BBB1E0265BD00579DD1 /* UIView+Extension.swift in Sources */,
 				74E49BBC1E0265BD00579DD1 /* GradientView.swift in Sources */,
 				74E49BBD1E0265BD00579DD1 /* ChatTextField.swift in Sources */,
+				B4AE40EE1E843DB60084CDE1 /* String_Extension.swift in Sources */,
 				74E49BBE1E0265BD00579DD1 /* TextToSpeechService.swift in Sources */,
 				74E49BBF1E0265BD00579DD1 /* ButtonsView.swift in Sources */,
 				B4AE40DD1E8434580084CDE1 /* CheckboxTableViewCell.swift in Sources */,
@@ -1324,6 +1338,7 @@
 				74E49BE81E0265E100579DD1 /* UIView+Extension.swift in Sources */,
 				74E49BE91E0265E100579DD1 /* GradientView.swift in Sources */,
 				74E49BEA1E0265E100579DD1 /* ChatTextField.swift in Sources */,
+				B4AE40EF1E843DB60084CDE1 /* String_Extension.swift in Sources */,
 				74E49BEB1E0265E100579DD1 /* TextToSpeechService.swift in Sources */,
 				74E49BEC1E0265E100579DD1 /* ButtonsView.swift in Sources */,
 				B4AE40DE1E8434590084CDE1 /* CheckboxTableViewCell.swift in Sources */,
@@ -1357,6 +1372,7 @@
 				74E49C151E0265FF00579DD1 /* UIView+Extension.swift in Sources */,
 				74E49C161E0265FF00579DD1 /* GradientView.swift in Sources */,
 				74E49C171E0265FF00579DD1 /* ChatTextField.swift in Sources */,
+				B4AE40F01E843DB70084CDE1 /* String_Extension.swift in Sources */,
 				74E49C181E0265FF00579DD1 /* TextToSpeechService.swift in Sources */,
 				74E49C191E0265FF00579DD1 /* ButtonsView.swift in Sources */,
 				B4AE40DF1E8434590084CDE1 /* CheckboxTableViewCell.swift in Sources */,

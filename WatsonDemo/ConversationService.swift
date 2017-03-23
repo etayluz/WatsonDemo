@@ -125,8 +125,8 @@ class ConversationService {
         
         context = json["context"] as! String
 
-        // DEBUG CHECKPOINTS
-        context = "{\"checkbox\": { \"values\" :[\"checkTitle1\", \"checkTitle2\"],\"display\": \"Yes\"}}"
+        // TEST CHECKPOINTS
+//        context = "{\"checkbox\": { \"values\" :[\"checkTitle1\", \"checkTitle2\"],\"display\": \"Yes\"}}"
         contextDictionary = context.dictionary()
         var text = json["text"] as! String
         options?.removeAll(keepingCapacity: false)
