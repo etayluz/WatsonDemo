@@ -40,7 +40,7 @@ class ConversationService {
 
     // MARK: - Key
     private struct Key {
-        static let context = "context"
+        static let contextKey = "context"
         static let cValue1 = "cvalue1"
         static let cValue2 = "cvalue2"
         static let cValue3 = "cvalue3"
@@ -75,7 +75,7 @@ class ConversationService {
              Key.cValue1: Constants.value1,
              Key.cValue2: Constants.value2,
              Key.cValue3: Constants.value3,
-             Key.context: context,
+             Key.contextKey: context,
         ]
 
         print(requestParameters)
