@@ -111,12 +111,12 @@ class ChatViewController: UIViewController {
             conversationService.sendMessage(withText: text)
         }
 
-        if let _ = messages.last?.options {
-            /// If user speak or types instead of tapping option button, reload that cell
-            let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
-            messages[messages.count - 1] = message
-            chatTableView.reloadRows(at: [indexPath], with: .none)
-        } else {
+//        if let _ = messages.last?.options {
+//            /// If user speak or types instead of tapping option button, reload that cell
+//            let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
+//            messages[messages.count - 1] = message
+//            chatTableView.reloadRows(at: [indexPath], with: .none)
+//        } else {
             messages.append(message)
             /// Add new row to chatTableView
             let indexPath = NSIndexPath(row: messages.count - 1, section: 0) as IndexPath
@@ -127,7 +127,7 @@ class ChatViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: when + 0.1) {
                 self.scrollChatTableToBottom()
             }
-        }
+//        }
 
     }
 
@@ -163,7 +163,7 @@ extension ChatViewController: UITableViewDataSource {
         case MessageType.Checkbox:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CheckboxViewCell.self),
                                                      for: indexPath) as! CheckboxViewCell
-            cell.configure(withMessage: message)
+            cell.configure(withMessage: message, delegate: self)
             return cell
 
         case MessageType.Map:
@@ -218,7 +218,19 @@ extension ChatViewController: UITableViewDelegate {
         
         return UITableViewAutomaticDimension
     }
-    
+
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        print("here")
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("here")
+    }
+
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("here")
+//    }
+
 }
 
 // MARK: - SpeechToTextServiceDelegate
@@ -277,6 +289,15 @@ extension ChatViewController: ConversationServiceDelegate {
     internal func didReceiveCheckbox(witOptions options: [String]) {
         let message = Message(type: MessageType.Checkbox, text: "", options: options)
         self.appendChat(withMessage: message)
+    }
+
+}
+
+// MARK: - CheckboxViewCellDelegate
+extension ChatViewController: CheckboxViewCellDelegate {
+
+    func continueButtonTapped() {
+        conversationService.sendMessage(withText: "Continue")
     }
 
 }

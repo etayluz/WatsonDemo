@@ -157,7 +157,7 @@ class ButtonsView: UIView {
     }
 
     func optionButtonTapped(button: CustomButton) {
-           delegate.optionButtonTapped(withSelectedButton: button)
+        delegate.optionButtonTapped(withSelectedButton: button)
     }
 
     func reset() {

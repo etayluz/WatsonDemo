@@ -70,7 +70,7 @@ extension ChatTextField: UITextFieldDelegate {
 //            chatInputAccessoryView.inputTextField.text = "Testing testing testing testing testing testing Testing testing testing testing testing testing"
 //            return
             if (debugChatIndex == 1) {
-                chatInputAccessoryView.inputTextField.text = "Play a movie"//"I received an alert on a suspicious transaction"
+                chatInputAccessoryView.inputTextField.text = "I need to prep for my meeting with Jane."//"I received an alert on a suspicious transaction"
                 debugChatIndex = debugChatIndex + 1
             }
             else if (debugChatIndex == 2) {

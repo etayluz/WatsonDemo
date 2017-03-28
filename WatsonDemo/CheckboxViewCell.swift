@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+protocol CheckboxViewCellDelegate: NSObjectProtocol {
+
+    // MARK: - Methods
+    func continueButtonTapped()
+    
+}
 
 class CheckboxViewCell: UITableViewCell {
 
@@ -17,13 +23,19 @@ class CheckboxViewCell: UITableViewCell {
 
     // MARK: - Properties
     var options: [String]?
-
+    weak var delegate: CheckboxViewCellDelegate!
 
     /// Configure Watson chat table view cell with Watson message
     ///
     /// - Parameter message: Message instance
-    func configure(withMessage message: Message) {
+    func configure(withMessage message: Message, delegate: CheckboxViewCellDelegate) {
+        self.delegate = delegate
         options = message.options
+    }
+
+    // MARK: - Actions
+    @IBAction func tappedContinueButton() {
+        delegate.continueButtonTapped()
     }
     
 }
@@ -59,5 +71,15 @@ extension CheckboxViewCell: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {        
         return 40
     }
-    
+
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        let checkboxTableViewCell = tableView.cellForRow(at: indexPath) as! CheckboxTableViewCell
+        checkboxTableViewCell.toggleCheckbox()
+    }
+
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let checkboxTableViewCell = tableView.cellForRow(at: indexPath) as! CheckboxTableViewCell
+//        checkboxTableViewCell.toggleCheckbox()
+//    }
+
 }

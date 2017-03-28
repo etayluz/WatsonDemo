@@ -122,13 +122,17 @@ class ConversationService {
     }
 
     func parseJson(json: [String:AnyObject]) {
-        
+
+        let test = json["context"]
+        print(type(of: test))
         context = json["context"] as! String
 
         // TEST CHECKPOINTS
 //        context = "{\"checkbox\": { \"values\" :[\"checkTitle1\", \"checkTitle2\"],\"display\": \"Yes\"}}"
         contextDictionary = context.dictionary()
         var text = json["text"] as! String
+        var text1 = json["text"] as! String
+
         options?.removeAll(keepingCapacity: false)
         
         // Look for the option params in the brackets
@@ -152,36 +156,19 @@ class ConversationService {
             //                        options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking"]
         #endif
 
-//        let mapUrlString: String?
-
-        /// No longer needed
-  /*      if text.contains("InsMap1") {
-            text = text.replacingOccurrences(of: "InsMap1", with: "")
-            mapUrlString = Map.mapOne
-        }
-
-        if text.contains("InsMap2") {
-            text = text.replacingOccurrences(of: "InsMap2", with: "")
-            mapUrlString = Map.mapTwo
-        }
-
-        if text.contains("InsMap3") {
-            text = text.replacingOccurrences(of: "InsMap3", with: "")
-            mapUrlString = Map.mapThree
-        }
-
-        if text.contains("InsMap4") {
-            text = text.replacingOccurrences(of: "InsMap4", with: "")
-            mapUrlString = Map.mapFour
-        }
-   */
+//
+//        if let array = json["text"] as? [String] {
+//            NSLog("here")
+//            if (array[0] == "checkbox") {
+//                var checkboxOptions = array
+//                checkboxOptions.remove(at: 0)
+//                delegate?.didReceiveCheckbox(witOptions: checkboxOptions)
+//                return
+//            }
+//        }
 
 
-//        self.delegate?.didReceiveMessage(withText: text, options: options)
-//        if let mapUrlString = mapUrlString {self.delegate?.didReceiveMap(withString: mapUrlString)}
-        // if let mapUrlString = mapUrlString, let mapUrl = URL(string: mapUrlString) {
-       //    self.delegate?.didReceiveMap(withUrl: mapUrl)
-       // }
+        self.delegate?.didReceiveMessage(withText: text, options: options);
 
         checkForButton()
         checkForUserIcon()
@@ -198,7 +185,17 @@ class ConversationService {
             let checkboxOptions = checkbox["values"] as! Array<String>
             NSLog("%@", checkboxOptions)
             delegate?.didReceiveCheckbox(witOptions: checkboxOptions)
-//            context = context.replacingOccurrences(of: movieJson, with: "")
+//            let context1 = context
+            contextDictionary?["checkbox"] = nil
+            print(context)
+
+            let nsContext = context as NSString
+            // String to remove: ,"checkbox":{"values":["Overall balance","Top Portfolio News "],"display":"Yes"}
+            let regex = try! NSRegularExpression(pattern: ",\"checkbox.*Yes\"\\}")
+            if let result = regex.matches(in: context, range: NSRange(location: 0, length: nsContext.length)).last {
+                let mapJson = nsContext.substring(with: result.range)
+                context = context.replacingOccurrences(of: mapJson, with: "")
+            }
         }
     }
 

@@ -327,7 +327,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Itx-sU-HxD">
+                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Itx-sU-HxD">
                                                             <rect key="frame" x="23" y="66" width="325" height="128"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <prototypes>
@@ -404,12 +404,12 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mq-rJ-snZ" customClass="CustomButton" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="179.66666666666666" y="212" width="55" height="30"/>
-                                                    <color key="backgroundColor" red="0.85882352939999995" green="0.1215686275" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="167" y="212" width="80" height="30"/>
+                                                    <color key="backgroundColor" red="0.043137254901960784" green="0.14117647058823529" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="55" id="noM-iF-Oqu"/>
+                                                        <constraint firstAttribute="width" constant="80" id="noM-iF-Oqu"/>
                                                     </constraints>
-                                                    <state key="normal" title="Save">
+                                                    <state key="normal" title="Continue">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -417,6 +417,9 @@
                                                             <real key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="tappedContinueButton" destination="Y57-VW-GBQ" eventType="touchUpInside" id="UYq-Vm-6Hx"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

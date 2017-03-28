@@ -39,7 +39,7 @@ class UserChatViewCell: UITableViewCell {
             userIcon.image = #imageLiteral(resourceName: "User")
         #elseif WATSONWEALTHASST
             userIcon.image = #imageLiteral(resourceName: "User")
-        #elseif WATSONWEALTHTASST
+        #elseif WATSONWEALTHTASST  || DEBUG
             if GlobalConstants.UserIcon.contains("Tom") {
                 userIcon.image = #imageLiteral(resourceName: "User-Tom") }
             else if GlobalConstants.UserIcon.contains("Patricia") {
@@ -57,7 +57,7 @@ class UserChatViewCell: UITableViewCell {
             userIcon.image = #imageLiteral(resourceName: "User")
         #elseif WATSONFIDASST
            userIcon.image = #imageLiteral(resourceName: "User")
-        #elseif WATSONALFASST || DEBUG
+        #elseif WATSONALFASST
             userIcon.image = #imageLiteral(resourceName: "User-WatsonAlfAsst")
         #elseif WATSONREGASST
             userIcon.image = #imageLiteral(resourceName: "User-WatsonRegAsst")
