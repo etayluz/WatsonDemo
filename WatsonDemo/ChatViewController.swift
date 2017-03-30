@@ -74,6 +74,7 @@ class ChatViewController: UIViewController {
         conversationService.sendMessage(withText: kickoffMessage)
 
         let gestureTap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
+        gestureTap.cancelsTouchesInView = false
         chatTableView.addGestureRecognizer(gestureTap)
     }
 
@@ -296,8 +297,8 @@ extension ChatViewController: ConversationServiceDelegate {
 // MARK: - CheckboxViewCellDelegate
 extension ChatViewController: CheckboxViewCellDelegate {
 
-    func continueButtonTapped() {
-        conversationService.sendMessage(withText: "Continue")
+    func continueButtonTapped(withCheckedOptions checkedOptions: [String]) {
+        conversationService.sendMessage(withText: checkedOptions.joined(separator: ", "))
     }
 
 }

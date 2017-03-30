@@ -12,7 +12,7 @@ import UIKit
 protocol CheckboxViewCellDelegate: NSObjectProtocol {
 
     // MARK: - Methods
-    func continueButtonTapped()
+    func continueButtonTapped(withCheckedOptions: [String])
     
 }
 
@@ -22,7 +22,8 @@ class CheckboxViewCell: UITableViewCell {
 
 
     // MARK: - Properties
-    var options: [String]?
+    var options: [String] = []
+    var checkedOptions: [String] = []
     weak var delegate: CheckboxViewCellDelegate!
 
     /// Configure Watson chat table view cell with Watson message
@@ -30,12 +31,13 @@ class CheckboxViewCell: UITableViewCell {
     /// - Parameter message: Message instance
     func configure(withMessage message: Message, delegate: CheckboxViewCellDelegate) {
         self.delegate = delegate
-        options = message.options
+        options = message.options!
+        checkedOptions = message.options!
     }
 
     // MARK: - Actions
     @IBAction func tappedContinueButton() {
-        delegate.continueButtonTapped()
+        delegate.continueButtonTapped(withCheckedOptions: checkedOptions)
     }
     
 }
@@ -45,15 +47,11 @@ class CheckboxViewCell: UITableViewCell {
 extension CheckboxViewCell: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let options = options {
             return options.count
-        } else {
-            return 0
-        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let option = options![indexPath.row]
+        let option = options[indexPath.row]
 
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CheckboxTableViewCell.self),
                                                  for: indexPath) as! CheckboxTableViewCell
@@ -72,14 +70,16 @@ extension CheckboxViewCell: UITableViewDelegate {
         return 40
     }
 
-    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let option = options[indexPath.row]
+        if (checkedOptions.contains(option)) {
+            checkedOptions.remove(at: (checkedOptions.index(of: option))!)
+        } else {
+            checkedOptions.append(option)
+        }
+
         let checkboxTableViewCell = tableView.cellForRow(at: indexPath) as! CheckboxTableViewCell
         checkboxTableViewCell.toggleCheckbox()
     }
-
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let checkboxTableViewCell = tableView.cellForRow(at: indexPath) as! CheckboxTableViewCell
-//        checkboxTableViewCell.toggleCheckbox()
-//    }
 
 }
