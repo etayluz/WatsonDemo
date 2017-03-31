@@ -10,11 +10,11 @@ import Foundation
 
 protocol ConversationServiceDelegate: class {
     func didReceiveMessage(withText text: String, options: [String]?)
-    func didReceiveCheckbox(witOptions: [String])
+    func didReceiveBarscore(withBarscore barscore: String)
+    func didReceiveCheckbox(withOptions: [String])
     func didReceiveMap(withString mapStr: String)
     //  func didReceiveMap(withUrl mapUrl: URL)
     func didReceiveVideo(withUrl videoUrl: URL)
-
 }
 
 
@@ -156,17 +156,6 @@ class ConversationService {
             //                        options = ["4 PM today", "9:30 AM tomorrow", "1 PM tomorrow", "checking"]
         #endif
 
-//
-//        if let array = json["text"] as? [String] {
-//            NSLog("here")
-//            if (array[0] == "checkbox") {
-//                var checkboxOptions = array
-//                checkboxOptions.remove(at: 0)
-//                delegate?.didReceiveCheckbox(witOptions: checkboxOptions)
-//                return
-//            }
-//        }
-
 
         self.delegate?.didReceiveMessage(withText: text, options: options);
 
@@ -175,8 +164,25 @@ class ConversationService {
         checkForMap()
         checkForMovie()
         checkForCheckbox()
+        checkForBarscore()
         // TBD: Remove me - for debug of map
         // strongSelf.delegate?.didReceiveMap(withUrl: URL(string: Map.mapOne)!)
+    }
+
+    func checkForBarscore() {
+        if contextDictionary?["barscore"] != nil {
+            let barscoreDict: Dictionary<String, Any> = contextDictionary?["barscore"] as! Dictionary<String, Any>
+            let barscores = barscoreDict["values"] as! Array<String>
+            let barscore = barscores[0]
+            delegate?.didReceiveBarscore(withBarscore: barscore)
+
+            let nsContext = context as NSString
+            let regex = try! NSRegularExpression(pattern: ",\"barscore.*Yes\"\\}")
+            if let result = regex.matches(in: context, range: NSRange(location: 0, length: nsContext.length)).last {
+                let mapJson = nsContext.substring(with: result.range)
+                context = context.replacingOccurrences(of: mapJson, with: "")
+            }
+        }
     }
 
     func checkForCheckbox() {
@@ -184,8 +190,7 @@ class ConversationService {
             let checkbox: Dictionary<String, Any> = contextDictionary?["checkbox"] as! Dictionary<String, Any>
             let checkboxOptions = checkbox["values"] as! Array<String>
             NSLog("%@", checkboxOptions)
-            delegate?.didReceiveCheckbox(witOptions: checkboxOptions)
-//            let context1 = context
+            delegate?.didReceiveCheckbox(withOptions: checkboxOptions)
             contextDictionary?["checkbox"] = nil
             print(context)
 

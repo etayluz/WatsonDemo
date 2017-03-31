@@ -297,6 +297,7 @@
 		74E49C381E0265FF00579DD1 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74E49C391E0265FF00579DD1 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74E49C3A1E0265FF00579DD1 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B40D49071E8EB87C0027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
 		B40FDFE61DDF89BF00BE07EB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE51DDF89BF00BE07EB /* CustomButton.swift */; };
 		B40FDFE81DE27E8D00BE07EB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */; };
 		B40FDFEA1DE3EF6900BE07EB /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */; };
@@ -504,6 +505,7 @@
 		74E49BE41E0265BD00579DD1 /* WatsonInsAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonInsAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E49C111E0265E100579DD1 /* WatsonWealthAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonWealthAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E49C3E1E0265FF00579DD1 /* WatsonMetAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonMetAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarscoreViewCell.swift; sourceTree = "<group>"; };
 		B40FDFE51DDF89BF00BE07EB /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCell.swift; sourceTree = "<group>"; };
@@ -695,6 +697,7 @@
 		B48B186C1DDA0AC7008CE7C2 /* ChatTableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */,
 				B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */,
 				B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */,
 				B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */,
@@ -1423,6 +1426,7 @@
 				B48B18691DD96FC5008CE7C2 /* CustomLabel.swift in Sources */,
 				B4F56E881DF722550068A426 /* UIImage+Assets.swift in Sources */,
 				B48B18811DDB908E008CE7C2 /* ConversationService.swift in Sources */,
+				B40D49071E8EB87C0027CCE7 /* BarscoreViewCell.swift in Sources */,
 				B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */,
 				B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */,
 				B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */,

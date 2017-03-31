@@ -10,6 +10,7 @@ import Foundation
 
 // MARK: - Type
 enum MessageType {
+    case Barscore
     case Checkbox
     case Map
     case User
@@ -26,6 +27,7 @@ public struct Message {
     var mapStr : String?
     //var mapUrl: URL?
     var videoUrl: URL?
+    var barscore: String?
 
     /// Initialize Message instance
     ///

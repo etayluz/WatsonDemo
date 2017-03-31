@@ -26,7 +26,7 @@ class CheckboxViewCell: UITableViewCell {
     var checkedOptions: [String] = []
     weak var delegate: CheckboxViewCellDelegate!
 
-    /// Configure Watson chat table view cell with Watson message
+    /// Configure checkbox options
     ///
     /// - Parameter message: Message instance
     func configure(withMessage message: Message, delegate: CheckboxViewCellDelegate) {

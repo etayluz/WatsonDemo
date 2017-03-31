@@ -437,6 +437,52 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarscoreViewCell" rowHeight="250" id="Rbf-zq-wNQ" userLabel="BarscoreViewCell" customClass="BarscoreViewCell" customModule="WatsonBankAsst">
+                                        <rect key="frame" x="0.0" y="811" width="768" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rbf-zq-wNQ" id="LaU-sa-gxI">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barscore" translatesAutoresizingMaskIntoConstraints="NO" id="Q6W-eN-UlE" userLabel="BarscoreView">
+                                                    <rect key="frame" x="145.5" y="8" width="477" height="234"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Q6W-eN-UlE" secondAttribute="height" multiplier="978:480" id="5IB-1B-izU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="hyf-q6-FSq" userLabel="BarscoreLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                                    <rect key="frame" x="395.5" y="129" width="74.5" height="74.5"/>
+                                                    <color key="backgroundColor" red="0.019607843137254902" green="0.20392156862745098" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="hyf-q6-FSq" secondAttribute="height" id="Zgw-ud-nUM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="37"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="hyf-q6-FSq" firstAttribute="leading" secondItem="Q6W-eN-UlE" secondAttribute="leading" constant="250" id="MkG-kO-IUg"/>
+                                                <constraint firstItem="hyf-q6-FSq" firstAttribute="height" secondItem="Q6W-eN-UlE" secondAttribute="height" multiplier="0.32" id="PJC-xm-OZT"/>
+                                                <constraint firstItem="hyf-q6-FSq" firstAttribute="centerY" secondItem="Q6W-eN-UlE" secondAttribute="centerY" multiplier="1.33" id="S9e-ZR-rN7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Q6W-eN-UlE" secondAttribute="bottom" id="bPf-2p-Vhv"/>
+                                                <constraint firstItem="Q6W-eN-UlE" firstAttribute="top" secondItem="LaU-sa-gxI" secondAttribute="topMargin" id="eK2-7o-mb5"/>
+                                                <constraint firstItem="Q6W-eN-UlE" firstAttribute="centerX" secondItem="LaU-sa-gxI" secondAttribute="centerX" id="peg-ig-Qhf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="barscoreLabel" destination="hyf-q6-FSq" id="3qP-DF-RwV"/>
+                                            <outlet property="barscoreLeadingConstraint" destination="MkG-kO-IUg" id="mjc-Oi-cX2"/>
+                                            <outlet property="barscoreView" destination="Q6W-eN-UlE" id="aOt-Z5-0tU"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="3go-5g-2RD" id="KWP-0a-HyI"/>
@@ -521,7 +567,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTp-CT-sgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1026.0869565217392" y="389.67391304347831"/>
+            <point key="canvasLocation" x="1025.78125" y="389.6484375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2YK-Ib-dq7">
@@ -544,6 +590,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Barscore" width="978" height="480"/>
         <image name="ChecklistVisual" width="35" height="35"/>
         <image name="MicOff" width="30" height="30"/>
         <image name="Overview-WatsonAlfAsst" width="768" height="1024"/>

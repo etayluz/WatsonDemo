@@ -27,7 +27,7 @@ class OverviewViewController: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupSimulator()
+//        setupSimulator()
        
         #if WATSONBANKASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")

@@ -104,7 +104,8 @@ class ChatViewController: UIViewController {
     func appendChat(withMessage message: Message) {
         guard let text = message.text,
             (text.characters.count > 0 || message.options != nil ||
-                message.mapStr != nil || message.videoUrl != nil)
+                message.mapStr != nil || message.videoUrl != nil ||
+                message.barscore != nil)
             else { return }
 
 
@@ -161,6 +162,13 @@ extension ChatViewController: UITableViewDataSource {
         let message = messages[indexPath.row]
 
         switch message.type {
+
+        case MessageType.Barscore:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: BarscoreViewCell.self),
+                                                     for: indexPath) as! BarscoreViewCell
+            cell.configure(withMessage: message, delegate: self)
+            return cell
+
         case MessageType.Checkbox:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CheckboxViewCell.self),
                                                      for: indexPath) as! CheckboxViewCell
@@ -216,7 +224,11 @@ extension ChatViewController: UITableViewDelegate {
         if message.type == MessageType.Checkbox {
             return CGFloat(message.options!.count) * 35 + 150
         }
-        
+
+        if message.type == MessageType.Barscore {
+            return 150
+        }
+
         return UITableViewAutomaticDimension
     }
 
@@ -257,6 +269,12 @@ extension ChatViewController: TextToSpeechServiceDelegate {
 
 // MARK: - ConversationServiceDelegate
 extension ChatViewController: ConversationServiceDelegate {
+    internal func didReceiveBarscore(withBarscore barscore: String) {
+        var message = Message(type: MessageType.Barscore, text: "", options: nil)
+        message.barscore = barscore
+        self.appendChat(withMessage: message)
+    }
+
 
     internal func didReceiveMessage(withText text: String, options: [String]?) {
         guard text.characters.count > 0 else { return }
@@ -287,7 +305,7 @@ extension ChatViewController: ConversationServiceDelegate {
         self.appendChat(withMessage: message)
     }
 
-    internal func didReceiveCheckbox(witOptions options: [String]) {
+    internal func didReceiveCheckbox(withOptions options: [String]) {
         let message = Message(type: MessageType.Checkbox, text: "", options: options)
         self.appendChat(withMessage: message)
     }
