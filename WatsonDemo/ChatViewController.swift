@@ -163,11 +163,11 @@ extension ChatViewController: UITableViewDataSource {
 
         switch message.type {
 
-        case MessageType.Barscore:
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: BarscoreViewCell.self),
-                                                     for: indexPath) as! BarscoreViewCell
-            cell.configure(withMessage: message, delegate: self)
-            return cell
+    //    case MessageType.Barscore:
+    //       let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: BarscoreViewCell.self),
+    //                                                for: indexPath) as! BarscoreViewCell
+    //        cell.configure(withMessage: message, delegate: self)
+    //        return cell
 
         case MessageType.Checkbox:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CheckboxViewCell.self),
@@ -200,6 +200,14 @@ extension ChatViewController: UITableViewDataSource {
             cell.configure(withMessage: message)
             cell.chatViewController = self
             return cell
+            
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UserChatViewCell.self),
+                                                     for: indexPath) as! UserChatViewCell
+            cell.configure(withMessage: message)
+            cell.chatViewController = self
+            return cell
+            
         }
 
     }
@@ -281,13 +289,19 @@ extension ChatViewController: ConversationServiceDelegate {
         
         //add code for multiple messages from watson
         let texts = text.components(separatedBy: "\",\"")
+        let arraySize = texts.count
+        var mycounter = 0
+        
         for mytext in texts {
-          
-          
+          mycounter = mycounter + 1
           self.appendChat(withMessage: Message(type: MessageType.Watson, text: mytext, options: nil))
           if let _ = options {
-            self.appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))
-          }
+            
+            if mycounter == arraySize {
+                self.appendChat(withMessage: Message(type: MessageType.User, text: "", options: options))}
+            else {
+                self.appendChat(withMessage: Message(type: MessageType.User, text: "", options: nil))}
+            }
         }
         let finalText =  texts.joined(separator: " ")
         self.textToSpeechService.synthesizeSpeech(withText: finalText)
