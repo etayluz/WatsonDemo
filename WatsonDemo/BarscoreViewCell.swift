@@ -18,7 +18,7 @@ class BarscoreViewCell: UITableViewCell {
 
     // MARK: - Properties
     weak var delegate: ChatViewController!
-    var hasReloaded = false
+    var hasReloaded = 0
 
     /// Configure retirement barscore
     ///
@@ -35,8 +35,8 @@ class BarscoreViewCell: UITableViewCell {
         barscoreLeadingConstraint.constant = CGFloat(startOffset + barscoreWidth * barscorePercentage)
 
         // The barscoreView contraints are NOT laid out when cell is first allocated, so need to reload it
-        if (hasReloaded == false) {
-            hasReloaded = true
+        if (hasReloaded < 2) {
+            hasReloaded += 1
             delegate.chatTableView.reloadData()
         }
     }

@@ -298,6 +298,14 @@
 		74E49C391E0265FF00579DD1 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74E49C3A1E0265FF00579DD1 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B40D49071E8EB87C0027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
+		B40D491D1E915DB60027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
+		B40D491E1E915DB70027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
+		B40D491F1E915DB70027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
+		B40D49201E915DB80027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
+		B40D49211E915DB80027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
+		B40D49221E915DB90027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
+		B40D49231E915DB90027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
+		B40D49241E915DBA0027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
 		B40FDFE61DDF89BF00BE07EB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE51DDF89BF00BE07EB /* CustomButton.swift */; };
 		B40FDFE81DE27E8D00BE07EB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */; };
 		B40FDFEA1DE3EF6900BE07EB /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */; };
@@ -1154,6 +1162,7 @@
 				744480041E20615B00291174 /* ChatViewController.swift in Sources */,
 				744480051E20615B00291174 /* CustomLabel.swift in Sources */,
 				744480061E20615B00291174 /* UIImage+Assets.swift in Sources */,
+				B40D49211E915DB80027CCE7 /* BarscoreViewCell.swift in Sources */,
 				744480071E20615B00291174 /* ConversationService.swift in Sources */,
 				744480081E20615B00291174 /* OverviewViewController.swift in Sources */,
 				744480091E20615B00291174 /* WatsonChatViewCell.swift in Sources */,
@@ -1188,6 +1197,7 @@
 				746B7F5C1E778D6C00CFC08B /* ChatViewController.swift in Sources */,
 				746B7F5D1E778D6C00CFC08B /* CustomLabel.swift in Sources */,
 				746B7F5E1E778D6C00CFC08B /* UIImage+Assets.swift in Sources */,
+				B40D49241E915DBA0027CCE7 /* BarscoreViewCell.swift in Sources */,
 				746B7F5F1E778D6C00CFC08B /* ConversationService.swift in Sources */,
 				746B7F601E778D6C00CFC08B /* OverviewViewController.swift in Sources */,
 				746B7F611E778D6C00CFC08B /* WatsonChatViewCell.swift in Sources */,
@@ -1222,6 +1232,7 @@
 				746E44521E3FBC03004AC465 /* ChatViewController.swift in Sources */,
 				746E44531E3FBC03004AC465 /* CustomLabel.swift in Sources */,
 				746E44541E3FBC03004AC465 /* UIImage+Assets.swift in Sources */,
+				B40D49221E915DB90027CCE7 /* BarscoreViewCell.swift in Sources */,
 				746E44551E3FBC03004AC465 /* ConversationService.swift in Sources */,
 				746E44561E3FBC03004AC465 /* OverviewViewController.swift in Sources */,
 				746E44571E3FBC03004AC465 /* WatsonChatViewCell.swift in Sources */,
@@ -1256,6 +1267,7 @@
 				746E44861E3FBC37004AC465 /* ChatViewController.swift in Sources */,
 				746E44871E3FBC37004AC465 /* CustomLabel.swift in Sources */,
 				746E44881E3FBC37004AC465 /* UIImage+Assets.swift in Sources */,
+				B40D49231E915DB90027CCE7 /* BarscoreViewCell.swift in Sources */,
 				746E44891E3FBC37004AC465 /* ConversationService.swift in Sources */,
 				746E448A1E3FBC37004AC465 /* OverviewViewController.swift in Sources */,
 				746E448B1E3FBC37004AC465 /* WatsonChatViewCell.swift in Sources */,
@@ -1290,6 +1302,7 @@
 				74CF3A3E1E045D2700CED191 /* ChatViewController.swift in Sources */,
 				74CF3A3F1E045D2700CED191 /* CustomLabel.swift in Sources */,
 				74CF3A401E045D2700CED191 /* UIImage+Assets.swift in Sources */,
+				B40D49201E915DB80027CCE7 /* BarscoreViewCell.swift in Sources */,
 				74CF3A411E045D2700CED191 /* ConversationService.swift in Sources */,
 				74CF3A421E045D2700CED191 /* OverviewViewController.swift in Sources */,
 				74CF3A431E045D2700CED191 /* WatsonChatViewCell.swift in Sources */,
@@ -1324,6 +1337,7 @@
 				74E49BCA1E0265BD00579DD1 /* ChatViewController.swift in Sources */,
 				74E49BCB1E0265BD00579DD1 /* CustomLabel.swift in Sources */,
 				74E49BCC1E0265BD00579DD1 /* UIImage+Assets.swift in Sources */,
+				B40D491D1E915DB60027CCE7 /* BarscoreViewCell.swift in Sources */,
 				74E49BCD1E0265BD00579DD1 /* ConversationService.swift in Sources */,
 				74E49BCE1E0265BD00579DD1 /* OverviewViewController.swift in Sources */,
 				74E49BCF1E0265BD00579DD1 /* WatsonChatViewCell.swift in Sources */,
@@ -1358,6 +1372,7 @@
 				74E49BF71E0265E100579DD1 /* ChatViewController.swift in Sources */,
 				74E49BF81E0265E100579DD1 /* CustomLabel.swift in Sources */,
 				74E49BF91E0265E100579DD1 /* UIImage+Assets.swift in Sources */,
+				B40D491E1E915DB70027CCE7 /* BarscoreViewCell.swift in Sources */,
 				74E49BFA1E0265E100579DD1 /* ConversationService.swift in Sources */,
 				74E49BFB1E0265E100579DD1 /* OverviewViewController.swift in Sources */,
 				74E49BFC1E0265E100579DD1 /* WatsonChatViewCell.swift in Sources */,
@@ -1392,6 +1407,7 @@
 				74E49C241E0265FF00579DD1 /* ChatViewController.swift in Sources */,
 				74E49C251E0265FF00579DD1 /* CustomLabel.swift in Sources */,
 				74E49C261E0265FF00579DD1 /* UIImage+Assets.swift in Sources */,
+				B40D491F1E915DB70027CCE7 /* BarscoreViewCell.swift in Sources */,
 				74E49C271E0265FF00579DD1 /* ConversationService.swift in Sources */,
 				74E49C281E0265FF00579DD1 /* OverviewViewController.swift in Sources */,
 				74E49C291E0265FF00579DD1 /* WatsonChatViewCell.swift in Sources */,

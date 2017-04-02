@@ -437,7 +437,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarscoreViewCell" rowHeight="250" id="Rbf-zq-wNQ" userLabel="BarscoreViewCell" customClass="BarscoreViewCell" customModule="WatsonBankAsst">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarscoreViewCell" rowHeight="250" id="Rbf-zq-wNQ" userLabel="BarscoreViewCell" customClass="BarscoreViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="811" width="768" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rbf-zq-wNQ" id="LaU-sa-gxI">
