@@ -129,9 +129,12 @@ class ConversationService {
 
         // TEST CHECKPOINTS
 //        context = "{\"checkbox\": { \"values\" :[\"checkTitle1\", \"checkTitle2\"],\"display\": \"Yes\"}}"
+
+        // TEST BARCODE
+//        context = "{\"angerName\":\"Anger\",\"angerScore\":\"0.000\",\"disgustName\":\"Disgust\",\"disgustScore\":\"0.000\",\"fearName\":\"Fear\",\"fearScore\":\"0.000\",\"joyName\":\"Joy\",\"joyScore\":\"0.000\",\"sadnessName\":\"Sadness\",\"sadnessScore\":\"0.000\",\"analyticalName\":\"Analytical\",\"analyticalScore\":\"0.000\",\"confidentName\":\"Confident\",\"confidentScore\":\"0.000\",\"tentativeName\":\"Tentative\",\"tentativeScore\":\"0.000\",\"OpenName\":\"Openness\",\"OpenScore\":\"0.313\",\"conTitle\":\"Conscientiousness\",\"conScore\":\"0.274\",\"extName\":\"Extraversion\",\"extScore\":\"0.543\",\"agreeName\":\"Agreeableness\",\"agreeScore\":\"0.600\",\"emoName\":\"Emotional Range\",\"emoScore\":\"0.279\",\"conversation_id\":\"1a91351f-d350-416b-ac73-514f4639ad0d\",\"system\":{\"dialog_stack\":[{\"dialog_node\":\"node_2_1490315057632\"}],\"dialog_turn_counter\":9,\"dialog_request_counter\":9,\"_node_output_map\":{\"node_2_1490823878953\":[0],\"node_6_1489433612911\":[0],\"node_1_1489433694732\":[0],\"node_3_1489442062171\":[0],\"node_8_1488760632018\":[0],\"node_9_1488760644680\":[0],\"node_2_1489443275001\":[0],\"node_10_1488760682919\":[0],\"node_2_1490315057632\":[0]}},\"age\":50,\"Salary\":\"0\",\"UserIcon\":\"Vicki\",\"Goals_Set\":0,\"firstname\":\"Vikki\",\"Beneficiary\":\"Anthony Cole\",\"Marital_status\":\"married\",\"Eligible_BothIRA\":1,\"Retirement_Score\":\"70\",\"New_Retirement_Score\":\"85\",\"PersonalShopping_Spend\":100,\"PersonalVacation_Spend\":100,\"Contingency_Beneficiary1\":\"Michael Gomez\",\"Contingency_Beneficiary2\":\"Joseph Gomez\",\"PersonalRestaurant_Spend\":100,\"fname\":\"Jane\",\"lname\":\"Smith\",\"nname\":\"Jane\",\"cvalue1\":\"Fidelity\",\"cvalue2\":\"TD Ameritrade\",\"cvalue3\":\"Pershing\",\"barscore\":{\"values\":[\"70%\"],\"display\":\"Yes\"}}"
+
         contextDictionary = context.dictionary()
         var text = json["text"] as! String
-        var text1 = json["text"] as! String
 
         options?.removeAll(keepingCapacity: false)
         
