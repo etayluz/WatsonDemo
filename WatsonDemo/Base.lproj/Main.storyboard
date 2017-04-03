@@ -444,17 +444,71 @@
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BarscoreContainer" translatesAutoresizingMaskIntoConstraints="NO" id="Q6W-eN-UlE">
-                                                    <rect key="frame" x="145.5" y="8" width="477" height="234"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aI6-iI-XqX" userLabel="BarscoreView" customClass="CustomView" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                                    <rect key="frame" x="115.5" y="8" width="538" height="234"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You scored a 70% probability of achieving your retirement goals" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-eI-XBj" userLabel="BarscoreTitle">
+                                                            <rect key="frame" x="8" y="6" width="512" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retirement Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp5-2r-feK">
+                                                            <rect key="frame" x="8" y="32" width="148" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%-25%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIH-Ha-JCO">
+                                                            <rect key="frame" x="35" y="120.5" width="36.5" height="11"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25%-50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSw-Rb-zNB" userLabel="25%-50%">
+                                                            <rect key="frame" x="169.5" y="120" width="46" height="12"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%-75%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3N-RQ-HTx">
+                                                            <rect key="frame" x="277" y="120" width="46" height="12"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75%-100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-g5-tHG" userLabel="75%-100%">
+                                                            <rect key="frame" x="390" y="120" width="50.5" height="12"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Q6W-eN-UlE" secondAttribute="height" multiplier="978:480" id="5IB-1B-izU"/>
+                                                        <constraint firstItem="uSw-Rb-zNB" firstAttribute="centerY" secondItem="fIH-Ha-JCO" secondAttribute="centerY" id="0AF-RP-eJn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7RG-eI-XBj" secondAttribute="trailing" constant="18" id="5dn-MC-Et4"/>
+                                                        <constraint firstItem="Sp5-2r-feK" firstAttribute="leading" secondItem="7RG-eI-XBj" secondAttribute="leading" id="BV6-5s-dRd"/>
+                                                        <constraint firstItem="7RG-eI-XBj" firstAttribute="leading" secondItem="aI6-iI-XqX" secondAttribute="leading" constant="8" id="bgj-4C-9eV"/>
+                                                        <constraint firstItem="2Qy-g5-tHG" firstAttribute="centerY" secondItem="H3N-RQ-HTx" secondAttribute="centerY" id="hUZ-kO-Hs7"/>
+                                                        <constraint firstItem="Sp5-2r-feK" firstAttribute="top" secondItem="7RG-eI-XBj" secondAttribute="bottom" constant="10" id="hW4-lo-bRH"/>
+                                                        <constraint firstItem="7RG-eI-XBj" firstAttribute="top" secondItem="aI6-iI-XqX" secondAttribute="top" constant="6" id="pVh-kd-lsb"/>
+                                                        <constraint firstItem="H3N-RQ-HTx" firstAttribute="centerY" secondItem="uSw-Rb-zNB" secondAttribute="centerY" id="t5X-Sh-hRA"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barscore" translatesAutoresizingMaskIntoConstraints="NO" id="cR5-o5-Vob" userLabel="Barscore">
+                                                    <rect key="frame" x="142.5" y="75.5" width="484" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="bGK-Kp-LI9"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barscore" translatesAutoresizingMaskIntoConstraints="NO" id="cR5-o5-Vob" userLabel="Barscore">
-                                                    <rect key="frame" x="169" y="131" width="429" height="70"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="70%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="hyf-q6-FSq" userLabel="BarscoreLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="404" y="129" width="75" height="75"/>
+                                                    <rect key="frame" x="404" y="48" width="75" height="75"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.019607843137254902" green="0.20392156862745098" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
@@ -469,20 +523,26 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="cR5-o5-Vob" firstAttribute="centerX" secondItem="Q6W-eN-UlE" secondAttribute="centerX" id="AMz-lk-5vz"/>
-                                                <constraint firstItem="cR5-o5-Vob" firstAttribute="centerY" secondItem="Q6W-eN-UlE" secondAttribute="centerY" multiplier="1.33" id="ElF-6G-cV7"/>
-                                                <constraint firstItem="cR5-o5-Vob" firstAttribute="height" secondItem="Q6W-eN-UlE" secondAttribute="height" multiplier="0.3" id="PQV-Km-USb"/>
-                                                <constraint firstItem="cR5-o5-Vob" firstAttribute="width" secondItem="Q6W-eN-UlE" secondAttribute="width" multiplier="0.9" id="bAf-f5-yKF"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Q6W-eN-UlE" secondAttribute="bottom" id="bPf-2p-Vhv"/>
-                                                <constraint firstItem="Q6W-eN-UlE" firstAttribute="top" secondItem="LaU-sa-gxI" secondAttribute="topMargin" id="eK2-7o-mb5"/>
-                                                <constraint firstItem="Q6W-eN-UlE" firstAttribute="centerX" secondItem="LaU-sa-gxI" secondAttribute="centerX" id="peg-ig-Qhf"/>
+                                                <constraint firstItem="fIH-Ha-JCO" firstAttribute="leading" secondItem="cR5-o5-Vob" secondAttribute="leading" constant="8" id="8aF-NZ-rZh"/>
+                                                <constraint firstItem="2Qy-g5-tHG" firstAttribute="centerX" secondItem="cR5-o5-Vob" secondAttribute="centerX" multiplier="1.38" id="DcM-h9-D11"/>
+                                                <constraint firstItem="uSw-Rb-zNB" firstAttribute="centerX" secondItem="cR5-o5-Vob" secondAttribute="centerX" multiplier="0.8" id="V8n-ok-Ry9"/>
+                                                <constraint firstAttribute="topMargin" secondItem="aI6-iI-XqX" secondAttribute="top" id="XbN-2L-wgy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aI6-iI-XqX" secondAttribute="bottom" id="aVZ-5a-8lV"/>
+                                                <constraint firstItem="aI6-iI-XqX" firstAttribute="centerX" secondItem="LaU-sa-gxI" secondAttribute="centerX" id="cIv-fk-Nt4"/>
+                                                <constraint firstItem="aI6-iI-XqX" firstAttribute="width" secondItem="LaU-sa-gxI" secondAttribute="width" multiplier="0.7" id="hFd-xY-k0R"/>
+                                                <constraint firstItem="cR5-o5-Vob" firstAttribute="width" secondItem="aI6-iI-XqX" secondAttribute="width" multiplier="0.9" id="j63-cD-eDE"/>
+                                                <constraint firstItem="fIH-Ha-JCO" firstAttribute="top" secondItem="cR5-o5-Vob" secondAttribute="bottom" constant="3" id="rJI-hm-pU1"/>
+                                                <constraint firstItem="cR5-o5-Vob" firstAttribute="top" secondItem="Sp5-2r-feK" secondAttribute="bottom" constant="15" id="tC8-Bb-Cse"/>
+                                                <constraint firstItem="cR5-o5-Vob" firstAttribute="centerX" secondItem="aI6-iI-XqX" secondAttribute="centerX" id="tiC-2U-K71"/>
+                                                <constraint firstItem="H3N-RQ-HTx" firstAttribute="centerX" secondItem="cR5-o5-Vob" secondAttribute="centerX" multiplier="1.08" id="zBx-tc-Mkf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="barscore" destination="cR5-o5-Vob" id="x07-mf-eSd"/>
                                             <outlet property="barscoreLabel" destination="hyf-q6-FSq" id="3qP-DF-RwV"/>
-                                            <outlet property="barscoreView" destination="Q6W-eN-UlE" id="aOt-Z5-0tU"/>
+                                            <outlet property="barscoreTitle" destination="7RG-eI-XBj" id="Ia5-X9-WHu"/>
+                                            <outlet property="barscoreView" destination="aI6-iI-XqX" id="Rmg-Ay-qeE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -569,7 +629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTp-CT-sgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="389"/>
+            <point key="canvasLocation" x="1025" y="388.4765625"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2YK-Ib-dq7">
@@ -593,7 +653,6 @@
     </scenes>
     <resources>
         <image name="Barscore" width="3492" height="623"/>
-        <image name="BarscoreContainer" width="978" height="480"/>
         <image name="ChecklistVisual" width="35" height="35"/>
         <image name="MicOff" width="30" height="30"/>
         <image name="Overview-WatsonAlfAsst" width="768" height="1024"/>

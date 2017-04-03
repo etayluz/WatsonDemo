@@ -226,7 +226,7 @@ extension ChatViewController: UITableViewDelegate {
         }
 
         if message.type == MessageType.Barscore {
-            return 150
+            return 175
         }
 
         return UITableViewAutomaticDimension

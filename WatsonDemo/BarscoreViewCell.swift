@@ -12,10 +12,11 @@ import UIKit
 class BarscoreViewCell: UITableViewCell {
 
     // MARK: - Outlets
-    @IBOutlet weak var barscoreView: UIImageView!
+    @IBOutlet weak var barscoreView: CustomView!
     @IBOutlet weak var barscore: UIImageView!
     @IBOutlet weak var barscoreLabel: CustomLabel!
-    
+    @IBOutlet weak var barscoreTitle: UILabel!
+
 
     // MARK: - Properties
     weak var delegate: ChatViewController!
@@ -28,7 +29,7 @@ class BarscoreViewCell: UITableViewCell {
 
         barscoreLabel.text = message.barscore
         barscoreLabel.textAlignment = .center
-
+        barscoreTitle.text = "You scored a " + barscoreLabel.text! + " probability of achieving your retirement goals"
         var barscorePercentage: CGFloat = 0
         let barscorePercentageString = message.barscore?.replacingOccurrences(of: "%", with: "")
         if let doubleValue = Double(barscorePercentageString!) {
