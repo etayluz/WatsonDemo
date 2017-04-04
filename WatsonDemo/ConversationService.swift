@@ -160,9 +160,11 @@ class ConversationService {
         #endif
 
 
-        self.delegate?.didReceiveMessage(withText: text, options: options);
+     
 
         checkForButton()
+        self.delegate?.didReceiveMessage(withText: text, options: options);
+        
         checkForUserIcon()
         checkForMap()
         checkForMovie()
