@@ -31,18 +31,10 @@
 		744480091E20615B00291174 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		7444800A1E20615B00291174 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
 		7444800B1E20615B00291174 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
-		7444800D1E20615B00291174 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		7444800E1E20615B00291174 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
-		7444800F1E20615B00291174 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
-		744480101E20615B00291174 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
 		744480121E20615B00291174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		744480131E20615B00291174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		744480141E20615B00291174 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		744480151E20615B00291174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		744480171E20615B00291174 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		744480181E20615B00291174 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		744480191E20615B00291174 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7444801A1E20615B00291174 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7444802C1E20621100291174 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
 		7444802D1E20621100291174 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
 		7444802E1E20621200291174 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
@@ -72,18 +64,10 @@
 		746B7F611E778D6C00CFC08B /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		746B7F621E778D6C00CFC08B /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
 		746B7F631E778D6C00CFC08B /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
-		746B7F651E778D6C00CFC08B /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		746B7F661E778D6C00CFC08B /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
-		746B7F671E778D6C00CFC08B /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
-		746B7F681E778D6C00CFC08B /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
 		746B7F6A1E778D6C00CFC08B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		746B7F6B1E778D6C00CFC08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		746B7F6C1E778D6C00CFC08B /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		746B7F6D1E778D6C00CFC08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		746B7F6F1E778D6C00CFC08B /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		746B7F701E778D6C00CFC08B /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		746B7F711E778D6C00CFC08B /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		746B7F721E778D6C00CFC08B /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		746E44421E3FBC03004AC465 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
 		746E44431E3FBC03004AC465 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		746E44441E3FBC03004AC465 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
@@ -108,18 +92,10 @@
 		746E44571E3FBC03004AC465 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		746E44581E3FBC03004AC465 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
 		746E44591E3FBC03004AC465 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
-		746E445B1E3FBC03004AC465 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		746E445C1E3FBC03004AC465 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
-		746E445D1E3FBC03004AC465 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
-		746E445E1E3FBC03004AC465 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
 		746E44601E3FBC03004AC465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		746E44611E3FBC03004AC465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		746E44621E3FBC03004AC465 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		746E44631E3FBC03004AC465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		746E44651E3FBC03004AC465 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		746E44661E3FBC03004AC465 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		746E44671E3FBC03004AC465 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		746E44681E3FBC03004AC465 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		746E44761E3FBC37004AC465 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
 		746E44771E3FBC37004AC465 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		746E44781E3FBC37004AC465 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
@@ -144,18 +120,10 @@
 		746E448B1E3FBC37004AC465 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		746E448C1E3FBC37004AC465 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
 		746E448D1E3FBC37004AC465 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
-		746E448F1E3FBC37004AC465 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		746E44901E3FBC37004AC465 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
-		746E44911E3FBC37004AC465 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
-		746E44921E3FBC37004AC465 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
 		746E44941E3FBC37004AC465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		746E44951E3FBC37004AC465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		746E44961E3FBC37004AC465 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		746E44971E3FBC37004AC465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		746E44991E3FBC37004AC465 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		746E449A1E3FBC37004AC465 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		746E449B1E3FBC37004AC465 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		746E449C1E3FBC37004AC465 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74CF3A2F1E045D2700CED191 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		74CF3A301E045D2700CED191 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		74CF3A311E045D2700CED191 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
@@ -179,19 +147,11 @@
 		74CF3A431E045D2700CED191 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		74CF3A441E045D2700CED191 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
 		74CF3A451E045D2700CED191 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
-		74CF3A471E045D2700CED191 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		74CF3A481E045D2700CED191 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
-		74CF3A491E045D2700CED191 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
-		74CF3A4A1E045D2700CED191 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
 		74CF3A4C1E045D2700CED191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		74CF3A4D1E045D2700CED191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		74CF3A4E1E045D2700CED191 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		74CF3A4F1E045D2700CED191 /* WatsonMetAsst-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 740FD07E1E028149007329B8 /* WatsonMetAsst-Info.plist */; };
 		74CF3A501E045D2700CED191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		74CF3A521E045D2700CED191 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74CF3A531E045D2700CED191 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74CF3A541E045D2700CED191 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74CF3A551E045D2700CED191 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74E49BBB1E0265BD00579DD1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		74E49BBC1E0265BD00579DD1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		74E49BBD1E0265BD00579DD1 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
@@ -215,18 +175,10 @@
 		74E49BCF1E0265BD00579DD1 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		74E49BD01E0265BD00579DD1 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
 		74E49BD11E0265BD00579DD1 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
-		74E49BD31E0265BD00579DD1 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		74E49BD41E0265BD00579DD1 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
-		74E49BD51E0265BD00579DD1 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
-		74E49BD61E0265BD00579DD1 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
 		74E49BD81E0265BD00579DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		74E49BD91E0265BD00579DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		74E49BDA1E0265BD00579DD1 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		74E49BDB1E0265BD00579DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		74E49BDD1E0265BD00579DD1 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74E49BDE1E0265BD00579DD1 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74E49BDF1E0265BD00579DD1 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74E49BE01E0265BD00579DD1 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74E49BE81E0265E100579DD1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		74E49BE91E0265E100579DD1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		74E49BEA1E0265E100579DD1 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
@@ -250,18 +202,10 @@
 		74E49BFC1E0265E100579DD1 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		74E49BFD1E0265E100579DD1 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
 		74E49BFE1E0265E100579DD1 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
-		74E49C001E0265E100579DD1 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		74E49C011E0265E100579DD1 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
-		74E49C021E0265E100579DD1 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
-		74E49C031E0265E100579DD1 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
 		74E49C051E0265E100579DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		74E49C061E0265E100579DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		74E49C071E0265E100579DD1 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		74E49C081E0265E100579DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		74E49C0A1E0265E100579DD1 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74E49C0B1E0265E100579DD1 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74E49C0C1E0265E100579DD1 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74E49C0D1E0265E100579DD1 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74E49C151E0265FF00579DD1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		74E49C161E0265FF00579DD1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		74E49C171E0265FF00579DD1 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */; };
@@ -285,18 +229,10 @@
 		74E49C291E0265FF00579DD1 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		74E49C2A1E0265FF00579DD1 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
 		74E49C2B1E0265FF00579DD1 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
-		74E49C2D1E0265FF00579DD1 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		74E49C2E1E0265FF00579DD1 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
-		74E49C2F1E0265FF00579DD1 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
-		74E49C301E0265FF00579DD1 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
 		74E49C321E0265FF00579DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		74E49C331E0265FF00579DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		74E49C341E0265FF00579DD1 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		74E49C351E0265FF00579DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		74E49C371E0265FF00579DD1 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74E49C381E0265FF00579DD1 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74E49C391E0265FF00579DD1 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74E49C3A1E0265FF00579DD1 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B40D49071E8EB87C0027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
 		B40D491D1E915DB60027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
 		B40D491E1E915DB70027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
@@ -312,8 +248,6 @@
 		B4395A001DE50DD400F2C075 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43959FF1DE50DD400F2C075 /* CustomView.swift */; };
 		B47B68C01DF423FF00AB6421 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		B47B68C21DF5D03D00AB6421 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */; };
-		B47B68C41DF5FF8A00AB6421 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; };
-		B47B68C51DF5FF8A00AB6421 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B47B68C31DF5FF8A00AB6421 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18611DD96859008CE7C2 /* ChatViewController.swift */; };
 		B48B18641DD96A66008CE7C2 /* WatsonChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */; };
 		B48B18661DD96A92008CE7C2 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
@@ -325,10 +259,6 @@
 		B48B18791DDB7025008CE7C2 /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */; };
 		B48B187F1DDB8D80008CE7C2 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */; };
 		B48B18811DDB908E008CE7C2 /* ConversationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18801DDB908E008CE7C2 /* ConversationService.swift */; };
-		B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */; };
-		B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; };
-		B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4981CB91DEE37F700C67B35 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
 		B4AE40DC1E842D290084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
 		B4AE40DD1E8434580084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
@@ -355,6 +285,47 @@
 		B4AE40F31E843DB80084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
 		B4AE40F41E843DB90084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
 		B4AE40F51E843DBA0084CDE1 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
+		B4B058471E9A28DE00855333 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; };
+		B4B058481E9A28DE00855333 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; };
+		B4B058491E9A28DE00855333 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; };
+		B4B0584A1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; };
+		B4B0584B1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; };
+		B4B0584C1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; };
+		B4B0584D1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; };
+		B4B0584E1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; };
+		B4B058501E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
+		B4B058511E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
+		B4B058521E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
+		B4B058531E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
+		B4B058541E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
+		B4B058551E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
+		B4B058561E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
+		B4B058571E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
+		B4B0585A1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
+		B4B0585B1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
+		B4B0585C1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
+		B4B0585D1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
+		B4B0585E1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
+		B4B0585F1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
+		B4B058601E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
+		B4B058611E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
+		B4B058631E9A293200855333 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4B058651E9A293800855333 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4B058691E9A294C00855333 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4B0586A1E9A296000855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
+		B4B0586B1E9A296000855333 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; };
+		B4B0586C1E9A296000855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
+		B4B058701E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B058711E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B058721E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B058731E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B058741E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B058751E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B058761E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B058771E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B058781E9A299500855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B058791E9A299B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
+		B4B0587A1E9A299B00855333 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4B1BA4C1E007EB9001656A4 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1BA4B1E007EB9001656A4 /* UIFont+Extension.swift */; };
 		B4BAE2CD1E1ED6FB00C06746 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
@@ -363,8 +334,6 @@
 		B4CBCF9C1DD91EA70003074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		B4CBCF9F1DD91EA70003074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		B4D160FB1DDBF19D00D436F1 /* SpeechToTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */; };
-		B4D160FD1DDBF1EE00D436F1 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; };
-		B4D160FF1DDBF1FC00D436F1 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4D161021DDBF2C600D436F1 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
 		B4DAA6B81E8301910099C5F6 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
 		B4DAA6BA1E830A3E0099C5F6 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
@@ -378,10 +347,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				744480171E20615B00291174 /* TextToSpeechV1.framework in Embed Frameworks */,
-				744480181E20615B00291174 /* RestKit.framework in Embed Frameworks */,
-				744480191E20615B00291174 /* SpeechToTextV1.framework in Embed Frameworks */,
-				7444801A1E20615B00291174 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,10 +357,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				746B7F6F1E778D6C00CFC08B /* TextToSpeechV1.framework in Embed Frameworks */,
-				746B7F701E778D6C00CFC08B /* RestKit.framework in Embed Frameworks */,
-				746B7F711E778D6C00CFC08B /* SpeechToTextV1.framework in Embed Frameworks */,
-				746B7F721E778D6C00CFC08B /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,10 +367,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				746E44651E3FBC03004AC465 /* TextToSpeechV1.framework in Embed Frameworks */,
-				746E44661E3FBC03004AC465 /* RestKit.framework in Embed Frameworks */,
-				746E44671E3FBC03004AC465 /* SpeechToTextV1.framework in Embed Frameworks */,
-				746E44681E3FBC03004AC465 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,10 +377,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				746E44991E3FBC37004AC465 /* TextToSpeechV1.framework in Embed Frameworks */,
-				746E449A1E3FBC37004AC465 /* RestKit.framework in Embed Frameworks */,
-				746E449B1E3FBC37004AC465 /* SpeechToTextV1.framework in Embed Frameworks */,
-				746E449C1E3FBC37004AC465 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,10 +387,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				74CF3A521E045D2700CED191 /* TextToSpeechV1.framework in Embed Frameworks */,
-				74CF3A531E045D2700CED191 /* RestKit.framework in Embed Frameworks */,
-				74CF3A541E045D2700CED191 /* SpeechToTextV1.framework in Embed Frameworks */,
-				74CF3A551E045D2700CED191 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,10 +397,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				74E49BDD1E0265BD00579DD1 /* TextToSpeechV1.framework in Embed Frameworks */,
-				74E49BDE1E0265BD00579DD1 /* RestKit.framework in Embed Frameworks */,
-				74E49BDF1E0265BD00579DD1 /* SpeechToTextV1.framework in Embed Frameworks */,
-				74E49BE01E0265BD00579DD1 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,10 +407,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				74E49C0A1E0265E100579DD1 /* TextToSpeechV1.framework in Embed Frameworks */,
-				74E49C0B1E0265E100579DD1 /* RestKit.framework in Embed Frameworks */,
-				74E49C0C1E0265E100579DD1 /* SpeechToTextV1.framework in Embed Frameworks */,
-				74E49C0D1E0265E100579DD1 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,10 +417,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				74E49C371E0265FF00579DD1 /* TextToSpeechV1.framework in Embed Frameworks */,
-				74E49C381E0265FF00579DD1 /* RestKit.framework in Embed Frameworks */,
-				74E49C391E0265FF00579DD1 /* SpeechToTextV1.framework in Embed Frameworks */,
-				74E49C3A1E0265FF00579DD1 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,10 +427,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B48B18881DDB99C0008CE7C2 /* TextToSpeechV1.framework in Embed Frameworks */,
-				B48B18911DDB9A55008CE7C2 /* RestKit.framework in Embed Frameworks */,
-				B4D160FF1DDBF1FC00D436F1 /* SpeechToTextV1.framework in Embed Frameworks */,
-				B47B68C51DF5FF8A00AB6421 /* WebImage.framework in Embed Frameworks */,
+				B4B058631E9A293200855333 /* RestKit.framework in Embed Frameworks */,
+				B4B058651E9A293800855333 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B4B058691E9A294C00855333 /* TextToSpeechV1.framework in Embed Frameworks */,
+				B4B0587A1E9A299B00855333 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,7 +457,6 @@
 		B43959FF1DE50DD400F2C075 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		B47B68BF1DF423FF00AB6421 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
-		B47B68C31DF5FF8A00AB6421 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebImage.framework; sourceTree = "<group>"; };
 		B48B18611DD96859008CE7C2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B48B18631DD96A66008CE7C2 /* WatsonChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonChatViewCell.swift; sourceTree = "<group>"; };
 		B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserChatViewCell.swift; sourceTree = "<group>"; };
@@ -530,15 +466,17 @@
 		B48B186F1DDA139F008CE7C2 /* ChatTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextField.swift; sourceTree = "<group>"; };
 		B48B18721DDA8768008CE7C2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B48B18781DDB7025008CE7C2 /* TextToSpeechService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToSpeechService.swift; sourceTree = "<group>"; };
-		B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TextToSpeechV1.framework; sourceTree = "<group>"; };
 		B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		B48B18801DDB908E008CE7C2 /* ConversationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationService.swift; sourceTree = "<group>"; };
-		B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
 		B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxTableViewCell.swift; sourceTree = "<group>"; };
+		B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Frameworks/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Frameworks/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		B4B058581E9A28FF00855333 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Frameworks/RestKit.framework; sourceTree = "<group>"; };
+		B4B0586E1E9A298B00855333 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Frameworks/WebImage.framework; sourceTree = "<group>"; };
 		B4B1BA4B1E007EB9001656A4 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewCell.swift; sourceTree = "<group>"; };
-		B4CBCF911DD91EA70003074A /* WatsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WatsonDemo.app; path = WatsonBankAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CBCF911DD91EA70003074A /* WatsonBankAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonBankAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CBCF941DD91EA70003074A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4CBCF961DD91EA70003074A /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		B4CBCF991DD91EA70003074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -546,7 +484,6 @@
 		B4CBCF9E1DD91EA70003074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4CBCFA01DD91EA70003074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D160FA1DDBF19D00D436F1 /* SpeechToTextService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechToTextService.swift; sourceTree = "<group>"; };
-		B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechToTextV1.framework; sourceTree = "<group>"; };
 		B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		B4DAA6B71E8301910099C5F6 /* String_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
 		B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxViewCell.swift; sourceTree = "<group>"; };
@@ -558,10 +495,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7444800D1E20615B00291174 /* TextToSpeechV1.framework in Frameworks */,
-				7444800E1E20615B00291174 /* RestKit.framework in Frameworks */,
-				7444800F1E20615B00291174 /* SpeechToTextV1.framework in Frameworks */,
-				744480101E20615B00291174 /* WebImage.framework in Frameworks */,
+				B4B0584B1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */,
+				B4B058541E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4B0585E1E9A28FF00855333 /* RestKit.framework in Frameworks */,
+				B4B058741E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,10 +506,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				746B7F651E778D6C00CFC08B /* TextToSpeechV1.framework in Frameworks */,
-				746B7F661E778D6C00CFC08B /* RestKit.framework in Frameworks */,
-				746B7F671E778D6C00CFC08B /* SpeechToTextV1.framework in Frameworks */,
-				746B7F681E778D6C00CFC08B /* WebImage.framework in Frameworks */,
+				B4B0584E1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */,
+				B4B058571E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4B058611E9A28FF00855333 /* RestKit.framework in Frameworks */,
+				B4B058771E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,10 +517,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				746E445B1E3FBC03004AC465 /* TextToSpeechV1.framework in Frameworks */,
-				746E445C1E3FBC03004AC465 /* RestKit.framework in Frameworks */,
-				746E445D1E3FBC03004AC465 /* SpeechToTextV1.framework in Frameworks */,
-				746E445E1E3FBC03004AC465 /* WebImage.framework in Frameworks */,
+				B4B0584C1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */,
+				B4B058551E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4B0585F1E9A28FF00855333 /* RestKit.framework in Frameworks */,
+				B4B058751E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,10 +528,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				746E448F1E3FBC37004AC465 /* TextToSpeechV1.framework in Frameworks */,
-				746E44901E3FBC37004AC465 /* RestKit.framework in Frameworks */,
-				746E44911E3FBC37004AC465 /* SpeechToTextV1.framework in Frameworks */,
-				746E44921E3FBC37004AC465 /* WebImage.framework in Frameworks */,
+				B4B0584D1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */,
+				B4B058561E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4B058601E9A28FF00855333 /* RestKit.framework in Frameworks */,
+				B4B058761E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,10 +539,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CF3A471E045D2700CED191 /* TextToSpeechV1.framework in Frameworks */,
-				74CF3A481E045D2700CED191 /* RestKit.framework in Frameworks */,
-				74CF3A491E045D2700CED191 /* SpeechToTextV1.framework in Frameworks */,
-				74CF3A4A1E045D2700CED191 /* WebImage.framework in Frameworks */,
+				B4B0584A1E9A28DF00855333 /* SpeechToTextV1.framework in Frameworks */,
+				B4B058531E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4B0585D1E9A28FF00855333 /* RestKit.framework in Frameworks */,
+				B4B058731E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,10 +550,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E49BD31E0265BD00579DD1 /* TextToSpeechV1.framework in Frameworks */,
-				74E49BD41E0265BD00579DD1 /* RestKit.framework in Frameworks */,
-				74E49BD51E0265BD00579DD1 /* SpeechToTextV1.framework in Frameworks */,
-				74E49BD61E0265BD00579DD1 /* WebImage.framework in Frameworks */,
+				B4B058471E9A28DE00855333 /* SpeechToTextV1.framework in Frameworks */,
+				B4B058501E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4B0585A1E9A28FF00855333 /* RestKit.framework in Frameworks */,
+				B4B058701E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,10 +561,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E49C001E0265E100579DD1 /* TextToSpeechV1.framework in Frameworks */,
-				74E49C011E0265E100579DD1 /* RestKit.framework in Frameworks */,
-				74E49C021E0265E100579DD1 /* SpeechToTextV1.framework in Frameworks */,
-				74E49C031E0265E100579DD1 /* WebImage.framework in Frameworks */,
+				B4B058481E9A28DE00855333 /* SpeechToTextV1.framework in Frameworks */,
+				B4B058511E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4B0585B1E9A28FF00855333 /* RestKit.framework in Frameworks */,
+				B4B058711E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,10 +572,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E49C2D1E0265FF00579DD1 /* TextToSpeechV1.framework in Frameworks */,
-				74E49C2E1E0265FF00579DD1 /* RestKit.framework in Frameworks */,
-				74E49C2F1E0265FF00579DD1 /* SpeechToTextV1.framework in Frameworks */,
-				74E49C301E0265FF00579DD1 /* WebImage.framework in Frameworks */,
+				B4B058491E9A28DE00855333 /* SpeechToTextV1.framework in Frameworks */,
+				B4B058521E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4B0585C1E9A28FF00855333 /* RestKit.framework in Frameworks */,
+				B4B058721E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,10 +583,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48B188B1DDB99DF008CE7C2 /* TextToSpeechV1.framework in Frameworks */,
-				B48B18901DDB9A55008CE7C2 /* RestKit.framework in Frameworks */,
-				B4D160FD1DDBF1EE00D436F1 /* SpeechToTextV1.framework in Frameworks */,
-				B47B68C41DF5FF8A00AB6421 /* WebImage.framework in Frameworks */,
+				B4B0586A1E9A296000855333 /* RestKit.framework in Frameworks */,
+				B4B058791E9A299B00855333 /* WebImage.framework in Frameworks */,
+				B4B0586B1E9A296000855333 /* SpeechToTextV1.framework in Frameworks */,
+				B4B0586C1E9A296000855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4B058781E9A299500855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,10 +675,10 @@
 		B48B18751DDB6EE0008CE7C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B48B188E1DDB9A3B008CE7C2 /* RestKit.framework */,
-				B4D160FC1DDBF1EE00D436F1 /* SpeechToTextV1.framework */,
-				B48B187C1DDB7DED008CE7C2 /* TextToSpeechV1.framework */,
-				B47B68C31DF5FF8A00AB6421 /* WebImage.framework */,
+				B4B0586E1E9A298B00855333 /* WebImage.framework */,
+				B4B058581E9A28FF00855333 /* RestKit.framework */,
+				B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */,
+				B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -756,7 +694,7 @@
 		B4CBCF921DD91EA70003074A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4CBCF911DD91EA70003074A /* WatsonDemo.app */,
+				B4CBCF911DD91EA70003074A /* WatsonBankAsst.app */,
 				74E49BE41E0265BD00579DD1 /* WatsonInsAsst.app */,
 				74E49C111E0265E100579DD1 /* WatsonWealthAsst.app */,
 				74E49C3E1E0265FF00579DD1 /* WatsonMetAsst.app */,
@@ -962,7 +900,7 @@
 			);
 			name = WatsonBankAsst;
 			productName = WatsonDemo;
-			productReference = B4CBCF911DD91EA70003074A /* WatsonDemo.app */;
+			productReference = B4CBCF911DD91EA70003074A /* WatsonBankAsst.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1526,6 +1464,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
@@ -1550,6 +1489,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1572,6 +1512,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1594,6 +1535,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1658,6 +1600,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1680,6 +1623,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1702,6 +1646,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1724,6 +1669,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1788,6 +1734,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1810,6 +1757,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1832,6 +1780,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1854,6 +1803,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1918,6 +1868,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1940,6 +1891,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1962,6 +1914,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1984,6 +1937,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2006,6 +1960,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2028,6 +1983,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2050,6 +2006,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2072,6 +2029,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2094,6 +2052,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2116,6 +2075,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2138,6 +2098,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2202,6 +2163,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2224,6 +2186,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2246,6 +2209,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2268,6 +2232,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2290,6 +2255,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2312,6 +2278,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2376,6 +2343,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2398,6 +2366,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2420,6 +2389,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2442,6 +2412,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2464,6 +2435,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2486,6 +2458,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2508,6 +2481,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2530,6 +2504,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2553,6 +2528,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2576,6 +2552,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2599,6 +2576,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2622,6 +2600,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2645,6 +2624,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2668,6 +2648,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2691,6 +2672,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2714,6 +2696,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2737,6 +2720,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2760,6 +2744,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2783,6 +2768,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2805,6 +2791,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2827,6 +2814,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2849,6 +2837,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2871,6 +2860,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2893,6 +2883,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2915,6 +2906,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2937,6 +2929,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2959,6 +2952,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2981,6 +2975,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3003,6 +2998,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3025,6 +3021,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3047,6 +3044,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3069,6 +3067,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3091,6 +3090,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3113,6 +3113,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3135,6 +3136,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3200,6 +3202,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3222,6 +3225,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3244,6 +3248,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3266,6 +3271,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3288,6 +3294,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3310,6 +3317,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3332,6 +3340,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3354,6 +3363,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3418,6 +3428,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
@@ -3441,6 +3452,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3463,6 +3475,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3485,6 +3498,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3507,6 +3521,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3529,6 +3544,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3551,6 +3567,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3573,6 +3590,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3637,6 +3655,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3659,6 +3678,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3681,6 +3701,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3703,6 +3724,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3725,6 +3747,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3747,6 +3770,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3769,6 +3793,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3791,6 +3816,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3813,6 +3839,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3835,6 +3862,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3857,6 +3885,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3879,6 +3908,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3901,6 +3931,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3923,6 +3954,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3945,6 +3977,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3967,6 +4000,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3989,6 +4023,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4100,6 +4135,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4122,6 +4158,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
