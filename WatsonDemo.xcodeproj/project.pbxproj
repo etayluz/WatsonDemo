@@ -233,6 +233,38 @@
 		74E49C331E0265FF00579DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		74E49C341E0265FF00579DD1 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		74E49C351E0265FF00579DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
+		74F6EE3E1EA57C5400006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE3F1EA57C5F00006A9C /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE401EA57C6A00006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE411EA57C7400006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE421EA57CA200006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE431EA57CA200006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE441EA57CA200006A9C /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE451EA57CA200006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE461EA57CAD00006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE471EA57CAD00006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE481EA57CAD00006A9C /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE491EA57CAD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE4A1EA57CB800006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE4B1EA57CB800006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE4C1EA57CB800006A9C /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE4D1EA57CB800006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE4E1EA57CC200006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE4F1EA57CC200006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE501EA57CC200006A9C /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE511EA57CC200006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE521EA57CCD00006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE531EA57CCD00006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE541EA57CCD00006A9C /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE551EA57CCD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE561EA57CD700006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE571EA57CD700006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE581EA57CD700006A9C /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE591EA57CD700006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE5A1EA57CE100006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE5B1EA57CE100006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE5C1EA57CE100006A9C /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058441E9A28DE00855333 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74F6EE5D1EA57CE100006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B40D49071E8EB87C0027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
 		B40D491D1E915DB60027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
 		B40D491E1E915DB70027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
@@ -347,6 +379,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				74F6EE4E1EA57CC200006A9C /* WebImage.framework in Embed Frameworks */,
+				74F6EE4F1EA57CC200006A9C /* RestKit.framework in Embed Frameworks */,
+				74F6EE501EA57CC200006A9C /* SpeechToTextV1.framework in Embed Frameworks */,
+				74F6EE511EA57CC200006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +393,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				74F6EE5A1EA57CE100006A9C /* WebImage.framework in Embed Frameworks */,
+				74F6EE5B1EA57CE100006A9C /* RestKit.framework in Embed Frameworks */,
+				74F6EE5C1EA57CE100006A9C /* SpeechToTextV1.framework in Embed Frameworks */,
+				74F6EE5D1EA57CE100006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +407,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				74F6EE521EA57CCD00006A9C /* WebImage.framework in Embed Frameworks */,
+				74F6EE531EA57CCD00006A9C /* RestKit.framework in Embed Frameworks */,
+				74F6EE541EA57CCD00006A9C /* SpeechToTextV1.framework in Embed Frameworks */,
+				74F6EE551EA57CCD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +421,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				74F6EE561EA57CD700006A9C /* WebImage.framework in Embed Frameworks */,
+				74F6EE571EA57CD700006A9C /* RestKit.framework in Embed Frameworks */,
+				74F6EE581EA57CD700006A9C /* SpeechToTextV1.framework in Embed Frameworks */,
+				74F6EE591EA57CD700006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,16 +435,24 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				74F6EE4A1EA57CB800006A9C /* WebImage.framework in Embed Frameworks */,
+				74F6EE4B1EA57CB800006A9C /* RestKit.framework in Embed Frameworks */,
+				74F6EE4C1EA57CB800006A9C /* SpeechToTextV1.framework in Embed Frameworks */,
+				74F6EE4D1EA57CB800006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		74E49BDC1E0265BD00579DD1 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				74F6EE411EA57C7400006A9C /* RestKit.framework in Embed Frameworks */,
+				74F6EE401EA57C6A00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
+				74F6EE3F1EA57C5F00006A9C /* SpeechToTextV1.framework in Embed Frameworks */,
+				74F6EE3E1EA57C5400006A9C /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +463,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				74F6EE421EA57CA200006A9C /* WebImage.framework in Embed Frameworks */,
+				74F6EE431EA57CA200006A9C /* RestKit.framework in Embed Frameworks */,
+				74F6EE441EA57CA200006A9C /* SpeechToTextV1.framework in Embed Frameworks */,
+				74F6EE451EA57CA200006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +477,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				74F6EE461EA57CAD00006A9C /* WebImage.framework in Embed Frameworks */,
+				74F6EE471EA57CAD00006A9C /* RestKit.framework in Embed Frameworks */,
+				74F6EE481EA57CAD00006A9C /* SpeechToTextV1.framework in Embed Frameworks */,
+				74F6EE491EA57CAD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
