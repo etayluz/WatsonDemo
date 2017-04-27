@@ -19,7 +19,7 @@ protocol SpeechToTextServiceDelegate: class {
 class SpeechToTextService {
 
     // MARK: - Properties
-    weak var delegate: SpeechToTextServiceDelegate?
+    var delegate: SpeechToTextServiceDelegate?
     var speechToTextSession: SpeechToTextSession? = nil
     var textTranscription: String?
 
