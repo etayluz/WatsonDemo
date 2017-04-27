@@ -51,7 +51,6 @@ class SpeechToTextService {
 
     func startRecording() {
         var settings = RecognitionSettings(contentType: .opus)
-      //  var settings = RecognitionSettings(contentType: .l16(rate: 44100, channels: 1))
         settings.interimResults = false
         settings.continuous = true
         settings.inactivityTimeout = -1
