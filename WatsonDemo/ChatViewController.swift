@@ -28,6 +28,7 @@ class ChatViewController: UIViewController {
     var audioPlayer: AVAudioPlayer?
     var messages = [Message]()
     var kickoffMessage = Constants.defaultConversationKickoffMessage
+    var firstTime = true
 
     // MARK: - Services
     lazy var conversationService: ConversationService = ConversationService(delegate:self)
@@ -88,7 +89,12 @@ class ChatViewController: UIViewController {
             if let _ = audioPlayer {
                 audioPlayer?.stop()
             }
-            speechToTextService.finishRecording()
+            
+            if firstTime {
+                speechToTextService.startRecording()
+                firstTime = false
+            }
+            
             speechToTextService.startRecording()
         }
 
