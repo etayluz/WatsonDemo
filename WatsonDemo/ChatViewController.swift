@@ -88,6 +88,7 @@ class ChatViewController: UIViewController {
             if let _ = audioPlayer {
                 audioPlayer?.stop()
             }
+            speechToTextService.finishRecording()
             speechToTextService.startRecording()
         }
 
