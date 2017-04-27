@@ -8,6 +8,7 @@
 
 import AVFoundation
 import UIKit
+import Darwin
 
 class ChatViewController: UIViewController {
 
@@ -88,11 +89,6 @@ class ChatViewController: UIViewController {
             micImage.image = UIImage.init(imageLiteralResourceName: "MicOn")
             if let _ = audioPlayer {
                 audioPlayer?.stop()
-            }
-            
-            if firstTime {
-                speechToTextService.startRecording()
-                firstTime = false
             }
             
             speechToTextService.startRecording()
