@@ -78,6 +78,10 @@ class ChatViewController: UIViewController {
         let gestureTap = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
         gestureTap.cancelsTouchesInView = false
         chatTableView.addGestureRecognizer(gestureTap)
+
+        // This is a temporary patch for a bug where SpeechToTextSession doesn't work (but only the first time around)
+        speechToTextService.startRecording()
+        speechToTextService.finishRecording()
     }
 
     // MARK: - Actions

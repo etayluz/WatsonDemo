@@ -28,27 +28,29 @@ class SpeechToTextService {
     init(delegate: SpeechToTextServiceDelegate) {
         self.delegate = delegate
 
-        
-    if GlobalConstants.STTcustomizationID == "" {
-         speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
-                                                   password: GlobalConstants.BluemixPasswordSTT)
-    }
-    else {
-         speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
-                                                   password: GlobalConstants.BluemixPasswordSTT,
-                                                   customizationID: GlobalConstants.STTcustomizationID)
-    }
-        
-    speechToTextSession?.onResults = { results in print(results.bestTranscript)
-            if let bestTranscript = results.bestTranscript as String? {
-                if bestTranscript.characters.count > 0 {
-                 let truncated = bestTranscript.substring(to: bestTranscript.index(before: bestTranscript.endIndex))
-                 delegate.didFinishTranscribingSpeech(withText: truncated)
+        if GlobalConstants.STTcustomizationID == "" {
+             speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
+                                                       password: GlobalConstants.BluemixPasswordSTT)
+        }
+        else {
+             speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
+                                                       password: GlobalConstants.BluemixPasswordSTT,
+                                                       customizationID: GlobalConstants.STTcustomizationID)
+        }
+            
+        speechToTextSession?.onResults =
+            { results in print(results.bestTranscript)
+                if let bestTranscript = results.bestTranscript as String? {
+                    if bestTranscript.characters.count > 0 {
+                        let truncated = bestTranscript.substring(to: bestTranscript.index(before: bestTranscript.endIndex))
+                        delegate.didFinishTranscribingSpeech(withText: truncated)
+                    }
                 }
             }
-        }
     }
 
+
+    /// Start recording session
     func startRecording() {
         var settings = RecognitionSettings(contentType: .opus)
         settings.interimResults = false
@@ -60,6 +62,8 @@ class SpeechToTextService {
         speechToTextSession?.startMicrophone()
     }
 
+
+    /// Finish recording session
     func finishRecording() {
         speechToTextSession?.stopMicrophone()
         speechToTextSession?.stopRequest()
