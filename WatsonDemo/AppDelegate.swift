@@ -6,6 +6,7 @@
 //  Copyright © 2016 Etay Luz. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 
 @UIApplicationMain
@@ -15,8 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        setupAudioPlayback()
         return true
+    }
+
+    // MARK: - Private
+    // Force audio to play even when mute switch is turned on to make the app user-error-proof
+    private func setupAudioPlayback() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord,
+                                                            with: AVAudioSessionCategoryOptions.defaultToSpeaker)
+        } catch {
+            // no-op
+        }
     }
 
 }
