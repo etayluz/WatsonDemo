@@ -38,7 +38,8 @@ final class LoginViewController: UIViewController {
     // MARK: - Segues
     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == Constants.loginSegueIdentifier {
-
+            GlobalConstants.username = usernameTextField.text!
+            GlobalConstants.password = passwordTextField.text!
         }
     }
 
