@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="efF-kg-Ais">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XFt-xI-0Xr">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,14 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Light.otf">
+            <string>SFUIText-Light</string>
+        </array>
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--HomeViewController-->
         <scene sceneID="tne-QT-ifu">
@@ -649,6 +657,171 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Zf-VX-uqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134" y="37"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="RSp-KE-e5K">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="XFt-xI-0Xr" customClass="LoginViewController" customModule="WatsonAlfAsst" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JpH-vp-DxF"/>
+                        <viewControllerLayoutGuide type="bottom" id="QZp-d1-Rdu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vrW-NS-eR8">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zlj-ec-QQW" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1143"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="acX-D6-2BZ" userLabel="Logo">
+                                <rect key="frame" x="250" y="138" width="268" height="239"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="acX-D6-2BZ" secondAttribute="height" multiplier="261:233" id="h13-KS-l1f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-qx-Y9m" userLabel="UsernameLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                <rect key="frame" x="123" y="504.5" width="63" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="z94-Ms-dJX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-Bz-5Uk" userLabel="UsernameTextField" customClass="CustomTextField" customModule="WatsonBankAsst">
+                                <rect key="frame" x="123" y="529.5" width="522" height="73.5"/>
+                                <accessibility key="accessibilityConfiguration" label="EmailTextField"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="f1c-Bz-5Uk" secondAttribute="height" multiplier="85:12" id="gJG-yj-CHt"/>
+                                </constraints>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="XFt-xI-0Xr" id="sqz-dN-equ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cjD-cf-ika" userLabel="PasswordLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                <rect key="frame" x="123" y="645" width="74.5" height="14"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-96-chk" userLabel="PasswordTextField" customClass="CustomTextField" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                <rect key="frame" x="123" y="672" width="522" height="73"/>
+                                <accessibility key="accessibilityConfiguration" label="PasswordTextField"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="XFt-xI-0Xr" id="Kdl-9W-BID"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9g-78-K7b" userLabel="SignInButton">
+                                <rect key="frame" x="62" y="768" width="644" height="82"/>
+                                <accessibility key="accessibilityConfiguration" label="SignInButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s9g-78-K7b" secondAttribute="height" multiplier="504:64" id="XeU-kM-InB"/>
+                                </constraints>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.10980392160000001" green="0.4549019608" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButtonTappedWithSender:" destination="XFt-xI-0Xr" eventType="touchUpInside" id="ngr-zy-Hcf"/>
+                                    <segue destination="efF-kg-Ais" kind="show" identifier="LoginSegue" id="cnE-rb-uSe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9X-LR-7uF" userLabel="ForgotPasswordButton">
+                                <rect key="frame" x="312.5" y="995" width="143" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="lB4-wi-xTh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" red="0.10980392160000001" green="0.4549019608" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bS1-wV-IuI" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                <rect key="frame" x="20" y="1011" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="acX-D6-2BZ" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="0.45" id="0dp-WD-w5z"/>
+                            <constraint firstAttribute="bottom" secondItem="s9g-78-K7b" secondAttribute="bottom" constant="174" id="2VG-vg-TLH"/>
+                            <constraint firstItem="x3s-qx-Y9m" firstAttribute="leading" secondItem="cjD-cf-ika" secondAttribute="leading" id="AjG-KF-4SK"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="width" secondItem="Zlj-ec-QQW" secondAttribute="width" multiplier="0.68" id="BWa-LR-7yT"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="centerX" secondItem="Zlj-ec-QQW" secondAttribute="centerX" id="CCo-yg-YaH"/>
+                            <constraint firstItem="Zlj-ec-QQW" firstAttribute="top" secondItem="vrW-NS-eR8" secondAttribute="top" id="F2I-vs-54Q"/>
+                            <constraint firstItem="bSV-96-chk" firstAttribute="width" secondItem="f1c-Bz-5Uk" secondAttribute="width" id="G0t-Zv-lTG"/>
+                            <constraint firstItem="bSV-96-chk" firstAttribute="centerX" secondItem="Zlj-ec-QQW" secondAttribute="centerX" id="HdX-sC-lR6"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="0.99" id="K6T-Xg-V3c"/>
+                            <constraint firstItem="bS1-wV-IuI" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leadingMargin" id="KEz-JV-cMy"/>
+                            <constraint firstItem="s9g-78-K7b" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leadingMargin" constant="42" id="LIn-ig-3Sw"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="top" secondItem="x3s-qx-Y9m" secondAttribute="bottom" constant="10" id="VCg-ug-0fC"/>
+                            <constraint firstItem="cjD-cf-ika" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="1.14" id="WFQ-Si-Ur9"/>
+                            <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="bS1-wV-IuI" secondAttribute="bottom" constant="13" id="WmB-Xm-7FI"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="height" secondItem="bSV-96-chk" secondAttribute="height" id="c99-or-89Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s9g-78-K7b" secondAttribute="trailing" constant="42" id="fHR-CJ-Gus"/>
+                            <constraint firstItem="Zlj-ec-QQW" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leading" id="fil-aQ-LcC"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="leading" secondItem="x3s-qx-Y9m" secondAttribute="leading" id="j7j-ea-B8G"/>
+                            <constraint firstItem="l9X-LR-7uF" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="1.89205" priority="750" id="klA-4s-Wzv"/>
+                            <constraint firstItem="bSV-96-chk" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="1.24" id="mDv-6b-Gwa"/>
+                            <constraint firstItem="cjD-cf-ika" firstAttribute="width" secondItem="cjD-cf-ika" secondAttribute="height" multiplier="5.33333" id="o3u-XW-kMN"/>
+                            <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="l9X-LR-7uF" secondAttribute="bottom" constant="3" id="pAL-0n-Lgo"/>
+                            <constraint firstItem="acX-D6-2BZ" firstAttribute="width" secondItem="Zlj-ec-QQW" secondAttribute="width" multiplier="261:750" id="q3k-ef-ni3"/>
+                            <constraint firstItem="Zlj-ec-QQW" firstAttribute="width" secondItem="vrW-NS-eR8" secondAttribute="width" id="qas-qf-qdN"/>
+                            <constraint firstItem="s9g-78-K7b" firstAttribute="top" secondItem="bSV-96-chk" secondAttribute="bottom" constant="23" id="tIw-Ob-nE8"/>
+                            <constraint firstItem="l9X-LR-7uF" firstAttribute="centerX" secondItem="Zlj-ec-QQW" secondAttribute="centerX" id="vQF-UA-wSC"/>
+                            <constraint firstItem="acX-D6-2BZ" firstAttribute="centerX" secondItem="Zlj-ec-QQW" secondAttribute="centerX" id="vu8-V6-kuM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="acX-D6-2BZ" id="YeP-Pq-X1p"/>
+                        <outlet property="passwordTextField" destination="bSV-96-chk" id="ygv-Tx-lKo"/>
+                        <outlet property="usernameTextField" destination="f1c-Bz-5Uk" id="CBu-vj-lYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COc-4K-W6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="37"/>
         </scene>
     </scenes>
     <resources>
