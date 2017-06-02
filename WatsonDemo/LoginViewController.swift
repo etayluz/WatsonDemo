@@ -58,8 +58,9 @@ final class LoginViewController: UIViewController {
 //            backgroundImageView.image =
         #else
             backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
-//            backgroundImageView.image = 
+//            backgroundImageView.image =
         #endif
+        backgroundImageView.backgroundColor =  UIColor.yellow
     }
 
 
