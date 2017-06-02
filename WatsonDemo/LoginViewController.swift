@@ -12,8 +12,8 @@ final class LoginViewController: UIViewController {
     // MARK: - Constants
     private struct Constants {
         static let loginSegueIdentifier = "LoginSegue"
-        static let password = "the_password"
-        static let username = "the_username"
+        static let password = "Your Password"
+        static let username = "Your Email"
     }
 
     // MARK: - Properties

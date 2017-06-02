@@ -673,12 +673,6 @@
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zlj-ec-QQW" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1143"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="acX-D6-2BZ" userLabel="Logo">
-                                <rect key="frame" x="250" y="138" width="268" height="239"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="acX-D6-2BZ" secondAttribute="height" multiplier="261:233" id="h13-KS-l1f"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-qx-Y9m" userLabel="UsernameLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
                                 <rect key="frame" x="123" y="504.5" width="63" height="15"/>
                                 <constraints>
@@ -781,6 +775,12 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Login-image" translatesAutoresizingMaskIntoConstraints="NO" id="acX-D6-2BZ" userLabel="Logo">
+                                <rect key="frame" x="74" y="102" width="577" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="acX-D6-2BZ" secondAttribute="height" multiplier="261:233" id="h13-KS-l1f"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -821,12 +821,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COc-4K-W6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-948" y="37"/>
+            <point key="canvasLocation" x="-948.4375" y="36.9140625"/>
         </scene>
     </scenes>
     <resources>
         <image name="Barscore" width="3492" height="623"/>
         <image name="ChecklistVisual" width="35" height="35"/>
+        <image name="Login-image" width="500" height="243"/>
         <image name="MicOff" width="30" height="30"/>
         <image name="Overview-WatsonAlfAsst" width="768" height="1024"/>
         <image name="RightTriangle" width="10" height="16"/>

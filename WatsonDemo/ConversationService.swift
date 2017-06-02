@@ -31,7 +31,7 @@ class ConversationService {
         static let firstName = "Jane"
         static let lastName = "Smith"
         static let httpMethodPost = "POST"
-        static let nName = "Jane"
+        static let userName = "Jane"
         static let statusCodeOK = 200
         static let value1 = "Fidelity"
         static let value2 = "TD Ameritrade"
@@ -47,7 +47,7 @@ class ConversationService {
         static let input = "input"
         static let firstName = "fname"
         static let lastName = "lname"
-        static let nName = "nname"
+        static let userName = "username"
         static let workspaceID = "workspace_id"
     }
 
@@ -71,7 +71,7 @@ class ConversationService {
              Key.workspaceID: GlobalConstants.dennisNotoWorkspaceID,
              Key.firstName: Constants.firstName,
              Key.lastName: Constants.lastName,
-             Key.nName: Constants.nName,
+             Key.userName: GlobalConstants.username,
              Key.cValue1: Constants.value1,
              Key.cValue2: Constants.value2,
              Key.cValue3: Constants.value3,
