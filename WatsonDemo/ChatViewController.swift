@@ -46,7 +46,7 @@ class ChatViewController: UIViewController {
         #elseif WATSONINSASST
              headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #elseif WATSONWEALTHASST
-             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
         #elseif WATSONWEALTHTASST  || DEBUG
             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
         #elseif WATSONMETASST

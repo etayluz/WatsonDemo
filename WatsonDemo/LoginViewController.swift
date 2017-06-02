@@ -36,7 +36,7 @@ final class LoginViewController: UIViewController {
             backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
 //            backgroundImageView.image =
         #elseif WATSONWEALTHASST
-            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
 //            backgroundImageView.image =
         #elseif WATSONWEALTHTASST  || DEBUG
             backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
@@ -60,7 +60,7 @@ final class LoginViewController: UIViewController {
             backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
 //            backgroundImageView.image =
         #endif
-        backgroundImageView.backgroundColor =  UIColor.yellow
+//      backgroundImageView.backgroundColor =  UIColor.yellow
     }
 
 
