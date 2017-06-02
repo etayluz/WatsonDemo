@@ -775,8 +775,8 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Login-image" translatesAutoresizingMaskIntoConstraints="NO" id="acX-D6-2BZ" userLabel="Logo">
-                                <rect key="frame" x="74" y="102" width="577" height="275"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login-image" translatesAutoresizingMaskIntoConstraints="NO" id="acX-D6-2BZ" userLabel="Logo">
+                                <rect key="frame" x="250.5" y="138" width="267" height="238.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="acX-D6-2BZ" secondAttribute="height" multiplier="261:233" id="h13-KS-l1f"/>
                                 </constraints>
@@ -814,6 +814,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="Zlj-ec-QQW" id="TL6-6m-8xe"/>
                         <outlet property="logoImageView" destination="acX-D6-2BZ" id="YeP-Pq-X1p"/>
                         <outlet property="passwordTextField" destination="bSV-96-chk" id="ygv-Tx-lKo"/>
                         <outlet property="usernameTextField" destination="f1c-Bz-5Uk" id="CBu-vj-lYS"/>

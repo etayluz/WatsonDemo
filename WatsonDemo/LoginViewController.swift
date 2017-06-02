@@ -22,11 +22,44 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var logoImageView: UIImageView!
 
+    @IBOutlet weak var backgroundImageView: UIImageView!
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSimulator()
+
+        #if WATSONBANKASST
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+//            backgroundImageView.image = 
+        #elseif WATSONINSASST
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+//            backgroundImageView.image =
+        #elseif WATSONWEALTHASST
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+//            backgroundImageView.image =
+        #elseif WATSONWEALTHTASST  || DEBUG
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+//            backgroundImageView.image =
+        #elseif WATSONMETASST
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+//            backgroundImageView.image =
+        #elseif WATSONWHIRLASST
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+//            backgroundImageView.image =
+        #elseif WATSONFIDASST
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+//            backgroundImageView.image =
+        #elseif WATSONALFASST || DEBUG
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+//            backgroundImageView.image =
+        #elseif WATSONREGASST
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+//            backgroundImageView.image =
+        #else
+            backgroundImageView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
+//            backgroundImageView.image = 
+        #endif
     }
 
 
