@@ -35,13 +35,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Overview-WatsonAlfAsst" highlightedImage="Overview-WatsonAlfAsst" translatesAutoresizingMaskIntoConstraints="NO" id="EsX-gw-lDI">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="974"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="974.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EsX-gw-lDI" secondAttribute="height" multiplier="767:973" id="Kg8-wR-Vd0"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-A6-zak" userLabel="GoButton">
-                                        <rect key="frame" x="288" y="-18.5" width="192" height="1100"/>
+                                        <rect key="frame" x="288" y="-19" width="192" height="1100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1100" id="Sep-R3-mN9"/>
                                         </constraints>
@@ -119,9 +119,8 @@
                                     <constraint firstItem="cuN-2Y-8SM" firstAttribute="centerX" secondItem="5se-DL-z8M" secondAttribute="centerX" id="bML-eL-tWy"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-x1-g52" userLabel="ChatGradientBackground" customClass="GradientView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="54" width="375" height="558"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-x1-g52" userLabel="ChatGradientBackground" customClass="GradientView" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="60" width="768" height="876"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -453,7 +452,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aI6-iI-XqX" userLabel="BarscoreView" customClass="CustomView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="115.5" y="8" width="538" height="234"/>
+                                                    <rect key="frame" x="115" y="8" width="538" height="234"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You scored a 70% probability of achieving your retirement goals" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-eI-XBj" userLabel="BarscoreTitle">
                                                             <rect key="frame" x="8" y="6" width="512" height="16"/>
@@ -486,7 +485,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75%-100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-g5-tHG" userLabel="75%-100%">
-                                                            <rect key="frame" x="390" y="120" width="50.5" height="12"/>
+                                                            <rect key="frame" x="389.5" y="120" width="50.5" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -510,7 +509,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barscore" translatesAutoresizingMaskIntoConstraints="NO" id="cR5-o5-Vob" userLabel="Barscore">
-                                                    <rect key="frame" x="142.5" y="75.5" width="484" height="50"/>
+                                                    <rect key="frame" x="142" y="75.5" width="484" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="bGK-Kp-LI9"/>
                                                     </constraints>
@@ -617,12 +616,16 @@
                             <constraint firstItem="E1E-09-ULi" firstAttribute="top" secondItem="GbL-9b-ILu" secondAttribute="bottom" constant="15" id="53A-7O-1hP"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="top" secondItem="nUc-hV-EYz" secondAttribute="top" id="8fb-Lw-8bq"/>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" constant="-6" id="A5j-NF-sQY"/>
+                            <constraint firstItem="GAR-x1-g52" firstAttribute="centerX" secondItem="nUc-hV-EYz" secondAttribute="centerX" id="FWv-eB-DTt"/>
                             <constraint firstItem="5se-DL-z8M" firstAttribute="leading" secondItem="nUc-hV-EYz" secondAttribute="leading" id="HKF-q4-SOE"/>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="centerX" secondItem="nUc-hV-EYz" secondAttribute="centerX" id="IsH-LV-2Ap"/>
+                            <constraint firstItem="GAR-x1-g52" firstAttribute="width" secondItem="nUc-hV-EYz" secondAttribute="width" id="LcF-PS-2wj"/>
                             <constraint firstItem="GbL-9b-ILu" firstAttribute="width" secondItem="nUc-hV-EYz" secondAttribute="width" id="WnO-p5-Zki"/>
                             <constraint firstAttribute="trailing" secondItem="5se-DL-z8M" secondAttribute="trailing" id="blk-HR-3ng"/>
                             <constraint firstItem="8ce-5m-jhc" firstAttribute="top" secondItem="E1E-09-ULi" secondAttribute="bottom" id="s8r-uK-9n7"/>
                             <constraint firstItem="E1E-09-ULi" firstAttribute="centerX" secondItem="nUc-hV-EYz" secondAttribute="centerX" id="tje-rL-ulO"/>
+                            <constraint firstItem="T25-IS-XUm" firstAttribute="top" secondItem="GAR-x1-g52" secondAttribute="bottom" id="x0g-6q-rtO"/>
+                            <constraint firstItem="GAR-x1-g52" firstAttribute="top" secondItem="5se-DL-z8M" secondAttribute="bottom" id="z8S-zr-Vak"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ask Watson" image="TabBarIcon-Watson" selectedImage="TabBarIcon-Watson" id="iQ9-A8-4Bg"/>
@@ -670,9 +673,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zlj-ec-QQW" userLabel="Background">
+                            <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zlj-ec-QQW" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1143"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xb-A6-yNr" userLabel="GradientView" customClass="GradientView" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1324"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.99607843139999996" green="0.89411764709999997" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.99215686270000003" green="0.47450980390000003" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-qx-Y9m" userLabel="UsernameLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
                                 <rect key="frame" x="123" y="504.5" width="63" height="15"/>
                                 <constraints>
@@ -795,13 +810,17 @@
                             <constraint firstItem="f1c-Bz-5Uk" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="0.99" id="K6T-Xg-V3c"/>
                             <constraint firstItem="bS1-wV-IuI" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leadingMargin" id="KEz-JV-cMy"/>
                             <constraint firstItem="s9g-78-K7b" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leadingMargin" constant="42" id="LIn-ig-3Sw"/>
+                            <constraint firstAttribute="trailing" secondItem="9xb-A6-yNr" secondAttribute="trailing" id="N9K-hG-gMl"/>
+                            <constraint firstItem="9xb-A6-yNr" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leading" id="Rq0-oA-1iJ"/>
                             <constraint firstItem="f1c-Bz-5Uk" firstAttribute="top" secondItem="x3s-qx-Y9m" secondAttribute="bottom" constant="10" id="VCg-ug-0fC"/>
                             <constraint firstItem="cjD-cf-ika" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="1.14" id="WFQ-Si-Ur9"/>
                             <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="bS1-wV-IuI" secondAttribute="bottom" constant="13" id="WmB-Xm-7FI"/>
+                            <constraint firstItem="9xb-A6-yNr" firstAttribute="top" secondItem="vrW-NS-eR8" secondAttribute="top" id="Z9D-ij-wfA"/>
                             <constraint firstItem="f1c-Bz-5Uk" firstAttribute="height" secondItem="bSV-96-chk" secondAttribute="height" id="c99-or-89Z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="s9g-78-K7b" secondAttribute="trailing" constant="42" id="fHR-CJ-Gus"/>
                             <constraint firstItem="Zlj-ec-QQW" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leading" id="fil-aQ-LcC"/>
                             <constraint firstItem="f1c-Bz-5Uk" firstAttribute="leading" secondItem="x3s-qx-Y9m" secondAttribute="leading" id="j7j-ea-B8G"/>
+                            <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="9xb-A6-yNr" secondAttribute="bottom" constant="-300" id="kbf-re-NjW"/>
                             <constraint firstItem="l9X-LR-7uF" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="1.89205" priority="750" id="klA-4s-Wzv"/>
                             <constraint firstItem="bSV-96-chk" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="1.24" id="mDv-6b-Gwa"/>
                             <constraint firstItem="cjD-cf-ika" firstAttribute="width" secondItem="cjD-cf-ika" secondAttribute="height" multiplier="5.33333" id="o3u-XW-kMN"/>

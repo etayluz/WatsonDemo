@@ -66,17 +66,10 @@ final class LoginViewController: UIViewController {
 
     // MARK: - Action
     @IBAction func signInButtonTapped(sender: AnyObject) {
+        GlobalConstants.username = usernameTextField.text!
+        GlobalConstants.password = passwordTextField.text!
         performSegue(withIdentifier: Constants.loginSegueIdentifier, sender: nil)
     }
-
-    // MARK: - Segues
-    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == Constants.loginSegueIdentifier {
-            GlobalConstants.username = usernameTextField.text!
-            GlobalConstants.password = passwordTextField.text!
-        }
-    }
-
 
 
     // This is a convenience method to setup email/password field dummy text during development

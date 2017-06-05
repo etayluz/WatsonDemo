@@ -53,7 +53,7 @@ import UIKit
         gradient.frame = CGRect(x: CGFloat(0),
                                 y: CGFloat(0),
                                 width: superview!.frame.size.width,
-                                height: superview!.frame.size.height - 120)
+                                height: frame.size.height - 0)
         gradient.colors = [mystartColor.cgColor, myendColor.cgColor]
 
         layer.addSublayer(gradient)
