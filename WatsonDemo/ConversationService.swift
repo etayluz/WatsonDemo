@@ -89,7 +89,7 @@ class ConversationService {
             DispatchQueue.main.async { [weak self] in
 
                 guard let data = data, error == nil else {
-                    print("error=\(error)")
+                    print("error=\(String(describing: error))")
                     return
                 }
 
