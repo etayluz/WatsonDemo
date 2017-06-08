@@ -124,7 +124,15 @@ struct GlobalConstants {
     static let BluemixPasswordTTS = "ky3dLOMhXbAW"
     static let TTScustomizationID = "f85ba3f7-4f2e-481c-900f-a24138974973"
     static let STTcustomizationID = "f276d800-eecd-11e6-8e67-ada083c78a12"
-    
+#elseif WATSONFMAEASST
+    static let dennisNotoWorkspaceID = "0a7cb606-7488-4b3e-88ae-abcdaafb1c0a"
+    static let nodeRedWorkflowUrl = "https://fanniemae-nodered-v1.mybluemix.net/mobile"
+    static let BluemixUsernameSTT = "57664062-7e3f-44ba-9509-86693059b908"
+    static let BluemixPasswordSTT = "S3mjUCoKlBUW"
+    static let BluemixUsernameTTS = "98b40873-5a5f-46fd-8b87-61d331d8154c"
+    static let BluemixPasswordTTS = "tndhTu1APbI3"
+    static let TTScustomizationID = ""
+    static let STTcustomizationID = ""
 #else
     static let dennisNotoWorkspaceID = "1549fa38-7160-4106-82ee-73796b21f3b8"
     static let nodeRedWorkflowUrl = "https://nodered-prod-v1.mybluemix.net/mobile"

@@ -673,8 +673,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zlj-ec-QQW" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1143"/>
+                            <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zlj-ec-QQW" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1117"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xb-A6-yNr" userLabel="GradientView" customClass="GradientView" customModule="WatsonAlfAsst" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1324"/>
@@ -688,28 +688,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-qx-Y9m" userLabel="UsernameLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="123" y="504.5" width="63" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-qx-Y9m" userLabel="UsernameLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                <rect key="frame" x="123" y="482" width="238" height="59"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="15" id="z94-Ms-dJX"/>
+                                    <constraint firstAttribute="height" constant="59" id="I7c-0k-rNO"/>
+                                    <constraint firstAttribute="width" constant="238" id="bbY-Di-4Ws"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-Bz-5Uk" userLabel="UsernameTextField" customClass="CustomTextField" customModule="WatsonBankAsst">
-                                <rect key="frame" x="123" y="529.5" width="522" height="73.5"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-Bz-5Uk" userLabel="UsernameTextField" customClass="CustomTextField" customModule="WatsonBankAsst">
+                                <rect key="frame" x="123" y="530" width="522" height="74"/>
                                 <accessibility key="accessibilityConfiguration" label="EmailTextField"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="f1c-Bz-5Uk" secondAttribute="height" multiplier="85:12" id="gJG-yj-CHt"/>
+                                    <constraint firstAttribute="height" constant="74" id="Xq4-eB-zOO"/>
                                 </constraints>
-                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
@@ -728,16 +727,22 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cjD-cf-ika" userLabel="PasswordLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="123" y="645" width="74.5" height="14"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="123" y="619" width="187" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="7kX-eT-s6I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-96-chk" userLabel="PasswordTextField" customClass="CustomTextField" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="123" y="672" width="522" height="73"/>
+                                <rect key="frame" x="123" y="662" width="522" height="81"/>
                                 <accessibility key="accessibilityConfiguration" label="PasswordTextField"/>
-                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="QNT-wl-bac"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -763,6 +768,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="s9g-78-K7b" secondAttribute="height" multiplier="504:64" id="XeU-kM-InB"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.10980392160000001" green="0.4549019608" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -775,11 +781,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9X-LR-7uF" userLabel="ForgotPasswordButton">
-                                <rect key="frame" x="312.5" y="995" width="143" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="143" id="lB4-wi-xTh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                <rect key="frame" x="251" y="897" width="267" height="82"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="25"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" red="0.10980392160000001" green="0.4549019608" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -791,45 +794,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login-image" translatesAutoresizingMaskIntoConstraints="NO" id="acX-D6-2BZ" userLabel="Logo">
-                                <rect key="frame" x="250.5" y="138" width="267" height="238.5"/>
+                                <rect key="frame" x="251" y="132" width="267" height="239"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="acX-D6-2BZ" secondAttribute="height" multiplier="261:233" id="h13-KS-l1f"/>
+                                    <constraint firstAttribute="height" constant="239" id="4yi-Sn-arl"/>
+                                    <constraint firstAttribute="width" constant="267" id="76P-Xy-E11"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="acX-D6-2BZ" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="0.45" id="0dp-WD-w5z"/>
+                            <constraint firstItem="x3s-qx-Y9m" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leading" constant="123" id="0CN-Q2-o5N"/>
+                            <constraint firstAttribute="bottom" secondItem="f1c-Bz-5Uk" secondAttribute="bottom" constant="420" id="12X-sz-bkh"/>
                             <constraint firstAttribute="bottom" secondItem="s9g-78-K7b" secondAttribute="bottom" constant="174" id="2VG-vg-TLH"/>
-                            <constraint firstItem="x3s-qx-Y9m" firstAttribute="leading" secondItem="cjD-cf-ika" secondAttribute="leading" id="AjG-KF-4SK"/>
-                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="width" secondItem="Zlj-ec-QQW" secondAttribute="width" multiplier="0.68" id="BWa-LR-7yT"/>
-                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="centerX" secondItem="Zlj-ec-QQW" secondAttribute="centerX" id="CCo-yg-YaH"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="trailing" secondItem="bSV-96-chk" secondAttribute="trailing" id="4wP-bN-aPf"/>
+                            <constraint firstAttribute="bottom" secondItem="cjD-cf-ika" secondAttribute="bottom" constant="370" id="57m-hE-xys"/>
+                            <constraint firstItem="x3s-qx-Y9m" firstAttribute="centerY" secondItem="vrW-NS-eR8" secondAttribute="centerY" id="6Gh-Ah-IVD"/>
+                            <constraint firstItem="acX-D6-2BZ" firstAttribute="trailing" secondItem="l9X-LR-7uF" secondAttribute="trailing" id="7Tc-eP-DrW"/>
+                            <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="l9X-LR-7uF" secondAttribute="bottom" constant="45" id="Ag6-rJ-e9z"/>
+                            <constraint firstItem="s9g-78-K7b" firstAttribute="top" secondItem="bSV-96-chk" secondAttribute="bottom" constant="25" id="Dfp-1b-iCC"/>
+                            <constraint firstItem="acX-D6-2BZ" firstAttribute="top" secondItem="JpH-vp-DxF" secondAttribute="bottom" constant="112" id="EZd-f8-KNu"/>
                             <constraint firstItem="Zlj-ec-QQW" firstAttribute="top" secondItem="vrW-NS-eR8" secondAttribute="top" id="F2I-vs-54Q"/>
-                            <constraint firstItem="bSV-96-chk" firstAttribute="width" secondItem="f1c-Bz-5Uk" secondAttribute="width" id="G0t-Zv-lTG"/>
-                            <constraint firstItem="bSV-96-chk" firstAttribute="centerX" secondItem="Zlj-ec-QQW" secondAttribute="centerX" id="HdX-sC-lR6"/>
-                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="0.99" id="K6T-Xg-V3c"/>
+                            <constraint firstItem="acX-D6-2BZ" firstAttribute="leading" secondItem="l9X-LR-7uF" secondAttribute="leading" id="HlM-u5-2HZ"/>
+                            <constraint firstItem="cjD-cf-ika" firstAttribute="top" secondItem="f1c-Bz-5Uk" secondAttribute="bottom" constant="15" id="JfV-qg-gpA"/>
                             <constraint firstItem="bS1-wV-IuI" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leadingMargin" id="KEz-JV-cMy"/>
                             <constraint firstItem="s9g-78-K7b" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leadingMargin" constant="42" id="LIn-ig-3Sw"/>
                             <constraint firstAttribute="trailing" secondItem="9xb-A6-yNr" secondAttribute="trailing" id="N9K-hG-gMl"/>
                             <constraint firstItem="9xb-A6-yNr" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leading" id="Rq0-oA-1iJ"/>
-                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="top" secondItem="x3s-qx-Y9m" secondAttribute="bottom" constant="10" id="VCg-ug-0fC"/>
-                            <constraint firstItem="cjD-cf-ika" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="1.14" id="WFQ-Si-Ur9"/>
                             <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="bS1-wV-IuI" secondAttribute="bottom" constant="13" id="WmB-Xm-7FI"/>
                             <constraint firstItem="9xb-A6-yNr" firstAttribute="top" secondItem="vrW-NS-eR8" secondAttribute="top" id="Z9D-ij-wfA"/>
-                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="height" secondItem="bSV-96-chk" secondAttribute="height" id="c99-or-89Z"/>
+                            <constraint firstItem="bSV-96-chk" firstAttribute="top" secondItem="cjD-cf-ika" secondAttribute="bottom" constant="8" symbolic="YES" id="cNr-5j-BOb"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="centerX" secondItem="s9g-78-K7b" secondAttribute="centerX" id="eVZ-Kt-81x"/>
+                            <constraint firstItem="bSV-96-chk" firstAttribute="leading" secondItem="cjD-cf-ika" secondAttribute="leading" id="fCi-xA-5jy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="s9g-78-K7b" secondAttribute="trailing" constant="42" id="fHR-CJ-Gus"/>
                             <constraint firstItem="Zlj-ec-QQW" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leading" id="fil-aQ-LcC"/>
-                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="leading" secondItem="x3s-qx-Y9m" secondAttribute="leading" id="j7j-ea-B8G"/>
+                            <constraint firstAttribute="bottom" secondItem="bSV-96-chk" secondAttribute="bottom" constant="281" id="jaN-vb-cSj"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="leading" secondItem="x3s-qx-Y9m" secondAttribute="leading" id="kTX-yv-yX5"/>
                             <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="9xb-A6-yNr" secondAttribute="bottom" constant="-300" id="kbf-re-NjW"/>
-                            <constraint firstItem="l9X-LR-7uF" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="1.89205" priority="750" id="klA-4s-Wzv"/>
-                            <constraint firstItem="bSV-96-chk" firstAttribute="centerY" secondItem="Zlj-ec-QQW" secondAttribute="centerY" multiplier="1.24" id="mDv-6b-Gwa"/>
-                            <constraint firstItem="cjD-cf-ika" firstAttribute="width" secondItem="cjD-cf-ika" secondAttribute="height" multiplier="5.33333" id="o3u-XW-kMN"/>
-                            <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="l9X-LR-7uF" secondAttribute="bottom" constant="3" id="pAL-0n-Lgo"/>
-                            <constraint firstItem="acX-D6-2BZ" firstAttribute="width" secondItem="Zlj-ec-QQW" secondAttribute="width" multiplier="261:750" id="q3k-ef-ni3"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="centerX" secondItem="l9X-LR-7uF" secondAttribute="centerX" id="on7-FV-mD6"/>
                             <constraint firstItem="Zlj-ec-QQW" firstAttribute="width" secondItem="vrW-NS-eR8" secondAttribute="width" id="qas-qf-qdN"/>
-                            <constraint firstItem="s9g-78-K7b" firstAttribute="top" secondItem="bSV-96-chk" secondAttribute="bottom" constant="23" id="tIw-Ob-nE8"/>
-                            <constraint firstItem="l9X-LR-7uF" firstAttribute="centerX" secondItem="Zlj-ec-QQW" secondAttribute="centerX" id="vQF-UA-wSC"/>
-                            <constraint firstItem="acX-D6-2BZ" firstAttribute="centerX" secondItem="Zlj-ec-QQW" secondAttribute="centerX" id="vu8-V6-kuM"/>
+                            <constraint firstItem="f1c-Bz-5Uk" firstAttribute="leading" secondItem="cjD-cf-ika" secondAttribute="leading" id="qbw-uv-bwC"/>
+                            <constraint firstItem="l9X-LR-7uF" firstAttribute="top" secondItem="s9g-78-K7b" secondAttribute="bottom" constant="47" id="scn-ei-ebd"/>
                         </constraints>
                     </view>
                     <connections>

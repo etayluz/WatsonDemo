@@ -42,8 +42,11 @@ import UIKit
     #elseif WATSONREGASST
       var mystartColor: UIColor = UIColor.colorWithRGBHex(hex24: 0xFEE4CE)
       var myendColor: UIColor = UIColor.colorWithRGBHex(hex24: 0xF07977)
+    #elseif WATSONFMAEASST
+      var mystartColor: UIColor = UIColor.colorWithRGBHex(hex24: 0x99CCFF)
+      var myendColor: UIColor = UIColor.colorWithRGBHex(hex24: 0x3399FF)
     #else
-      var startColor: UIColor = UIColor.colorWithRGBHex(hex24: 0xFEE4CE)
+      var mystartColor: UIColor = UIColor.colorWithRGBHex(hex24: 0xFEE4CE)
       var myendColor: UIColor = UIColor.colorWithRGBHex(hex24: 0xF07977)
 
     #endif

@@ -52,6 +52,8 @@ class OverviewViewController: UIViewController {
                                               "Complete claim process|Michael receives proactive claims update"])
         #elseif WATSONREGASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
+        #elseif WATSONFMAEASST
+            overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonFMaeAsst")
         #else
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
         #endif
