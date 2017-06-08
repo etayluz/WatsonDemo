@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XFt-xI-0Xr">
-    <device id="retina5_5" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -28,20 +28,20 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bij-Xo-vvY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Overview-WatsonAlfAsst" highlightedImage="Overview-WatsonAlfAsst" translatesAutoresizingMaskIntoConstraints="NO" id="EsX-gw-lDI">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="525.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="974.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EsX-gw-lDI" secondAttribute="height" multiplier="767:973" id="Kg8-wR-Vd0"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-A6-zak" userLabel="GoButton">
-                                        <rect key="frame" x="155.33333333333331" y="-263.66666666666669" width="103.33333333333331" height="1100"/>
+                                        <rect key="frame" x="288" y="-19" width="192.5" height="1100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1100" id="Sep-R3-mN9"/>
                                         </constraints>
@@ -62,7 +62,7 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="4jX-aC-C73" userLabel="UsecaseButtonsView" customClass="ButtonsView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="30" y="519.66666666666652" width="354" height="147.33333333333337"/>
+                                <rect key="frame" x="30" y="750" width="708" height="205"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -99,14 +99,14 @@
                         <viewControllerLayoutGuide type="bottom" id="8ce-5m-jhc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nUc-hV-EYz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5se-DL-z8M" userLabel="Header">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Watson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-2Y-8SM" userLabel="Title">
-                                        <rect key="frame" x="159" y="25" width="96" height="22"/>
+                                        <rect key="frame" x="336" y="25" width="96" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -120,7 +120,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-x1-g52" userLabel="ChatGradientBackground" customClass="GradientView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="60" width="414" height="588"/>
+                                <rect key="frame" x="0.0" y="60" width="768" height="876"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -132,15 +132,15 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" allowsSelectionDuringEditing="YES" rowHeight="140" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="GbL-9b-ILu" userLabel="ChatTableView">
-                                <rect key="frame" x="0.0" y="54" width="414" height="573"/>
+                                <rect key="frame" x="0.0" y="54" width="768" height="861"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WatsonChatViewCell" id="BJB-NB-L3A" userLabel="WatsonViewCell" customClass="WatsonChatViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="1" width="768" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BJB-NB-L3A" id="9i8-DP-9qa">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watson3" highlightedImage="Watson3" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-Dx-6Yr" userLabel="WatsonIcon">
@@ -151,7 +151,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-6E-kDH" userLabel="WatsonMsgBackground" customClass="CustomView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="113" y="28" width="284.66666666666669" height="84"/>
+                                                    <rect key="frame" x="113" y="28" width="284.5" height="84"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -160,7 +160,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giz-gT-A77" userLabel="WatsonMessage">
-                                                    <rect key="frame" x="128" y="43" width="254.66666666666669" height="54"/>
+                                                    <rect key="frame" x="128" y="43" width="254.5" height="54"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Hello! I'm your personal banking virtual assistant. You can ask me about anything?">
@@ -204,10 +204,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserChatViewCell" id="55h-j6-z27" userLabel="UserViewCell" customClass="UserChatViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="141" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="141" width="768" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="55h-j6-z27" id="Ju8-59-tQr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-NN-Ikw" userLabel="ButtonsView" customClass="ButtonsView" customModule="WatsonAlfAsst" customModuleProvider="target">
@@ -284,10 +284,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapViewCell" id="82H-b7-0No" userLabel="MapViewCell" customClass="MapViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="281" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="281" width="768" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="82H-b7-0No" id="0hf-wd-wKg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-5d-NVy" userLabel="MapImageView">
@@ -307,10 +307,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoViewCell" id="ThR-IJ-Thf" userLabel="VideoViewCell" customClass="VideoViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="421" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="421" width="768" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ThR-IJ-Thf" id="cIj-cv-1AB">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -319,17 +319,17 @@
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckboxViewCell" rowHeight="250" id="Y57-VW-GBQ" userLabel="CheckboxViewCell" customClass="CheckboxViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="561" width="414" height="250"/>
+                                        <rect key="frame" x="0.0" y="561" width="768" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y57-VW-GBQ" id="ZoX-lS-YTI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KmD-er-qJf" userLabel="CheckBoxContainer" customClass="CustomView" customModule="WatsonAlfAsst" customModuleProvider="target">
                                                     <rect key="frame" x="28" y="8" width="358" height="194"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check the box next to the items you'd like to remove:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gr-MD-4dY">
-                                                            <rect key="frame" x="23" y="14.000000000000004" width="325" height="38.333333333333343"/>
+                                                            <rect key="frame" x="23" y="14" width="325" height="38.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -359,7 +359,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-lK-gB3" userLabel="Border">
-                                                                                <rect key="frame" x="8" y="50" width="211.66666666666666" height="1"/>
+                                                                                <rect key="frame" x="8" y="50" width="211.5" height="1"/>
                                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="1" id="evR-0W-mRB"/>
@@ -445,47 +445,47 @@
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarscoreViewCell" rowHeight="250" id="Rbf-zq-wNQ" userLabel="BarscoreViewCell" customClass="BarscoreViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="811" width="414" height="250"/>
+                                        <rect key="frame" x="0.0" y="811" width="768" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rbf-zq-wNQ" id="LaU-sa-gxI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aI6-iI-XqX" userLabel="BarscoreView" customClass="CustomView" customModule="WatsonAlfAsst" customModuleProvider="target">
                                                     <rect key="frame" x="62" y="8" width="290" height="234"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You scored a 70% probability of achieving your retirement goals" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-eI-XBj" userLabel="BarscoreTitle">
-                                                            <rect key="frame" x="8" y="6" width="264" height="16"/>
+                                                            <rect key="frame" x="8" y="6" width="264" height="31.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retirement Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp5-2r-feK">
-                                                            <rect key="frame" x="8" y="31.999999999999996" width="148" height="20.666666666666661"/>
+                                                            <rect key="frame" x="8" y="47.5" width="148" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%-25%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIH-Ha-JCO">
-                                                            <rect key="frame" x="22.666666666666671" y="120.66666666666666" width="36.666666666666657" height="11"/>
+                                                            <rect key="frame" x="22.5" y="136" width="37" height="11"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25%-50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSw-Rb-zNB" userLabel="25%-50%">
-                                                            <rect key="frame" x="81" y="120" width="46" height="12"/>
+                                                            <rect key="frame" x="81.5" y="135.5" width="46" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%-75%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3N-RQ-HTx">
-                                                            <rect key="frame" x="139" y="120" width="46" height="12"/>
+                                                            <rect key="frame" x="138.5" y="135.5" width="46" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75%-100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-g5-tHG" userLabel="75%-100%">
-                                                            <rect key="frame" x="198.33333333333331" y="120" width="50.333333333333371" height="12"/>
+                                                            <rect key="frame" x="198" y="135.5" width="50" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -509,7 +509,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barscore" translatesAutoresizingMaskIntoConstraints="NO" id="cR5-o5-Vob" userLabel="Barscore">
-                                                    <rect key="frame" x="76.666666666666686" y="75.666666666666671" width="260.66666666666663" height="50"/>
+                                                    <rect key="frame" x="76.5" y="91" width="261" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="bGK-Kp-LI9"/>
                                                     </constraints>
@@ -559,7 +559,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1E-09-ULi" userLabel="ChatInputAccessoryView">
-                                <rect key="frame" x="0.0" y="642" width="414" height="45"/>
+                                <rect key="frame" x="0.0" y="930" width="768" height="45"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MicOff" highlightedImage="MicOff" translatesAutoresizingMaskIntoConstraints="NO" id="vb7-PA-IIf" userLabel="MicImage">
                                         <rect key="frame" x="10" y="6" width="34" height="34"/>
@@ -579,13 +579,13 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T25-IS-XUm" userLabel="ChatTextField" customClass="ChatTextField" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                        <rect key="frame" x="59" y="6" width="296" height="34"/>
+                                        <rect key="frame" x="59" y="6" width="650" height="34"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWx-nd-flC">
-                                        <rect key="frame" x="370" y="8" width="36" height="30"/>
+                                        <rect key="frame" x="724" y="8" width="36" height="30"/>
                                         <state key="normal" title="Send">
                                             <color key="titleColor" red="0.28627450980392155" green="0.34901960784313724" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -670,14 +670,14 @@
                         <viewControllerLayoutGuide type="bottom" id="QZp-d1-Rdu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vrW-NS-eR8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zlj-ec-QQW" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xb-A6-yNr" userLabel="GradientView" customClass="GradientView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1036"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1324"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -689,21 +689,21 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login-image" translatesAutoresizingMaskIntoConstraints="NO" id="acX-D6-2BZ" userLabel="Logo">
-                                <rect key="frame" x="73" y="70" width="267" height="239"/>
+                                <rect key="frame" x="250.5" y="30" width="267" height="239"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="239" id="4yi-Sn-arl"/>
                                     <constraint firstAttribute="width" constant="267" id="76P-Xy-E11"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-qx-Y9m" userLabel="UsernameLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="62" y="359" width="157" height="35"/>
+                                <rect key="frame" x="62" y="722.5" width="157" height="35"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-Bz-5Uk" userLabel="UsernameTextField" customClass="CustomTextField" customModule="WatsonBankAsst">
-                                <rect key="frame" x="62" y="414" width="290" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-Bz-5Uk" userLabel="UsernameTextField" customClass="CustomTextField">
+                                <rect key="frame" x="62" y="777.5" width="644" height="39"/>
                                 <accessibility key="accessibilityConfiguration" label="EmailTextField"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="30"/>
@@ -727,7 +727,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cjD-cf-ika" userLabel="PasswordLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="62" y="474.33333333333331" width="187" height="35"/>
+                                <rect key="frame" x="62" y="842" width="187" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187" id="7kX-eT-s6I"/>
                                 </constraints>
@@ -735,8 +735,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-96-chk" userLabel="PasswordTextField" customClass="CustomTextField" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="62" y="529.33333333333337" width="290" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-96-chk" userLabel="PasswordTextField" customClass="CustomTextField" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                <rect key="frame" x="62" y="897" width="644" height="39"/>
                                 <accessibility key="accessibilityConfiguration" label="PasswordTextField"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="30"/>
@@ -760,7 +760,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9g-78-K7b" userLabel="SignInButton">
-                                <rect key="frame" x="143.66666666666669" y="584.33333333333337" width="127.00000000000006" height="58"/>
+                                <rect key="frame" x="320.5" y="956" width="127" height="58"/>
                                 <accessibility key="accessibilityConfiguration" label="SignInButton"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <state key="normal" title="Sign In">
@@ -775,7 +775,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bS1-wV-IuI" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="20" y="723" width="0.0" height="0.0"/>
+                                <rect key="frame" x="20" y="1011" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -786,7 +786,7 @@
                             <constraint firstItem="f1c-Bz-5Uk" firstAttribute="top" secondItem="x3s-qx-Y9m" secondAttribute="bottom" constant="20" id="0sw-Xd-63R"/>
                             <constraint firstItem="s9g-78-K7b" firstAttribute="centerX" secondItem="vrW-NS-eR8" secondAttribute="centerX" id="6PP-us-UZ7"/>
                             <constraint firstItem="cjD-cf-ika" firstAttribute="leading" secondItem="x3s-qx-Y9m" secondAttribute="leading" id="79i-6S-zlT"/>
-                            <constraint firstItem="acX-D6-2BZ" firstAttribute="top" secondItem="JpH-vp-DxF" secondAttribute="bottom" constant="50" id="EZd-f8-KNu"/>
+                            <constraint firstItem="acX-D6-2BZ" firstAttribute="top" secondItem="JpH-vp-DxF" secondAttribute="bottom" constant="10" id="EZd-f8-KNu"/>
                             <constraint firstItem="Zlj-ec-QQW" firstAttribute="top" secondItem="vrW-NS-eR8" secondAttribute="top" id="F2I-vs-54Q"/>
                             <constraint firstItem="bS1-wV-IuI" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leadingMargin" id="KEz-JV-cMy"/>
                             <constraint firstAttribute="trailing" secondItem="9xb-A6-yNr" secondAttribute="trailing" id="N9K-hG-gMl"/>
@@ -798,12 +798,12 @@
                             <constraint firstItem="bSV-96-chk" firstAttribute="leading" secondItem="cjD-cf-ika" secondAttribute="leading" id="YH2-Bd-Fqx"/>
                             <constraint firstItem="9xb-A6-yNr" firstAttribute="top" secondItem="vrW-NS-eR8" secondAttribute="top" id="Z9D-ij-wfA"/>
                             <constraint firstItem="Zlj-ec-QQW" firstAttribute="leading" secondItem="vrW-NS-eR8" secondAttribute="leading" id="fil-aQ-LcC"/>
+                            <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="s9g-78-K7b" secondAttribute="bottom" constant="10" id="g8b-Oe-hZL"/>
                             <constraint firstItem="acX-D6-2BZ" firstAttribute="centerX" secondItem="vrW-NS-eR8" secondAttribute="centerX" id="i1D-Ib-NSf"/>
                             <constraint firstItem="QZp-d1-Rdu" firstAttribute="top" secondItem="9xb-A6-yNr" secondAttribute="bottom" constant="-300" id="kbf-re-NjW"/>
                             <constraint firstItem="cjD-cf-ika" firstAttribute="top" secondItem="f1c-Bz-5Uk" secondAttribute="bottom" constant="25" id="nbr-iM-RZG"/>
                             <constraint firstItem="s9g-78-K7b" firstAttribute="top" secondItem="bSV-96-chk" secondAttribute="bottom" constant="20" id="nzG-qS-1xH"/>
                             <constraint firstItem="Zlj-ec-QQW" firstAttribute="width" secondItem="vrW-NS-eR8" secondAttribute="width" id="qas-qf-qdN"/>
-                            <constraint firstItem="x3s-qx-Y9m" firstAttribute="top" secondItem="acX-D6-2BZ" secondAttribute="bottom" constant="50" id="t3j-bu-Y1b"/>
                             <constraint firstItem="Zlj-ec-QQW" firstAttribute="height" secondItem="vrW-NS-eR8" secondAttribute="height" id="udu-MQ-u3x"/>
                             <constraint firstItem="f1c-Bz-5Uk" firstAttribute="centerX" secondItem="vrW-NS-eR8" secondAttribute="centerX" id="v8A-6P-MHQ"/>
                             <constraint firstItem="bSV-96-chk" firstAttribute="top" secondItem="cjD-cf-ika" secondAttribute="bottom" constant="20" id="x9x-s9-o3u"/>
