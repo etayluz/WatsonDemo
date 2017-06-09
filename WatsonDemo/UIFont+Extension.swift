@@ -40,7 +40,7 @@ extension UILabel {
         //iPhone 6s Plus
         case "iPhone8,2":  font = UIFont(name: "Arial", size: 16.0);
         //iphone 7
-        case "iPhone9,1", "iPhone9,3":  font = UIFont(name: "Arial", size: 5.0);
+        case "iPhone9,1", "iPhone9,3":  font = UIFont(name: "Arial", size: 14.0);
         //iphone 7 plus
         case "iPhone9,2", "iPhone9,4":  font = UIFont(name: "Arial", size: 16.0);
         //iPhone SE
@@ -63,8 +63,11 @@ extension UILabel {
         case "iPad4,7", "iPad4,8", "iPad4,9": font = UIFont(name: "Arial", size: 16.0);
         //iPad Mini 4
         case "iPad5,1", "iPad5,2": font = UIFont(name: "Arial", size: 16.0);
-        //iPad Pro
-        case "iPad6,3", "iPad6,4", "iPad6,7", "iPad6,8":font = UIFont(name: "Arial", size: 22.0);
+        //iPad Pro 9.7 inch
+        case "iPad6,3", "iPad6,4":font = UIFont(name: "Arial", size: 22.0);
+        //iPad Pro 12.9 inch
+        case "iPad6,7", "iPad6,8":font = UIFont(name: "Arial", size: 24.0);
+    
         //default
        // default: font = UIFont(name: "Arial", size: 18.0);
           default: font = UIFont(name: "Arial", size: 32.0);
