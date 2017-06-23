@@ -114,12 +114,12 @@ struct GlobalConstants {
     
 #elseif WATSONFMAEASST
     
-    static let dennisNotoWorkspaceID = "0a7cb606-7488-4b3e-88ae-abcdaafb1c0a"
+    static let dennisNotoWorkspaceID = "58bf45aa-5cb7-4683-bb4b-24e1dc1c0eb6"
     static let nodeRedWorkflowUrl = "https://fanniemae-nodered-v1.mybluemix.net/mobile"
-    static let BluemixUsernameSTT = "57664062-7e3f-44ba-9509-86693059b908"
-    static let BluemixPasswordSTT = "S3mjUCoKlBUW"
-    static let BluemixUsernameTTS = "98b40873-5a5f-46fd-8b87-61d331d8154c"
-    static let BluemixPasswordTTS = "tndhTu1APbI3"
+    static let BluemixUsernameSTT = "8785f0ee-cc39-46a8-af5f-9524d2ec32e1"
+    static let BluemixPasswordSTT = "zEHAWYsm6pYH"
+    static let BluemixUsernameTTS = "a959079b-b60e-4101-b722-f2ec4b6a8652"
+    static let BluemixPasswordTTS = "zkloyeobF1Tr"
     static let TTScustomizationID = ""
     static let STTcustomizationID = ""
     
