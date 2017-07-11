@@ -60,6 +60,7 @@ final class LoginViewController: UIViewController {
     @IBAction func signInButtonTapped(sender: AnyObject) {
         GlobalConstants.username = usernameTextField.text!
         GlobalConstants.password = passwordTextField.text!
+        IQKeyboardManager.sharedManager().enable = false
         performSegue(withIdentifier: Constants.loginSegueIdentifier, sender: nil)
     }
 
@@ -68,8 +69,8 @@ final class LoginViewController: UIViewController {
     // This will only execute on the simulator and NOT on a real device
     private func setupSimulator() {
         //        #if (arch(i386) || arch(x86_64)) && os(iOS)
-        usernameTextField.text = Constants.username
-        passwordTextField.text = Constants.password
+        // usernameTextField.text = Constants.username
+        // passwordTextField.text = Constants.password
         //        #endif
     }
 }
@@ -78,6 +79,12 @@ final class LoginViewController: UIViewController {
 
 // MARK: - UITextFieldDelegate
 extension LoginViewController: UITextFieldDelegate {
+
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        usernameTextField.text = ""
+        passwordTextField.text = ""
+        return true
+    }
 
     func textFieldDidEndEditing(_ textField: UITextField) {
     }

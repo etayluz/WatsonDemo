@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         setupAudioPlayback()
+        setupIQKeyboardManager()
         return true
     }
 
@@ -30,6 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             // no-op
         }
+    }
+
+
+    /// Setup IQKeyboardManager
+    private func setupIQKeyboardManager() {
+        IQKeyboardManager.sharedManager().enable = true
     }
 
 }
