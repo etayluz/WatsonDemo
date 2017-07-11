@@ -120,8 +120,8 @@ struct GlobalConstants {
     static let BluemixPasswordSTT = "zEHAWYsm6pYH"
     static let BluemixUsernameTTS = "a959079b-b60e-4101-b722-f2ec4b6a8652"
     static let BluemixPasswordTTS = "zkloyeobF1Tr"
-    static let TTScustomizationID = ""
-    static let STTcustomizationID = ""
+    static let TTScustomizationID = "d6aab329-b010-4a9c-ae27-39701faf5a48"
+    static let STTcustomizationID = "89117320-635d-11e7-85f6-435b156592c7"
     
 #else
     
