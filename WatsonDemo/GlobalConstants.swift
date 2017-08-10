@@ -33,7 +33,7 @@ struct GlobalConstants {
     
 #elseif WATSONWEALTHASST
 
-    static let dennisNotoWorkspaceID = "6cbf0eab-55e4-4800-a183-969d6df82b1c"
+    static let dennisNotoWorkspaceID = "c2777aef-fe89-4df5-8792-46880d6a0662"
    //static let dennisNotoWorkspaceID = "8a43bb91-62b9-4f45-93c9-dee8075a49fa"
     static let nodeRedWorkflowUrl = "https://nodered-prod-v3.mybluemix.net/mobile"
     static let BluemixUsernameSTT = "57664062-7e3f-44ba-9509-86693059b908"
@@ -43,10 +43,10 @@ struct GlobalConstants {
     static let TTScustomizationID = ""
     static let STTcustomizationID = ""
     
-#elseif WATSONWEALTHTASST || DEBUG
+#elseif WATSONWEALTHTASST
     
-    static let dennisNotoWorkspaceID = "549ef6e1-ffc8-427b-b356-603c02e44d8e"
-    static let nodeRedWorkflowUrl = "https://nodered-dev-v3.mybluemix.net/mobile"
+    static let dennisNotoWorkspaceID = "c2777aef-fe89-4df5-8792-46880d6a0662"
+    static let nodeRedWorkflowUrl = "https://nodered-prod-v3.mybluemix.net/mobile"
     static let BluemixUsernameSTT = "57664062-7e3f-44ba-9509-86693059b908"
     static let BluemixPasswordSTT = "S3mjUCoKlBUW"
     static let BluemixUsernameTTS = "98b40873-5a5f-46fd-8b87-61d331d8154c"
