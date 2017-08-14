@@ -123,7 +123,19 @@ struct GlobalConstants {
     static let TTScustomizationID = "d6aab329-b010-4a9c-ae27-39701faf5a48"
     static let STTcustomizationID = "89117320-635d-11e7-85f6-435b156592c7"
     
-#else
+#elseif WATSONHERTZASST
+    
+    static let dennisNotoWorkspaceID = "8bc22de1-609b-4530-bab0-13481eba086c"
+    static let nodeRedWorkflowUrl = "https://callwatson.mybluemix.net/mobile"
+    static let BluemixUsernameSTT = "7f9d7a16-b26a-48bc-a1ef-fc470f58eb5b"
+    static let BluemixPasswordSTT = "EdtenjXZdeha"
+    static let BluemixUsernameTTS = "bf4f679e-7f2d-4473-8f06-359e3029d106"
+    static let BluemixPasswordTTS = "yCHYfBm10qPK"
+    static let TTScustomizationID = ""
+    static let STTcustomizationID = ""
+    
+    
+    #else
     
     static let dennisNotoWorkspaceID = "1549fa38-7160-4106-82ee-73796b21f3b8"
     static let nodeRedWorkflowUrl = "https://nodered-prod-v3.mybluemix.net/mobile"
