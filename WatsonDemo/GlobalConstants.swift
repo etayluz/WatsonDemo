@@ -57,7 +57,7 @@ struct GlobalConstants {
 #elseif WATSONMETASST
     
     static let dennisNotoWorkspaceID = "5fd7c1c7-9ea2-4fc8-b6fa-7920e10aad5a"
-    static let nodeRedWorkflowUrl = "http://metlifepotnode-red1.mybluemix.net/mobileV2-1"
+    static let nodeRedWorkflowUrl = "http://metlifepotnode-red1.mybluemix.net/mobile"
     static let BluemixUsernameSTT = "02aa260b-fe3c-428a-83b3-4d6909e305e3"
     static let BluemixPasswordSTT = "5YxEslShK1UL"
     static let BluemixUsernameTTS = "709f9691-5440-4518-ae53-a7515cf2b7eb"
@@ -68,7 +68,7 @@ struct GlobalConstants {
 #elseif WATSONWHIRLASST
     
     static let dennisNotoWorkspaceID = "251c4882-44e3-4f34-9c71-36054e155320"
-    static let nodeRedWorkflowUrl = "https://whirlpoolnode-red.mybluemix.net/mobileV2-1"
+    static let nodeRedWorkflowUrl = "https://whirlpoolnode-red.mybluemix.net/mobile"
     static let BluemixUsernameSTT = "8b772b77-c923-42ff-b2ef-29370cba1965"
     static let BluemixPasswordSTT = "NP0ooxJSFfL8"
     static let BluemixUsernameTTS = "833e48e0-2139-4142-935f-04190b698542"
@@ -77,9 +77,6 @@ struct GlobalConstants {
     static let STTcustomizationID = ""
     
 #elseif WATSONFIDASST
- //Fidelity space
- //  static let dennisNotoWorkspaceID = "46975d17-120f-4757-8fe8-4a6649b3a257"
- //  static let nodeRedWorkflowUrl = "https://ibm-nodered-v1.mybluemix.net/mobileV2-1"    
     
     static let dennisNotoWorkspaceID = "1555159e-fa59-4d8d-bfba-b10a19144e22"
     static let nodeRedWorkflowUrl = "https://nodered-dev-v1.mybluemix.net/mobile"
@@ -93,7 +90,7 @@ struct GlobalConstants {
 #elseif WATSONREGASST
     
     static let dennisNotoWorkspaceID = "321e996d-efee-42a0-8aed-3dc93006a026"
-    static let nodeRedWorkflowUrl = "https://node-red-regions.mybluemix.net/mobileV2-1"
+    static let nodeRedWorkflowUrl = "https://node-red-regions.mybluemix.net/mobile"
     static let BluemixUsernameSTT = "8fb6456f-3e2b-483c-bc39-34609d7e27a1"
     static let BluemixPasswordSTT = "JmtwYp5NEBVw"
     static let BluemixUsernameTTS = "af631b9a-ef1d-4b06-aa14-2687a157a999"
