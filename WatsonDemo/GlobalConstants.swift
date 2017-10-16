@@ -26,7 +26,7 @@ struct GlobalConstants {
     static let nodeRedWorkflowUrl = "https://nodered-prod-v3.mybluemix.net/mobile"
     static let BluemixUsernameSTT = "57664062-7e3f-44ba-9509-86693059b908"
     static let BluemixPasswordSTT = "S3mjUCoKlBUW"
-    static let BluemixUsernameTTS = "98b40873-5a5f-46fd-8b87-61d331d8154c"
+    static let BluemixUsernameTTS = "54141f49-ffa2-4f6b-887c-aac6aea5d42d"
     static let BluemixPasswordTTS = "tndhTu1APbI3"
     static let TTScustomizationID = ""
     static let STTcustomizationID = ""
