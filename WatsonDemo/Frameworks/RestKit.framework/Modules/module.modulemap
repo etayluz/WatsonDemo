@@ -7,4 +7,5 @@ framework module RestKit {
 
 module RestKit.Swift {
     header "RestKit-Swift.h"
+    requires objc
 }

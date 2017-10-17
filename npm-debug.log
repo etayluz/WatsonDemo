@@ -1,0 +1,167 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-',
+1 verbose cli   'g',
+1 verbose cli   'yarn' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 verbose config Skipping project config: /Users/etayluz/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData -
+9 silly fetchPackageMetaData g
+10 silly fetchPackageMetaData yarn
+11 silly fetchOtherPackageData -
+12 silly cache add args [ '-', null ]
+13 verbose cache add spec -
+14 silly fetchNamedPackageData g
+15 silly mapToRegistry name g
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry data Result {
+18 silly mapToRegistry   raw: 'g',
+18 silly mapToRegistry   scope: null,
+18 silly mapToRegistry   escapedName: 'g',
+18 silly mapToRegistry   name: 'g',
+18 silly mapToRegistry   rawSpec: '',
+18 silly mapToRegistry   spec: 'latest',
+18 silly mapToRegistry   type: 'tag' }
+19 silly mapToRegistry uri https://registry.npmjs.org/g
+20 silly fetchNamedPackageData yarn
+21 silly mapToRegistry name yarn
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry data Result {
+24 silly mapToRegistry   raw: 'yarn',
+24 silly mapToRegistry   scope: null,
+24 silly mapToRegistry   escapedName: 'yarn',
+24 silly mapToRegistry   name: 'yarn',
+24 silly mapToRegistry   rawSpec: '',
+24 silly mapToRegistry   spec: 'latest',
+24 silly mapToRegistry   type: 'tag' }
+25 silly mapToRegistry uri https://registry.npmjs.org/yarn
+26 silly cache add parsed spec Result {
+26 silly cache add   raw: '-',
+26 silly cache add   scope: null,
+26 silly cache add   escapedName: null,
+26 silly cache add   name: null,
+26 silly cache add   rawSpec: '-',
+26 silly cache add   spec: '/Users/etayluz/WatsonDemo/-',
+26 silly cache add   type: 'local' }
+27 verbose request uri https://registry.npmjs.org/g
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 2:33:43 PM
+30 verbose request id e6affc83fd4b4c24
+31 http request GET https://registry.npmjs.org/g
+32 verbose request uri https://registry.npmjs.org/yarn
+33 verbose request no auth needed
+34 info attempt registry request try #1 at 2:33:43 PM
+35 http request GET https://registry.npmjs.org/yarn
+36 error addLocal Could not install /Users/etayluz/WatsonDemo/-
+37 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/etayluz/WatsonDemo/-'
+37 silly fetchPackageMetaData     at Error (native)
+37 silly fetchPackageMetaData  error for - { Error: ENOENT: no such file or directory, open '/Users/etayluz/WatsonDemo/-'
+37 silly fetchPackageMetaData     at Error (native)
+37 silly fetchPackageMetaData   errno: -2,
+37 silly fetchPackageMetaData   code: 'ENOENT',
+37 silly fetchPackageMetaData   syscall: 'open',
+37 silly fetchPackageMetaData   path: '/Users/etayluz/WatsonDemo/-' }
+38 http 200 https://registry.npmjs.org/g
+39 verbose headers { server: 'nginx/1.10.1',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'last-modified': 'Sat, 14 May 2016 03:19:21 GMT',
+39 verbose headers   etag: 'W/"57369939-205b"',
+39 verbose headers   'content-encoding': 'gzip',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '1712',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Tue, 11 Jul 2017 18:33:07 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   age: '0',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-ewr18139-EWR',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1499797987.420049,VS0,VE8',
+39 verbose headers   vary: 'Accept-Encoding, Accept' }
+40 silly get cb [ 200,
+40 silly get   { server: 'nginx/1.10.1',
+40 silly get     'content-type': 'application/json',
+40 silly get     'last-modified': 'Sat, 14 May 2016 03:19:21 GMT',
+40 silly get     etag: 'W/"57369939-205b"',
+40 silly get     'content-encoding': 'gzip',
+40 silly get     'cache-control': 'max-age=300',
+40 silly get     'content-length': '1712',
+40 silly get     'accept-ranges': 'bytes',
+40 silly get     date: 'Tue, 11 Jul 2017 18:33:07 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     age: '0',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-ewr18139-EWR',
+40 silly get     'x-cache': 'MISS',
+40 silly get     'x-cache-hits': '0',
+40 silly get     'x-timer': 'S1499797987.420049,VS0,VE8',
+40 silly get     vary: 'Accept-Encoding, Accept' } ]
+41 verbose get saving g to /Users/etayluz/.npm/registry.npmjs.org/g/.cache.json
+42 verbose correctMkdir /Users/etayluz/.npm correctMkdir not in flight; initializing
+43 http 200 https://registry.npmjs.org/yarn
+44 verbose headers { server: 'nginx/1.10.1',
+44 verbose headers   'content-type': 'application/json',
+44 verbose headers   'last-modified': 'Mon, 10 Jul 2017 17:28:45 GMT',
+44 verbose headers   etag: 'W/"5963b94d-2faa0"',
+44 verbose headers   'content-encoding': 'gzip',
+44 verbose headers   'cache-control': 'max-age=300',
+44 verbose headers   'content-length': '10962',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   date: 'Tue, 11 Jul 2017 18:33:07 GMT',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   age: '149',
+44 verbose headers   connection: 'keep-alive',
+44 verbose headers   'x-served-by': 'cache-ewr18146-EWR',
+44 verbose headers   'x-cache': 'HIT',
+44 verbose headers   'x-cache-hits': '2',
+44 verbose headers   'x-timer': 'S1499797987.420400,VS0,VE0',
+44 verbose headers   vary: 'Accept-Encoding, Accept' }
+45 silly get cb [ 200,
+45 silly get   { server: 'nginx/1.10.1',
+45 silly get     'content-type': 'application/json',
+45 silly get     'last-modified': 'Mon, 10 Jul 2017 17:28:45 GMT',
+45 silly get     etag: 'W/"5963b94d-2faa0"',
+45 silly get     'content-encoding': 'gzip',
+45 silly get     'cache-control': 'max-age=300',
+45 silly get     'content-length': '10962',
+45 silly get     'accept-ranges': 'bytes',
+45 silly get     date: 'Tue, 11 Jul 2017 18:33:07 GMT',
+45 silly get     via: '1.1 varnish',
+45 silly get     age: '149',
+45 silly get     connection: 'keep-alive',
+45 silly get     'x-served-by': 'cache-ewr18146-EWR',
+45 silly get     'x-cache': 'HIT',
+45 silly get     'x-cache-hits': '2',
+45 silly get     'x-timer': 'S1499797987.420400,VS0,VE0',
+45 silly get     vary: 'Accept-Encoding, Accept' } ]
+46 verbose get saving yarn to /Users/etayluz/.npm/registry.npmjs.org/yarn/.cache.json
+47 verbose correctMkdir /Users/etayluz/.npm correctMkdir not in flight; initializing
+48 silly rollbackFailedOptional Starting
+49 silly rollbackFailedOptional Finishing
+50 silly runTopLevelLifecycles Finishing
+51 silly install printInstalled
+52 verbose stack Error: ENOENT: no such file or directory, open '/Users/etayluz/WatsonDemo/-'
+52 verbose stack     at Error (native)
+53 verbose cwd /Users/etayluz/WatsonDemo
+54 error Darwin 16.5.0
+55 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-" "g" "yarn"
+56 error node v6.9.5
+57 error npm  v3.10.10
+58 error path /Users/etayluz/WatsonDemo/-
+59 error code ENOENT
+60 error errno -2
+61 error syscall open
+62 error enoent ENOENT: no such file or directory, open '/Users/etayluz/WatsonDemo/-'
+63 error enoent ENOENT: no such file or directory, open '/Users/etayluz/WatsonDemo/-'
+63 error enoent This is most likely not a problem with npm itself
+63 error enoent and is related to npm not being able to find a file.
+64 verbose exit [ -2, true ]

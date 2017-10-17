@@ -54,7 +54,7 @@ class SpeechToTextService {
     func startRecording() {
         var settings = RecognitionSettings(contentType: .opus)
         settings.interimResults = false
-        settings.continuous = true
+//        settings.continuous = true
         settings.inactivityTimeout = -1
         settings.smartFormatting = true
         speechToTextSession?.connect()
