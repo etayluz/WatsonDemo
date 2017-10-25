@@ -81,8 +81,11 @@ final class LoginViewController: UIViewController {
 extension LoginViewController: UITextFieldDelegate {
 
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        usernameTextField.text = ""
-        passwordTextField.text = ""
+        if textField == usernameTextField {
+            usernameTextField.text = ""
+        } else {
+            passwordTextField.text = ""
+        }
         return true
     }
 
