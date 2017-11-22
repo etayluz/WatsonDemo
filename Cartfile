@@ -1,2 +1,4 @@
 github "watson-developer-cloud/ios-sdk"
 github "rs/SDWebImage"
+github "hackiftekhar/IQKeyboardManager"
+

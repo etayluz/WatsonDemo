@@ -29,8 +29,8 @@ class TextToSpeechService {
     ///
     /// - Parameter text: Text to be syntheszied to speech
     func synthesizeSpeech(withText text: String) {
-        guard text.characters.count > 0 else { return }
-        
+        guard text.count > 0 else { return }
+
         let textToSpeech = TextToSpeech(username: GlobalConstants.BluemixUsernameTTS,
                                         password: GlobalConstants.BluemixPasswordTTS)
 
@@ -45,7 +45,7 @@ class TextToSpeechService {
                     strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
                 }
             }
-        
+
          }
         else {
             textToSpeech.synthesize(text, customizationID: GlobalConstants.TTScustomizationID,

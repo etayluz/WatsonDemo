@@ -20,7 +20,7 @@ class SpeechToTextService {
 
     // MARK: - Properties
     var delegate: SpeechToTextServiceDelegate?
-    var speechToTextSession: SpeechToTextSession? = nil
+//    var speechToTextSession: SpeechToTextSession? = nil
     var textTranscription: String?
 
 
@@ -28,46 +28,46 @@ class SpeechToTextService {
     init(delegate: SpeechToTextServiceDelegate) {
         self.delegate = delegate
 
-        if GlobalConstants.STTcustomizationID == "" {
-             speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
-                                                       password: GlobalConstants.BluemixPasswordSTT)
-        }
-        else {
-             speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
-                                                       password: GlobalConstants.BluemixPasswordSTT,
-                                                       customizationID: GlobalConstants.STTcustomizationID)
-        }
-            
-        speechToTextSession?.onResults =
-            { results in print(results.bestTranscript)
-                if let bestTranscript = results.bestTranscript as String? {
-                    if bestTranscript.characters.count > 0 {
-                        let truncated = bestTranscript.substring(to: bestTranscript.index(before: bestTranscript.endIndex))
-                        delegate.didFinishTranscribingSpeech(withText: truncated)
-                    }
-                }
-            }
+//        if GlobalConstants.STTcustomizationID == "" {
+//             speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
+//                                                       password: GlobalConstants.BluemixPasswordSTT)
+//        }
+//        else {
+//             speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
+//                                                       password: GlobalConstants.BluemixPasswordSTT,
+//                                                       customizationID: GlobalConstants.STTcustomizationID)
+//        }
+
+//        speechToTextSession?.onResults =
+//            { results in print(results.bestTranscript)
+//                if let bestTranscript = results.bestTranscript as String? {
+//                    if bestTranscript.characters.count > 0 {
+//                        let truncated = bestTranscript.substring(to: bestTranscript.index(before: bestTranscript.endIndex))
+//                        delegate.didFinishTranscribingSpeech(withText: truncated)
+//                    }
+//                }
+//            }
     }
 
 
     /// Start recording session
     func startRecording() {
-        var settings = RecognitionSettings(contentType: .opus)
-        settings.interimResults = false
-//        settings.continuous = true
-        settings.inactivityTimeout = -1
-        settings.smartFormatting = true
-        speechToTextSession?.connect()
-        speechToTextSession?.startRequest(settings: settings)
-        speechToTextSession?.startMicrophone()
+//        var settings = RecognitionSettings(contentType: .opus)
+//        settings.interimResults = false
+////        settings.continuous = true
+//        settings.inactivityTimeout = -1
+//        settings.smartFormatting = true
+//        speechToTextSession?.connect()
+//        speechToTextSession?.startRequest(settings: settings)
+//        speechToTextSession?.startMicrophone()
     }
 
 
     /// Finish recording session
     func finishRecording() {
-        speechToTextSession?.stopMicrophone()
-        speechToTextSession?.stopRequest()
-        speechToTextSession?.disconnect()
+//        speechToTextSession?.stopMicrophone()
+//        speechToTextSession?.stopRequest()
+//        speechToTextSession?.disconnect()
     }
     
 }

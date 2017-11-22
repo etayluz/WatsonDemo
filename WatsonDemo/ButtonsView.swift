@@ -54,12 +54,13 @@ class ButtonsView: UIView {
         print ("options is " + option)
         
         if let rangeOfZero = option.range(of: "|", options: .backwards) {
-            found_title = String(option.characters.prefix(upTo: rangeOfZero.lowerBound))
-            if String(option.characters.suffix(from: rangeOfZero.upperBound)).contains("http") {           found_url = String(option.characters.suffix(from: rangeOfZero.upperBound))
+            found_title = String(option.prefix(upTo: rangeOfZero.lowerBound))
+            if String(option.suffix(from: rangeOfZero.upperBound)).contains("http") {
+                found_url = String(option.suffix(from: rangeOfZero.upperBound))
                 buttonHasUrl = 1;
             }
             else {
-                found_reply = String(option.characters.suffix(from: rangeOfZero.upperBound))
+                found_reply = String(option.suffix(from: rangeOfZero.upperBound))
                 buttonHasReply = 1;
             }
         }
@@ -160,7 +161,7 @@ class ButtonsView: UIView {
 
     }
 
-    func optionButtonTapped(button: CustomButton) {
+    @objc func optionButtonTapped(button: CustomButton) {
         delegate.optionButtonTapped(withSelectedButton: button)
     }
 

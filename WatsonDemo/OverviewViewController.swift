@@ -97,7 +97,7 @@ extension OverviewViewController: ButtonsViewDelegate {
 
     func optionButtonTapped(withSelectedButton selectedButton: CustomButton) {
 
-        if (selectedButton.buttonReply?.characters.count)! > 0 {
+        if (selectedButton.buttonReply?.count)! > 0 {
             
             if let chatViewController = tabBarController?.viewControllers?[Constants.chatSelectedIndex] as? ChatViewController,
                 

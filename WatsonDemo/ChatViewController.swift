@@ -107,20 +107,20 @@ class ChatViewController: UIViewController {
 
 
     /// Dismiss keyboard on screen tap
-    func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         chatTableBottomConstraint.constant = 0
         view.endEditing(true)
     }
 
     func appendChat(withMessage message: Message) {
         guard let text = message.text,
-            (text.characters.count > 0 || message.options != nil ||
+            (text.count > 0 || message.options != nil ||
                 message.mapStr != nil || message.videoUrl != nil ||
                 message.barscore != nil)
             else { return }
 
 
-        if message.type == MessageType.User && text.characters.count > 0 {
+        if message.type == MessageType.User && text.count > 0 {
             conversationService.sendMessage(withText: text)
         }
 
@@ -288,7 +288,7 @@ extension ChatViewController: ConversationServiceDelegate {
 
 
     internal func didReceiveMessage(withText text: String, options: [String]?) {
-        guard text.characters.count > 0 else { return }
+        guard text.count > 0 else { return }
         
         //add code for multiple messages from watson
         let texts = text.components(separatedBy: "\",\"")

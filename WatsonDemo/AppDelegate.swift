@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// Setup IQKeyboardManager
     private func setupIQKeyboardManager() {
-        IQKeyboardManager.sharedManager().enable = true
+//        IQKeyboardManager.sharedManager().enable = true
     }
 
 }

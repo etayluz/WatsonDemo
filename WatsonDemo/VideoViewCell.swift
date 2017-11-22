@@ -70,7 +70,7 @@ class VideoViewCell: UITableViewCell {
 //        #endif
     }
 
-    func playerDidFinishPlaying() {
+    @objc func playerDidFinishPlaying() {
         if chatViewController?.messages.last?.type == message?.type {
           //  chatViewController?.conversationService.sendMessage(withText: "OK")
         }

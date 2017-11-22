@@ -85,7 +85,7 @@ class UserChatViewCell: UITableViewCell {
         self.message = message
 
         if let text = message.text,
-            text.characters.count > 0 {
+            text.count > 0 {
             messageLabel.text = text
         }
         
