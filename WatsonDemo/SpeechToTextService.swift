@@ -65,9 +65,9 @@ class SpeechToTextService {
 
     /// Finish recording session
     func finishRecording() {
-//        speechToTextSession?.stopMicrophone()
-//        speechToTextSession?.stopRequest()
-//        speechToTextSession?.disconnect()
+        speechToTextSession?.stopMicrophone()
+        speechToTextSession?.stopRequest()
+        speechToTextSession?.disconnect()
     }
     
 }
