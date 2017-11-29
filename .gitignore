@@ -4,4 +4,4 @@
 *.xcuserdatad
 codesigndoc_exports/
 Cartfile.resolved
-Carthage/
+#Carthage/
