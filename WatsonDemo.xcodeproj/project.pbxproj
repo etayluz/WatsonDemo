@@ -362,6 +362,18 @@
 		B48B187F1DDB8D80008CE7C2 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */; };
 		B48B18811DDB908E008CE7C2 /* ConversationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18801DDB908E008CE7C2 /* ConversationService.swift */; };
 		B4981CB91DEE37F700C67B35 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
+		B4A2AC031FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC041FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC051FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC061FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC071FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC081FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC091FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC0A1FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC0B1FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC0C1FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC0D1FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; };
+		B4A2AC0E1FCF094C004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4AE40DC1E842D290084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
 		B4AE40DD1E8434580084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
 		B4AE40DE1E8434590084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
@@ -578,6 +590,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC0E1FCF094C004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				B4B058631E9A293200855333 /* RestKit.framework in Embed Frameworks */,
 				B4B058691E9A294C00855333 /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4B0587A1E9A299B00855333 /* WebImage.framework in Embed Frameworks */,
@@ -621,6 +634,7 @@
 		B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		B48B18801DDB908E008CE7C2 /* ConversationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationService.swift; sourceTree = "<group>"; };
 		B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = SOURCE_ROOT; };
 		B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxTableViewCell.swift; sourceTree = "<group>"; };
 		B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Frameworks/TextToSpeechV1.framework; sourceTree = "<group>"; };
 		B4B058581E9A28FF00855333 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Frameworks/RestKit.framework; sourceTree = "<group>"; };
@@ -651,6 +665,7 @@
 				B4B058541E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B0585E1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4B058741E9A298B00855333 /* WebImage.framework in Frameworks */,
+				B4A2AC081FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +676,7 @@
 				B4B058571E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B058611E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4B058771E9A298B00855333 /* WebImage.framework in Frameworks */,
+				B4A2AC0B1FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +687,7 @@
 				B4B058551E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B0585F1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4B058751E9A298B00855333 /* WebImage.framework in Frameworks */,
+				B4A2AC091FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +698,7 @@
 				B4B058561E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B058601E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4B058761E9A298B00855333 /* WebImage.framework in Frameworks */,
+				B4A2AC0A1FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +709,7 @@
 				74758D8F1F41FA8F00420502 /* TextToSpeechV1.framework in Frameworks */,
 				74758D901F41FA8F00420502 /* RestKit.framework in Frameworks */,
 				74758D911F41FA8F00420502 /* WebImage.framework in Frameworks */,
+				B4A2AC0D1FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +720,7 @@
 				74C425E61EE8A69E00D18B7C /* RestKit.framework in Frameworks */,
 				74C425E71EE8A69E00D18B7C /* WebImage.framework in Frameworks */,
 				74C425E91EE8A69E00D18B7C /* TextToSpeechV1.framework in Frameworks */,
+				B4A2AC0C1FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +731,7 @@
 				B4B058531E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B0585D1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4B058731E9A298B00855333 /* WebImage.framework in Frameworks */,
+				B4A2AC071FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,6 +742,7 @@
 				B4B058501E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B0585A1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4B058701E9A298B00855333 /* WebImage.framework in Frameworks */,
+				B4A2AC041FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,6 +753,7 @@
 				B4B058511E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B0585B1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4B058711E9A298B00855333 /* WebImage.framework in Frameworks */,
+				B4A2AC051FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +764,7 @@
 				B4B058521E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B0585C1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4B058721E9A298B00855333 /* WebImage.framework in Frameworks */,
+				B4A2AC061FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,6 +775,7 @@
 				B4B0586A1E9A296000855333 /* RestKit.framework in Frameworks */,
 				B4B058791E9A299B00855333 /* WebImage.framework in Frameworks */,
 				B4B0586C1E9A296000855333 /* TextToSpeechV1.framework in Frameworks */,
+				B4A2AC031FCF093E004BF160 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +865,7 @@
 		B48B18751DDB6EE0008CE7C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */,
 				B4B0586E1E9A298B00855333 /* WebImage.framework */,
 				B4B058581E9A28FF00855333 /* RestKit.framework */,
 				B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */,
@@ -1796,6 +1822,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
@@ -1822,6 +1849,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1845,6 +1873,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1868,6 +1897,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1941,6 +1971,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1965,6 +1996,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1988,6 +2020,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2011,6 +2044,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2083,6 +2117,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2107,6 +2142,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2130,6 +2166,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2153,6 +2190,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2225,6 +2263,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2249,6 +2288,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2272,6 +2312,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2295,6 +2336,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2318,6 +2360,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2341,6 +2384,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2364,6 +2408,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2387,6 +2432,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2410,6 +2456,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2433,6 +2480,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2456,6 +2504,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2528,6 +2577,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2552,6 +2602,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2575,6 +2626,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2598,6 +2650,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2621,6 +2674,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2644,6 +2698,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2716,6 +2771,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2740,6 +2796,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2763,6 +2820,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2786,6 +2844,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2809,6 +2868,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2832,6 +2892,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2855,6 +2916,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2878,6 +2940,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2902,6 +2965,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2926,6 +2990,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2950,6 +3015,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2974,6 +3040,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2998,6 +3065,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3022,6 +3090,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3046,6 +3115,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3070,6 +3140,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3094,6 +3165,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3118,6 +3190,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3142,6 +3215,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3165,6 +3239,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3188,6 +3263,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3211,6 +3287,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3234,6 +3311,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3257,6 +3335,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3280,6 +3359,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3303,6 +3383,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3326,6 +3407,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3349,6 +3431,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3372,6 +3455,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3395,6 +3479,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3418,6 +3503,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3441,6 +3527,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3464,6 +3551,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3487,6 +3575,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3510,6 +3599,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3583,6 +3673,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3607,6 +3698,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3630,6 +3722,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3653,6 +3746,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3676,6 +3770,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3699,6 +3794,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3722,6 +3818,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3745,6 +3842,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3817,6 +3915,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
@@ -3842,6 +3941,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3865,6 +3965,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3888,6 +3989,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3911,6 +4013,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3934,6 +4037,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3957,6 +4061,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3980,6 +4085,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4004,6 +4110,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4027,6 +4134,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4050,6 +4158,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4073,6 +4182,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4096,6 +4206,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4119,6 +4230,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4142,6 +4254,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4165,6 +4278,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4188,6 +4302,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4211,6 +4326,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4234,6 +4350,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4257,6 +4374,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4330,6 +4448,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4354,6 +4473,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4377,6 +4497,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4400,6 +4521,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4423,6 +4545,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4446,6 +4569,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4469,6 +4593,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4492,6 +4617,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4516,6 +4642,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4539,6 +4666,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4562,6 +4690,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4585,6 +4714,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4608,6 +4738,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
@@ -4632,6 +4763,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4655,6 +4787,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4678,6 +4811,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4701,6 +4835,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4724,6 +4859,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4747,6 +4883,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4770,6 +4907,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
@@ -4794,6 +4932,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
@@ -4819,6 +4958,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4892,6 +5032,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
@@ -4918,6 +5059,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4941,6 +5083,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4964,6 +5107,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4987,6 +5131,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5010,6 +5155,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5033,6 +5179,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5056,6 +5203,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5080,6 +5228,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5103,6 +5252,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
@@ -5177,6 +5327,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5201,6 +5352,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5224,6 +5376,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5247,6 +5400,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5270,6 +5424,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5293,6 +5448,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5316,6 +5472,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5339,6 +5496,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5362,6 +5520,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5385,6 +5544,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5408,6 +5568,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5432,6 +5593,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5455,6 +5617,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5478,6 +5641,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5501,6 +5665,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5524,6 +5689,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5547,6 +5713,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5673,6 +5840,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5697,6 +5865,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
