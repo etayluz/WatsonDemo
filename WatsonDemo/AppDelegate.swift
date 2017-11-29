@@ -8,6 +8,7 @@
 
 import AVFoundation
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -36,7 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// Setup IQKeyboardManager
     private func setupIQKeyboardManager() {
-//        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().enable = true
+
     }
 
 }
