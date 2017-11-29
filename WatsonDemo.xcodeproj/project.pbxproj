@@ -386,6 +386,26 @@
 		B4A2AC191FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; };
 		B4A2AC1A1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; };
 		B4A2AC1B1FCF0AD8004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC1C1FCF0CF1004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC1D1FCF0CF1004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC1E1FCF0CF8004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC1F1FCF0CF8004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC201FCF0D00004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC211FCF0D00004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC221FCF0D07004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC231FCF0D07004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC241FCF0D0F004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC251FCF0D0F004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC261FCF0D16004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC271FCF0D16004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC281FCF0D1E004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC291FCF0D1E004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC2A1FCF0D25004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC2B1FCF0D25004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC2C1FCF0D2C004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC2D1FCF0D2C004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC2E1FCF0D33004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC2F1FCF0D33004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4AE40DC1E842D290084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
 		B4AE40DD1E8434580084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
 		B4AE40DE1E8434590084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
@@ -472,6 +492,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC241FCF0D0F004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC251FCF0D0F004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE4E1EA57CC200006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE4F1EA57CC200006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE511EA57CC200006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -485,6 +507,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC2A1FCF0D25004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC2B1FCF0D25004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE5A1EA57CE100006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE5B1EA57CE100006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE5D1EA57CE100006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -498,6 +522,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC261FCF0D16004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC271FCF0D16004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE521EA57CCD00006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE531EA57CCD00006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE551EA57CCD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -511,6 +537,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC281FCF0D1E004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC291FCF0D1E004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE561EA57CD700006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE571EA57CD700006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE591EA57CD700006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -524,6 +552,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC2E1FCF0D33004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC2F1FCF0D33004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74758D991F41FA8F00420502 /* RestKit.framework in Embed Frameworks */,
 				74758D9A1F41FA8F00420502 /* TextToSpeechV1.framework in Embed Frameworks */,
 				74758D9C1F41FA8F00420502 /* WebImage.framework in Embed Frameworks */,
@@ -537,6 +567,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC2C1FCF0D2C004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC2D1FCF0D2C004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74C425F11EE8A69E00D18B7C /* RestKit.framework in Embed Frameworks */,
 				74C425F31EE8A69E00D18B7C /* TextToSpeechV1.framework in Embed Frameworks */,
 				74C425F41EE8A69E00D18B7C /* WebImage.framework in Embed Frameworks */,
@@ -550,6 +582,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC221FCF0D07004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC231FCF0D07004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE4A1EA57CB800006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE4B1EA57CB800006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE4D1EA57CB800006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -563,6 +597,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC1C1FCF0CF1004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC1D1FCF0CF1004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE411EA57C7400006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE401EA57C6A00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 				74F6EE3E1EA57C5400006A9C /* WebImage.framework in Embed Frameworks */,
@@ -576,6 +612,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC1E1FCF0CF8004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC1F1FCF0CF8004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE421EA57CA200006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE431EA57CA200006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE451EA57CA200006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -589,6 +627,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B4A2AC201FCF0D00004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B4A2AC211FCF0D00004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE461EA57CAD00006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE471EA57CAD00006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE491EA57CAD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
