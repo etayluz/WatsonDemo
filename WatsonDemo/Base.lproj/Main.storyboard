@@ -700,14 +700,14 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x3s-qx-Y9m" userLabel="UsernameLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="58" y="476.66666666666669" width="157" height="35"/>
+                                <rect key="frame" x="58" y="480.66666666666669" width="157" height="35.000000000000057"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-Bz-5Uk" userLabel="UsernameTextField" customClass="CustomTextField">
-                                <rect key="frame" x="58" y="531.66666666666663" width="259" height="39"/>
+                                <rect key="frame" x="58" y="535.66666666666663" width="259" height="39"/>
                                 <accessibility key="accessibilityConfiguration" label="EmailTextField"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="30"/>
@@ -731,7 +731,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cjD-cf-ika" userLabel="PasswordLabel" customClass="CustomLabel" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="58" y="596" width="187" height="35"/>
+                                <rect key="frame" x="58" y="600" width="187" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187" id="7kX-eT-s6I"/>
                                 </constraints>
@@ -740,7 +740,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your Password" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSV-96-chk" userLabel="PasswordTextField" customClass="CustomTextField" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                <rect key="frame" x="58" y="651" width="259" height="39"/>
+                                <rect key="frame" x="58" y="655" width="259" height="35"/>
                                 <accessibility key="accessibilityConfiguration" label="PasswordTextField"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="30"/>

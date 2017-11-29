@@ -406,6 +406,15 @@
 		B4A2AC2D1FCF0D2C004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4A2AC2E1FCF0D33004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC0F1FCF0A6D004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4A2AC2F1FCF0D33004BF160 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC021FCF093E004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A2AC301FCF23A5004BF160 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025B1EE09E6400785568 /* CustomTextField.swift */; };
+		B4A2AC311FCF23A6004BF160 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025B1EE09E6400785568 /* CustomTextField.swift */; };
+		B4A2AC321FCF23A6004BF160 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025B1EE09E6400785568 /* CustomTextField.swift */; };
+		B4A2AC331FCF23A7004BF160 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025B1EE09E6400785568 /* CustomTextField.swift */; };
+		B4A2AC341FCF23A7004BF160 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025B1EE09E6400785568 /* CustomTextField.swift */; };
+		B4A2AC351FCF23A7004BF160 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025B1EE09E6400785568 /* CustomTextField.swift */; };
+		B4A2AC361FCF23A8004BF160 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025B1EE09E6400785568 /* CustomTextField.swift */; };
+		B4A2AC371FCF23A9004BF160 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025B1EE09E6400785568 /* CustomTextField.swift */; };
+		B4A2AC381FCF23A9004BF160 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025B1EE09E6400785568 /* CustomTextField.swift */; };
 		B4AE40DC1E842D290084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
 		B4AE40DD1E8434580084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
 		B4AE40DE1E8434590084CDE1 /* CheckboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */; };
@@ -1426,6 +1435,7 @@
 				74447FFC1E20615B00291174 /* SpeechToTextService.swift in Sources */,
 				74447FFD1E20615B00291174 /* UIColor+Hex.swift in Sources */,
 				74447FFE1E20615B00291174 /* CustomButton.swift in Sources */,
+				B4A2AC341FCF23A7004BF160 /* CustomTextField.swift in Sources */,
 				74447FFF1E20615B00291174 /* CustomView.swift in Sources */,
 				744480001E20615B00291174 /* AppDelegate.swift in Sources */,
 				744480011E20615B00291174 /* ChatInputAccessoryView.swift in Sources */,
@@ -1462,6 +1472,7 @@
 				746B7F541E778D6C00CFC08B /* SpeechToTextService.swift in Sources */,
 				746B7F551E778D6C00CFC08B /* UIColor+Hex.swift in Sources */,
 				746B7F561E778D6C00CFC08B /* CustomButton.swift in Sources */,
+				B4A2AC371FCF23A9004BF160 /* CustomTextField.swift in Sources */,
 				746B7F571E778D6C00CFC08B /* CustomView.swift in Sources */,
 				746B7F581E778D6C00CFC08B /* AppDelegate.swift in Sources */,
 				746B7F591E778D6C00CFC08B /* ChatInputAccessoryView.swift in Sources */,
@@ -1498,6 +1509,7 @@
 				746E444A1E3FBC03004AC465 /* SpeechToTextService.swift in Sources */,
 				746E444B1E3FBC03004AC465 /* UIColor+Hex.swift in Sources */,
 				746E444C1E3FBC03004AC465 /* CustomButton.swift in Sources */,
+				B4A2AC351FCF23A7004BF160 /* CustomTextField.swift in Sources */,
 				746E444D1E3FBC03004AC465 /* CustomView.swift in Sources */,
 				746E444E1E3FBC03004AC465 /* AppDelegate.swift in Sources */,
 				746E444F1E3FBC03004AC465 /* ChatInputAccessoryView.swift in Sources */,
@@ -1534,6 +1546,7 @@
 				746E447E1E3FBC37004AC465 /* SpeechToTextService.swift in Sources */,
 				746E447F1E3FBC37004AC465 /* UIColor+Hex.swift in Sources */,
 				746E44801E3FBC37004AC465 /* CustomButton.swift in Sources */,
+				B4A2AC361FCF23A8004BF160 /* CustomTextField.swift in Sources */,
 				746E44811E3FBC37004AC465 /* CustomView.swift in Sources */,
 				746E44821E3FBC37004AC465 /* AppDelegate.swift in Sources */,
 				746E44831E3FBC37004AC465 /* ChatInputAccessoryView.swift in Sources */,
@@ -1570,6 +1583,7 @@
 				74758D6F1F41FA8F00420502 /* SpeechToTextService.swift in Sources */,
 				74758D711F41FA8F00420502 /* UIColor+Hex.swift in Sources */,
 				74758D731F41FA8F00420502 /* CustomButton.swift in Sources */,
+				B4A2AC381FCF23A9004BF160 /* CustomTextField.swift in Sources */,
 				74758D751F41FA8F00420502 /* CustomView.swift in Sources */,
 				74758D761F41FA8F00420502 /* AppDelegate.swift in Sources */,
 				74758D771F41FA8F00420502 /* ChatInputAccessoryView.swift in Sources */,
@@ -1643,6 +1657,7 @@
 				74CF3A361E045D2700CED191 /* SpeechToTextService.swift in Sources */,
 				74CF3A371E045D2700CED191 /* UIColor+Hex.swift in Sources */,
 				74CF3A381E045D2700CED191 /* CustomButton.swift in Sources */,
+				B4A2AC331FCF23A7004BF160 /* CustomTextField.swift in Sources */,
 				74CF3A391E045D2700CED191 /* CustomView.swift in Sources */,
 				74CF3A3A1E045D2700CED191 /* AppDelegate.swift in Sources */,
 				74CF3A3B1E045D2700CED191 /* ChatInputAccessoryView.swift in Sources */,
@@ -1679,6 +1694,7 @@
 				74E49BC21E0265BD00579DD1 /* SpeechToTextService.swift in Sources */,
 				74E49BC31E0265BD00579DD1 /* UIColor+Hex.swift in Sources */,
 				74E49BC41E0265BD00579DD1 /* CustomButton.swift in Sources */,
+				B4A2AC301FCF23A5004BF160 /* CustomTextField.swift in Sources */,
 				74E49BC51E0265BD00579DD1 /* CustomView.swift in Sources */,
 				74E49BC61E0265BD00579DD1 /* AppDelegate.swift in Sources */,
 				74E49BC71E0265BD00579DD1 /* ChatInputAccessoryView.swift in Sources */,
@@ -1715,6 +1731,7 @@
 				74E49BEF1E0265E100579DD1 /* SpeechToTextService.swift in Sources */,
 				74E49BF01E0265E100579DD1 /* UIColor+Hex.swift in Sources */,
 				74E49BF11E0265E100579DD1 /* CustomButton.swift in Sources */,
+				B4A2AC311FCF23A6004BF160 /* CustomTextField.swift in Sources */,
 				74E49BF21E0265E100579DD1 /* CustomView.swift in Sources */,
 				74E49BF31E0265E100579DD1 /* AppDelegate.swift in Sources */,
 				74E49BF41E0265E100579DD1 /* ChatInputAccessoryView.swift in Sources */,
@@ -1751,6 +1768,7 @@
 				74E49C1C1E0265FF00579DD1 /* SpeechToTextService.swift in Sources */,
 				74E49C1D1E0265FF00579DD1 /* UIColor+Hex.swift in Sources */,
 				74E49C1E1E0265FF00579DD1 /* CustomButton.swift in Sources */,
+				B4A2AC321FCF23A6004BF160 /* CustomTextField.swift in Sources */,
 				74E49C1F1E0265FF00579DD1 /* CustomView.swift in Sources */,
 				74E49C201E0265FF00579DD1 /* AppDelegate.swift in Sources */,
 				74E49C211E0265FF00579DD1 /* ChatInputAccessoryView.swift in Sources */,
