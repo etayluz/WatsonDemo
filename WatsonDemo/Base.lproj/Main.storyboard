@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XFt-xI-0Xr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XFt-xI-0Xr">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -148,14 +148,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watson3" highlightedImage="Watson3" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-Dx-6Yr" userLabel="WatsonIcon">
-                                                    <rect key="frame" x="18" y="30" width="80" height="80"/>
+                                                    <rect key="frame" x="25" y="30" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="3w5-xb-dhM"/>
                                                         <constraint firstAttribute="width" secondItem="MLg-Dx-6Yr" secondAttribute="height" id="nYl-T1-Gje"/>
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-6E-kDH" userLabel="WatsonMsgBackground" customClass="CustomView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="113.00000000000001" y="28" width="244.33333333333337" height="84"/>
+                                                    <rect key="frame" x="120.00000000000001" y="31" width="222.33333333333337" height="78"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -164,7 +164,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giz-gT-A77" userLabel="WatsonMessage">
-                                                    <rect key="frame" x="128" y="43" width="214.33333333333337" height="54"/>
+                                                    <rect key="frame" x="135" y="46" width="192.33333333333337" height="48"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Hello! I'm your personal banking virtual assistant. You can ask me about anything?">
@@ -177,7 +177,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Triangle" highlightedImage="Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-iL-KVp" userLabel="LeftTriangle">
-                                                    <rect key="frame" x="106" y="57" width="9" height="15"/>
+                                                    <rect key="frame" x="113" y="57" width="9" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="giS-Bk-Z42"/>
                                                         <constraint firstAttribute="width" secondItem="ZxN-iL-KVp" secondAttribute="height" multiplier="10:16" id="sEI-G5-rHZ"/>
@@ -215,18 +215,18 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-NN-Ikw" userLabel="ButtonsView" customClass="ButtonsView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="28" y="23" width="259" height="109"/>
+                                                    <rect key="frame" x="35" y="26" width="245" height="103"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" highlightedImage="User" translatesAutoresizingMaskIntoConstraints="NO" id="vo5-6M-QOP" userLabel="UserIcon">
-                                                    <rect key="frame" x="297" y="2" width="60" height="60"/>
+                                                    <rect key="frame" x="290" y="5" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="eHB-mL-2OL"/>
                                                         <constraint firstAttribute="height" constant="60" id="v5G-ha-yyt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Tq-dd-0u9" userLabel="UserMsgBackground" customClass="CustomView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="216" y="11" width="66" height="42"/>
+                                                    <rect key="frame" x="209" y="14" width="66" height="42"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -235,7 +235,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRW-E5-X6Q" userLabel="UserMessage">
-                                                    <rect key="frame" x="231" y="23" width="36" height="17"/>
+                                                    <rect key="frame" x="224" y="26" width="36" height="17"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
@@ -248,7 +248,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightTriangle" highlightedImage="RightTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-Ki-PLb" userLabel="RightTriangle">
-                                                    <rect key="frame" x="280" y="20" width="9" height="15"/>
+                                                    <rect key="frame" x="273" y="22.666666666666668" width="9" height="15.000000000000004"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="WNM-D4-NlR"/>
                                                     </constraints>
@@ -330,7 +330,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KmD-er-qJf" userLabel="CheckBoxContainer" customClass="CustomView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="18" y="8" width="339.33333333333331" height="194"/>
+                                                    <rect key="frame" x="18" y="11" width="339.33333333333331" height="188"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check the box next to the items you'd like to remove:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gr-MD-4dY">
                                                             <rect key="frame" x="23" y="14.000000000000004" width="306.33333333333331" height="38.333333333333343"/>
@@ -339,7 +339,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Itx-sU-HxD">
-                                                            <rect key="frame" x="23" y="66" width="306.33333333333331" height="128"/>
+                                                            <rect key="frame" x="23" y="66" width="306.33333333333331" height="122"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <prototypes>
                                                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckboxTableViewCell" rowHeight="51" id="bfW-8g-uZR" userLabel="CheckboxTableView Cell" customClass="CheckboxTableViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
@@ -350,20 +350,20 @@
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChecklistVisual" translatesAutoresizingMaskIntoConstraints="NO" id="JO8-bp-jon">
-                                                                                <rect key="frame" x="8" y="15848" width="25" height="25"/>
+                                                                                <rect key="frame" x="15" y="55" width="25" height="25"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="25" id="M5y-0Y-cUi"/>
                                                                                     <constraint firstAttribute="width" constant="25" id="jRP-GW-aFt"/>
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4q1-7g-GvM" userLabel="Option">
-                                                                                <rect key="frame" x="48" y="15851" width="113" height="20"/>
+                                                                                <rect key="frame" x="55" y="58" width="113" height="20"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-lK-gB3" userLabel="Border">
-                                                                                <rect key="frame" x="8" y="50" width="199" height="1"/>
+                                                                                <rect key="frame" x="15" y="50" width="199" height="1"/>
                                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="1" id="evR-0W-mRB"/>
@@ -416,7 +416,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mq-rJ-snZ" customClass="CustomButton" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="147.66666666666666" y="212" width="80" height="30"/>
+                                                    <rect key="frame" x="147.66666666666666" y="209" width="80" height="30"/>
                                                     <color key="backgroundColor" red="0.043137254901960784" green="0.14117647058823529" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="noM-iF-Oqu"/>
@@ -456,7 +456,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aI6-iI-XqX" userLabel="BarscoreView" customClass="CustomView" customModule="WatsonAlfAsst" customModuleProvider="target">
-                                                    <rect key="frame" x="56.333333333333343" y="8" width="262.33333333333326" height="234"/>
+                                                    <rect key="frame" x="56.333333333333343" y="11" width="262.33333333333326" height="228"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You scored a 70% probability of achieving your retirement goals" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-eI-XBj" userLabel="BarscoreTitle">
                                                             <rect key="frame" x="7.9999999999999858" y="6" width="236.33333333333331" height="16"/>
@@ -513,7 +513,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barscore" translatesAutoresizingMaskIntoConstraints="NO" id="cR5-o5-Vob" userLabel="Barscore">
-                                                    <rect key="frame" x="69.666666666666671" y="75.666666666666671" width="235.66666666666663" height="50"/>
+                                                    <rect key="frame" x="69.666666666666671" y="78.666666666666671" width="235.66666666666663" height="50.000000000000014"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="bGK-Kp-LI9"/>
                                                     </constraints>

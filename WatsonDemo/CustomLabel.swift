@@ -58,16 +58,16 @@ import UIKit
         return contentSize
     }
 
-    override var text: String? {
-        didSet {
-            let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.lineSpacing = Constants.lineSpacing
-
-            let attrString = NSMutableAttributedString(string: text!)
-            attrString.addAttribute(NSAttributedStringKey.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
-
-            attributedText = attrString
-        }
-    }
+//    override var text: String? {
+//        didSet {
+//            let paragraphStyle = NSMutableParagraphStyle()
+//            paragraphStyle.lineSpacing = Constants.lineSpacing
+//
+//            let attrString = NSMutableAttributedString(string: text!)
+//            attrString.addAttribute(NSAttributedStringKey.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+//
+//            attributedText = attrString
+//        }
+//    }
 
 }
