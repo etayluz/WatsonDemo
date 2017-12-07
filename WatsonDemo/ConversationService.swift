@@ -49,6 +49,8 @@ class ConversationService {
         static let lastName = "lname"
         static let userName = "username"
         static let workspaceID = "workspace_id"
+        static let wcs_username = "wcs_username"
+        static let wcs_password = "wcs_password"
     }
 
     // MARK: - Map
@@ -68,7 +70,9 @@ class ConversationService {
     func sendMessage(withText text: String) {
         let requestParameters =
             [Key.input: text + " ", // Need to add space at end since node red chops off last letter
-             Key.workspaceID: GlobalConstants.dennisNotoWorkspaceID,
+             Key.workspaceID: GlobalConstants.workspaceID,
+             Key.wcs_username: GlobalConstants.wcs_username,
+             Key.wcs_password: GlobalConstants.wcs_password,
              Key.firstName: Constants.firstName,
              Key.lastName: Constants.lastName,
              Key.userName: GlobalConstants.username,
