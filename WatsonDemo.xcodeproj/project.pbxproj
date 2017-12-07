@@ -491,8 +491,6 @@
 		B4D161021DDBF2C600D436F1 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
 		B4DAA6B81E8301910099C5F6 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
 		B4DAA6BA1E830A3E0099C5F6 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
-		B4F0C1421FCF73A300E0E311 /* include.h in Resources */ = {isa = PBXBuildFile; fileRef = B4F0C13B1FCF730800E0E311 /* include.h */; };
-		B4F0C1431FCF73A300E0E311 /* module.modulemap in Resources */ = {isa = PBXBuildFile; fileRef = B4F0C13C1FCF730800E0E311 /* module.modulemap */; };
 		B4F56E881DF722550068A426 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F56E871DF722550068A426 /* UIImage+Assets.swift */; };
 /* End PBXBuildFile section */
 
@@ -719,8 +717,6 @@
 		B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		B4DAA6B71E8301910099C5F6 /* String_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
 		B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxViewCell.swift; sourceTree = "<group>"; };
-		B4F0C13B1FCF730800E0E311 /* include.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = include.h; sourceTree = "<group>"; };
-		B4F0C13C1FCF730800E0E311 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		B4F56E871DF722550068A426 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -982,7 +978,6 @@
 		B4CBCF931DD91EA70003074A /* WatsonDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B4F0C13A1FCF730800E0E311 /* zlib */,
 				B4CBCF941DD91EA70003074A /* AppDelegate.swift */,
 				B4CBCF9B1DD91EA70003074A /* Assets.xcassets */,
 				B48B187E1DDB8D80008CE7C2 /* GlobalConstants.swift */,
@@ -1010,16 +1005,6 @@
 			);
 			name = Extensions;
 			sourceTree = "<group>";
-		};
-		B4F0C13A1FCF730800E0E311 /* zlib */ = {
-			isa = PBXGroup;
-			children = (
-				B4F0C13B1FCF730800E0E311 /* include.h */,
-				B4F0C13C1FCF730800E0E311 /* module.modulemap */,
-			);
-			name = zlib;
-			path = "Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib";
-			sourceTree = SOURCE_ROOT;
 		};
 		B4F0C13D1FCF739900E0E311 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -1399,8 +1384,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E49BD81E0265BD00579DD1 /* LaunchScreen.storyboard in Resources */,
-				B4F0C1421FCF73A300E0E311 /* include.h in Resources */,
-				B4F0C1431FCF73A300E0E311 /* module.modulemap in Resources */,
 				74E49BD91E0265BD00579DD1 /* Assets.xcassets in Resources */,
 				74E49BDA1E0265BD00579DD1 /* ChatInputAccessoryView.xib in Resources */,
 				74E49BDB1E0265BD00579DD1 /* Main.storyboard in Resources */,
