@@ -27,6 +27,9 @@ import UIKit
     #elseif WATSONWEALTHTASST  || DEBUG
       var mystartColor: UIColor = UIColor.colorWithRGBHex(hex24: 0x99CCFF)
       var myendColor: UIColor = UIColor.colorWithRGBHex(hex24: 0x3399FF)
+    #elseif WATSONASST
+      var mystartColor: UIColor = UIColor.colorWithRGBHex(hex24: 0x99CCFF)
+      var myendColor: UIColor = UIColor.colorWithRGBHex(hex24: 0x3399FF)
     #elseif WATSONMETASST
       var mystartColor: UIColor = UIColor.colorWithRGBHex(hex24: 0xFEE4CE)
       var myendColor: UIColor = UIColor.colorWithRGBHex(hex24: 0xF07977)

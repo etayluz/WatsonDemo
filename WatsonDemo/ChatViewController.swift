@@ -14,7 +14,9 @@ class ChatViewController: UIViewController {
 
     // MARK: - Constants
     private struct Constants {
-        static let defaultConversationKickoffMessage = "Hi"
+      
+    static let defaultConversationKickoffMessage = "Hi"
+    
     }
 
     // MARK: - Outlets
@@ -48,6 +50,8 @@ class ChatViewController: UIViewController {
         #elseif WATSONWEALTHASST
              headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
         #elseif WATSONWEALTHTASST  || DEBUG
+            headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+        #elseif WATSONASST
             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
         #elseif WATSONMETASST
              headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
