@@ -40,8 +40,7 @@ class TextToSpeechService {
         #elseif WATSONWEALTHTASST  || DEBUG
             let voice  =  SynthesisVoice.us_Michael.rawValue
         #elseif WATSONASST
-            ////let voice  =  SynthesisVoice.us_Lisa.rawValue
-            let voice  =  SynthesisVoice.gb_Kate.rawValue
+            let voice  =  SynthesisVoice.us_Lisa.rawValue
         #elseif WATSONMETASST
             let voice  =  SynthesisVoice.us_Michael.rawValue
         #elseif WATSONWHIRLASST
