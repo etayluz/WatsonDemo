@@ -41,7 +41,8 @@ class OverviewViewController: UIViewController {
             setupUsecaseButtons(withOptions: ["Jackie|hello jackie","Luke|hello luke","Vikki|hello vikki","Tom|hello tom","Patricia|hello Patricia"])
         #elseif WATSONASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonAsst")
-            setupUsecaseButtons(withOptions: ["Insure Assist|hello insure Assist","Bank Assist|hello Bank Assist","Wealth Assist|hello Money Assist","Quicken Loans|hello Quicken Loans"])
+       //     setupUsecaseButtons(withOptions: ["Insure Assist|hello insure Assist","Bank Assist|hello Bank Assist","Wealth Assist|hello Money Assist","Quicken Loans|hello Quicken Loans"])
+             setupUsecaseButtons(withOptions: ["Insure Assist|hello insure Assist","Bank Assist|hello Bank Assist","Wealth Assist|hello Money Assist","Health Assist|hello Health Assist"])
         #elseif WATSONMETASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonMetAsst")
         #elseif WATSONWHIRLASST
