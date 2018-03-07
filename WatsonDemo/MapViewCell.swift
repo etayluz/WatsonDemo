@@ -54,6 +54,12 @@ class MapViewCell: UITableViewCell {
         case "iPhone9,2", "iPhone9,4":  imgsize = "&size=500x300";
         //iPhone SE
         case "iPhone8,4":  imgsize = "&size=400x200";
+        //iphone 8
+        case "iPhone10,1", "iPhone10,4":  imgsize = "&size=500x300";
+        //iphone 8 plus
+        case "iPhone10,2", "iPhone10,5":  imgsize = "&size=500x300";
+        //iphone x
+        case "iPhone10,3", "iPhone10,6":  imgsize = "&size=500x300";
         //iPad2
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":imgsize = "&size=600x400";
         //iPad 3

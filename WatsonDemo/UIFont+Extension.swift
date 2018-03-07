@@ -45,6 +45,12 @@ extension UILabel {
         case "iPhone9,2", "iPhone9,4":  font = UIFont(name: "Arial", size: 16.0);
         //iPhone SE
         case "iPhone8,4":  font = UIFont(name: "Arial", size: 14.0);
+        //iphone 8
+        case "iPhone10,1", "iPhone10,4":  font = UIFont(name: "Arial", size: 14.0);
+        //iphone 8 plus
+        case "iPhone10,2", "iPhone10,5":  font = UIFont(name: "Arial", size: 16.0);
+        //iphone x
+        case "iPhone10,3", "iPhone10,6":  font = UIFont(name: "Arial", size: 16.0);
         //iPad2
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":font = UIFont(name: "Arial", size: 20.0);
         //iPad 3
