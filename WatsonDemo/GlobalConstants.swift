@@ -79,7 +79,7 @@ struct GlobalConstants {
     static let workspaceID = "5fd7c1c7-9ea2-4fc8-b6fa-7920e10aad5a"
     static let wcs_username = "7d18e2e6-310b-4efc-9370-d9a8289e17dd"
     static let wcs_password = "UEVfKB4CLIyF"
-    static let nodeRedWorkflowUrl = "http://ucg-clusterdev.us-south.containers.mybluemix.net/mobile"
+    static let nodeRedWorkflowUrl = "http://ucg-clusterv3.us-south.containers.mybluemix.net/mobile"
     static let BluemixUsernameSTT = "02aa260b-fe3c-428a-83b3-4d6909e305e3"
     static let BluemixPasswordSTT = "5YxEslShK1UL"
     static let BluemixUsernameTTS = "709f9691-5440-4518-ae53-a7515cf2b7eb"
