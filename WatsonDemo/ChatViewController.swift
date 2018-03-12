@@ -229,7 +229,7 @@ extension ChatViewController: UITableViewDelegate {
         let message = messages[indexPath.row]
 
         if message.type == MessageType.Map {
-            return 240
+            return 450
         }
 
         if message.type == MessageType.Video {

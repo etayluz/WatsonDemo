@@ -140,7 +140,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WatsonChatViewCell" id="BJB-NB-L3A" userLabel="WatsonViewCell" customClass="WatsonChatViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WatsonChatViewCell" id="BJB-NB-L3A" userLabel="WatsonViewCell" customClass="WatsonChatViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="768" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BJB-NB-L3A" id="9i8-DP-9qa">
@@ -207,7 +207,7 @@
                                             <outlet property="watsonIcon" destination="MLg-Dx-6Yr" id="dXU-4E-Pyc"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserChatViewCell" id="55h-j6-z27" userLabel="UserViewCell" customClass="UserChatViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserChatViewCell" id="55h-j6-z27" userLabel="UserViewCell" customClass="UserChatViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="141" width="768" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="55h-j6-z27" id="Ju8-59-tQr">
@@ -294,14 +294,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-5d-NVy" userLabel="MapImageView">
-                                                    <rect key="frame" x="0.0" y="8" width="700" height="700"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-5d-NVy" userLabel="MapImageView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="768"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ETF-5d-NVy" secondAttribute="height" id="bPx-dw-foC"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="width" secondItem="0hf-wd-wKg" secondAttribute="width" id="69a-BF-99w"/>
                                                 <constraint firstItem="ETF-5d-NVy" firstAttribute="centerX" secondItem="0hf-wd-wKg" secondAttribute="centerX" id="Vsh-6D-jdQ"/>
+                                                <constraint firstItem="ETF-5d-NVy" firstAttribute="top" secondItem="0hf-wd-wKg" secondAttribute="top" id="tw9-gD-ofX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -310,7 +315,7 @@
                                             <outlet property="mapImageView" destination="ETF-5d-NVy" id="EZI-zU-ikm"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoViewCell" id="ThR-IJ-Thf" userLabel="VideoViewCell" customClass="VideoViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoViewCell" id="ThR-IJ-Thf" userLabel="VideoViewCell" customClass="VideoViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="421" width="768" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ThR-IJ-Thf" id="cIj-cv-1AB">
@@ -322,7 +327,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckboxViewCell" rowHeight="250" id="Y57-VW-GBQ" userLabel="CheckboxViewCell" customClass="CheckboxViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckboxViewCell" rowHeight="250" id="Y57-VW-GBQ" userLabel="CheckboxViewCell" customClass="CheckboxViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="561" width="768" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y57-VW-GBQ" id="ZoX-lS-YTI">
@@ -448,7 +453,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarscoreViewCell" rowHeight="250" id="Rbf-zq-wNQ" userLabel="BarscoreViewCell" customClass="BarscoreViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BarscoreViewCell" rowHeight="250" id="Rbf-zq-wNQ" userLabel="BarscoreViewCell" customClass="BarscoreViewCell" customModule="WatsonAlfAsst" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="811" width="768" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rbf-zq-wNQ" id="LaU-sa-gxI">
@@ -471,7 +476,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%-25%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIH-Ha-JCO">
-                                                            <rect key="frame" x="35.5" y="120.5" width="37" height="11"/>
+                                                            <rect key="frame" x="35" y="120.5" width="37" height="11"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -513,7 +518,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barscore" translatesAutoresizingMaskIntoConstraints="NO" id="cR5-o5-Vob" userLabel="Barscore">
-                                                    <rect key="frame" x="142.5" y="78.5" width="483" height="50"/>
+                                                    <rect key="frame" x="142" y="78.5" width="484" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="bGK-Kp-LI9"/>
                                                     </constraints>
