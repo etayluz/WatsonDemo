@@ -55,13 +55,13 @@ class MapViewCell: UITableViewCell {
         //iPhone SE
         case "iPhone8,4":  imgsize = "&size=400x200";
         //iphone 8
-        case "iPhone10,1", "iPhone10,4":  imgsize = "&size=500x300";
+        case "iPhone10,1", "iPhone10,4":  imgsize = "&size=500x500";
         //iphone 8 plus
-        case "iPhone10,2", "iPhone10,5":  imgsize = "&size=500x300";
+        case "iPhone10,2", "iPhone10,5":  imgsize = "&size=500x500";
         //iphone x
-        case "iPhone10,3", "iPhone10,6":  imgsize = "&size=500x300";
+        case "iPhone10,3", "iPhone10,6":  imgsize = "&size=500x500";
         //iPad2
-        case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":imgsize = "&size=600x400";
+        case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":imgsize = "&size=600x600";
         //iPad 3
         case "iPad3,1", "iPad3,2", "iPad3,3": imgsize = "&size=600x400";
         //iPad 4
@@ -71,18 +71,18 @@ class MapViewCell: UITableViewCell {
         //iPad Air 2
         case "iPad5,3", "iPad5,4": imgsize = "&size=600x400";
         //iPad Mini
-        case "iPad2,5", "iPad2,6", "iPad2,7": imgsize = "&size=600x400";
+        case "iPad2,5", "iPad2,6", "iPad2,7": imgsize = "&size=700x700";
         //iPad Mini 3
-        case "iPad4,4", "iPad4,5", "iPad4,6": imgsize = "&size=600x400";
+        case "iPad4,4", "iPad4,5", "iPad4,6": imgsize = "&size=700x700";
         //iPad Mini 3
-        case "iPad4,7", "iPad4,8", "iPad4,9": imgsize = "&size=600x400";
+        case "iPad4,7", "iPad4,8", "iPad4,9": imgsize = "&size=700x700";
         //iPad Mini 4
-        case "iPad5,1", "iPad5,2": imgsize = "&size=600x400";
+        case "iPad5,1", "iPad5,2": imgsize = "&size=700x700";
         //iPad Pro
-        case "iPad6,3", "iPad6,4", "iPad6,7", "iPad6,8":imgsize = "&size=600x400";
+        case "iPad6,3", "iPad6,4", "iPad6,7", "iPad6,8":imgsize = "&size=700x700";
         //default
      //   default: imgsize = "&size=500x300";
-          default: imgsize = "&size=700x600";
+          default: imgsize = "&size=700x700";
         }
         
         
