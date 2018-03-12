@@ -82,7 +82,7 @@ class MapViewCell: UITableViewCell {
         case "iPad6,3", "iPad6,4", "iPad6,7", "iPad6,8":imgsize = "&size=700x700";
         //default
      //   default: imgsize = "&size=500x300";
-          default: imgsize = "&size=700x700";
+          default: imgsize = "&size=500x500";
         }
         
         

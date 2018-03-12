@@ -34,7 +34,10 @@ class UserChatViewCell: UITableViewCell {
         
         
         #if WATSONBANKASST
-            userIcon.image = #imageLiteral(resourceName: "User")
+            if GlobalConstants.UserIcon.contains("Dennis") {
+                userIcon.image = #imageLiteral(resourceName: "User-Den") }
+            else
+            { userIcon.image = #imageLiteral(resourceName: "User") }
         #elseif WATSONINSASST
             userIcon.image = #imageLiteral(resourceName: "User")
         #elseif WATSONWEALTHASST
