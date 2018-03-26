@@ -31,6 +31,7 @@ class OverviewViewController: UIViewController {
        
         #if WATSONBANKASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonBankAsst")
+            setupUsecaseButtons(withOptions: ["Ask Watson|hello"])
         #elseif WATSONINSASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonInsAsst")
         #elseif WATSONWEALTHASST
