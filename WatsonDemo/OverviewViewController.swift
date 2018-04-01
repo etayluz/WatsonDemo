@@ -34,6 +34,7 @@ class OverviewViewController: UIViewController {
             setupUsecaseButtons(withOptions: ["Ask Watson|hello"])
         #elseif WATSONINSASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonInsAsst")
+            setupUsecaseButtons(withOptions: ["Ask Watson|hi"])
         #elseif WATSONWEALTHASST
             overviewImageView.image = #imageLiteral(resourceName: "Overview-WatsonWealthAsst")
              setupUsecaseButtons(withOptions: ["Jackie|hello jackie","Luke|hello luke","Vikki|hello vikki","Tom|hello tom","Patricia|hello Patricia"])

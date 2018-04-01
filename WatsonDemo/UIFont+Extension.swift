@@ -11,6 +11,8 @@ import UIKit
 extension UILabel {
 
     func setFont() {
+        
+        
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
@@ -18,8 +20,7 @@ extension UILabel {
             guard let value = element.value as? Int8, value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
-
-        NSLog(identifier)
+        print ("identifier is " + identifier)        //NSLog(identifier)
         switch identifier {
         //iPhone 4
         case "iPhone3,1", "iPhone3,2", "iPhone3,3": font = UIFont(name: "Arial", size: 12.0);
@@ -70,13 +71,14 @@ extension UILabel {
         //iPad Mini 4
         case "iPad5,1", "iPad5,2": font = UIFont(name: "Arial", size: 16.0);
         //iPad Pro 9.7 inch
-        case "iPad6,3", "iPad6,4":font = UIFont(name: "Arial", size: 22.0);
+        case "iPad6,3", "iPad6,4":font = UIFont(name: "Arial", size: 24.0);
         //iPad Pro 12.9 inch
         case "iPad6,7", "iPad6,8":font = UIFont(name: "Arial", size: 24.0);
-    
-        //default
-       // default: font = UIFont(name: "Arial", size: 18.0);
-          default: font = UIFont(name: "Arial", size: 32.0);
+            
+        default: font = UIFont(name: "Arial", size: 24.0);
+        }
+        if identifier == "x86_64" {
+            font = UIFont(name: "Arial", size: 24.0)
         }
     }
 
