@@ -30,37 +30,6 @@ class TextToSpeechService {
     /// - Parameter text: Text to be syntheszied to speech
     func synthesizeSpeech(withText text: String) {
         guard text.count > 0 else { return }
-
-        #if WATSONBANKASST
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONINSASST
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONWEALTHASST
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONWEALTHTASST  || DEBUG
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONASST
-            ////let voice  =  SynthesisVoice.us_Lisa.rawValue
-            let voice  =  SynthesisVoice.gb_Kate.rawValue
-        #elseif WATSONMETASST
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONWHIRLASST
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONFIDASST
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONALFASST || DEBUG
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONREGASST
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONFMAEASST
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #elseif WATSONHERTZASST
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #else
-            let voice  =  SynthesisVoice.us_Michael.rawValue
-        #endif
-        
-        
         
         let textToSpeech = TextToSpeech(username: GlobalConstants.BluemixUsernameTTS,
                                         password: GlobalConstants.BluemixPasswordTTS)
@@ -69,8 +38,10 @@ class TextToSpeechService {
             print(error)
         }
 
-         if GlobalConstants.STTcustomizationID == "" {
-            textToSpeech.synthesize(text, voice: voice, audioFormat: AudioFormat.wav, failure: failure) { data in
+        let voice = "us_Michael.rawValue"
+        let accept = "audio/wav"
+        if GlobalConstants.STTcustomizationID == "" {
+            textToSpeech.synthesize(text: text, accept: accept, voice: voice, failure: failure) { data in
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }
                     strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
@@ -79,8 +50,10 @@ class TextToSpeechService {
 
          }
         else {
-            textToSpeech.synthesize(text,voice: voice, customizationID: GlobalConstants.TTScustomizationID,
-                                    audioFormat: AudioFormat.wav,
+            textToSpeech.synthesize(text: text,
+                                    accept: accept,
+                                    voice: voice,
+                                    customizationID: GlobalConstants.TTScustomizationID,
                                     failure: failure) { data in
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }
