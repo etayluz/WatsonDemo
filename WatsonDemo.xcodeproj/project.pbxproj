@@ -37,7 +37,6 @@
 		742937F720143FC700857E66 /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
 		742937F820143FC700857E66 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
 		742937F920143FC700857E66 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
-		742937FB20143FC700857E66 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
 		742937FC20143FC700857E66 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC3A1FCF2BC7004BF160 /* SpeechToTextV1.framework */; };
 		742937FD20143FC700857E66 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
 		742937FE20143FC700857E66 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC391FCF2BC7004BF160 /* IQKeyboardManagerSwift.framework */; };
@@ -46,7 +45,6 @@
 		7429380220143FC700857E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		7429380320143FC700857E66 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		7429380420143FC700857E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		7429380620143FC700857E66 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7429380720143FC700857E66 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7429380820143FC700857E66 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC391FCF2BC7004BF160 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7429380920143FC700857E66 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A2AC3A1FCF2BC7004BF160 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -197,13 +195,11 @@
 		74758D8B1F41FA8F00420502 /* UserChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18651DD96A92008CE7C2 /* UserChatViewCell.swift */; };
 		74758D8C1F41FA8F00420502 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
 		74758D8F1F41FA8F00420502 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
-		74758D901F41FA8F00420502 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
 		74758D911F41FA8F00420502 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
 		74758D941F41FA8F00420502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		74758D951F41FA8F00420502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		74758D961F41FA8F00420502 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		74758D971F41FA8F00420502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		74758D991F41FA8F00420502 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74758D9A1F41FA8F00420502 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74758D9C1F41FA8F00420502 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74C425C71EE8A69E00D18B7C /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */; };
@@ -236,14 +232,12 @@
 		74C425E21EE8A69E00D18B7C /* CheckboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B91E830A3E0099C5F6 /* CheckboxViewCell.swift */; };
 		74C425E31EE8A69E00D18B7C /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D161011DDBF2C600D436F1 /* Dictionary+Extension.swift */; };
 		74C425E41EE8A69E00D18B7C /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DAA6B71E8301910099C5F6 /* String_Extension.swift */; };
-		74C425E61EE8A69E00D18B7C /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
 		74C425E71EE8A69E00D18B7C /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
 		74C425E91EE8A69E00D18B7C /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
 		74C425EC1EE8A69E00D18B7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9D1DD91EA70003074A /* LaunchScreen.storyboard */; };
 		74C425ED1EE8A69E00D18B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF9B1DD91EA70003074A /* Assets.xcassets */; };
 		74C425EE1EE8A69E00D18B7C /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48B186A1DDA0A4D008CE7C2 /* ChatInputAccessoryView.xib */; };
 		74C425EF1EE8A69E00D18B7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
-		74C425F11EE8A69E00D18B7C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74C425F31EE8A69E00D18B7C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74C425F41EE8A69E00D18B7C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74CF3A2F1E045D2700CED191 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4981CB81DEE37F700C67B35 /* UIView+Extension.swift */; };
@@ -357,27 +351,19 @@
 		74E49C351E0265FF00579DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
 		74F6EE3E1EA57C5400006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE401EA57C6A00006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74F6EE411EA57C7400006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE421EA57CA200006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74F6EE431EA57CA200006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE451EA57CA200006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE461EA57CAD00006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74F6EE471EA57CAD00006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE491EA57CAD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE4A1EA57CB800006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74F6EE4B1EA57CB800006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE4D1EA57CB800006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE4E1EA57CC200006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74F6EE4F1EA57CC200006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE511EA57CC200006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE521EA57CCD00006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74F6EE531EA57CCD00006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE551EA57CCD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE561EA57CD700006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74F6EE571EA57CD700006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE591EA57CD700006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE5A1EA57CE100006A9C /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74F6EE5B1EA57CE100006A9C /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74F6EE5D1EA57CE100006A9C /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B40D49071E8EB87C0027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
 		B40D491D1E915DB60027CCE7 /* BarscoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D49061E8EB87C0027CCE7 /* BarscoreViewCell.swift */; };
@@ -492,17 +478,7 @@
 		B4B058551E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
 		B4B058561E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
 		B4B058571E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
-		B4B0585A1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
-		B4B0585B1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
-		B4B0585C1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
-		B4B0585D1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
-		B4B0585E1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
-		B4B0585F1E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
-		B4B058601E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
-		B4B058611E9A28FF00855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
-		B4B058631E9A293200855333 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4B058691E9A294C00855333 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B4B0586A1E9A296000855333 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058581E9A28FF00855333 /* RestKit.framework */; };
 		B4B0586C1E9A296000855333 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */; };
 		B4B058701E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
 		B4B058711E9A298B00855333 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0586E1E9A298B00855333 /* WebImage.framework */; };
@@ -526,6 +502,19 @@
 		B4BD02641EE0A5E400785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
 		B4BD02651EE0A5E500785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
 		B4BD02661EE0A5E600785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
+		B4CB6ADC208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6ADD208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6ADE208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6ADF208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6AE0208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6AE1208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6AE2208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6AE3208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6AE5208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6AE6208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6AE7208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6AE8208CECA8001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B4CB6AEA208CED07001E3AD1 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
 		B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF961DD91EA70003074A /* OverviewViewController.swift */; };
 		B4CBCF9A1DD91EA70003074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
@@ -545,7 +534,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7429380620143FC700857E66 /* RestKit.framework in Embed Frameworks */,
 				7429380720143FC700857E66 /* TextToSpeechV1.framework in Embed Frameworks */,
 				7429380820143FC700857E66 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				7429380920143FC700857E66 /* SpeechToTextV1.framework in Embed Frameworks */,
@@ -561,7 +549,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				74F6EE4E1EA57CC200006A9C /* WebImage.framework in Embed Frameworks */,
-				74F6EE4F1EA57CC200006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE511EA57CC200006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC5B1FCF2D4D004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC5C1FCF2D4D004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
@@ -576,7 +563,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				74F6EE5A1EA57CE100006A9C /* WebImage.framework in Embed Frameworks */,
-				74F6EE5B1EA57CE100006A9C /* RestKit.framework in Embed Frameworks */,
 				B4A2AC611FCF2D59004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC621FCF2D59004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE5D1EA57CE100006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -591,7 +577,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				74F6EE521EA57CCD00006A9C /* WebImage.framework in Embed Frameworks */,
-				74F6EE531EA57CCD00006A9C /* RestKit.framework in Embed Frameworks */,
 				B4A2AC5D1FCF2D53004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC5E1FCF2D53004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE551EA57CCD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -606,7 +591,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				74F6EE561EA57CD700006A9C /* WebImage.framework in Embed Frameworks */,
-				74F6EE571EA57CD700006A9C /* RestKit.framework in Embed Frameworks */,
 				B4A2AC5F1FCF2D56004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC601FCF2D56004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE591EA57CD700006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -620,7 +604,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				74758D991F41FA8F00420502 /* RestKit.framework in Embed Frameworks */,
 				74758D9A1F41FA8F00420502 /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC651FCF2D5F004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC661FCF2D5F004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
@@ -635,7 +618,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				74C425F11EE8A69E00D18B7C /* RestKit.framework in Embed Frameworks */,
 				74C425F31EE8A69E00D18B7C /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC631FCF2D5C004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC641FCF2D5C004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
@@ -651,7 +633,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				74F6EE4A1EA57CB800006A9C /* WebImage.framework in Embed Frameworks */,
-				74F6EE4B1EA57CB800006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE4D1EA57CB800006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC591FCF2D48004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC5A1FCF2D48004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
@@ -667,7 +648,6 @@
 			files = (
 				B4A2AC511FCF2BCF004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC521FCF2BCF004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
-				74F6EE411EA57C7400006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE401EA57C6A00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 				74F6EE3E1EA57C5400006A9C /* WebImage.framework in Embed Frameworks */,
 			);
@@ -681,7 +661,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				74F6EE421EA57CA200006A9C /* WebImage.framework in Embed Frameworks */,
-				74F6EE431EA57CA200006A9C /* RestKit.framework in Embed Frameworks */,
 				B4A2AC551FCF2D3D004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC561FCF2D3D004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE451EA57CA200006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -696,7 +675,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				74F6EE461EA57CAD00006A9C /* WebImage.framework in Embed Frameworks */,
-				74F6EE471EA57CAD00006A9C /* RestKit.framework in Embed Frameworks */,
 				74F6EE491EA57CAD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC571FCF2D42004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC581FCF2D42004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
@@ -710,13 +688,22 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B4B058631E9A293200855333 /* RestKit.framework in Embed Frameworks */,
 				B4B058691E9A294C00855333 /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC531FCF2BD9004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC541FCF2BD9004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				B4B0587A1E9A299B00855333 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CB6AE9208CECC8001E3AD1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B4CB6AEA208CED07001E3AD1 /* Starscream.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -761,12 +748,12 @@
 		B4A2AC3A1FCF2BC7004BF160 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Frameworks/SpeechToTextV1.framework; sourceTree = "<group>"; };
 		B4AE40DB1E842D290084CDE1 /* CheckboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxTableViewCell.swift; sourceTree = "<group>"; };
 		B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Frameworks/TextToSpeechV1.framework; sourceTree = "<group>"; };
-		B4B058581E9A28FF00855333 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Frameworks/RestKit.framework; sourceTree = "<group>"; };
 		B4B0586E1E9A298B00855333 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Frameworks/WebImage.framework; sourceTree = "<group>"; };
 		B4B1BA4B1E007EB9001656A4 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewCell.swift; sourceTree = "<group>"; };
 		B4BD025B1EE09E6400785568 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B4BD025D1EE0A11300785568 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Frameworks/Starscream.framework; sourceTree = "<group>"; };
 		B4CBCF911DD91EA70003074A /* WatsonBankAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonBankAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CBCF941DD91EA70003074A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4CBCF961DD91EA70003074A /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
@@ -786,10 +773,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				742937FB20143FC700857E66 /* RestKit.framework in Frameworks */,
 				742937FC20143FC700857E66 /* SpeechToTextV1.framework in Frameworks */,
 				742937FD20143FC700857E66 /* WebImage.framework in Frameworks */,
 				742937FE20143FC700857E66 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6AE7208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				742937FF20143FC700857E66 /* TextToSpeechV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -800,8 +787,8 @@
 			files = (
 				B4B058541E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4A2AC4B1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
-				B4B0585E1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4A2AC401FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6AE1208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B058741E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,10 +797,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B058571E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
-				B4A2AC4E1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
-				B4B058611E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4A2AC431FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4A2AC4E1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
+				B4CB6AE8208CECA8001E3AD1 /* Starscream.framework in Frameworks */,
+				B4B058571E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B058771E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -824,8 +811,8 @@
 			files = (
 				B4B058551E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4A2AC4C1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
-				B4B0585F1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4A2AC411FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6AE2208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B058751E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -836,8 +823,8 @@
 			files = (
 				B4B058561E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4A2AC4D1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
-				B4B058601E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4A2AC421FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6AE3208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B058761E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -848,8 +835,8 @@
 			files = (
 				74758D8F1F41FA8F00420502 /* TextToSpeechV1.framework in Frameworks */,
 				B4A2AC501FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
-				74758D901F41FA8F00420502 /* RestKit.framework in Frameworks */,
 				B4A2AC451FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6AE6208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				74758D911F41FA8F00420502 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -858,10 +845,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C425E61EE8A69E00D18B7C /* RestKit.framework in Frameworks */,
 				B4A2AC4F1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				74C425E71EE8A69E00D18B7C /* WebImage.framework in Frameworks */,
 				B4A2AC441FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6AE5208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				74C425E91EE8A69E00D18B7C /* TextToSpeechV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -872,8 +859,8 @@
 			files = (
 				B4B058531E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4A2AC4A1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
-				B4B0585D1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4A2AC3F1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6AE0208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B058731E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -884,8 +871,8 @@
 			files = (
 				B4B058501E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4A2AC471FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
-				B4B0585A1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4A2AC3C1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6ADD208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B058701E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -896,8 +883,8 @@
 			files = (
 				B4B058511E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4A2AC481FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
-				B4B0585B1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4A2AC3D1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6ADE208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B058711E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -908,8 +895,8 @@
 			files = (
 				B4B058521E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4A2AC491FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
-				B4B0585C1E9A28FF00855333 /* RestKit.framework in Frameworks */,
 				B4A2AC3E1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6ADF208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B058721E9A298B00855333 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -918,10 +905,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B0586A1E9A296000855333 /* RestKit.framework in Frameworks */,
 				B4A2AC461FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4B058791E9A299B00855333 /* WebImage.framework in Frameworks */,
 				B4A2AC3B1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B4CB6ADC208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B0586C1E9A296000855333 /* TextToSpeechV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1012,10 +999,10 @@
 		B48B18751DDB6EE0008CE7C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */,
 				B4A2AC391FCF2BC7004BF160 /* IQKeyboardManagerSwift.framework */,
 				B4A2AC3A1FCF2BC7004BF160 /* SpeechToTextV1.framework */,
 				B4B0586E1E9A298B00855333 /* WebImage.framework */,
-				B4B058581E9A28FF00855333 /* RestKit.framework */,
 				B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */,
 			);
 			name = Frameworks;
@@ -1135,6 +1122,7 @@
 				746B7F641E778D6C00CFC08B /* Frameworks */,
 				746B7F691E778D6C00CFC08B /* Resources */,
 				746B7F6E1E778D6C00CFC08B /* Embed Frameworks */,
+				B4CB6AE9208CECC8001E3AD1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1314,7 +1302,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Etay Luz";
 				TargetAttributes = {
 					742937DA20143FC700857E66 = {
@@ -1325,7 +1313,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					746B7F4A1E778D6C00CFC08B = {
-						DevelopmentTeam = 675E4CR9UZ;
+						DevelopmentTeam = 7E2482XJ3U;
 						ProvisioningStyle = Automatic;
 					};
 					746E44401E3FBC03004AC465 = {
@@ -1348,7 +1336,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					74E49BB91E0265BD00579DD1 = {
-						DevelopmentTeam = 675E4CR9UZ;
+						DevelopmentTeam = 7E2482XJ3U;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -2083,7 +2071,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2125,7 +2113,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonBankAsst;
@@ -2150,7 +2138,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonBankAsst;
@@ -2236,7 +2224,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2278,7 +2266,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonInsAsst;
@@ -2303,7 +2291,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonInsAsst;
@@ -2388,7 +2376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2430,7 +2418,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthAsst;
@@ -2455,7 +2443,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthAsst;
@@ -2540,7 +2528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2582,7 +2570,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonMetAsst;
@@ -2607,7 +2595,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonMetAsst;
@@ -2695,7 +2683,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2737,7 +2725,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAsst;
@@ -2762,7 +2750,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAsst;
@@ -2787,7 +2775,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAsst;
@@ -2812,7 +2800,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAsst;
@@ -2829,6 +2817,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2838,7 +2827,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAsst;
@@ -2863,7 +2852,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAsst;
@@ -2874,7 +2863,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2889,7 +2878,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAsst;
@@ -2916,7 +2905,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAsst;
@@ -2941,7 +2930,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAsst;
@@ -3338,7 +3327,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3363,7 +3352,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -3388,7 +3377,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonMetAsst;
@@ -3413,7 +3402,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWhirlAsst;
@@ -3438,7 +3427,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthAsst;
@@ -3463,7 +3452,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonInsAsst;
@@ -3488,7 +3477,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonBankAsst;
@@ -3573,7 +3562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -3615,7 +3604,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFidAsst;
@@ -3640,7 +3629,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFidAsst;
@@ -3665,7 +3654,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFidAsst;
@@ -3690,7 +3679,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFidAsst;
@@ -3775,7 +3764,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -3817,7 +3806,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthTAsst;
@@ -3842,7 +3831,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthTAsst;
@@ -3867,7 +3856,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthTAsst;
@@ -3892,7 +3881,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthTAsst;
@@ -3909,6 +3898,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3918,7 +3908,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthTAsst;
@@ -3943,7 +3933,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthTAsst;
@@ -3954,7 +3944,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -3969,7 +3959,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3980,7 +3970,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -3995,7 +3985,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -4006,7 +3996,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4021,7 +4011,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonMetAsst;
@@ -4032,7 +4022,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4047,7 +4037,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWhirlAsst;
@@ -4058,7 +4048,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4073,7 +4063,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthAsst;
@@ -4084,7 +4074,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4099,7 +4089,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthTAsst;
@@ -4110,7 +4100,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4125,7 +4115,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFidAsst;
@@ -4136,7 +4126,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4151,7 +4141,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonInsAsst;
@@ -4162,7 +4152,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4177,7 +4167,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAlfAsst;
@@ -4188,7 +4178,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4203,7 +4193,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonBankAsst;
@@ -4214,7 +4204,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4229,7 +4219,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonRegAsst;
@@ -4246,6 +4236,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4255,7 +4246,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -4272,6 +4263,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4281,7 +4273,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -4298,6 +4290,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4307,7 +4300,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonMetAsst;
@@ -4324,6 +4317,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4333,7 +4327,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWhirlAsst;
@@ -4350,6 +4344,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4359,7 +4354,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthAsst;
@@ -4376,6 +4371,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4385,7 +4381,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFidAsst;
@@ -4402,6 +4398,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4411,7 +4408,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonInsAsst;
@@ -4428,6 +4425,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4437,7 +4435,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonBankAsst;
@@ -4462,7 +4460,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -4487,7 +4485,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -4512,7 +4510,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonMetAsst;
@@ -4537,7 +4535,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWhirlAsst;
@@ -4562,7 +4560,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthAsst;
@@ -4587,7 +4585,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFidAsst;
@@ -4612,7 +4610,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonInsAsst;
@@ -4637,7 +4635,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonBankAsst;
@@ -4723,7 +4721,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4765,7 +4763,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonRegAsst;
@@ -4790,7 +4788,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonRegAsst;
@@ -4815,7 +4813,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonRegAsst;
@@ -4840,7 +4838,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonRegAsst;
@@ -4857,6 +4855,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -4866,7 +4865,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonRegAsst;
@@ -4891,7 +4890,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonRegAsst;
@@ -4977,7 +4976,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -5019,7 +5018,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAlfAsst;
@@ -5044,7 +5043,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAlfAsst;
@@ -5069,7 +5068,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAlfAsst;
@@ -5094,7 +5093,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAlfAsst;
@@ -5111,6 +5110,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5120,7 +5120,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAlfAsst;
@@ -5145,7 +5145,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAlfAsst;
@@ -5171,7 +5171,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -5196,7 +5196,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -5221,7 +5221,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonMetAsst;
@@ -5246,7 +5246,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWhirlAsst;
@@ -5271,7 +5271,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthAsst;
@@ -5296,7 +5296,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthTAsst;
@@ -5321,7 +5321,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFidAsst;
@@ -5346,7 +5346,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonInsAsst;
@@ -5371,7 +5371,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAlfAsst;
@@ -5396,7 +5396,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonBankAsst;
@@ -5421,7 +5421,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFMaeAsst;
@@ -5446,7 +5446,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonRegAsst;
@@ -5532,7 +5532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -5574,7 +5574,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonHertzAsst;
@@ -5599,7 +5599,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonHertzAsst;
@@ -5624,7 +5624,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonHertzAsst;
@@ -5649,7 +5649,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonHertzAsst;
@@ -5666,6 +5666,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5675,7 +5676,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonHertzAsst;
@@ -5700,7 +5701,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonHertzAsst;
@@ -5711,7 +5712,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -5726,7 +5727,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonHertzAsst;
@@ -5751,7 +5752,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonHertzAsst;
@@ -5776,7 +5777,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonHertzAsst;
@@ -5801,7 +5802,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -5827,7 +5828,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -5852,7 +5853,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonMetAsst;
@@ -5877,7 +5878,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWhirlAsst;
@@ -5902,7 +5903,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthAsst;
@@ -5927,7 +5928,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthTAsst;
@@ -5952,7 +5953,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFidAsst;
@@ -5977,7 +5978,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonInsAsst;
@@ -6003,7 +6004,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonAlfAsst;
@@ -6030,7 +6031,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonBankAsst;
@@ -6055,7 +6056,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonRegAsst;
@@ -6143,7 +6144,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6185,7 +6186,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFMaeAsst;
@@ -6210,7 +6211,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFMaeAsst;
@@ -6235,7 +6236,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFMaeAsst;
@@ -6260,7 +6261,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFMaeAsst;
@@ -6277,6 +6278,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks/**",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
+					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -6286,7 +6288,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFMaeAsst;
@@ -6311,7 +6313,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFMaeAsst;
@@ -6322,7 +6324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6337,7 +6339,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFMaeAsst;
@@ -6364,7 +6366,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonFMaeAsst;
@@ -6449,7 +6451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6491,7 +6493,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWhirlAsst;
@@ -6516,7 +6518,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWhirlAsst;
@@ -6541,7 +6543,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -6566,7 +6568,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -6591,7 +6593,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonMetAsst;
@@ -6616,7 +6618,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWhirlAsst;
@@ -6641,7 +6643,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonWealthAsst;
@@ -6666,7 +6668,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonInsAsst;
@@ -6691,7 +6693,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = WatsonBankAsst;
@@ -6702,7 +6704,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6729,7 +6731,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6771,7 +6773,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -6796,7 +6798,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -6821,7 +6823,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -6846,7 +6848,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib\"";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

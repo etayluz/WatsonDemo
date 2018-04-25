@@ -61,7 +61,7 @@ final class LoginViewController: UIViewController {
     @IBAction func signInButtonTapped(sender: AnyObject) {
         GlobalConstants.username = usernameTextField.text!
         GlobalConstants.password = passwordTextField.text!
-        IQKeyboardManager.sharedManager().enable = false
+        IQKeyboardManager.shared.enable = false
 
         performSegue(withIdentifier: Constants.loginSegueIdentifier, sender: nil)
     }
