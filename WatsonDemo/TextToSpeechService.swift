@@ -66,10 +66,10 @@ class TextToSpeechService {
                                         password: GlobalConstants.BluemixPasswordTTS)
 
         let failure = { (error: Error) in
-            print("synthesizeSpeech failed");
             print(error)
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 //        let voice = "us_Michael.rawValue"
         let accept = "audio/wav"
@@ -79,6 +79,12 @@ class TextToSpeechService {
          if GlobalConstants.STTcustomizationID == "" {
             textToSpeech.synthesize(text, voice: voice, audioFormat: AudioFormat.wav, failure: failure) { data in
 >>>>>>> parent of 5c20a8b... Save work
+=======
+        let voice = "us_Michael.rawValue"
+        let accept = "audio/wav"
+        if GlobalConstants.STTcustomizationID == "" {
+            textToSpeech.synthesize(text: text, accept: accept, voice: voice, failure: failure) { data in
+>>>>>>> parent of 76df4e1... Fix voice
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }
                     strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
@@ -90,6 +96,7 @@ class TextToSpeechService {
 <<<<<<< HEAD
             textToSpeech.synthesize(text: text,
                                     accept: accept,
+                                    voice: voice,
                                     customizationID: GlobalConstants.TTScustomizationID,
 =======
             textToSpeech.synthesize(text,voice: voice, customizationID: GlobalConstants.TTScustomizationID,
