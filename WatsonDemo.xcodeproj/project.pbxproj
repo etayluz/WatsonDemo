@@ -502,6 +502,7 @@
 		B4BD02641EE0A5E400785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
 		B4BD02651EE0A5E500785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
 		B4BD02661EE0A5E600785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
+		B4C38EDF2092108A009F48FC /* Starscream.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4CB6ADC208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
 		B4CB6ADD208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
 		B4CB6ADE208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
@@ -694,6 +695,17 @@
 				B4B0587A1E9A299B00855333 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4C38EDE20921067009F48FC /* Copy Files (1 item) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B4C38EDF2092108A009F48FC /* Starscream.framework in Copy Files (1 item) */,
+			);
+			name = "Copy Files (1 item)";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B4CB6AE9208CECC8001E3AD1 /* CopyFiles */ = {
@@ -1285,6 +1297,7 @@
 				B4CBCF8E1DD91EA70003074A /* Frameworks */,
 				B4CBCF8F1DD91EA70003074A /* Resources */,
 				B48B18891DDB99C1008CE7C2 /* Embed Frameworks */,
+				B4C38EDE20921067009F48FC /* Copy Files (1 item) */,
 			);
 			buildRules = (
 			);
