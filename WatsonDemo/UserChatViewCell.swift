@@ -31,8 +31,55 @@ class UserChatViewCell: UITableViewCell {
     ///
     /// - Parameter message: Message instance
     func configure(withMessage message: Message) {
-
-        #if WATSONALFASST
+        
+        
+        #if WATSONBANKASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONINSASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONWEALTHASST
+            if GlobalConstants.UserIcon.contains("Tom") {
+                userIcon.image = #imageLiteral(resourceName: "User-Tom") }
+            else if GlobalConstants.UserIcon.contains("Patricia") {
+                userIcon.image = #imageLiteral(resourceName: "User-Patricia") }
+            else if GlobalConstants.UserIcon.contains("Luke") {
+                userIcon.image = #imageLiteral(resourceName: "User-Luke") }
+            else if GlobalConstants.UserIcon.contains("Jackie") {
+                userIcon.image = #imageLiteral(resourceName: "User-Jackie") }
+            else if GlobalConstants.UserIcon.contains("Vicki") {
+                userIcon.image = #imageLiteral(resourceName: "User-Vikki") }
+            else { userIcon.image = #imageLiteral(resourceName: "User") }
+        #elseif WATSONWEALTHTASST  || DEBUG
+            if GlobalConstants.UserIcon.contains("Tom") {
+                userIcon.image = #imageLiteral(resourceName: "User-Tom") }
+            else if GlobalConstants.UserIcon.contains("Patricia") {
+                userIcon.image = #imageLiteral(resourceName: "User-Patricia") }
+            else if GlobalConstants.UserIcon.contains("Luke") {
+                userIcon.image = #imageLiteral(resourceName: "User-Luke") }
+            else if GlobalConstants.UserIcon.contains("Jackie") {
+                userIcon.image = #imageLiteral(resourceName: "User-Jackie") }
+            else if GlobalConstants.UserIcon.contains("Vicki") {
+                userIcon.image = #imageLiteral(resourceName: "User-Vikki") }
+            else { userIcon.image = #imageLiteral(resourceName: "User") }
+        #elseif WATSONASST
+            if GlobalConstants.UserIcon.contains("Tom") {
+                userIcon.image = #imageLiteral(resourceName: "User-Tom") }
+            else if GlobalConstants.UserIcon.contains("Patricia") {
+                userIcon.image = #imageLiteral(resourceName: "User-Patricia") }
+            else if GlobalConstants.UserIcon.contains("Luke") {
+                userIcon.image = #imageLiteral(resourceName: "User-Luke") }
+            else if GlobalConstants.UserIcon.contains("Jackie") {
+                userIcon.image = #imageLiteral(resourceName: "User-Jackie") }
+            else if GlobalConstants.UserIcon.contains("Vicki") {
+                userIcon.image = #imageLiteral(resourceName: "User-Vikki") }
+            else { userIcon.image = #imageLiteral(resourceName: "User") }
+        #elseif WATSONMETASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONWHIRLASST
+            userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONFIDASST
+           userIcon.image = #imageLiteral(resourceName: "User")
+        #elseif WATSONALFASST
             userIcon.image = #imageLiteral(resourceName: "User-WatsonAlfAsst")
         #elseif WATSONREGASST
             userIcon.image = #imageLiteral(resourceName: "User-WatsonRegAsst")
@@ -40,23 +87,11 @@ class UserChatViewCell: UITableViewCell {
             userIcon.image = #imageLiteral(resourceName: "User-Henry")
         #elseif WATSONFMAEASST
             userIcon.image = #imageLiteral(resourceName: "User-Jackie")
+
         #else
             userIcon.image = #imageLiteral(resourceName: "User")
         #endif
-
-        if GlobalConstants.UserIcon.contains("Dennis") {
-            userIcon.image =  #imageLiteral(resourceName: "User-Den") }
-        else if GlobalConstants.UserIcon.contains("Tom") {
-            userIcon.image = #imageLiteral(resourceName: "User-Tom") }
-        else if GlobalConstants.UserIcon.contains("Patricia") {
-            userIcon.image = #imageLiteral(resourceName: "User-Patricia") }
-        else if GlobalConstants.UserIcon.contains("Luke") {
-            userIcon.image = #imageLiteral(resourceName: "User-Luke") }
-        else if GlobalConstants.UserIcon.contains("Jackie") {
-            userIcon.image = #imageLiteral(resourceName: "User-Jackie") }
-        else if GlobalConstants.UserIcon.contains("Vicki") {
-            userIcon.image = #imageLiteral(resourceName: "User-Vikki") }
-        else{}
+    
         
         self.message = message
 

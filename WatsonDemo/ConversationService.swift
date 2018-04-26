@@ -28,7 +28,7 @@ class ConversationService {
     
     // MARK: - Constants
     private struct Constants {
-        static var firstName = "Jane"
+        static let firstName = "Jane"
         static let lastName = "Smith"
         static let httpMethodPost = "POST"
         static let userName = "Jane"
@@ -68,32 +68,6 @@ class ConversationService {
     }
 
     func sendMessage(withText text: String) {
-        
-        if GlobalConstants.username.range(of: "(?i)dennis", options: .regularExpression, range: nil, locale: nil)  != nil {
-            GlobalConstants.UserIcon = "Dennis"
-            Constants.firstName = "Dennis"
-        }
-        else if GlobalConstants.username.range(of: "(?i)tom", options: .regularExpression, range: nil, locale: nil)  != nil {
-            GlobalConstants.UserIcon = "Tom"
-            Constants.firstName = "Tom"
-        }
-        else if GlobalConstants.username.range(of: "(?i)patricia", options: .regularExpression, range: nil, locale: nil)  != nil {
-            GlobalConstants.UserIcon = "Patricia"
-            Constants.firstName = "Patricia"
-        }
-        else if GlobalConstants.username.range(of: "(?i)luke", options: .regularExpression, range: nil, locale: nil)  != nil {
-            GlobalConstants.UserIcon = "Luke"
-            Constants.firstName = "Luke"
-        }
-        else if GlobalConstants.username.range(of: "(?i)jackie", options: .regularExpression, range: nil, locale: nil)  != nil {
-            GlobalConstants.UserIcon = "Jackie"
-            Constants.firstName = "Jackie"
-        }
-        else if GlobalConstants.username.range(of: "(?i)vicki", options: .regularExpression, range: nil, locale: nil)  != nil {
-            GlobalConstants.UserIcon = "Vicki"
-            Constants.firstName = "Vicki"
-        }
-        
         let requestParameters =
             [Key.input: text + " ", // Need to add space at end since node red chops off last letter
              Key.workspaceID: GlobalConstants.workspaceID,
@@ -107,7 +81,7 @@ class ConversationService {
              Key.cValue3: Constants.value3,
              Key.contextKey: context,
         ]
-        
+
         print(requestParameters)
 
         var request = URLRequest(url: URL(string: GlobalConstants.nodeRedWorkflowUrl)!)

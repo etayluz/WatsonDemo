@@ -11,8 +11,6 @@ import UIKit
 extension UILabel {
 
     func setFont() {
-        
-        
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
@@ -20,7 +18,8 @@ extension UILabel {
             guard let value = element.value as? Int8, value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
-        print ("identifier is " + identifier)        //NSLog(identifier)
+
+        NSLog(identifier)
         switch identifier {
         //iPhone 4
         case "iPhone3,1", "iPhone3,2", "iPhone3,3": font = UIFont(name: "Arial", size: 12.0);
@@ -46,12 +45,6 @@ extension UILabel {
         case "iPhone9,2", "iPhone9,4":  font = UIFont(name: "Arial", size: 16.0);
         //iPhone SE
         case "iPhone8,4":  font = UIFont(name: "Arial", size: 14.0);
-        //iphone 8
-        case "iPhone10,1", "iPhone10,4":  font = UIFont(name: "Arial", size: 14.0);
-        //iphone 8 plus
-        case "iPhone10,2", "iPhone10,5":  font = UIFont(name: "Arial", size: 16.0);
-        //iphone x
-        case "iPhone10,3", "iPhone10,6":  font = UIFont(name: "Arial", size: 16.0);
         //iPad2
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":font = UIFont(name: "Arial", size: 20.0);
         //iPad 3
@@ -71,14 +64,13 @@ extension UILabel {
         //iPad Mini 4
         case "iPad5,1", "iPad5,2": font = UIFont(name: "Arial", size: 16.0);
         //iPad Pro 9.7 inch
-        case "iPad6,3", "iPad6,4":font = UIFont(name: "Arial", size: 24.0);
+        case "iPad6,3", "iPad6,4":font = UIFont(name: "Arial", size: 22.0);
         //iPad Pro 12.9 inch
         case "iPad6,7", "iPad6,8":font = UIFont(name: "Arial", size: 24.0);
-            
-        default: font = UIFont(name: "Arial", size: 24.0);
-        }
-        if identifier == "x86_64" {
-            font = UIFont(name: "Arial", size: 24.0)
+    
+        //default
+       // default: font = UIFont(name: "Arial", size: 18.0);
+          default: font = UIFont(name: "Arial", size: 32.0);
         }
     }
 

@@ -44,9 +44,9 @@ class ChatViewController: UIViewController {
         
         
         #if WATSONBANKASST
-             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #elseif WATSONINSASST
-             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #elseif WATSONWEALTHASST
              headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
         #elseif WATSONWEALTHTASST  || DEBUG
@@ -68,7 +68,7 @@ class ChatViewController: UIViewController {
         #elseif WATSONHERTZASST
             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x000000)
         #else
-             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+             headerView.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #endif
         
     
@@ -229,7 +229,7 @@ extension ChatViewController: UITableViewDelegate {
         let message = messages[indexPath.row]
 
         if message.type == MessageType.Map {
-            return 450
+            return 240
         }
 
         if message.type == MessageType.Video {

@@ -70,9 +70,9 @@ class ButtonsView: UIView {
         optionButton.backgroundColor = UIColor.buttonBackgroundColor()
 
         #if WATSONBANKASST
-            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #elseif WATSONINSASST
-            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #elseif WATSONWEALTHASST
             optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
         #elseif WATSONWEALTHTASST  || DEBUG
@@ -94,7 +94,7 @@ class ButtonsView: UIView {
         #elseif WATSONHERTZASST
             optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #else
-            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0x0000FF)
+            optionButton.backgroundColor =  UIColor.colorWithRGBHex(hex24: 0xCC0000)
         #endif
         
         optionButton.titleLabel?.setFont()
