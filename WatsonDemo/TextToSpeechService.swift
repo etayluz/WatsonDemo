@@ -40,8 +40,7 @@ class TextToSpeechService {
         #elseif WATSONWEALTHTASST  || DEBUG
             let voice  =  SynthesisVoice.us_Michael.rawValue
         #elseif WATSONASST
-            ////let voice  =  SynthesisVoice.us_Lisa.rawValue
-            let voice  =  SynthesisVoice.gb_Kate.rawValue
+            let voice  =  SynthesisVoice.us_Michael.rawValue
         #elseif WATSONMETASST
             let voice  =  SynthesisVoice.us_Michael.rawValue
         #elseif WATSONWHIRLASST
@@ -69,22 +68,8 @@ class TextToSpeechService {
             print(error)
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-//        let voice = "us_Michael.rawValue"
-        let accept = "audio/wav"
-        if GlobalConstants.STTcustomizationID == "" {
-            textToSpeech.synthesize(text: text, accept: accept, failure: failure) { data in
-=======
          if GlobalConstants.STTcustomizationID == "" {
             textToSpeech.synthesize(text, voice: voice, audioFormat: AudioFormat.wav, failure: failure) { data in
->>>>>>> parent of 5c20a8b... Save work
-=======
-        let voice = "us_Michael.rawValue"
-        let accept = "audio/wav"
-        if GlobalConstants.STTcustomizationID == "" {
-            textToSpeech.synthesize(text: text, accept: accept, voice: voice, failure: failure) { data in
->>>>>>> parent of 76df4e1... Fix voice
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }
                     strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
@@ -93,15 +78,8 @@ class TextToSpeechService {
 
          }
         else {
-<<<<<<< HEAD
-            textToSpeech.synthesize(text: text,
-                                    accept: accept,
-                                    voice: voice,
-                                    customizationID: GlobalConstants.TTScustomizationID,
-=======
             textToSpeech.synthesize(text,voice: voice, customizationID: GlobalConstants.TTScustomizationID,
                                     audioFormat: AudioFormat.wav,
->>>>>>> parent of 5c20a8b... Save work
                                     failure: failure) { data in
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }

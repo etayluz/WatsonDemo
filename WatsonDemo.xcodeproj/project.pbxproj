@@ -526,26 +526,6 @@
 		B4BD02641EE0A5E400785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
 		B4BD02651EE0A5E500785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
 		B4BD02661EE0A5E600785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-		B4C38EDF2092108A009F48FC /* Starscream.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-=======
->>>>>>> parent of e755701... Merge branch 'master' of https://github.com/etayluz/WatsonDemo
-		B4CB6ADC208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6ADD208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6ADE208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6ADF208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6AE0208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6AE1208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6AE2208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6AE3208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6AE5208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6AE6208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6AE7208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6AE8208CECA8001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
-		B4CB6AEA208CED07001E3AD1 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-=======
->>>>>>> parent of 5c20a8b... Save work
 		B4CBCF951DD91EA70003074A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF941DD91EA70003074A /* AppDelegate.swift */; };
 		B4CBCF971DD91EA70003074A /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBCF961DD91EA70003074A /* OverviewViewController.swift */; };
 		B4CBCF9A1DD91EA70003074A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CBCF981DD91EA70003074A /* Main.storyboard */; };
@@ -739,33 +719,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
-		B4C38EDE20921067009F48FC /* Copy Files (1 item) */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B4C38EDF2092108A009F48FC /* Starscream.framework in Copy Files (1 item) */,
-			);
-			name = "Copy Files (1 item)";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-=======
->>>>>>> parent of e755701... Merge branch 'master' of https://github.com/etayluz/WatsonDemo
-		B4CB6AE9208CECC8001E3AD1 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B4CB6AEA208CED07001E3AD1 /* Starscream.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-=======
->>>>>>> parent of 5c20a8b... Save work
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -1372,7 +1325,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					746B7F4A1E778D6C00CFC08B = {
-						DevelopmentTeam = 7E2482XJ3U;
+						DevelopmentTeam = 675E4CR9UZ;
 						ProvisioningStyle = Automatic;
 					};
 					746E44401E3FBC03004AC465 = {
@@ -1395,7 +1348,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					74E49BB91E0265BD00579DD1 = {
-						DevelopmentTeam = 7E2482XJ3U;
+						DevelopmentTeam = 675E4CR9UZ;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -2130,7 +2083,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2283,7 +2236,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2435,7 +2388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2587,7 +2540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2742,7 +2695,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2921,7 +2874,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -3620,7 +3573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -3822,7 +3775,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4001,7 +3954,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4027,7 +3980,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4053,7 +4006,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4079,7 +4032,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4105,7 +4058,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4131,7 +4084,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4157,7 +4110,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4183,7 +4136,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4209,7 +4162,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4235,7 +4188,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4261,7 +4214,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4770,7 +4723,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -5024,7 +4977,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -5579,7 +5532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -5758,7 +5711,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6190,7 +6143,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6369,7 +6322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6496,7 +6449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6749,7 +6702,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6776,7 +6729,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonInsAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7E2482XJ3U;
+				DEVELOPMENT_TEAM = 675E4CR9UZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
