@@ -378,6 +378,28 @@
 		B40FDFE81DE27E8D00BE07EB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */; };
 		B40FDFEA1DE3EF6900BE07EB /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */; };
 		B4395A001DE50DD400F2C075 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43959FF1DE50DD400F2C075 /* CustomView.swift */; };
+		B47A1CAD20C5A6DA001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CAE20C5A6DA001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CAF20C5A6E2001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CB020C5A6E2001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CB120C5A6E8001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CB220C5A6E8001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CB320C5A71C001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CB420C5A71C001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CB520C5A722001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CB620C5A722001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CB720C5A726001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CB820C5A726001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CB920C5A72A001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CBA20C5A72A001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CBB20C5A72F001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CBC20C5A72F001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CBD20C5A734001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CBE20C5A734001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CBF20C5A738001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CC020C5A738001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B47A1CC120C5A73D001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
+		B47A1CC220C5A73D001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B47B68C01DF423FF00AB6421 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68BF1DF423FF00AB6421 /* GradientView.swift */; };
 		B47B68C21DF5D03D00AB6421 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */; };
 		B48B18621DD96859008CE7C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B18611DD96859008CE7C2 /* ChatViewController.swift */; };
@@ -537,6 +559,7 @@
 				7429380720143FC700857E66 /* TextToSpeechV1.framework in Embed Frameworks */,
 				7429380820143FC700857E66 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				7429380920143FC700857E66 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B47A1CC220C5A73D001471FB /* Starscream.framework in Embed Frameworks */,
 				7429380A20143FC700857E66 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -551,6 +574,7 @@
 				74F6EE4E1EA57CC200006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE511EA57CC200006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC5B1FCF2D4D004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B47A1CB820C5A726001471FB /* Starscream.framework in Embed Frameworks */,
 				B4A2AC5C1FCF2D4D004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -579,6 +603,7 @@
 				74F6EE521EA57CCD00006A9C /* WebImage.framework in Embed Frameworks */,
 				B4A2AC5D1FCF2D53004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC5E1FCF2D53004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B47A1CBA20C5A72A001471FB /* Starscream.framework in Embed Frameworks */,
 				74F6EE551EA57CCD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -593,6 +618,7 @@
 				74F6EE561EA57CD700006A9C /* WebImage.framework in Embed Frameworks */,
 				B4A2AC5F1FCF2D56004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC601FCF2D56004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B47A1CBC20C5A72F001471FB /* Starscream.framework in Embed Frameworks */,
 				74F6EE591EA57CD700006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -607,6 +633,7 @@
 				74758D9A1F41FA8F00420502 /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC651FCF2D5F004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC661FCF2D5F004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B47A1CC020C5A738001471FB /* Starscream.framework in Embed Frameworks */,
 				74758D9C1F41FA8F00420502 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -621,6 +648,7 @@
 				74C425F31EE8A69E00D18B7C /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC631FCF2D5C004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC641FCF2D5C004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B47A1CBE20C5A734001471FB /* Starscream.framework in Embed Frameworks */,
 				74C425F41EE8A69E00D18B7C /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -635,6 +663,7 @@
 				74F6EE4A1EA57CB800006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE4D1EA57CB800006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC591FCF2D48004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B47A1CB620C5A722001471FB /* Starscream.framework in Embed Frameworks */,
 				B4A2AC5A1FCF2D48004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -649,6 +678,7 @@
 				B4A2AC511FCF2BCF004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC521FCF2BCF004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE401EA57C6A00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
+				B47A1CAE20C5A6DA001471FB /* Starscream.framework in Embed Frameworks */,
 				74F6EE3E1EA57C5400006A9C /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -663,6 +693,7 @@
 				74F6EE421EA57CA200006A9C /* WebImage.framework in Embed Frameworks */,
 				B4A2AC551FCF2D3D004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC561FCF2D3D004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B47A1CB220C5A6E8001471FB /* Starscream.framework in Embed Frameworks */,
 				74F6EE451EA57CA200006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -677,6 +708,7 @@
 				74F6EE461EA57CAD00006A9C /* WebImage.framework in Embed Frameworks */,
 				74F6EE491EA57CAD00006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC571FCF2D42004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+				B47A1CB420C5A71C001471FB /* Starscream.framework in Embed Frameworks */,
 				B4A2AC581FCF2D42004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -691,6 +723,7 @@
 				B4B058691E9A294C00855333 /* TextToSpeechV1.framework in Embed Frameworks */,
 				B4A2AC531FCF2BD9004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC541FCF2BD9004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
+				B47A1CB020C5A6E2001471FB /* Starscream.framework in Embed Frameworks */,
 				B4B0587A1E9A299B00855333 /* WebImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -774,6 +807,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				742937FC20143FC700857E66 /* SpeechToTextV1.framework in Frameworks */,
+				B47A1CC120C5A73D001471FB /* Starscream.framework in Frameworks */,
 				742937FD20143FC700857E66 /* WebImage.framework in Frameworks */,
 				742937FE20143FC700857E66 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE7208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -786,6 +820,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058541E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B47A1CB720C5A726001471FB /* Starscream.framework in Frameworks */,
 				B4A2AC4B1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC401FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE1208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -810,6 +845,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058551E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B47A1CB920C5A72A001471FB /* Starscream.framework in Frameworks */,
 				B4A2AC4C1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC411FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE2208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -822,6 +858,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058561E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B47A1CBB20C5A72F001471FB /* Starscream.framework in Frameworks */,
 				B4A2AC4D1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC421FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE3208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -834,6 +871,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74758D8F1F41FA8F00420502 /* TextToSpeechV1.framework in Frameworks */,
+				B47A1CBF20C5A738001471FB /* Starscream.framework in Frameworks */,
 				B4A2AC501FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC451FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE6208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -846,6 +884,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4A2AC4F1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
+				B47A1CBD20C5A734001471FB /* Starscream.framework in Frameworks */,
 				74C425E71EE8A69E00D18B7C /* WebImage.framework in Frameworks */,
 				B4A2AC441FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE5208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -858,6 +897,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058531E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B47A1CB520C5A722001471FB /* Starscream.framework in Frameworks */,
 				B4A2AC4A1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3F1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE0208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -870,6 +910,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058501E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B47A1CAD20C5A6DA001471FB /* Starscream.framework in Frameworks */,
 				B4A2AC471FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3C1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADD208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -882,6 +923,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058511E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B47A1CB120C5A6E8001471FB /* Starscream.framework in Frameworks */,
 				B4A2AC481FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3D1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADE208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -894,6 +936,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058521E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B47A1CB320C5A71C001471FB /* Starscream.framework in Frameworks */,
 				B4A2AC491FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3E1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADF208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -906,6 +949,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4A2AC461FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
+				B47A1CAF20C5A6E2001471FB /* Starscream.framework in Frameworks */,
 				B4B058791E9A299B00855333 /* WebImage.framework in Frameworks */,
 				B4A2AC3B1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADC208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
