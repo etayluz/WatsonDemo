@@ -34,32 +34,35 @@ class TextToSpeechService {
         let textToSpeech = TextToSpeech(username: GlobalConstants.BluemixUsernameTTS,
                                         password: GlobalConstants.BluemixPasswordTTS)
 
-        let failure = { (error: Error) in
-            print("synthesizeSpeech failed");
-            print(error)
-        }
+//        let failure = { (error: Error) in
+//            print("synthesizeSpeech failed");
+//            print(error)
+//        }
 
 //        let voice = "us_Michael.rawValue"
         let accept = "audio/wav"
         if GlobalConstants.STTcustomizationID == "" {
-            textToSpeech.synthesize(text: text, accept: accept, failure: failure) { data in
+            textToSpeech.synthesize(text: text, accept: accept) { data, error in
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }
-                    strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
+                    guard let theData = data?.result else { return }
+                    strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: theData)
                 }
             }
 
          }
         else {
             textToSpeech.synthesize(text: text,
-                                    accept: accept,
                                     customizationID: GlobalConstants.TTScustomizationID,
-                                    failure: failure) { data in
+                                    accept: accept
+                                    ) { data, error in
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }
-                    strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: data)
+                    guard let theData = data?.result else { return }
+                    strongSelf.delegate?.textToSpeechDidFinishSynthesizing(withAudioData: theData)
                 }
             }
+            
         }
     }
 

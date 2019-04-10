@@ -524,6 +524,21 @@
 		B4BD02641EE0A5E400785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
 		B4BD02651EE0A5E500785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
 		B4BD02661EE0A5E600785568 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD025D1EE0A11300785568 /* LoginViewController.swift */; };
+		B4C57CB0225E7CF700BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CAF225E7CF700BD50BE /* RestKit.framework */; };
+		B4C57CB2225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CB3225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CB4225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CB5225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CB6225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CB7225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CB8225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CB9225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CBA225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CBB225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CBC225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CBD225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CBE225E7EEE00BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B4C57CBF225E7EEE00BD50BE /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4CB6ADC208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
 		B4CB6ADD208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
 		B4CB6ADE208CEBEB001E3AD1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
@@ -587,6 +602,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				74F6EE5A1EA57CE100006A9C /* WebImage.framework in Embed Frameworks */,
+				B4C57CBF225E7EEE00BD50BE /* RestKit.framework in Embed Frameworks */,
 				B4A2AC611FCF2D59004BF160 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				B4A2AC621FCF2D59004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				74F6EE5D1EA57CE100006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
@@ -786,6 +802,8 @@
 		B4BAE2CC1E1ED6FB00C06746 /* VideoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewCell.swift; sourceTree = "<group>"; };
 		B4BD025B1EE09E6400785568 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B4BD025D1EE0A11300785568 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B4C57CAF225E7CF700BD50BE /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = WatsonDemo/Frameworks/RestKit.framework; sourceTree = "<group>"; };
+		B4C57CB1225E7D7400BD50BE /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Frameworks/RestKit.framework; sourceTree = "<group>"; };
 		B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Frameworks/Starscream.framework; sourceTree = "<group>"; };
 		B4CBCF911DD91EA70003074A /* WatsonBankAsst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonBankAsst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CBCF941DD91EA70003074A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -808,6 +826,7 @@
 			files = (
 				742937FC20143FC700857E66 /* SpeechToTextV1.framework in Frameworks */,
 				B47A1CC120C5A73D001471FB /* Starscream.framework in Frameworks */,
+				B4C57CBD225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				742937FD20143FC700857E66 /* WebImage.framework in Frameworks */,
 				742937FE20143FC700857E66 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE7208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -821,6 +840,7 @@
 			files = (
 				B4B058541E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B47A1CB720C5A726001471FB /* Starscream.framework in Frameworks */,
+				B4C57CB7225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4A2AC4B1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC401FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE1208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -834,9 +854,11 @@
 			files = (
 				B4A2AC431FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4A2AC4E1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
+				B4C57CBE225E7EEE00BD50BE /* RestKit.framework in Frameworks */,
 				B4CB6AE8208CECA8001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B058571E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B058771E9A298B00855333 /* WebImage.framework in Frameworks */,
+				B4C57CBA225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,6 +868,7 @@
 			files = (
 				B4B058551E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B47A1CB920C5A72A001471FB /* Starscream.framework in Frameworks */,
+				B4C57CB8225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4A2AC4C1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC411FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE2208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -859,6 +882,7 @@
 			files = (
 				B4B058561E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B47A1CBB20C5A72F001471FB /* Starscream.framework in Frameworks */,
+				B4C57CB9225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4A2AC4D1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC421FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE3208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -872,6 +896,7 @@
 			files = (
 				74758D8F1F41FA8F00420502 /* TextToSpeechV1.framework in Frameworks */,
 				B47A1CBF20C5A738001471FB /* Starscream.framework in Frameworks */,
+				B4C57CBC225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4A2AC501FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC451FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE6208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -885,6 +910,7 @@
 			files = (
 				B4A2AC4F1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B47A1CBD20C5A734001471FB /* Starscream.framework in Frameworks */,
+				B4C57CBB225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				74C425E71EE8A69E00D18B7C /* WebImage.framework in Frameworks */,
 				B4A2AC441FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE5208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -898,6 +924,7 @@
 			files = (
 				B4B058531E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B47A1CB520C5A722001471FB /* Starscream.framework in Frameworks */,
+				B4C57CB6225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4A2AC4A1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3F1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE0208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -911,6 +938,7 @@
 			files = (
 				B4B058501E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B47A1CAD20C5A6DA001471FB /* Starscream.framework in Frameworks */,
+				B4C57CB3225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4A2AC471FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3C1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADD208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -924,6 +952,7 @@
 			files = (
 				B4B058511E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B47A1CB120C5A6E8001471FB /* Starscream.framework in Frameworks */,
+				B4C57CB4225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4A2AC481FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3D1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADE208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -937,6 +966,7 @@
 			files = (
 				B4B058521E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B47A1CB320C5A71C001471FB /* Starscream.framework in Frameworks */,
+				B4C57CB5225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4A2AC491FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3E1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADF208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -948,8 +978,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C57CB0225E7CF700BD50BE /* RestKit.framework in Frameworks */,
 				B4A2AC461FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B47A1CAF20C5A6E2001471FB /* Starscream.framework in Frameworks */,
+				B4C57CB2225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4B058791E9A299B00855333 /* WebImage.framework in Frameworks */,
 				B4A2AC3B1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADC208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -1048,6 +1080,7 @@
 				B4A2AC3A1FCF2BC7004BF160 /* SpeechToTextV1.framework */,
 				B4B0586E1E9A298B00855333 /* WebImage.framework */,
 				B4B058451E9A28DE00855333 /* TextToSpeechV1.framework */,
+				B4C57CB1225E7D7400BD50BE /* RestKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1115,6 +1148,7 @@
 		B4F0C13D1FCF739900E0E311 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4C57CAF225E7CF700BD50BE /* RestKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1405,6 +1439,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -2099,7 +2134,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2127,7 +2162,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2153,7 +2188,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2178,7 +2213,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2256,7 +2291,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2283,7 +2318,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2309,7 +2344,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2334,7 +2369,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2411,7 +2446,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2438,7 +2473,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2464,7 +2499,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2489,7 +2524,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2566,7 +2601,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2593,7 +2628,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2619,7 +2654,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2644,7 +2679,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2723,7 +2758,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2751,7 +2786,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2777,7 +2812,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2802,7 +2837,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2827,7 +2862,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2852,7 +2887,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2879,7 +2914,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2904,7 +2939,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2930,7 +2965,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2956,7 +2991,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2982,7 +3017,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3007,7 +3042,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3034,7 +3069,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3060,7 +3095,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3086,7 +3121,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3112,7 +3147,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3138,7 +3173,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3164,7 +3199,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3190,7 +3225,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3216,7 +3251,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3243,7 +3278,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3270,7 +3305,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3298,7 +3333,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3326,7 +3361,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3353,7 +3388,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy4-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3379,7 +3414,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3404,7 +3439,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3429,7 +3464,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3454,7 +3489,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3479,7 +3514,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3504,7 +3539,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3529,7 +3564,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3606,7 +3641,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3633,7 +3668,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3659,7 +3694,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3684,7 +3719,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3709,7 +3744,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3734,7 +3769,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3811,7 +3846,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3838,7 +3873,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3864,7 +3899,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3889,7 +3924,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3914,7 +3949,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3939,7 +3974,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3966,7 +4001,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3991,7 +4026,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4017,7 +4052,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4043,7 +4078,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4069,7 +4104,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4095,7 +4130,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4121,7 +4156,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4147,7 +4182,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4173,7 +4208,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4199,7 +4234,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4225,7 +4260,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4251,7 +4286,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4277,7 +4312,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4304,7 +4339,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4331,7 +4366,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4358,7 +4393,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4385,7 +4420,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4412,7 +4447,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4439,7 +4474,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4466,7 +4501,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4493,7 +4528,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4518,7 +4553,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4543,7 +4578,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4568,7 +4603,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4593,7 +4628,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4618,7 +4653,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4643,7 +4678,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4668,7 +4703,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4693,7 +4728,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4771,7 +4806,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4798,7 +4833,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4824,7 +4859,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4849,7 +4884,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4874,7 +4909,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4899,7 +4934,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4926,7 +4961,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4951,7 +4986,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5029,7 +5064,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5056,7 +5091,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5082,7 +5117,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5107,7 +5142,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5132,7 +5167,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5157,7 +5192,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5184,7 +5219,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5209,7 +5244,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5235,7 +5270,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5260,7 +5295,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5285,7 +5320,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5310,7 +5345,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5335,7 +5370,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5360,7 +5395,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5385,7 +5420,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5410,7 +5445,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5435,7 +5470,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5460,7 +5495,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5485,7 +5520,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5510,7 +5545,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5588,7 +5623,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5615,7 +5650,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5641,7 +5676,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5666,7 +5701,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5691,7 +5726,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5716,7 +5751,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5743,7 +5778,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5768,7 +5803,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5794,7 +5829,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5819,7 +5854,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5844,7 +5879,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonHertzAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5869,7 +5904,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5895,7 +5930,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5920,7 +5955,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5945,7 +5980,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5970,7 +6005,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5995,7 +6030,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6020,7 +6055,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6045,7 +6080,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6071,7 +6106,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6097,7 +6132,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6123,7 +6158,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6202,7 +6237,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6230,7 +6265,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6256,7 +6291,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6281,7 +6316,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6306,7 +6341,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6331,7 +6366,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonWealthAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFidAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6358,7 +6393,7 @@
 					"$(PROJECT_DIR)/WatsonDemo/Frameworks",
 				);
 				INFOPLIST_FILE = "WatsonBankAsst copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonRegAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6383,7 +6418,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonInsAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonAlfAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6409,7 +6444,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthTAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthTAsst2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6435,7 +6470,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "WatsonBankAsst copy3-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonFMaeAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6513,7 +6548,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6540,7 +6575,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6566,7 +6601,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6591,7 +6626,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6616,7 +6651,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6641,7 +6676,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6666,7 +6701,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6691,7 +6726,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6716,7 +6751,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6741,7 +6776,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6766,7 +6801,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WatsonMetAsst copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWhirlAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6793,7 +6828,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6820,7 +6855,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-sdk/Source/SupportingFiles/Dependencies/Starscream/zlib/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonInsAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonInsAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6846,7 +6881,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6871,7 +6906,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonWealthAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonWealthAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6896,7 +6931,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6921,7 +6956,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/WatsonDemo/WatsonMetAsst-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonMetAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -7054,7 +7089,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -7082,7 +7117,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = WatsonDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonBankAsst;
 				PRODUCT_NAME = "$(TARGET_NAME)";

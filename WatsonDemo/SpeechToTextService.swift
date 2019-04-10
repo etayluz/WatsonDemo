@@ -33,26 +33,28 @@ class SpeechToTextService {
                                                        password: GlobalConstants.BluemixPasswordSTT)
         }
         else {
-             speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
-                                                       password: GlobalConstants.BluemixPasswordSTT,
-                                                       customizationID: GlobalConstants.STTcustomizationID)
+            speechToTextSession = SpeechToTextSession(username: GlobalConstants.BluemixUsernameSTT,
+                                                      password: GlobalConstants.BluemixPasswordSTT,
+                                                      languageCustomizationID: GlobalConstants.STTcustomizationID,
+                                                      acousticCustomizationID: GlobalConstants.STTcustomizationID)
         }
 
         speechToTextSession?.onResults =
-            { results in print(results.bestTranscript)
-                if let bestTranscript = results.bestTranscript as String? {
-                    if bestTranscript.count > 0 {
-                        let truncated = bestTranscript.substring(to: bestTranscript.index(before: bestTranscript.endIndex))
-                        delegate.didFinishTranscribingSpeech(withText: truncated)
-                    }
-                }
+            { results in print(results)
+//                if let bestTranscript = results.bestTranscript as String? {
+//                    if bestTranscript.count > 0 {
+//                        let truncated = bestTranscript.substring(to: bestTranscript.index(before: bestTranscript.endIndex))
+//                        delegate.didFinishTranscribingSpeech(withText: truncated)
+//                    }
+//                }
             }
     }
 
 
     /// Start recording session
     func startRecording() {
-        var settings = RecognitionSettings(contentType: .opus)
+//        var settings = RecognitionSettings(contentType: .opus)
+        var settings = RecognitionSettings(contentType: nil)
         settings.interimResults = false
 //        settings.continuous = true
         settings.inactivityTimeout = -1
