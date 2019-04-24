@@ -377,6 +377,8 @@
 		B40FDFE61DDF89BF00BE07EB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE51DDF89BF00BE07EB /* CustomButton.swift */; };
 		B40FDFE81DE27E8D00BE07EB /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */; };
 		B40FDFEA1DE3EF6900BE07EB /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */; };
+		B42114C82270DF5C00154934 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
+		B42114C92270DF5C00154934 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4395A001DE50DD400F2C075 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43959FF1DE50DD400F2C075 /* CustomView.swift */; };
 		B47A1CAD20C5A6DA001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
 		B47A1CAE20C5A6DA001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -527,7 +529,6 @@
 		B4C57CB0225E7CF700BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CAF225E7CF700BD50BE /* RestKit.framework */; };
 		B4C57CB2225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
 		B4C57CB3225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
-		B4C57CB4225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
 		B4C57CB5225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
 		B4C57CB6225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
 		B4C57CB7225E7D7400BD50BE /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
@@ -711,6 +712,7 @@
 				B4A2AC561FCF2D3D004BF160 /* SpeechToTextV1.framework in Embed Frameworks */,
 				B47A1CB220C5A6E8001471FB /* Starscream.framework in Embed Frameworks */,
 				74F6EE451EA57CA200006A9C /* TextToSpeechV1.framework in Embed Frameworks */,
+				B42114C92270DF5C00154934 /* RestKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -952,7 +954,7 @@
 			files = (
 				B4B058511E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B47A1CB120C5A6E8001471FB /* Starscream.framework in Frameworks */,
-				B4C57CB4225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B42114C82270DF5C00154934 /* RestKit.framework in Frameworks */,
 				B4A2AC481FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3D1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADE208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
