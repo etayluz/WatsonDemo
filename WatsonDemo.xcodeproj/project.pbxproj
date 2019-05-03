@@ -380,6 +380,30 @@
 		B42114C82270DF5C00154934 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; };
 		B42114C92270DF5C00154934 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4C57CB1225E7D7400BD50BE /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4395A001DE50DD400F2C075 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43959FF1DE50DD400F2C075 /* CustomView.swift */; };
+		B44E428D227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E428E227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E428F227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4290227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4291227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4292227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4293227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4294227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4295227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4296227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4297227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4298227CCF2D00EFBB0C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428B227CCF2D00EFBB0C /* Fabric.framework */; };
+		B44E4299227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E429A227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E429B227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E429C227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E429D227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E429E227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E429F227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E42A0227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E42A1227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E42A2227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E42A3227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
+		B44E42A4227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */; };
 		B47A1CAD20C5A6DA001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
 		B47A1CAE20C5A6DA001471FB /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B47A1CAF20C5A6E2001471FB /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */; };
@@ -781,6 +805,8 @@
 		B40FDFE71DE27E8D00BE07EB /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		B40FDFE91DE3EF6900BE07EB /* MapViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCell.swift; sourceTree = "<group>"; };
 		B43959FF1DE50DD400F2C075 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		B44E428B227CCF2D00EFBB0C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Frameworks/Fabric.framework; sourceTree = "<group>"; };
+		B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
 		B47B68BF1DF423FF00AB6421 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B47B68C11DF5D03D00AB6421 /* ButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		B48B18611DD96859008CE7C2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -827,8 +853,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				742937FC20143FC700857E66 /* SpeechToTextV1.framework in Frameworks */,
+				B44E42A4227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CC120C5A73D001471FB /* Starscream.framework in Frameworks */,
 				B4C57CBD225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B44E4298227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				742937FD20143FC700857E66 /* WebImage.framework in Frameworks */,
 				742937FE20143FC700857E66 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE7208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -841,8 +869,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058541E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B44E429E227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CB720C5A726001471FB /* Starscream.framework in Frameworks */,
 				B4C57CB7225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B44E4292227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				B4A2AC4B1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC401FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE1208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -855,8 +885,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4A2AC431FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				B44E42A1227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B4A2AC4E1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4C57CBE225E7EEE00BD50BE /* RestKit.framework in Frameworks */,
+				B44E4295227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				B4CB6AE8208CECA8001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B058571E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
 				B4B058771E9A298B00855333 /* WebImage.framework in Frameworks */,
@@ -869,8 +901,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058551E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B44E429F227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CB920C5A72A001471FB /* Starscream.framework in Frameworks */,
 				B4C57CB8225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B44E4293227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				B4A2AC4C1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC411FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE2208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -883,8 +917,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058561E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B44E42A0227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CBB20C5A72F001471FB /* Starscream.framework in Frameworks */,
 				B4C57CB9225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B44E4294227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				B4A2AC4D1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC421FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE3208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -897,8 +933,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				74758D8F1F41FA8F00420502 /* TextToSpeechV1.framework in Frameworks */,
+				B44E42A3227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CBF20C5A738001471FB /* Starscream.framework in Frameworks */,
 				B4C57CBC225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B44E4297227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				B4A2AC501FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC451FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE6208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -911,8 +949,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4A2AC4F1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
+				B44E42A2227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CBD20C5A734001471FB /* Starscream.framework in Frameworks */,
 				B4C57CBB225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B44E4296227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				74C425E71EE8A69E00D18B7C /* WebImage.framework in Frameworks */,
 				B4A2AC441FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE5208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -925,8 +965,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058531E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B44E429D227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CB520C5A722001471FB /* Starscream.framework in Frameworks */,
 				B4C57CB6225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B44E4291227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				B4A2AC4A1FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3F1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6AE0208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -939,8 +981,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058501E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B44E429A227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CAD20C5A6DA001471FB /* Starscream.framework in Frameworks */,
 				B4C57CB3225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B44E428E227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				B4A2AC471FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3C1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADD208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -953,8 +997,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058511E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B44E429B227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CB120C5A6E8001471FB /* Starscream.framework in Frameworks */,
 				B42114C82270DF5C00154934 /* RestKit.framework in Frameworks */,
+				B44E428F227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				B4A2AC481FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3D1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADE208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -967,8 +1013,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B058521E9A28DF00855333 /* TextToSpeechV1.framework in Frameworks */,
+				B44E429C227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B47A1CB320C5A71C001471FB /* Starscream.framework in Frameworks */,
 				B4C57CB5225E7D7400BD50BE /* RestKit.framework in Frameworks */,
+				B44E4290227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
 				B4A2AC491FCF2BC8004BF160 /* SpeechToTextV1.framework in Frameworks */,
 				B4A2AC3E1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADF208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
@@ -985,6 +1033,8 @@
 				B47A1CAF20C5A6E2001471FB /* Starscream.framework in Frameworks */,
 				B4C57CB2225E7D7400BD50BE /* RestKit.framework in Frameworks */,
 				B4B058791E9A299B00855333 /* WebImage.framework in Frameworks */,
+				B44E428D227CCF2D00EFBB0C /* Fabric.framework in Frameworks */,
+				B44E4299227CCF2D00EFBB0C /* Crashlytics.framework in Frameworks */,
 				B4A2AC3B1FCF2BC8004BF160 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				B4CB6ADC208CEBEB001E3AD1 /* Starscream.framework in Frameworks */,
 				B4B0586C1E9A296000855333 /* TextToSpeechV1.framework in Frameworks */,
@@ -1077,6 +1127,8 @@
 		B48B18751DDB6EE0008CE7C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B44E428C227CCF2D00EFBB0C /* Crashlytics.framework */,
+				B44E428B227CCF2D00EFBB0C /* Fabric.framework */,
 				B4CB6ADB208CEBEB001E3AD1 /* Starscream.framework */,
 				B4A2AC391FCF2BC7004BF160 /* IQKeyboardManagerSwift.framework */,
 				B4A2AC3A1FCF2BC7004BF160 /* SpeechToTextV1.framework */,
@@ -1329,6 +1381,8 @@
 				74E49BFF1E0265E100579DD1 /* Frameworks */,
 				74E49C041E0265E100579DD1 /* Resources */,
 				74E49C091E0265E100579DD1 /* Embed Frameworks */,
+				B44E428A227A2AD600EFBB0C /* ShellScript */,
+				B44E42A5227CCF8E00EFBB0C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1421,7 +1475,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					74E49BE61E0265E100579DD1 = {
-						DevelopmentTeam = 675E4CR9UZ;
+						DevelopmentTeam = 7E2482XJ3U;
 						ProvisioningStyle = Automatic;
 					};
 					74E49C131E0265FF00579DD1 = {
@@ -1601,6 +1655,43 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B44E428A227A2AD600EFBB0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone    \n";
+		};
+		B44E42A5227CCF8E00EFBB0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n./Fabric.framework/run 7e610cd058d383239a93a2c2eadfb3baf6ee0ff7 0ae0432ac01a37913abcfa663b9bf29e6fccec3643b9cd7ebaa6c89ee937740a    \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		742937DB20143FC700857E66 /* Sources */ = {
@@ -2182,7 +2273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2338,7 +2429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2493,7 +2584,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2648,7 +2739,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -2806,7 +2897,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -3688,7 +3779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -3893,7 +3984,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -4853,7 +4944,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -5111,7 +5202,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -5670,7 +5761,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6285,7 +6376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6595,7 +6686,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6875,7 +6966,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
@@ -6900,7 +6991,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-WatsonWealthAsst";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 675E4CR9UZ;
+				DEVELOPMENT_TEAM = 7E2482XJ3U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WatsonDemo",
