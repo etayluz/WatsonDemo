@@ -41,12 +41,17 @@ class SpeechToTextService {
 
         speechToTextSession?.onResults =
             { results in print(results)
-//                if let bestTranscript = results.bestTranscript as String? {
-//                    if bestTranscript.count > 0 {
-//                        let truncated = bestTranscript.substring(to: bestTranscript.index(before: bestTranscript.endIndex))
-//                        delegate.didFinishTranscribingSpeech(withText: truncated)
-//                    }
-//                }
+                if let speechRecognitionResults = results.results as [SpeechToTextV1.SpeechRecognitionResult]? {
+                    if speechRecognitionResults.count > 0 {
+                        if let firstSpeechRecognitionResult = speechRecognitionResults[0] as SpeechToTextV1.SpeechRecognitionResult? {
+                            if let firstAlternative = firstSpeechRecognitionResult.alternatives[0] as SpeechToTextV1.SpeechRecognitionAlternative? {
+                                if firstAlternative.transcript.count > 0 {
+                                    delegate.didFinishTranscribingSpeech(withText: firstAlternative.transcript)
+                                }
+                            }
+                        }
+                    }
+                }
             }
     }
 
