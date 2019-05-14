@@ -24,7 +24,8 @@ struct GlobalConstants {
     
 #elseif WATSONINSASST
     
-    static let workspaceID = "54141f49-ffa2-4f6b-887c-aac6aea5d42d"
+//    static let workspaceID = "54141f49-ffa2-4f6b-887c-aac6aea5d42d"
+    static let workspaceID = "faf6e421-43ae-474a-8f9e-e8e10e71e3df" // Insurance Call Center Assist
     static let wcs_username = "4acac659-e820-4ef6-8421-e88f517c9c4c"
     static let wcs_password = "k0gYo1FjJymP"
     static let nodeRedWorkflowUrl = "http://ucg-clusterv3.us-south.containers.mybluemix.net/mobile"
@@ -37,8 +38,7 @@ struct GlobalConstants {
     
 #elseif WATSONWEALTHASST
 
-//    static let workspaceID = "c2777aef-fe89-4df5-8792-46880d6a0662"
-    static let workspaceID = "faf6e421-43ae-474a-8f9e-e8e10e71e3df" // Insurance Call Center Assist
+    static let workspaceID = "c2777aef-fe89-4df5-8792-46880d6a0662"
     static let wcs_username = "4acac659-e820-4ef6-8421-e88f517c9c4c"
     static let wcs_password = "k0gYo1FjJymP"
     static let nodeRedWorkflowUrl = "http://ucg-clusterv3.us-south.containers.mybluemix.net/mobile"

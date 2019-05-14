@@ -95,7 +95,7 @@ class ConversationService {
         }
         
         let requestParameters =
-            [Key.input: text + " ", // Need to add space at end since node red chops off last letter
+            [Key.input: text,// + " ", // Need to add space at end since node red chops off last letter
              Key.workspaceID: GlobalConstants.workspaceID,
              Key.wcs_username: GlobalConstants.wcs_username,
              Key.wcs_password: GlobalConstants.wcs_password,
